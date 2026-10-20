@@ -1,0 +1,39 @@
+{
+  "slug": "dat",
+  "order": 16,
+  "name": "AutoSecure - DAT – Camera trường học lái xe",
+  "shortName": "DAT",
+  "industry": "Vận tải",
+  "summary": "Giải pháp camera giám sát cho trường đào tạo lái xe: camera AutoSecure kèm đầu đọc thẻ ID tích hợp màn hình cảm ứng 7 inch để xác thực học viên – giáo viên, ghi nhận thời gian, quãng đường luyện tập và tự động cảnh báo gian lận.",
+  "painPoints": [
+    "Xác thực đúng học viên trong quá trình luyện tập",
+    "Ghi nhận minh bạch thời gian, quãng đường luyện tập",
+    "Phát hiện hành vi gian lận"
+  ],
+  "architecture": "Camera AutoSecure - DAT (camera trước + cabin, DMS) + mô-đun đầu đọc thẻ ID tích hợp màn hình cảm ứng 7 inch, module bảo mật 2 SAM Slot → truyền dữ liệu qua 4G LTE về hệ thống quản lý.",
+  "modules": [],
+  "features": [
+    "[DATM] Hiển thị thông tin học viên - giáo viên",
+    "Xác thực người học tần suất 15fps",
+    "Hiển thị thời gian, quãng đường đã luyện tập",
+    "Tự động cảnh báo các hành vi gian lận",
+    "DMS, FleetFocus, DriverID"
+  ],
+  "benefits": [],
+  "targetCustomers": [
+    "Đào tạo lái xe"
+  ],
+  "relatedSeries": [
+    "autosecure"
+  ],
+  "products": [
+    "autosecure-dat"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/autosecure-3.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_full version.pdf"
+  ],
+  "notes": ""
+}

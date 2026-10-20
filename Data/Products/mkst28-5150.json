@@ -1,0 +1,80 @@
+{
+  "slug": "mkst28-5150",
+  "model": "MKST28-5150",
+  "name": "Chuyển mạch Access L2+/Lite L3 24 cổng 1000Mbps, 4 cổng SFP+ 10G",
+  "series": "mk-networks",
+  "category": "Access Switch L2+",
+  "resolution": "",
+  "ipRating": "",
+  "summary": "Switch truy cập Gigabit Ethernet 24 cổng RJ45 GE tích hợp 4 cổng uplink quang 10G SFP+, phù hợp lớp Access cho mạng ISP, doanh nghiệp, SMB, campus và hạ tầng IoT/cloud. Tích hợp HA, QoS, VLAN, multicast, bảo mật truy cập và quản lý IPv4/IPv6.",
+  "features": [
+    "Switch Access Gigabit uplink 10G hiệu năng cao",
+    "Không quạt, tiết kiệm điện, chạy êm",
+    "Hỗ trợ bảo vệ vòng Ring L2 ERPS G.8032 <50ms",
+    "Tích hợp bảo mật, IPv6, multicast nâng cao",
+    "Quản lý Web/CLI/SNMP/Cloud, hỗ trợ giám sát tập trung EMS",
+    "Chống sét 6KV"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Network": [
+      [
+        "Cổng",
+        "24 cổng GE + 4 uplink 10G SFP+"
+      ],
+      [
+        "Định tuyến",
+        "Hỗ trợ L2+/Lite L3 Rounting"
+      ],
+      [
+        "Bảo vệ vòng Ring",
+        "Hỗ trợ bảo vệ vòng Ring L2 ERPS G.8032 <50ms"
+      ]
+    ],
+    "Environment": [
+      [
+        "Nhiệt độ hoạt động",
+        "-5°C ~ 45°C"
+      ],
+      [
+        "Chống sét",
+        "6KV"
+      ]
+    ],
+    "Physical": [
+      [
+        "Tản nhiệt",
+        "Không quạt, chạy êm"
+      ]
+    ],
+    "Other": [
+      [
+        "Quản lý",
+        "Web/CLI/SNMP/Cloud"
+      ],
+      [
+        "Giám sát tập trung",
+        "Hỗ trợ giám sát tập trung EMS"
+      ],
+      [
+        "Bảo hành",
+        "3 năm"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Datasheet MKST28-5150 / MKSP28-5150 (Tiếng Việt, v2.0)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MK Networks/Datasheets/2. 3 MKST28-5150_VN 2.0.docx"
+    }
+  ],
+  "image": "/img/products/mkst28-5150.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/MK Networks/Datasheets/2. 3 MKST28-5150_VN 2.0.docx"
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, MAC table, VLAN, kích thước, trọng lượng, công suất tiêu thụ...). Một datasheet chung cho \"MKST28/ MKSP28\" (không ghi hậu tố -5150; model MKST28-5150 lấy theo tên file và nhãn trên ảnh sản phẩm). Datasheet phân biệt biến thể bằng tên Edgecore trong ngoặc: \"Không quạt, chạy êm (ECS4150-28T)\" và \"PoE 370W chuẩn af/at (ECS4150-28P)\"; ảnh minh họa trong file ghi ECS4150-28T/ECS4150-28P. Việc gán ECS4150-28T → MKST28-5150 và ECS4150-28P → MKSP28-5150 là suy luận từ tên model (T/P) và ảnh sản phẩm (ảnh MKSP28-5150 có đèn PoE), cần xác nhận. Dòng \"Không quạt\" được datasheet gắn với ECS4150-28T nên chỉ ghi cho MKST28-5150. Datasheet ghi \"Rounting\" (lỗi chính tả, giữ nguyên). Tiêu đề trang 1 ghi \"Chuyển mạch Access L2+/Lite L3\", header ghi \"Chuyển mạch lớp 2\"; đoạn giới thiệu ghi \"switch truy cập Layer 2\". File có comment \"Đổi tên thiết bị MK Networks\" tại các chỗ ghi tên ECS4150. Không có ngày phát hành in trên datasheet."
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "acp",
+  "order": 3,
+  "name": "Kiểm soát ra vào bằng khuôn mặt và CCCD gắn chip (Access Control Platform)",
+  "shortName": "ACP",
+  "industry": "Nền tảng phần mềm",
+  "summary": "Quản lý ra vào bằng thẻ CCCD gắn chip/CC/thẻ nhân viên và sinh trắc học (khuôn mặt/vân tay). Hỗ trợ quản lý nhân viên nội bộ (chấm công, ghi nhận ra vào trụ sở) và quản lý khách (đăng ký ra vào bằng thông tin khách, kiểm soát số lượng khách theo từng cán bộ, duyệt khách đến gặp). Thiết bị M6 điều khiển cửa từ, barrier, cổng xoay/flap barrier khi xác thực thành công.",
+  "painPoints": [
+    "Mất chìa khóa/thẻ hoặc thông tin xác thực",
+    "Kiểm tra giấy tờ thủ công, phụ thuộc kinh nghiệm bảo vệ",
+    "Không có phân quyền theo khu vực và thời gian",
+    "Khó tra soát lịch sử ra vào",
+    "Quản lý ra vào, phân quyền truy cập cho nhân viên, khách phân tán, thủ công",
+    "Nhu cầu kiểm tra, xác thực thẻ CC/CCCD tại khách sạn, phòng tiếp dân"
+  ],
+  "architecture": "1. Nhân sự tạo yêu cầu ra vào (faceID/số định danh) trên Access Control Server → 2. Quản lý duyệt yêu cầu → 3. Khách xác thực faceID/giấy tờ tùy thân tại cửa kiểm soát (thiết bị M6) → 4. Thiết bị kiểm tra quyền ra vào với server → 5. Mở cửa. Vận hành: lắp đặt thiết bị (bắt vít lên tường/cửa, cấp nguồn và internet) → đăng ký thiết bị vào cửa/khu vực trên ACP → lên chính sách truy cập (thời gian, khu vực, đối tượng) → thêm người truy cập.",
+  "modules": [
+    {
+      "name": "Quản lý quyền truy cập tập trung",
+      "description": "Tập trung quyền truy cập của người dùng trên một nền tảng."
+    },
+    {
+      "name": "Kịch bản kiểm soát ra/vào",
+      "description": "Kiểm soát chặt chẽ theo các kịch bản cấu hình sẵn."
+    }
+  ],
+  "features": [
+    "Trang quản trị ACP: Tính năng phân quyền (vai trò, nhóm tài khoản, tài khoản)",
+    "Quản lý truy cập: khoảng thời gian truy cập, nhóm truy cập gồm khu vực và thời gian",
+    "Quản lý khu vực và cửa: loại cửa, thời gian chờ, giám sát trạng thái cửa, mở cửa tự động",
+    "Quản lý thiết bị: đăng ký, xóa, cập nhật đầu đọc M6",
+    "Báo cáo lịch sử truy cập theo thời gian, xuất file Excel",
+    "Xác thực theo nhiều mức độ bảo mật; quản lý qua thiết bị di động",
+    "Một thẻ nhận dạng cho tất cả các cửa trong tòa nhà; quản lý từ xa 100%"
+  ],
+  "benefits": [
+    "Đồng bộ chuyên biệt với thiết bị M6",
+    "Xác thực CCCD gắn chip kết hợp sinh trắc học"
+  ],
+  "targetCustomers": [
+    "Cơ quan nhà nước",
+    "Doanh nghiệp cần quản lý ra vào",
+    "Khách sạn, phòng tiếp dân"
+  ],
+  "relatedSeries": [
+    "biosecure"
+  ],
+  "products": [
+    "m6",
+    "a612"
+  ],
+  "documents": [
+    {
+      "title": "Kiến trúc hệ thống cơ bản",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+    }
+  ],
+  "cover": "/img/scenes/biosecure-2.png",
+  "images": [
+    "/img/solutions/acp-architecture.png"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf",
+    "Data/MK Vision/Docs/HDSD/HDSD_ACP_WEB_CLIENT (Final).pdf",
+    "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+  ],
+  "notes": ""
+}

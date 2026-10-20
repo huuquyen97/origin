@@ -1,0 +1,32 @@
+{
+  "slug": "do-thi",
+  "order": 9,
+  "name": "AI Camera cho quản lý trật tự đô thị",
+  "shortName": "",
+  "industry": "Đô thị & Giao thông",
+  "summary": "Giám sát 24/7 chợ, phố đi bộ, công viên; phát hiện tụ tập, gây rối, đánh nhau, xả rác, lấn chiếm vỉa hè; hỗ trợ truy vết đối tượng, giải quyết khiếu nại và quy hoạch đô thị thông minh.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "Đô thị / Chính quyền"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [
+    "va50fa0v",
+    "va50fa2v-40",
+    "vb50fb1v",
+    "vb80fa1v"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/building-1.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}

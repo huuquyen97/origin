@@ -1,0 +1,163 @@
+[
+  {
+    "id": "v-secure",
+    "order": 1,
+    "name": "V-Secure",
+    "aliases": [
+      "V-SECURE",
+      "VSecure"
+    ],
+    "kind": "AI Camera giám sát",
+    "tagline": "Bullet · Dome · PTZ, AI xử lý tại biên",
+    "description": "Dòng AI Camera xử lý tại biên (AI on Edge) thương hiệu MK Vision, “Make in Vietnam” và “Made in Vietnam”, dùng SoC Ambarella CV25 với CVflow; gồm camera Bullet 5MP/8MP, Dome 5MP và PTZ zoom quang 40x. Theo slide giới thiệu, AI Camera xử lý tại biên được xác định là sản phẩm công nghệ chiến lược cần ưu tiên triển khai trong 2025 (theo Bộ KH&CN).",
+    "highlights": [
+      "Xử lý AI tại biên bằng chip Ambarella CV25 / CVflow®",
+      "HDR Engine Gen3, hình ảnh rõ nét khi thiếu sáng/ngược sáng",
+      "Chuẩn chống va đập IK10, chống bụi/nước IP67",
+      "Đáp ứng ONVIF Profile S/G/T/M và An toàn thông tin QCVN 135:2024/BTTTT; NDAA, FIPS 140-2 Level 3",
+      "Sản xuất tại nhà máy Lô C-1B KCN Thăng Long Vĩnh Phúc; thiết kế và làm chủ công nghệ bởi người Việt",
+      "AI huấn luyện trên dữ liệu người Việt, tùy biến phần mềm/phần cứng theo yêu cầu, đội ngũ kỹ sư hỗ trợ 24/7 (theo slide)"
+    ],
+    "certifications": [],
+    "image": "/img/scenes/products.jpg",
+    "solution": "vms"
+  },
+  {
+    "id": "mobisecure",
+    "order": 2,
+    "name": "MobiSecure",
+    "aliases": [
+      "MOBISECURE",
+      "Mobi Secure"
+    ],
+    "kind": "Camera đeo người",
+    "tagline": "Body-worn camera AI, kết nối COMS",
+    "description": "MobiSecure là dòng camera đeo người (Body-Worn Camera) do MK Vision thiết kế và sản xuất tại Việt Nam, ứng dụng AI nhận diện khuôn mặt tại biên, đọc chip CCCD qua NFC và kết nối 4G/Wi-Fi/GPS về phần mềm quản lý tập trung COMS. Dòng sản phẩm gồm model MK22FC1E và T8 Series (T8A · T8B · T8C – cùng thân máy, khác nhau ở kết nối, định danh và dung lượng lưu trữ).",
+    "highlights": [
+      "Camera gắn trên người đầu tiên tại Việt Nam ứng dụng AI nhận diện khuôn mặt cho người Việt (theo slide giới thiệu)",
+      "Thư viện đến 20.000 khuôn mặt, độ chính xác ≥ 90%, xử lý tại biên",
+      "Đọc chip CCCD / hộ chiếu điện tử qua NFC (MK22FC1E, T8C)",
+      "Sony 1/2.8\" CMOS, Ambarella ISP + CVflow AI Vision, góc nhìn 140°, 0.001 lux",
+      "Wi-Fi 2.4/5 GHz, Bluetooth, 4G LTE, GPS & GLONASS – giám sát vị trí, live view, đàm thoại 1 và 2 chiều, SOS",
+      "Vỏ ABS/PC, gắn được trên áo, áo giáp, mũ, ô tô, xe máy; phím cơ dùng được khi đeo găng tay",
+      "Đạt chuẩn QCVN 135:2024/BTTTT (theo slide); API, SDK mở cho tích hợp",
+      "Phần mềm quản lý COMS đã được cấp Giấy chứng nhận đăng ký quyền tác giả (số 7977/2024/QTG)"
+    ],
+    "certifications": [],
+    "image": "/img/scenes/mobisecure-1.jpg",
+    "solution": "coms"
+  },
+  {
+    "id": "autosecure",
+    "order": 3,
+    "name": "AutoSecure",
+    "aliases": [
+      "AUTOSECURE",
+      "Auto Secure"
+    ],
+    "kind": "Camera hành trình AI",
+    "tagline": "Dashcam + DMS, quản lý đội xe FMS",
+    "description": "AutoSecure là giải pháp camera hành trình AI (AI-on-Edge, Ambarella CV SoC) kết hợp hệ thống giám sát tài xế DMS và phần mềm quản lý đội xe FMS của MK Vision. Thiết bị quay đồng thời phía trước xe và trong cabin, phát hiện hành vi lái xe bất thường, nhận diện tài xế, truyền video/sự kiện thời gian thực qua 4G và lưu bằng chứng trên máy chủ. Thiết kế, sản xuất tại Việt Nam, phù hợp Nghị định 10/2020/NĐ-CP và Thông tư 12/2020 của Bộ GTVT.",
+    "highlights": [
+      "Camera hành trình AI đầu tiên tại Việt Nam tích hợp giám sát hành vi tài xế",
+      "Chế độ xem kép: quay video phía trước và trong cabin cùng lúc",
+      "AI xử lý tại biên (AI-on-Edge) – Ambarella CVflow®",
+      "4G LTE, tự động upload; GPS & GLONASS",
+      "Micro-SD lên đến 512 GB, quay video lên tới 72h (theo slide)",
+      "Bảo vệ khi đỗ xe, báo động đột nhập, siêu tiết kiệm điện năng",
+      "Bảo mật: ký số firmware/video/sự kiện, TrustZone® secure boot, mã hoá bộ nhớ",
+      "Open API, tích hợp FMS và hệ thống quản lý video MK Vision",
+      "Made in Vietnam – nhà máy Vĩnh Phúc, hỗ trợ 24/7"
+    ],
+    "certifications": [
+      "ISO 9001:2015",
+      "Giấy chứng nhận hợp quy số C0404161023AA04A3 (model V1C) – QCVN 117:2020/BTTTT; QCVN 54:2020/BTTTT – hiệu lực 16/10/2023 đến 16/10/2026",
+      "Giấy chứng nhận đăng ký quyền tác giả 'Phần mềm hệ thống quản lý đội xe (FMS)' số 7541/2024/QTG (30/08/2024)",
+      "FCC, CE (theo datasheet English / DAT)",
+      "Phù hợp Nghị định 10/2020/NĐ-CP và Thông tư 12/2020 của Bộ GTVT"
+    ],
+    "image": "/img/scenes/autosecure-3.jpg",
+    "solution": "fms"
+  },
+  {
+    "id": "biosecure",
+    "order": 4,
+    "name": "BioSecure",
+    "aliases": [
+      "BIOSECURE",
+      "M6"
+    ],
+    "kind": "Định danh sinh trắc học",
+    "tagline": "Đầu đọc CCCD gắn chip, khuôn mặt, vân tay",
+    "description": "Dòng thiết bị và giải pháp kiểm soát ra vào – định danh sinh trắc học của MK Vision, xoay quanh đầu đọc thẻ CCCD gắn chip/hộ chiếu điện tử kết hợp xác thực khuôn mặt và vân tay (Match-on-Card theo giao thức Bộ Công An), kết nối phần mềm Access Control Platform (ACP) và có thể kết hợp camera AI nhận diện khuôn mặt tại biên.",
+    "highlights": [
+      "Đọc và xác thực CCCD gắn chip theo chuẩn ICAO, đối sánh sinh trắc học Match-on-Card (MoC)",
+      "Xác thực đa phương thức: thẻ CCCD/CC/thẻ nhân viên, khuôn mặt, vân tay",
+      "AI xử lý tại biên (Ambarella CV25 / CVflow®) giảm độ trễ, giảm chi phí hạ tầng",
+      "Phần mềm quản trị ACP: phân quyền, quản lý truy cập, khu vực/cửa, thiết bị, báo cáo xuất Excel",
+      "Triển khai On-premise hoặc SaaS",
+      "Bảo mật đường truyền MQTT có mã hóa TLS, HTTPS SSL/TLS, nhật ký không thể chỉnh sửa",
+      "MK Group được Trung tâm nghiên cứu ứng dụng dữ liệu dân cư và căn cước công dân (Bộ Công an) chứng nhận là đơn vị cung cấp sản phẩm, dịch vụ xác thực thông tin công dân trong chip CCCD (2023)",
+      "Thiết kế, sản xuất và làm chủ công nghệ tại Việt Nam"
+    ],
+    "certifications": [],
+    "image": "/img/scenes/biosecure-3.png",
+    "solution": "acp"
+  },
+  {
+    "id": "cuvo",
+    "order": 5,
+    "name": "CUVO",
+    "aliases": [
+      "Cuvo",
+      "Pavana"
+    ],
+    "kind": "Camera dân dụng & IP",
+    "tagline": "Camera gia đình, IP camera, NVR",
+    "description": "CUVO là giải pháp camera an ninh gia đình thông minh (Home Security Solution, lộ trình sản phẩm 2022) gồm Camera AI không dây dùng pin, Chuông cửa AI video không dây dùng pin và Camera AI đèn an ninh, quản lý qua một ứng dụng CUVO, lưu trữ đám mây trên hạ tầng Amazon. File 'Cuvo catalogue 2024' trong thư mục Datasheets thực tế là catalogue thương hiệu 'pavana Smart Security Camera' (camera IP và NVR).",
+    "highlights": [
+      "Camera AI không dây dùng pin: pin lithium 9,750 mAh, góc quay 134 độ, radar nhận diện chuyển động, còi báo động 105dB, đế nam châm (theo slide)",
+      "Chuông cửa AI video: góc nhìn 180˚, giao tiếp 2 chiều, radar, loa báo động 105 dB, chống nước (theo slide)",
+      "Camera AI đèn an ninh: đèn LED 1200 lm, ánh sáng 4000K, góc nhìn 146 độ, quay 10s trước khi đèn sáng, nguồn 12V AC/DC, chống nước IP56 (theo slide)",
+      "Một ứng dụng CUVO điều khiển mọi thiết bị từ xa; gói cước Pro/Elite lưu video 7 hoặc 90 ngày",
+      "Gói sản phẩm theo nhu cầu: VỆ SỸ 247, QUẢN GIA 247, THẦN GIỮ CỦA"
+    ],
+    "certifications": [],
+    "image": "/img/scenes/vsecure-1.jpg",
+    "solution": "cuvo-gia-dinh"
+  },
+  {
+    "id": "mk-networks",
+    "order": 6,
+    "name": "MK Networks",
+    "aliases": [
+      "MK NETWORKS",
+      "MK Network",
+      "MKNetworks"
+    ],
+    "kind": "Thiết bị mạng",
+    "tagline": "Core Switch, Access Switch, Industrial Switch, Wi-Fi AP",
+    "description": "Thiết bị mạng MK Networks: switch Core Layer 3 10G/100G, switch Access L2+ Gigabit uplink 10G (có bản PoE), switch công nghiệp PoE và Access Point Wi-Fi 6, quản trị Web/CLI/SNMP/Cloud, phục vụ hạ tầng mạng cho doanh nghiệp, ISP, campus, nhà máy và hệ thống camera giám sát.",
+    "highlights": [
+      "Switch Core L3 24 cổng 10G SFP+, 6 uplink 100G QSFP28, nguồn dự phòng kép",
+      "Switch Access Gigabit 24 cổng, 4 uplink 10G SFP+, PoE 370W chuẩn af/at",
+      "Switch công nghiệp PoE IEEE 802.3bt đến 90W mỗi cổng, -40 ~ 75 ˚C, DIN-Rail IP50",
+      "Access Point Wi-Fi 6 MU-MIMO 2x2 đến 3 Gbps, IP55, tích hợp BLE và ZigBee",
+      "Bảo vệ vòng Ring ERPS G.8032, hỗ trợ IPv6, multicast và bảo mật",
+      "Quản trị Web/CLI/SNMP/Cloud"
+    ],
+    "certifications": [
+      "FCC class A",
+      "CE",
+      "CB",
+      "UL",
+      "RoHS",
+      "WEEE",
+      "IP55",
+      "IP50",
+      "ITU-T G.8032 ERPS"
+    ],
+    "image": "/img/solutions/mk-networks-thon-so.jpg",
+    "solution": "mk-networks-thon-so"
+  }
+]

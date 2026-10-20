@@ -1,0 +1,102 @@
+{
+  "slug": "vms",
+  "order": 1,
+  "name": "Hệ thống quản lý video",
+  "shortName": "VMS",
+  "industry": "Nền tảng phần mềm",
+  "summary": "Nền tảng phần mềm \"Made in Vietnam\" do MK Vision tự phát triển để kết nối, quản lý, xem trực tiếp, ghi hình, lưu trữ và phát lại video từ nhiều dòng camera trên một giao diện tập trung, mở rộng từ hàng trăm đến hàng nghìn camera.",
+  "painPoints": [
+    "Hệ thống camera lớn, phân tán nhiều khu vực, nhiều hãng khác nhau khó quản lý tập trung",
+    "Phụ thuộc nền tảng VMS nước ngoài, chi phí bản quyền và vận hành cao, rủi ro an toàn dữ liệu",
+    "Khó truy xuất nhanh video khi xảy ra sự cố, mất thời gian tìm theo camera và thời gian",
+    "Thiếu phân quyền chi tiết theo vai trò, khu vực khiến dữ liệu video dễ bị truy cập trái phép"
+  ],
+  "architecture": "Camera IP (ONVIF hoặc non-ONVIF, NVR chuẩn ONVIF) truyền luồng video qua RTSP về VMS Stack. Recording Server ghi hình và đẩy dữ liệu xuống Storage (SAN/NAS/DAS); Media Server xử lý và phân phối luồng tới client; Management Server và Database Server lưu cấu hình hệ thống, camera, người dùng và sự kiện. Business Stack gồm trạm giám sát (Monitoring workstation – Desktop/Web Client), Mobile client và tích hợp bên thứ ba qua RESTful API/WebSocket. Bảo mật bằng HTTPS/SRTP, xác thực token/LDAP/OAuth2, giới hạn IP và phân quyền theo vai trò.",
+  "modules": [
+    {
+      "name": "Giám sát trực tiếp (Live View)",
+      "description": "Xem video từ một hoặc nhiều camera cùng lúc với layout 1/4/9/16 ô, chuyển main/sub stream, chụp ảnh snapshot, phóng to/thu nhỏ."
+    },
+    {
+      "name": "Điều khiển PTZ",
+      "description": "Xoay trái/phải, lên/xuống, zoom; lưu và gọi nhanh preset; cấu hình tuần tra tự động (PTZ Patrol)."
+    },
+    {
+      "name": "Phát lại video (Playback)",
+      "description": "Tìm video theo thời gian và camera, phát theo timeline, tua nhanh/chậm, tạm dừng, chụp ảnh và xuất video ra file."
+    },
+    {
+      "name": "Quản lý thiết bị",
+      "description": "Thêm camera qua IP/tên miền, kết nối RTSP/ONVIF, tự động phát hiện (ONVIF Discovery), cấu hình stream profile, theo dõi trạng thái online/offline, tổ chức nhóm camera."
+    },
+    {
+      "name": "Quản lý khu vực",
+      "description": "Khai báo khu vực (Area) và số thiết bị theo khu vực để tổ chức hệ thống camera."
+    },
+    {
+      "name": "Quản lý file ảnh và video cắt",
+      "description": "Danh sách, tìm kiếm, xem trước, tải xuống và xóa file snapshot/video clipping, lưu trữ tập trung."
+    },
+    {
+      "name": "Quản lý đối tượng và danh sách theo dõi",
+      "description": "Quản lý hồ sơ người (Person Management) và danh sách theo dõi (Watchlist) phục vụ cảnh báo, hỗ trợ import theo mẫu."
+    },
+    {
+      "name": "Người dùng và phân quyền",
+      "description": "Tạo/sửa/xóa người dùng, quản lý vai trò (role), phân quyền xem live view, playback, quản lý camera, quản lý hệ thống; quản lý ứng dụng và tổ chức (SSO)."
+    },
+    {
+      "name": "Quản lý cấu hình hệ thống",
+      "description": "Cấu hình chung hệ thống, chính sách lưu trữ (retention policy) tự động xóa/ghi đè dữ liệu cũ."
+    }
+  ],
+  "features": [],
+  "benefits": [
+    "Tương thích nhiều hãng camera qua ONVIF Profile S/G/T/M và RTSP",
+    "Độ trễ phát trực tiếp ≤ 2 giây trong mạng LAN; tìm kiếm video ≤ 3 giây với dữ liệu 7 ngày",
+    "Hỗ trợ tối thiểu 1.000 luồng video đồng thời; mở rộng từ 500 lên ≥ 2.000 camera theo chiều ngang và chiều dọc",
+    "Hoạt động 24/7, tự phục hồi sau mất điện, mất kết nối; cơ chế ghi đệm hạn chế mất dữ liệu",
+    "Làm chủ 100% công nghệ, tiết kiệm chi phí bản quyền so với nền tảng nước ngoài",
+    "Truy cập đa nền tảng: Chrome, Firefox, Edge; Windows, Android, iOS"
+  ],
+  "targetCustomers": [
+    "Đơn vị cần quản lý số lượng camera lớn",
+    "Cơ quan nhà nước, đô thị thông minh",
+    "Khu công nghiệp, nhà máy, tòa nhà văn phòng",
+    "Trung tâm thương mại, bệnh viện, trường học"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [],
+  "documents": [
+    {
+      "title": "SRS Video Management System Platform",
+      "type": "srs",
+      "path": "Data/MK Vision/Solutions/VMS/SRS_VIDEO MANAGEMENT SYSTEM_PLATFORM (1).docx"
+    },
+    {
+      "title": "Kiến trúc hệ thống cơ bản",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+    }
+  ],
+  "cover": "/img/scenes/products.jpg",
+  "images": [
+    "/img/solutions/vms-liveview.png",
+    "/img/solutions/vms-storage-playback.png",
+    "/img/solutions/vms-area-management.png",
+    "/img/solutions/vms-person-management.png",
+    "/img/solutions/vms-watchlist-management.png",
+    "/img/solutions/vms-role-management.png",
+    "/img/solutions/vms-user-management.png",
+    "/img/solutions/vms-system-management-sso.png",
+    "/img/solutions/vms-architecture.png"
+  ],
+  "sources": [
+    "Data/MK Vision/Solutions/VMS/SRS_VIDEO MANAGEMENT SYSTEM_PLATFORM (1).docx",
+    "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx",
+    "Data/MK Vision/Docs/Slide/BÁO CÁO TÓM TẮT VỀ NĂNG LỰC CỦA MK VISION.pdf"
+  ],
+  "notes": ""
+}

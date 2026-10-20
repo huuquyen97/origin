@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Sinh lúc build từ /Data (scripts/copy-assets.mjs)
+public/files/
+public/brand/
+lib/generated/
+
+# Tài liệu gốc nội bộ (~640MB) không đưa lên git; giữ logo vì build cần
+/Data/MK Vision/*
+!/Data/MK Vision/Logo/
+/Data/Design/

@@ -1,0 +1,72 @@
+{
+  "slug": "ai-factory",
+  "order": 18,
+  "name": "Nền tảng nhà máy AI",
+  "shortName": "AI Factory",
+  "industry": "Nền tảng đối tác",
+  "summary": "Nền tảng mở cho phép thu thập, dán nhãn dữ liệu, huấn luyện, tinh chỉnh và triển khai mô hình AI chuyên biệt cho từng khách hàng xuống camera AI-Ready, theo hướng xã hội hóa phát triển ứng dụng AI.",
+  "painPoints": [
+    "Phát triển thuật toán AI phân tán trên nhiều công cụ, hiệu suất thấp, chi phí quản lý R&D cao",
+    "Dữ liệu huấn luyện thiếu chuẩn hóa, gán nhãn thủ công tốn công",
+    "Khó đóng gói và triển khai mô hình lên nhiều loại phần cứng suy luận khác nhau",
+    "Mô hình chung không sát nhu cầu thực tế của từng khách hàng, từng bối cảnh"
+  ],
+  "architecture": "Quy trình khép kín: Thu thập và chuẩn bị dữ liệu → Lập trình mô hình → Huấn luyện, đánh giá, tinh chỉnh → Triển khai mô hình → Dự đoán → Giám sát dự đoán → Quản lý mô hình và phiên bản. Kiến trúc phân lớp: lớp ứng dụng nghiệp vụ (xử lý dữ liệu, huấn luyện thuật toán, lượng tử hóa/chuyển đổi, suy luận mô hình); lớp quản lý nền tảng (người dùng, dữ liệu, mô hình, tài nguyên GPU, lưu trữ); lớp framework (TensorFlow, Caffe, PyTorch, MXNet, PaddlePaddle); lớp hệ thống; lớp tài nguyên vật lý (GPU, NPU, lưu trữ phân tán/đám mây). Mô hình sau khi đóng gói được triển khai xuống camera AI-Ready tại biên.",
+  "modules": [
+    {
+      "name": "Quản lý dữ liệu",
+      "description": "Lưu trữ dữ liệu an toàn, quản lý dữ liệu thô, tiền xử lý, gán nhãn đa chế độ (kể cả 3D/point cloud, gán nhãn trước bằng AI), quản lý tài sản dữ liệu theo tag."
+    },
+    {
+      "name": "Model Factory",
+      "description": "Huấn luyện trực quan \"zero-code\", hỗ trợ nhiều framework, dashboard chỉ số huấn luyện thời gian thực, so sánh tinh chỉnh và quản lý vòng đời, phiên bản mô hình."
+    },
+    {
+      "name": "Engineering Engine",
+      "description": "Thích ứng đa phần cứng suy luận, SDK đóng gói mô hình, triển khai một chạm, quy trình kiểm thử offline bắt buộc trước khi phát hành."
+    },
+    {
+      "name": "Fine-tuning chuyên biệt",
+      "description": "Nền tảng tinh chỉnh do MK Vision sở hữu, cho phép điều chỉnh mô hình theo đúng yêu cầu từng khách hàng."
+    }
+  ],
+  "features": [],
+  "benefits": [
+    "Mô hình AI tùy chỉnh riêng cho từng khách hàng, sát bài toán thực tế",
+    "Rút ngắn vòng đời phát triển từ dữ liệu đến ứng dụng trên một nền tảng thống nhất",
+    "Hỗ trợ đa framework và đa phần cứng suy luận",
+    "Thu hút nguồn lực trí tuệ xã hội cùng phát triển ứng dụng AI"
+  ],
+  "targetCustomers": [
+    "Cơ quan quản lý đô thị, chính quyền thành phố",
+    "Đơn vị cần thuật toán AI chuyên biệt cho camera",
+    "Đối tác phát triển ứng dụng AI"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [],
+  "documents": [
+    {
+      "title": "AI Factory (tài liệu nền tảng AI Capability Center – đối tác)",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/AI Factory/AI Factory.pptx"
+    },
+    {
+      "title": "Báo cáo năng lực công nghệ – AI Camera xử lý tại biên",
+      "type": "profile",
+      "path": "Data/MK Vision/Docs/Slide/MK Vision Năng lực công nghệ.pdf"
+    }
+  ],
+  "cover": "/img/scenes/ai.jpg",
+  "images": [
+    "/img/solutions/ai-factory-workflow.png",
+    "/img/solutions/ai-factory-layered-architecture.png"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/AI Factory/AI Factory.pptx",
+    "Data/MK Vision/Docs/Slide/MK Vision Năng lực công nghệ.pdf",
+    "Data/MK Vision/Docs/Slide/BÁO CÁO TÓM TẮT VỀ NĂNG LỰC CỦA MK VISION.pdf"
+  ],
+  "notes": "Tài liệu AI Factory.pptx là bộ slide tiếng Anh/Trung của đối tác công nghệ về AI Capability Center; các số liệu hiệu quả trong slide là của đối tác, không phải số liệu của MK Vision"
+}

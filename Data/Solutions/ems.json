@@ -1,0 +1,109 @@
+{
+  "slug": "ems",
+  "order": 4,
+  "name": "Hệ thống quản lý sự kiện",
+  "shortName": "EMS",
+  "industry": "Nền tảng phần mềm",
+  "summary": "EMS (Event Management System) tiếp nhận và quản lý tập trung dữ liệu sự kiện từ Camera AI – khuôn mặt, biển số, đặc điểm người/phương tiện, lảng vảng, cháy khói – phục vụ tra cứu, truy vết, thống kê và cảnh báo theo phạm vi được phân quyền.",
+  "painPoints": [
+    "Camera AI ghi nhận rất nhiều sự kiện rời rạc tại nhiều camera, nhiều thời điểm, khó tổng hợp",
+    "Khó trả lời đối tượng đã xuất hiện ở camera nào, lúc nào; truy vết thủ công tốn thời gian",
+    "Thiếu số liệu thống kê theo loại sự kiện, khung giờ, khu vực để ra quyết định",
+    "Cần kiểm soát ai được xem dữ liệu nào, phụ trách khu vực và camera nào",
+    "Cảnh báo không đến đúng người, đúng kênh khi xảy ra sự kiện quan trọng"
+  ],
+  "architecture": "Kiến trúc 5 vùng: (1) Internet Zone – Camera AI kết nối an toàn, gửi dữ liệu sự kiện (chuẩn ONVIF); (2) DMZ Zone – API Gateway và EMS API xác thực yêu cầu, kiểm tra token và chứng thư client, tiếp nhận và kiểm tra dữ liệu; (3) Internal Zone – điều phối luồng truyền tin, bộ nhớ đệm, phiên làm việc, kiểm soát tần suất truy cập, xử lý nghiệp vụ sự kiện, đối sánh khuôn mặt, lưu trữ hình ảnh và video; (4) DB Zone – quản lý dữ liệu nghiệp vụ và dữ liệu theo thời gian, phân tích thống kê, lập chỉ mục và tìm kiếm nhanh; (5) Outbound Zone – gửi thông báo qua Email (SMTP), SMS (SMS Gateway) và Notifications (push/real-time). Luồng dữ liệu: Tiếp nhận sự kiện → Tổ chức dữ liệu (gắn thời gian, camera, vị trí, thuộc tính) → Phân loại và đối chiếu định danh → Quản lý và khai thác (hiển thị, tra cứu, cảnh báo, thống kê).",
+  "modules": [
+    {
+      "name": "Quản lý sự kiện",
+      "description": "Tiếp nhận và tra cứu sự kiện người (nhận diện khuôn mặt, đặc điểm), hành vi (lảng vảng), giao thông (nhận diện phương tiện, biển số) và cháy khói; lọc theo thời gian, camera, vị trí, thuộc tính."
+    },
+    {
+      "name": "Tìm kiếm và đối sánh khuôn mặt 1:N",
+      "description": "Tải ảnh đối tượng, đặt ngưỡng tương đồng, đối sánh với dữ liệu đã ghi nhận và truy vết lịch sử xuất hiện qua nhiều camera."
+    },
+    {
+      "name": "Truy vết phương tiện",
+      "description": "Tra cứu theo biển số, loại xe, màu xe, hãng xe; tái hiện lộ trình di chuyển của phương tiện trên bản đồ."
+    },
+    {
+      "name": "Báo cáo thống kê",
+      "description": "Tổng hợp lưu lượng, phân bố thuộc tính nhận diện (tuổi, giới tính, cảm xúc…), khung giờ cao điểm qua dashboard; xem và xuất báo cáo."
+    },
+    {
+      "name": "Quản lý định danh",
+      "description": "Quản lý danh sách người, phương tiện (VIP, blacklist, nhóm tùy chỉnh), nhập đơn lẻ hoặc theo danh sách, phát hiện bản ghi trùng."
+    },
+    {
+      "name": "Quản lý người dùng",
+      "description": "Khai báo tài khoản, gán đơn vị, nhóm quyền và nhóm camera được truy cập."
+    },
+    {
+      "name": "Quản lý nhóm quyền",
+      "description": "Tạo nhóm quyền theo nhiệm vụ (giám sát, truy vết, quản trị), chọn chức năng và hành động được phép."
+    },
+    {
+      "name": "Quản lý đơn vị",
+      "description": "Mô hình hóa cơ cấu tổ chức cha – con, phân vùng phạm vi dữ liệu theo cấp bậc."
+    },
+    {
+      "name": "Quản lý camera",
+      "description": "Thông tin, vị trí camera, nhóm camera, bản đồ camera với trạng thái ON/OFF, giới hạn phạm vi truy cập."
+    },
+    {
+      "name": "Cấu hình thông báo",
+      "description": "Chọn loại sự kiện, người nhận và một hoặc nhiều kênh cảnh báo (Web, Email, SMS, Zalo); theo dõi lịch sử gửi."
+    },
+    {
+      "name": "Thông báo",
+      "description": "Tiếp nhận cảnh báo tức thì trên web, phân biệt mới/đã xem, lọc theo loại sự kiện và mở chi tiết sự kiện."
+    }
+  ],
+  "features": [],
+  "benefits": [
+    "Một hệ thống – nhiều bài toán giám sát: khuôn mặt, phương tiện, đặc điểm, lảng vảng, cháy khói",
+    "Từ hàng nghìn sự kiện đến thông tin tổng hợp trực quan qua biểu đồ",
+    "Truy vết đa camera từ một dấu hiệu: hình ảnh, biển số hoặc thuộc tính",
+    "Phân quyền nhiều cấp theo cơ cấu tổ chức thực tế (đơn vị, nhóm camera, nhóm quyền)",
+    "Cảnh báo linh hoạt đa kênh theo nghiệp vụ từng đơn vị",
+    "Định danh thông minh: nhận biết người và phương tiện cần theo dõi",
+    "Kiến trúc phân vùng bảo mật Internet/DMZ/Internal/DB/Outbound"
+  ],
+  "targetCustomers": [
+    "Đơn vị cần quản lý sự kiện từ Camera AI",
+    "Lực lượng an ninh, cán bộ truy vết",
+    "Ban quản lý tòa nhà, khu công nghiệp, nhà xưởng, kho bãi",
+    "Lãnh đạo, quản lý cần số liệu thống kê"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [],
+  "documents": [
+    {
+      "title": "Đào tạo sản phẩm EMS cho team Sales",
+      "type": "slide",
+      "path": "Data/MK Vision/Solutions/EMS/EMS_Dao_tao_Sales_lv.pptx"
+    },
+    {
+      "title": "Kiến trúc hệ thống cơ bản (mục IVA)",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+    }
+  ],
+  "cover": "/img/solutions/ems-statistics-dashboard.jpg",
+  "images": [
+    "/img/solutions/ems-architecture.png",
+    "/img/solutions/ems-statistics-dashboard.jpg",
+    "/img/solutions/ems-camera-map.jpg",
+    "/img/solutions/ems-vehicle-tracking.jpg",
+    "/img/solutions/ems-fire-event-list.jpg",
+    "/img/solutions/ems-fire-event-detail.jpg",
+    "/img/solutions/ems-loitering-events.jpg"
+  ],
+  "sources": [
+    "Data/MK Vision/Solutions/EMS/EMS_Dao_tao_Sales_lv.pptx",
+    "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+  ],
+  "notes": "Camera cần gửi event theo chuẩn ONVIF và loại sự kiện EMS hỗ trợ; kiểm tra model, firmware, test thử trước khi tích hợp Kết quả nhận diện AI có thể sai lệch, không đồng nghĩa kết luận danh tính chắc chắn; cần đối chiếu trước khi ra quyết định Không tự cam kết số camera tối đa, số event đồng thời hoặc độ trễ khi chưa khảo sát và kiểm thử Xác định thời gian lưu và dung lượng trước khi thiết kế hạ tầng"
+}

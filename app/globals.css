@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* Design tokens — màu thương hiệu đo từ Data/MK Vision/Logo/mk-vision.png */
+@theme {
+  --color-brand-navy: #004c98;
+  --color-brand-navy-600: #003d7a;
+  --color-brand-navy-50: #eef4fb;
+  --color-brand-gold: #debb5c;
+
+  --color-ink: #161512;
+  --color-ink-2: #3a3934;
+  --color-muted: #6e6c66;
+  --color-faint: #9a978f;
+  --color-line: #e9e7e2;
+  --color-line-2: #dedbd4;
+  --color-surface: #f7f6f3;
+  --color-surface-2: #f1efea;
+  --color-dark: #1b1a17;
+
+  --font-sans: var(--font-inter), "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --radius-xl2: 22px;
+  --radius-xl3: 28px;
+  --ease-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --shadow-soft: 0 10px 30px -12px rgb(22 21 18 / 0.18);
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { @apply bg-white text-ink antialiased; font-size: 15px; line-height: 1.55; overflow-x: hidden; }
+  h1, h2, h3, h4 { @apply font-semibold; letter-spacing: -0.025em; line-height: 1.12; }
+  :focus-visible { outline: 2px solid var(--color-brand-navy); outline-offset: 2px; border-radius: 8px; }
+  mark { background: rgb(222 187 92 / 0.35); color: inherit; border-radius: 3px; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-[1264px] px-4 md:px-6 lg:px-8; }
+
+  /* Nhãn nhỏ phía trên tiêu đề: cỡ ngang đoạn lead để cân đối với tiêu đề lớn */
+  .eyebrow { @apply inline-flex items-center gap-2 text-[15px] font-medium leading-snug tracking-[-0.005em] text-ink-2 md:text-base; }
+  .eyebrow-dark { @apply text-white/85; }
+
+  .heading-display { @apply font-semibold; font-size: clamp(36px, 5.4vw, 68px); letter-spacing: -0.04em; line-height: 1.02; }
+  .heading-1 { font-size: clamp(30px, 4.4vw, 48px); letter-spacing: -0.035em; }
+  .heading-2 { font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.03em; }
+  .lead { @apply max-w-[56ch] text-muted; font-size: clamp(15px, 1.4vw, 17px); }
+
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-medium transition-colors duration-200; }
+  .btn svg { @apply size-4 shrink-0; }
+  .btn-dark { @apply bg-ink text-white hover:bg-black; }
+  .btn-light { @apply bg-white text-ink hover:bg-[#f2f1ee]; }
+  .btn-ghost { @apply border border-line-2 bg-white hover:border-ink; }
+  .btn-glass { @apply border border-white/25 bg-white/10 text-white backdrop-blur-md hover:bg-white/20; }
+  .btn-sm { @apply min-h-9 px-3.5 text-[13px]; }
+
+  .pill { @apply inline-flex min-h-9 items-center gap-2 whitespace-nowrap rounded-full border border-line bg-white px-3.5 text-[13px] font-medium text-ink-2 transition-colors duration-200 hover:border-line-2 hover:bg-surface; }
+  .pill[aria-pressed="true"], .pill.is-active { @apply border-ink bg-ink text-white; }
+  .pill .count { @apply text-[11.5px] text-faint; }
+  .pill[aria-pressed="true"] .count, .pill.is-active .count { @apply text-white/60; }
+
+  .tag { @apply inline-flex h-6 items-center gap-1.5 whitespace-nowrap rounded-full bg-surface-2 px-2.5 text-xs font-medium text-ink-2; }
+  .tag-navy { @apply bg-brand-navy-50 text-brand-navy; }
+  .tag-dark { @apply bg-white/15 text-white backdrop-blur; }
+
+  .card { @apply relative flex flex-col overflow-hidden rounded-xl2 border border-line bg-white transition duration-300; transition-timing-function: var(--ease-soft); }
+  .card-link:hover { @apply -translate-y-[3px] border-line-2; box-shadow: var(--shadow-soft); }
+
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  .shade-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(14 13 11 / 0.86) 0%, rgb(14 13 11 / 0.55) 48%, rgb(14 13 11 / 0.15) 100%), linear-gradient(0deg, rgb(14 13 11 / 0.75) 0%, rgb(14 13 11 / 0) 45%); }
+  .shade-compact::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(14 13 11 / 0.9) 0%, rgb(14 13 11 / 0.6) 60%, rgb(14 13 11 / 0.35) 100%); }
+  .shade-bottom::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgb(10 10 9 / 0.9) 0%, rgb(10 10 9 / 0.45) 55%, rgb(10 10 9 / 0.3) 100%); }
+  .shade-panel::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgb(14 13 11 / 0.96) 0%, rgb(14 13 11 / 0.82) 45%, rgb(14 13 11 / 0.2) 100%); }
+  .shade-feature::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgb(10 24 40 / 0.82) 0%, rgb(10 24 40 / 0.35) 55%, rgb(10 12 14 / 0.8) 100%); }
+  .shade-product::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgb(255 255 255 / 0.96) 0%, rgb(255 255 255 / 0.6) 32%, rgb(255 255 255 / 0) 55%); }
+  .cta-glow::before { content: ""; position: absolute; inset: -40% -10% auto; height: 120%; z-index: -1; background: radial-gradient(50% 50% at 50% 0%, rgb(0 76 152 / 0.45) 0%, rgb(0 76 152 / 0) 70%); }
+
+  .doc-ic { @apply grid h-[46px] w-[38px] shrink-0 place-items-center rounded-lg bg-ink-2 text-[10px] font-bold tracking-wide text-white; }
+  .doc-ic[data-ext="pdf"] { background: #d6453d; }
+  .doc-ic[data-ext="pptx"] { background: #d9692f; }
+  .doc-ic[data-ext="docx"] { background: #2f62c9; }
+  .doc-ic[data-ext="xlsx"] { background: #1f8a55; }
+  .doc-ic[data-ext="png"], .doc-ic[data-ext="jpg"] { background: #7a6fd6; }
+  .doc-ic[data-ext="mp4"] { background: #333; }
+
+  .check-list { @apply grid gap-2.5; }
+  .check-list li { @apply grid grid-cols-[auto_1fr] gap-2.5 text-[14.5px] text-ink-2; }
+  .check-list li::before { content: ""; @apply mt-0.5 size-[18px] rounded-full bg-brand-navy-50; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23004c98' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; }
+
+  .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* Fade-in khi cuộn tới (CSS scroll-driven); trình duyệt không hỗ trợ thì hiện ngay */
+  @supports (animation-timeline: view()) {
+    .reveal { animation: reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+  }
+}
+
+@keyframes reveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}

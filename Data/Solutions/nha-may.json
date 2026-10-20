@@ -1,0 +1,32 @@
+{
+  "slug": "nha-may",
+  "order": 10,
+  "name": "Nhà máy & khu công nghiệp",
+  "shortName": "",
+  "industry": "Công nghiệp & Năng lượng",
+  "summary": "Phát hiện vi phạm quy trình, xâm nhập khu cấm; giám sát dây chuyền; cảnh báo cháy, khói, rò rỉ hóa chất, vi phạm an toàn lao động (không đội mũ bảo hộ); nhận diện biển số, quản lý cổng ra/vào tự động.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "Sản xuất / Công nghiệp"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [
+    "va50fa0v",
+    "va50fa2v-40",
+    "vb50fb1v",
+    "vb80fa1v"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/rnd-1.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}

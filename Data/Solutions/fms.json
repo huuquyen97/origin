@@ -1,0 +1,78 @@
+{
+  "slug": "fms",
+  "order": 2,
+  "name": "FMS – Quản lý đội xe & giám sát tài xế",
+  "shortName": "FMS",
+  "industry": "Vận tải",
+  "summary": "Giải pháp quản lý đội xe thông minh AutoSecure gồm camera hành trình AI (DMS, FleetFocus, DriverID, LPR) và phần mềm FMS trên Web (https://fms.mkvision.com) cùng ứng dụng mobile 'AutoSecure'. Hệ thống theo dõi vị trí GPS thời gian thực, live stream, ghi nhận sự kiện vi phạm, quản lý tài xế/phương tiện/camera và cung cấp 6 loại báo cáo, phục vụ doanh nghiệp vận tải xe khách (trên 9 chỗ), đội xe công ty, vận tải hàng hóa, xe container, taxi.",
+  "painPoints": [
+    "An toàn tài xế: lái xe đường dài gây mệt mỏi, buồn ngủ, tăng nguy cơ tai nạn",
+    "Khó tối ưu tuyến đường, kiểm soát điểm dừng đỗ, thời gian lái xe và nhiên liệu",
+    "Bảo vệ tài sản: va quệt, trộm linh kiện khi xe dừng/đỗ",
+    "Thiếu bằng chứng minh bạch khi xảy ra sự cố, tranh chấp, yêu cầu bảo hiểm",
+    "Tuân thủ Nghị định 10/2020/NĐ-CP & Thông tư 12/2020 của Bộ GTVT",
+    "Chi phí vận hành, uy tín dịch vụ bị ảnh hưởng",
+    "Chủ đội xe lớn khó giám sát tập trung hành vi tài xế và tình trạng phương tiện",
+    "Rủi ro tai nạn do tài xế buồn ngủ, mất tập trung, hút thuốc, không thắt dây an toàn",
+    "Không phát hiện kịp thời va chạm, kể cả khi xe đang dừng đỗ"
+  ],
+  "architecture": "Camera AutoSecure (camera trước + camera cabin/mô-đun DMS, AI-on-Edge, GPS, cảm biến gia tốc) gắn kính lái, cấp nguồn ACC/B+/GND từ hộp cầu chì → phân tích sự kiện tại biên, lưu Micro-SD → truyền sự kiện, vị trí, video qua 4G LTE về máy chủ FMS (máy chủ trung gian cho Live Stream) → Web FMS cho System Admin / Fleet Admin / Operator và ứng dụng mobile 'AutoSecure' (kết nối camera qua wifi local để lắp đặt, xem lại video, test mạng, test nguồn) → Open API (metadata, sự kiện, báo cáo, quản lý thiết bị; Accesskey cho API đội xe) tích hợp hệ thống bên thứ ba. Mô hình dữ liệu: 1 Hệ thống – nhiều Fleet; 1 Fleet – nhiều Phương tiện; 1 Camera – 1 Phương tiện – 1 tài xế; nhiều Trip – 1 Vehicle/Driver; nhiều Event – 1 Trip.",
+  "modules": [
+    {
+      "name": "Giám sát từ xa",
+      "description": "Điều hành và giám sát 3 đối tượng chính: camera, tài xế, phương tiện."
+    },
+    {
+      "name": "Cảnh báo hành vi tài xế (DMS)",
+      "description": "Camera AI cảnh báo hút thuốc, mất tập trung, buồn ngủ, không thắt dây an toàn…"
+    },
+    {
+      "name": "Định vị và cảnh báo va chạm",
+      "description": "Định vị xe, cảnh báo khi xe có va chạm kể cả khi đang dừng đỗ."
+    }
+  ],
+  "features": [
+    "Xác thực: đăng nhập, quên mật khẩu, đăng xuất",
+    "Bản đồ & giám sát thời gian thực: bản đồ đội xe (Map/Satellite), Live Stream camera, xem sự kiện tài xế kèm video, xem hành trình chuyến đi",
+    "Quản lý: camera (đăng ký theo S/N), tài xế, phương tiện (phân công tài xế, đổi camera), cài đặt sự kiện camera (độ nhạy cảm biến, giới hạn tốc độ, tự động chụp ảnh)",
+    "Loại sự kiện: Vượt quá tốc độ, Hành vi bất thường, Sự kiện DMS, Va chạm, Manual, Lái xe và đỗ xe",
+    "Báo cáo: sự kiện, hành trình, ảnh Snapshot, biểu đồ phương tiện, biểu đồ tài xế",
+    "Xuất báo cáo B1–B6 (Excel/CSV): Hành trình xe chạy, Tốc độ vận hành, Thời gian lái xe liên tục, Dừng đỗ, Báo cáo tổng hợp, Chi tiết ảnh từ CMRGHST",
+    "Quản lý hệ thống: tài khoản, phân quyền vai trò, nhật ký hệ thống (audit log)",
+    "Quản lý đội xe: người dùng đội xe (Fleet Admin, tài xế), danh sách đội xe",
+    "Phi chức năng: bản đồ tải trong 3 giây với 500 phương tiện; hỗ trợ tối thiểu 1.000 phương tiện đồng thời; HTTPS TLS 1.2+; uptime 99.5%, 24/7; lưu dữ liệu hành trình/sự kiện 12 tháng, video sự kiện 30 ngày"
+  ],
+  "benefits": [
+    "Quản lý tập trung đội xe số lượng lớn",
+    "Nâng cao an toàn vận hành",
+    "Tương thích chuyên biệt với thiết bị AutoSecure"
+  ],
+  "targetCustomers": [
+    "Chủ đội xe vận tải",
+    "Doanh nghiệp xe chở khách có số lượng xe lớn"
+  ],
+  "relatedSeries": [
+    "autosecure"
+  ],
+  "products": [
+    "autosecure",
+    "autosecure-dms"
+  ],
+  "documents": [
+    {
+      "title": "Kiến trúc hệ thống cơ bản",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+    }
+  ],
+  "cover": "/img/scenes/autosecure-2.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/AUTOSECURE/SRS/SRS FMS Tiêu chuẩn 2026 - v1.docx",
+    "Data/MK Vision/Docs/AUTOSECURE/Danh sách chức năng FMS tiêu chuẩn.pdf",
+    "Data/MK Vision/Docs/Slide/1. Autosecure ver.0.9.pptx",
+    "Data/MK Vision/Docs/Slide/1.2. AutoSecure_ Smart Fleet Management & Driver Monitoring Solution.pptx",
+    "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+  ],
+  "notes": ""
+}

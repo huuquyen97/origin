@@ -1,0 +1,88 @@
+{
+  "slug": "mksx30-6550",
+  "model": "MKSX30-6550",
+  "name": "Chuyển mạch Core L3 24 cổng 10G SFP+, 6 cổng QSFP28 100G",
+  "series": "mk-networks",
+  "category": "Core Switch",
+  "resolution": "",
+  "ipRating": "",
+  "summary": "Switch Layer 3 với 24 cổng 10GbE SFP+ và 6 cổng uplink 100GbE, thiết kế cho lớp aggregation của mạng carrier/doanh nghiệp hoặc triển khai Top-of-Rack (ToR) trong trung tâm dữ liệu quy mô nhỏ. Phù hợp hệ thống bệnh viện, phân tích lưu trữ/hình ảnh, nhà máy lớn, cảng biển, ISP/IPTV.",
+  "features": [
+    "Switch Aggregation 10G, uplink 100G",
+    "Định tuyến Layer 3 nâng cao: OSPF v1/v2, BGP4+, VRRP, PIM-SM/SSM, PBR",
+    "Mạng độ tin cậy cao theo chuẩn ITU-T G.8032 ERPS (< 50ms), dịch vụ L2 VPN, OAM nâng cao đảm bảo SLA",
+    "Nguồn dự phòng kép (CRPS)",
+    "Quản trị IPv6 nâng cao, bảo mật IPv6, điều khiển multicast IPv6",
+    "Quản trị Web / CLI / SNMP / Cloud"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Network": [
+      [
+        "Cổng",
+        "24 cổng 10G SFP+"
+      ],
+      [
+        "Cổng uplink",
+        "6 cổng uplink 100G QSFP28"
+      ],
+      [
+        "Module quang",
+        "Hỗ trợ module quang 1G / 2.5G / 10G"
+      ],
+      [
+        "Bảng MAC",
+        "32K"
+      ],
+      [
+        "Bộ đệm gói tin",
+        "6MB"
+      ],
+      [
+        "Các tính năng định tuyến L3",
+        "OSPF v1/v2, BGP4+, VRRP, IGMP v2/v3, PIM-SM/SSM, PBR (Policy-Based Routing), UDP Helper, Loopback Interface, Null Interface"
+      ],
+      [
+        "Bảo vệ vòng Ring",
+        "ERPS G.8032 < 50ms"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn",
+        "Nguồn dự phòng kép (CRPS)"
+      ]
+    ],
+    "Environment": [
+      [
+        "Nhiệt độ hoạt động",
+        "-5°C ~ 50°C"
+      ]
+    ],
+    "Other": [
+      [
+        "Quản trị",
+        "Web / CLI / SNMP / Cloud"
+      ],
+      [
+        "Bảo hành",
+        "03 năm"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Datasheet MKSX30-6550 (Tiếng Việt, v2.0)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MK Networks/Datasheets/1.1 MKSX30-6550_VN_2.0.docx"
+    }
+  ],
+  "image": "/img/products/mksx30-6550.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/MK Networks/Datasheets/1.1 MKSX30-6550_VN_2.0.docx"
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, forwarding rate, VLAN, công suất tiêu thụ, kích thước, trọng lượng...). Mục \"Tính năng chính\" ghi \"24/48 cổng 10G SFP+\" và đoạn giới thiệu nói dòng gồm hai mẫu 24 hoặc 48 cổng; comment trong file (06/05/2026) yêu cầu \"Bỏ option 48 cổng, cả ảnh minh họa, không phân phối dòng này\" → chỉ ghi 24 cổng theo tiêu đề datasheet (\"24 cổng 10G SFP+, 06QSFP28 100G\"). Danh sách định tuyến xuất hiện 2 lần, khác nhau: mục đầu ghi \"UDP help\" và lặp \"VRRP\"; dùng danh sách ở đoạn \"Các tính năng định tuyến L3\" (ghi \"UDP Helper\"), chỉ chuẩn hóa khoảng trắng quanh dấu phẩy. Không có ngày phát hành in trên datasheet."
+}

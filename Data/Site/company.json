@@ -1,0 +1,127 @@
+{
+  "name": "Công ty Cổ phần MK Vision",
+  "email": "contact@mkvision.com",
+  "hotline": "+84 247 100 6785",
+  "about": "MK Vision là thành viên của Tập đoàn MK (MK Group) – tập đoàn có hơn 25 năm kinh nghiệm trong lĩnh vực bảo mật, an toàn dữ liệu và định danh tại Việt Nam. Được thành lập ngày 09/07/2020, MK Vision tập trung nghiên cứu, phát triển và sản xuất AI Camera xử lý tại biên (Edge AI) mang thương hiệu \"Make in Vietnam\", đồng thời cung cấp dịch vụ ODM/OEM và giải pháp nhà máy trọn gói. Công ty làm chủ chuỗi giá trị từ thiết kế sản phẩm (cơ khí/kiểu dáng, điện tử/vi mạch, hệ điều hành/phần mềm nhúng, quang học/cảm biến, AI/dữ liệu, VMS/nền tảng) đến sản xuất hàng loạt tại nhà máy riêng ở KCN Thăng Long 3. Hệ sinh thái sản phẩm gồm AI Camera, thiết bị xác thực sinh trắc học, đầu đọc CCCD gắn chip, camera đeo người, camera hành trình cùng các nền tảng phần mềm VMS, EMS, ACP, COMS, FMS và AI Factory.",
+  "milestones": [
+    {
+      "year": "1999",
+      "text": "MK Technology – cung cấp giải pháp phát hành thẻ, ứng dụng và quản lý thẻ, giải pháp bảo mật và giao dịch an toàn (thành viên MK Group)."
+    },
+    {
+      "year": "2003",
+      "text": "MK Smart – sản xuất thẻ và biểu mẫu kinh doanh; giải pháp phát hành và cá thể hóa EMV/VCCS."
+    },
+    {
+      "year": "2007",
+      "text": "VinaPay – cung cấp dịch vụ, công nghệ và ứng dụng cho điện thoại di động và internet."
+    },
+    {
+      "year": "2020",
+      "text": "Thành lập MK Vision (09/07/2020) – phát triển và sản xuất sản phẩm, giải pháp AI camera cho giao thông, dân sự và chính phủ."
+    },
+    {
+      "year": "2025",
+      "text": "Ngày 17/12/2025, đoàn đại biểu Bộ Khoa học và Công nghệ đến thăm và làm việc, đánh giá MK Vision có đầy đủ năng lực nghiên cứu, phát triển, sản xuất AI Camera xử lý tại biên – dòng sản phẩm thuộc danh mục Công nghệ chiến lược Quốc gia."
+    },
+    {
+      "year": "2025",
+      "text": "Làm chủ công nghệ lõi trong 6 lĩnh vực theo Phụ lục II, Quyết định số 2815/QĐ-TTg ngày 28/12/2025 của Thủ tướng Chính phủ."
+    }
+  ],
+  "capabilities": [
+    "Nghiên cứu, phát triển và sản xuất AI Camera xử lý tại biên (AI-on-Edge)",
+    "Thiết kế cơ khí, kiểu dáng công nghiệp và vật liệu (CAD 3D, FEA, CFD, DFM/DFA/DFT)",
+    "Thiết kế điện tử, vi mạch: bo mạch tốc độ cao đến 24 lớp, PoE, EMI/EMC, SI/PI",
+    "Hệ điều hành và phần mềm nhúng: U-boot, Linux/RTOS, BSP, driver, secure boot, OTA",
+    "Xử lý ảnh và video: ISP, IQ tuning, H.264/H.265, Smart IR, HDR",
+    "Mạng và giao thức: ONVIF, RTSP/RTP, HTTP/HTTPS, MQTT, WebRTC, HLS, MPEG-DASH",
+    "Quang học và cảm biến: ống kính, cảm biến CMOS 2MP–8MP, cảm biến nhiệt (thermal imaging)",
+    "AI, dữ liệu và LLM tại biên: NPU, nhận dạng/phân loại/tracking đối tượng, mô hình ngôn ngữ nhỏ",
+    "Nền tảng phần mềm: VMS, EMS, ACP, COMS, FMS, AI Factory",
+    "Dịch vụ ODM/OEM trọn gói từ ý tưởng, thiết kế, chuỗi cung ứng đến sản xuất hàng loạt và hậu mãi",
+    "Quy trình nghiên cứu phát triển chuẩn Concept – EVT – DVT – PVT – MP",
+    "Sản xuất SMT và kiểm soát chất lượng IQC – PQC – OQC – Reliability"
+  ],
+  "stats": [
+    {
+      "value": "25+",
+      "label": "Năm kinh nghiệm của MK Group trong lĩnh vực bảo mật, an toàn dữ liệu"
+    },
+    {
+      "value": "2020",
+      "label": "Năm thành lập MK Vision"
+    },
+    {
+      "value": "2 triệu",
+      "label": "Sản phẩm/năm – công suất nhà máy"
+    },
+    {
+      "value": "95.000",
+      "label": "Camera/tháng – công suất sản xuất"
+    },
+    {
+      "value": "2 + 2",
+      "label": "Dây chuyền SMT và dây chuyền lắp ráp"
+    },
+    {
+      "value": "20+",
+      "label": "Nhà cung cấp linh kiện quan hệ trực tiếp"
+    },
+    {
+      "value": "10",
+      "label": "Chuyên gia sourcing phối hợp với R&D và sản xuất"
+    },
+    {
+      "value": "6",
+      "label": "Lĩnh vực công nghệ lõi làm chủ (theo QĐ 2815/QĐ-TTg)"
+    },
+    {
+      "value": "82%",
+      "label": "Tỷ lệ làm chủ công nghệ trung bình (7 lĩnh vực)"
+    },
+    {
+      "value": "100%",
+      "label": "Mức độ làm chủ VMS/Nền tảng và Quy trình sản xuất & QC"
+    },
+    {
+      "value": "ISO 7",
+      "label": "Hệ thống phòng sạch sản xuất (cấp 10.000)"
+    }
+  ],
+  "factory": "Nhà máy sản xuất thông minh của MK Vision đặt tại KCN Thăng Long 3, Bình Xuyên, Vĩnh Phúc (nay thuộc tỉnh Phú Thọ), công suất 2 triệu sản phẩm/năm (khoảng 95.000 camera/tháng), gồm 2 dây chuyền SMT (Panasonic) và 2 dây chuyền lắp ráp, đầy đủ công đoạn từ sản xuất bo mạch, mô-đun quang học, lắp ráp thành phẩm, đóng gói đến kiểm thử. Nhà máy có phòng sạch ISO 7 (cấp 10.000), hệ thống kiểm tra SPI 3D, AOI 3D, X-Ray, ICT/FCT, phòng lấy nét và kiểm thử độ tin cậy (nhiệt độ – độ ẩm, chống bụi nước, phun sương muối), vận hành bằng hệ thống FCIM gồm MDM, APS, WMS và QMS.",
+  "certifications": [
+    "ISO 9001:2015 (TCVN ISO 9001:2015) – Hệ thống quản lý chất lượng",
+    "IP65 / IP66 / IP67 / IP68 – Bảo vệ chống bụi, nước",
+    "IK10 – Chống va đập",
+    "IEC 61000 (EMI/EMC) – Tương thích điện từ",
+    "IEC 60950-1, IEC 62368-1 – An toàn điện",
+    "IPC-A-610, IPC-J-STD-001 – Tiêu chuẩn hàn linh kiện",
+    "RoHS, REACH – Tuân thủ môi trường",
+    "NDAA compliant",
+    "CE, FCC (theo catalog sản phẩm)",
+    "ISO 9227:2017 – Thử nghiệm phun sương muối",
+    "ONVIF Profile G/S/T/M"
+  ],
+  "partners": [
+    "Ambarella (MK Vision là đối tác ODM duy nhất tại Đông Nam Á)",
+    "Ingenic",
+    "Novatek",
+    "Sony (cảm biến hình ảnh)",
+    "VinCSS",
+    "VinBigData",
+    "Accton (hợp tác phát triển thiết bị mạng MK Network)",
+    "SCS – Safegate (hệ sinh thái MK Group, an ninh mạng)",
+    "Infrasen (MK Group là nhà đầu tư chiến lược – chip ảnh nhiệt)",
+    "Đại học Bách khoa Hà Nội (nghiên cứu chip vi xử lý cho camera)",
+    "Qualcomm, Texas Instruments, Samsung, ON Semiconductor, STMicroelectronics, NXP (linh kiện qua nhà phân phối ủy quyền cấp 1)",
+    "Asia Optical, Tamron, Lester Electro Optics, Fujian Forecam Optics (ống kính)",
+    "Meiko Electronics Vietnam, Hannstar Board (PCB)",
+    "Arrow, Avnet, WPG, Mouser, Digi-Key, Future Electronics, RS, Farnell, Rutronik… (mạng lưới nhà phân phối linh kiện)"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/BÁO CÁO TÓM TẮT VỀ NĂNG LỰC CỦA MK VISION.pdf",
+    "Data/MK Vision/Docs/Slide/MK Vision Profile (EN).pdf",
+    "Data/MK Vision/Docs/Slide/MK Vision Năng lực công nghệ.pdf"
+  ]
+}

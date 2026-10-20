@@ -1,0 +1,46 @@
+{
+  "slug": "ekyc",
+  "order": 6,
+  "name": "Định danh, xác thực khách hàng bằng CCCD gắn chip (eKYC / MoC)",
+  "shortName": "eKYC",
+  "industry": "Tài chính – Ngân hàng",
+  "summary": "Giải pháp xác minh và định danh sử dụng thẻ CCCD gắn chip (MK e-ID) do MK Group phát triển trên nền tảng ứng dụng xác thực thẻ CCCD gắn chip của Bộ Công an. Ứng dụng công nghệ Match-on-Card (MoC) đối sánh vân tay/khuôn mặt sống của công dân với dữ liệu lưu trong chip CCCD, giúp đơn giản hóa thủ tục, giảm thời gian chờ đợi. Căn cứ pháp lý: Quyết định 810/QĐ-NHNN, Quyết định 06/QĐ-TTg, Kế hoạch 01, Quyết định 264/QĐ-NHNN.",
+  "painPoints": [
+    "Ghi sổ tay thủ công, yêu cầu chi phí cao và bảo trì thường xuyên",
+    "Rủi ro giả mạo danh tính, CCCD giả trong giao dịch",
+    "Nhiều giấy tờ, tốn chi phí và thời gian của công dân"
+  ],
+  "architecture": "Ứng dụng eID đọc dữ liệu trong chip thẻ CCCD theo chuẩn ICAO → Ứng dụng MoC xác minh chủ thẻ bằng đối sánh vân tay/khuôn mặt sống với dữ liệu đặc trưng lưu trên chip → trả kết quả xác thực. Thiết bị: đầu đọc M6/A612 (NFC + camera + cảm biến vân tay, xử lý AI tại biên).",
+  "modules": [],
+  "features": [
+    "AI xử lý tại biên (AI on Edge), quy trình xác thực danh tính đồng bộ, nhất quán",
+    "Tối ưu chi phí: đối sánh ngay trong chip (MOC), loại bỏ yêu cầu đầu tư thêm hệ thống xác thực",
+    "Xác thực sinh trắc học vân tay và khuôn mặt tăng cường bảo mật",
+    "Giảm rủi ro giao dịch, phân biệt CCCD giả",
+    "Phương án triển khai linh hoạt",
+    "Giảm giấy tờ, chi phí và thời gian của công dân"
+  ],
+  "benefits": [],
+  "targetCustomers": [
+    "Tài chính – Ngân hàng",
+    "Cổng thanh toán",
+    "Viễn thông",
+    "Cổng dịch vụ công",
+    "Bảo hiểm",
+    "Thuế"
+  ],
+  "relatedSeries": [
+    "biosecure"
+  ],
+  "products": [
+    "m6",
+    "a612"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/biosecure-3.png",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf"
+  ],
+  "notes": ""
+}

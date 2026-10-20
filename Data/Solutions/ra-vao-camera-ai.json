@@ -1,0 +1,52 @@
+{
+  "slug": "ra-vao-camera-ai",
+  "order": 13,
+  "name": "Quản lý ra vào sinh trắc học kết hợp camera AI giám sát an ninh và nhận diện khuôn mặt",
+  "shortName": "",
+  "industry": "Tài chính – Ngân hàng",
+  "summary": "Giải pháp kiểm soát ra vào sử dụng nhận diện khuôn mặt để xác thực danh tính, kết hợp hệ thống camera AI giám sát an ninh, phân tích hành vi và cảnh báo bất thường theo thời gian thực. Nhân sự/khách đăng ký sinh trắc học một lần bằng CCCD gắn chip/thẻ CC (MoC) trên thiết bị M6 tại quầy lễ tân, sau đó ra vào bằng khuôn mặt qua cửa kiểm soát mà không cần thẻ vật lý. Ví dụ phạm vi đề xuất: sảnh chính, tầng hầm ô tô/xe máy, lối thoát hiểm, cửa tầng 1 sát thang máy, quầy lễ tân.",
+  "painPoints": [
+    "Kiểm soát thủ công bằng sổ giấy, đối chiếu giấy tờ bằng mắt thường",
+    "Không có công cụ xác minh tính hợp lệ của thẻ hoặc người cầm thẻ",
+    "Chưa có cơ sở dữ liệu số hóa, khó tra soát",
+    "Thiếu phân quyền theo khu vực và thời gian",
+    "Camera giám sát thụ động, không cảnh báo hay nhận diện khuôn mặt",
+    "Chưa tự động hóa quy trình vận hành"
+  ],
+  "architecture": "Hệ thống kiểm soát ra vào: Nhân sự hành chính tạo yêu cầu ra vào (ảnh/số thẻ căn cước, chính sách truy cập) → Hệ thống máy chủ → gửi thông tin truy cập tới cửa kiểm soát (flap barrier gắn thiết bị M6) → người ra vào chụp ảnh/xác thực CCCD gắn chip/thẻ CC → mở cửa. Hệ thống camera AI: Camera AI (5MP, Sony 1/2.8\" CMOS, ống kính 2.8 - 12mm, IP67, IK10, ONVIF profile G,S,T) → Switch → Máy vận hành/Hệ thống máy chủ, phần mềm web: ghi/phân loại/lưu trữ dữ liệu khuôn mặt, cảnh báo người lạ, thông báo người quen/VIP, cảnh báo danh sách đen, thống kê báo cáo (PDF, Excel, gửi định kỳ qua email). Cửa kiểm soát mẫu: flap barrier F386 – Turboo (35 lượt/ phút, làn 700-900mm). Mô hình triển khai: On-premise (hạ tầng đặt tại khách hàng) hoặc SaaS (máy chủ MK). Bảo mật: thiết bị giao tiếp server qua MQTT có mã hóa TLS; camera kết nối qua HTTPS SSL/TLS; xác thực thiết bị đầu cuối; dữ liệu mã hóa, phân quyền theo vai trò, log không thể chỉnh sửa.",
+  "modules": [],
+  "features": [
+    "Đọc, xác minh tính hợp lệ CCCD gắn chip/thẻ CC; đọc họ tên, ngày sinh, giới tính, quê quán, quốc tịch, số định danh, ảnh chân dung",
+    "Đăng ký sinh trắc học qua MoC, sau đó ra vào bằng khuôn mặt",
+    "Cấp quyền theo khu vực, chức năng; khu vực hạn chế và khung giờ truy cập; tự động từ chối khách ngoài giờ/không có lịch hẹn",
+    "Ghi nhận lịch sử ra vào kèm ảnh sinh trắc học tại thời điểm xác thực",
+    "Tự động điều khiển cửa từ, barrier, cổng xoay",
+    "Camera AI: phát hiện, trích xuất đặc trưng, so khớp CSDL, nhận diện khuôn mặt thời gian thực; hoạt động 24/7, IR ban đêm",
+    "Cảnh báo người lạ, thông báo người quen/VIP, cảnh báo danh sách đen",
+    "Mở rộng tích hợp chấm công, quản lý nhân sự, hệ thống an ninh hiện hữu qua chuẩn giao tiếp mở"
+  ],
+  "benefits": [],
+  "targetCustomers": [
+    "Ngân hàng – Tài chính",
+    "trụ sở",
+    "chi nhánh",
+    "trung tâm vận hành",
+    "tòa nhà văn phòng"
+  ],
+  "relatedSeries": [
+    "biosecure",
+    "v-secure"
+  ],
+  "products": [
+    "m6",
+    "a612"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/docs.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf",
+    "Data/MK Vision/Docs/BIOSECURE/[MKV] Giới thiệu giải pháp kiểm soát ra vào.pdf"
+  ],
+  "notes": "Tài liệu gốc là đề xuất cho một khách hàng ngân hàng cụ thể – đã lược bỏ tên khách hàng và số lượng thiết bị cụ thể. Camera AI 5MP trong đề xuất không ghi model. Lưu ý từ tài liệu: người đội mũ, đeo khẩu trang hoặc che kín mặt thì camera AI không thể nhận diện."
+}

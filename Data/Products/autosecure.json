@@ -1,0 +1,265 @@
+{
+  "slug": "autosecure",
+  "model": "AutoSecure",
+  "name": "AutoSecure – Camera hành trình thông minh AI (DMS + LPR)",
+  "series": "autosecure",
+  "category": "Dashcam",
+  "resolution": "8MP + 5MP",
+  "ipRating": "",
+  "summary": "Camera hành trình thông minh đầu tiên tại Việt Nam tích hợp AI giám sát hành vi tài xế. Quay đồng thời phía trước xe và trong cabin (4K), tích hợp hệ thống nhận diện trạng thái tài xế (DMS), nhận diện biển số (LPR), kết nối 4G LTE/Wifi/GPS và đồng bộ với phần mềm quản lý đội xe FMS. Sản phẩm phù hợp Nghị định 10 và Thông tư 12 của Bộ Giao thông vận tải.",
+  "features": [
+    "Kết nối tốc độ cao 4G – báo cáo thời gian thực",
+    "Cảm biến gia tốc chính xác, tùy chỉnh theo nhu cầu",
+    "Chip xử lý hình ảnh AI (Ambarella CV SoC, AI-on-Edge)",
+    "Nhận diện khuôn mặt và 7 trạng thái tài xế (DMS)",
+    "Báo cáo đột nhập, va chạm",
+    "Nhận diện biển số xe phía trước (LPR)",
+    "Theo dõi video từ xa – góc nhìn trước xe và trong cabin",
+    "Các chế độ nguồn điện bảo vệ xe, nguồn 11.8 - 36.0V chống ngược cực",
+    "Vỏ nhôm + nhựa ABS, Micro-SD lên đến 512 GB",
+    "Phù hợp Nghị định 10/2020/NĐ-CP và Thông tư 12/2020 của Bộ GTVT",
+    "Made in Vietnam"
+  ],
+  "aiFeatures": [
+    "[FleetFocus] Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, phanh gấp, tăng tốc, va chạm",
+    "[FleetFocus+] Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ, mức độ tập trung, sử dụng điện thoại, đeo dây an toàn, đeo kính, đeo khẩu trang, hút thuốc, nhận diện khuôn mặt tài xế, nhận diện sự sống động",
+    "[DriverID] Nhận diện lái xe, chống giả mạo",
+    "[LPR] Nhận diện biển số các xe đi phía trước"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "Trước xe: Sony 1/2.8\" CMOS\nTrong cabin: Sony 1/2.8\" CMOS"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut cố định\nChuyển đổi tự động"
+      ],
+      [
+        "Chiếu sáng tối thiểu",
+        "Chế độ màu: 0.05 lux, tại 50 IRE F2.2\nChế độ hồng ngoại: 0 lux"
+      ],
+      [
+        "Độ phân giải",
+        "Trước cabin: 8MP\nTrong cabin: 5MP"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu",
+        "≥ 50dB"
+      ],
+      [
+        "Dải cân bằng sáng (WDR)",
+        "≥ 120dB"
+      ],
+      [
+        "Điều chỉnh hình ảnh",
+        "Tự động cân bằng trắng, Tự động bù ngược sáng, Tự động điều chỉnh độ lợi"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Trước xe: Tiêu cự cố định, 2.8mm, F2.2, góc nhìn 138°\nTrong cabin: Tiêu cự cố định, 1.5mm, F2.8, góc nhìn 190°"
+      ]
+    ],
+    "AI": [
+      [
+        "Bộ xử lý",
+        "Quad-core Arm® Cortex®-A53 1 GHz"
+      ],
+      [
+        "Bộ nhớ",
+        "2048 MB DDR4"
+      ],
+      [
+        "Hiệu năng xử lý",
+        "Bộ xử lý tín hiệu hình ảnh và mã hóa video Ambarella; Lõi xử lý AI tại biên CVflow®"
+      ],
+      [
+        "[FleetFocus]",
+        "Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, phanh gấp, tăng tốc, va chạm"
+      ],
+      [
+        "[FleetFocus+]",
+        "Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ, mức độ tập trung, sử dụng điện thoại, đeo dây an toàn, đeo kính, đeo khẩu trang, hút thuốc, nhận diện khuôn mặt tài xế, nhận diện sự sống động"
+      ],
+      [
+        "[DriverID]",
+        "Nhận diện lái xe, chống giả mạo"
+      ],
+      [
+        "[LPR]",
+        "Nhận diện biển số các xe đi phía trước:\nTốc độ nhận diện biển số: >60ms (tương đương 15 FPS)\nKhoảng cách nhận diện: 5m\nChế độ nhận diện: ảnh màu/đen trắng\nĐộ chính xác 95% ban ngày, 80% ban đêm (có đèn IR)\nKhông bị ảnh hưởng bởi hiệu ứng góc cosin"
+      ]
+    ],
+    "Video": [
+      [
+        "Chuẩn nén",
+        "H.264"
+      ],
+      [
+        "Tốc độ khung hình",
+        "Lên đến 30 khung hình/giây ở độ phân giải Full HD\nLên đến 15 khung hình/giây ở độ phân giải 4K"
+      ],
+      [
+        "Đầu nhận âm thanh",
+        "Microphone*1"
+      ],
+      [
+        "Đầu ra âm thanh",
+        "Speaker*1"
+      ],
+      [
+        "Chuẩn mã hóa âm thanh",
+        "AAC-LC lên đến 48kHz"
+      ]
+    ],
+    "Network": [
+      [
+        "Kết nối có dây",
+        "1*USB-C; 1*Micro-USB (debug)"
+      ],
+      [
+        "Kết nối không dây",
+        "Wifi: 802.11 b/g/n, 2.4GHz & 5GHz\nGPS: GPS & GLONASS hỗ trợ A-GPS\nDữ liệu di động: 4G LTE"
+      ],
+      [
+        "Giao thức",
+        "MK Vision SDK"
+      ],
+      [
+        "Giao diện lập trình ứng dụng",
+        "Dịch vụ API mở cho tích hợp phần mềm: metadata, sự kiện, báo cáo, quản lý thiết bị"
+      ],
+      [
+        "Hệ thống giám sát video",
+        "Tương thích với hệ thống quản lý video của MK Vision"
+      ],
+      [
+        "Mô-đun",
+        "Mô-đun camera DMS\nMô-đun đầu đọc thẻ ID (tuỳ chọn)"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "11.8 - 36.0V, chống ngược cực"
+      ]
+    ],
+    "Environment": [
+      [
+        "Điều kiện hoạt động",
+        "-20°C đến 65°C, độ ẩm 90% và không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-20°C đến 70°C, độ ẩm 90% và không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Nhựa ABS, Nhôm"
+      ],
+      [
+        "Kích thước",
+        "146 x 93 x 146 mm"
+      ],
+      [
+        "Trọng lượng",
+        "600g"
+      ],
+      [
+        "Phụ kiện",
+        "Bộ dây điện trực tiếp, Màng phim tĩnh điện, Gá dán kính"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "1024 Mb NAND Flash (hệ điều hành), 1*Micro-SD slot lên đến 512 GB (dữ liệu video)"
+      ],
+      [
+        "Chiếu sáng hồng ngoại camera cabin",
+        "Khoảng cách hồng ngoại: 3m"
+      ],
+      [
+        "An toàn thông tin",
+        "Ký số Firmware; Ký số Video; Ký số Sự kiện; Mật khẩu một lần (OTP); Bộ tạo số ngẫu nhiên thực (TRNG); Mã hoá mật khẩu; Khởi động an toàn TrustZone®; Mã hoá bộ nhớ; Xáo trộn DRAM"
+      ],
+      [
+        "ISO",
+        "ISO 9001:2015"
+      ],
+      [
+        "QCVN",
+        "QCVN 117:2023/BTTTT ; QCVN 54:2020/BTTTT"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "CO",
+        "Sản xuất tại Việt Nam"
+      ],
+      [
+        "CQ",
+        "MK Vision CQ, Quatest"
+      ]
+    ]
+  },
+  "solutions": [
+    "fms"
+  ],
+  "documents": [
+    {
+      "title": "AutoSecure – Datasheet (Lite version, Tiếng Việt)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf"
+    },
+    {
+      "title": "AutoSecure – Datasheet (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/Autosecure English (2).pdf"
+    },
+    {
+      "title": "Hướng dẫn lắp đặt & sử dụng AutoSecure",
+      "type": "hdsd",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HD lắp đặt.pdf"
+    },
+    {
+      "title": "Hướng dẫn cập nhật phần mềm camera AutoSecure qua thẻ nhớ",
+      "type": "hdsd",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/Hướng dẫn cập nhật phần mềm camera Autosecure qua thẻ nhớ.pdf"
+    },
+    {
+      "title": "Giấy chứng nhận hợp quy AutoSecure (model V1C)",
+      "type": "certificate",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/GCN hop quy Autosecure_Cuc VT.pdf"
+    },
+    {
+      "title": "Chứng nhận ISO 9001:2015 – MK Vision",
+      "type": "certificate",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/MKV_ISO 9001-2015.pdf"
+    },
+    {
+      "title": "Slide AutoSecure ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/1. Autosecure ver.0.9.pptx"
+    },
+    {
+      "title": "Slide AutoSecure – Smart Fleet Management & Driver Monitoring Solution",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/1.2. AutoSecure_ Smart Fleet Management & Driver Monitoring Solution.pptx"
+    }
+  ],
+  "image": "/img/products/autosecure.png",
+  "status": "",
+  "updatedAt": "2026-10-16",
+  "sources": [
+    "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf"
+  ],
+  "notes": "Spec lấy nguyên văn từ datasheet tiếng Việt 'AUTOSECURE_Lite version.pdf' (bản có LPR, QCVN – được coi là bản mới nhất). Khác biệt so với datasheet English: (1) English ghi 'Night mode: Automatic IR-cut filter', bản VN ghi 'Bộ lọc IR-cut cố định'; (2) English ghi 'IR Light: Infrared: 10m', Lite ghi 'Chiếu sáng hồng ngoại camera cabin: 3m'; (3) English ghi 'EMC: FCC, CE Certified', Lite thay bằng 'QCVN 117:2023/BTTTT ; QCVN 54:2020/BTTTT' (GCN hợp quy thực tế ghi QCVN 117:2020/BTTTT); (4) English không có LPR, không có 'đeo khẩu trang' trong FleetFocus+ và API không có 'quản lý thiết bị'; (5) English nguồn '11.8 - 36.0V' không ghi chống ngược cực. Datasheet ghi 'Trước cabin: 8MP' (nguyên văn; English ghi 'Front: 8MP'). GCN hợp quy (số C0404161023AA04A3, hiệu lực 16/10/2023–16/10/2026) và file firmware trong HDSD cập nhật đều ghi model V1C. Phụ kiện theo HDSD: Camera AutoSecure *1, Bộ gá dán kính lái *1, Film bảo vệ kính lái *2, Dây nguồn *1, Đầu nối cầu chì *6. Nút bấm: nhấn giữ 2s tạo sự kiện thủ công, 4s khởi động lại camera. Ứng dụng mobile 'AutoSecure' (phiên bản mobile của FMS) có trên App Store/Google Play. Ảnh chất lượng cao hơn: assets/img/products/autosecure-hq.png."
+}

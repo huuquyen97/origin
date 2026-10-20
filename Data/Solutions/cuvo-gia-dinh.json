@@ -1,0 +1,27 @@
+{
+  "slug": "cuvo-gia-dinh",
+  "order": 17,
+  "name": "An ninh gia đình thông minh CUVO",
+  "shortName": "CUVO",
+  "industry": "Dân dụng",
+  "summary": "Camera không dây dùng pin, chuông cửa video và camera đèn an ninh kết nối Wi-Fi, quản lý qua ứng dụng CUVO; các gói VỆ SỸ 247 (trông xe), QUẢN GIA 247 (trông nhà), THẦN GIỮ CỦA (cảnh báo tức thời).",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "Dân dụng / Gia đình"
+  ],
+  "relatedSeries": [
+    "cuvo"
+  ],
+  "products": [],
+  "documents": [],
+  "cover": "/img/scenes/vsecure-2.png",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/5. CUVO camera sale kit.pptx"
+  ],
+  "notes": ""
+}

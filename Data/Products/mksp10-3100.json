@@ -1,0 +1,69 @@
+{
+  "slug": "mksp10-3100",
+  "model": "MKSP10-3100",
+  "name": "Chuyển mạch Access L2+ 8 cổng RJ45 1000Mb, 02 SFP",
+  "series": "mk-networks",
+  "category": "Access Switch L2+",
+  "resolution": "",
+  "ipRating": "",
+  "summary": "Switch quản lý L2+ dành cho SMB và doanh nghiệp với 8 cổng RJ45 1000Mb và cổng uplink SFP. Hỗ trợ IPv4/IPv6, định tuyến tĩnh Layer 3, IEEE 802.3az tiết kiệm điện và quản lý qua Console, Web.",
+  "features": [
+    "Hỗ trợ IPv4/IPv6 và định tuyến tĩnh (Static Routing) Layer 3",
+    "Hỗ trợ IEEE 802.3az và Green Ethernet, tự động giảm điện năng khi lưu lượng thấp",
+    "Hỗ trợ firmware/cấu hình kép, tự động nâng cấp firmware",
+    "Hỗ trợ hẹn giờ PoE",
+    "Tích hợp cổng Console, giao diện Dashboard quản lý"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Network": [
+      [
+        "Cổng",
+        "8RJ45 1000Mb, 02 SFP, SFP+"
+      ],
+      [
+        "Định tuyến",
+        "Hỗ trợ IPv4/IPv6 và Static Routing Layer 3"
+      ],
+      [
+        "Tiết kiệm điện",
+        "Tích hợp công nghệ tiết kiệm điện IEEE 802.3az và Green Ethernet"
+      ]
+    ],
+    "Power": [
+      [
+        "PoE",
+        "Hỗ trợ hẹn giờ PoE"
+      ]
+    ],
+    "Other": [
+      [
+        "Quản lý",
+        "Console, Web; Giao diện Dashboard quản lý"
+      ],
+      [
+        "Cổng Console",
+        "Tích hợp cổng Console"
+      ],
+      [
+        "Firmware",
+        "Hỗ trợ firmware/cấu hình kép; Hỗ trợ tự động nâng cấp firmware"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Datasheet MKSP10-3100 (Tiếng Việt, v2.0)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MK Networks/Datasheets/6.1 MKSP10-3100_VN 2.0.docx"
+    }
+  ],
+  "image": "/img/products/mksp10-3100.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/MK Networks/Datasheets/6.1 MKSP10-3100_VN 2.0.docx"
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết. Nội dung viết cho cả \"MKSP_3100 Series\" (các biến thể -10T, -10P, -10PE, -28T, -28PP), không nói rõ MKSP10-3100 là biến thể nào; comment trong file yêu cầu loại các dòng không phân phối và mô tả đúng tên thiết bị thay vì cả series. Vì vậy KHÔNG đưa vào specs các thông số riêng của biến thể: \"-10P thiết kế PoE không quạt, tối đa 8 cổng 15.4W hoặc 4 cổng 30W\", \"-10PE siêu mỏng 2.65 cm, treo tường\", \"-28PP PoE lên đến 370W\", \"Hỗ trợ công suất PoE từ 65W đến 370W\", \"Hỗ trợ 2 hoặc 4 cổng uplink Gigabit SFP\". Cổng ghi nguyên văn tiêu đề \"8RJ45 1000Mb, 02 SFP, SFP+\" — không rõ uplink là SFP hay SFP+ (ảnh sản phẩm có 2 khe SFP, nút \"PoE Mode\"). Sơ đồ ứng dụng trong datasheet nhắc MKSX30-6550, MKSP28-3100 PoE Switch, MKWS5203 Wireless Controller, MKEAP-650-L 802.11ac. Không có ngày phát hành in trên datasheet."
+}

@@ -1,0 +1,243 @@
+{
+  "slug": "autosecure-dat",
+  "model": "AutoSecure - DAT",
+  "name": "AutoSecure - DAT – Giải pháp Camera trường học lái xe",
+  "series": "autosecure",
+  "category": "Dashcam",
+  "resolution": "8MP + 5MP",
+  "ipRating": "",
+  "summary": "Phiên bản AutoSecure dành cho giải pháp camera trường học lái xe (DAT): camera hành trình AI kèm mô-đun đầu đọc thẻ ID tích hợp màn hình cảm ứng 7 inch, hiển thị thông tin học viên – giáo viên, xác thực người học và tự động cảnh báo hành vi gian lận; hỗ trợ 2 SAM Slot.",
+  "features": [
+    "Màn hình 7 inch cảm ứng, mô-đun đầu đọc thẻ ID tích hợp",
+    "Hiển thị thông tin học viên – giáo viên, thời gian và quãng đường luyện tập",
+    "Xác thực người học tần suất 15fps, tự động cảnh báo gian lận",
+    "Module bảo mật hỗ trợ 2 SAM Slot",
+    "DMS + FleetFocus + DriverID như AutoSecure tiêu chuẩn",
+    "Kết nối 4G LTE, Wifi 2.4GHz & 5GHz, GPS & GLONASS"
+  ],
+  "aiFeatures": [
+    "[FleetFocus] Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, Phanh gấp, Tăng tốc, Va chạm",
+    "[FleetFocus+] Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ; Mức độ tập trung; Sử dụng điện thoại; Đeo dây an toàn; Đeo kính; Đeo khẩu trang; Hút thuốc; Nhận diện khuôn mặt tài xế; Nhận diện sự sống động",
+    "[DriverID] Nhận diện lái xe, chống giả mạo",
+    "[DATM] Hiển thị thông tin học viên - giáo viên; Xác thực; Hiển thị thời gian, quãng đường của học viên đã luyện tập; Xác thực người học tần suất 15fps; Tự động cảnh báo các hành vi gian lận."
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "Trước xe: Sony 1/2.8\" CMOS\nTrong cabin: Sony 1/2.8\" CMOS"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut cố định\nChuyển đổi tự động"
+      ],
+      [
+        "Chiếu sáng tối thiểu",
+        "Chế độ màu: 0.05 lux, tại 50 IRE F2.2\nChế độ hồng ngoại: 0 lux"
+      ],
+      [
+        "Độ phân giải",
+        "Trước cabin: 8MP\nTrong cabin: 5MP"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu",
+        "≥ 50dB"
+      ],
+      [
+        "Dải cân bằng sáng (WDR)",
+        "≥ 120dB"
+      ],
+      [
+        "Điều chỉnh hình ảnh",
+        "Tự động cân bằng trắng, Tự động bù ngược sáng, Tự động điều chỉnh độ lợi"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Trước xe: Tiêu cự cố định, 2.8mm, F2.2, góc nhìn 138°\nTrong cabin: Tiêu cự cố định, 1.5mm, F2.8, góc nhìn 190°"
+      ]
+    ],
+    "AI": [
+      [
+        "Bộ xử lý",
+        "Quad-core Arm® Cortex®-A53 1 GHz"
+      ],
+      [
+        "Bộ nhớ",
+        "2048 MB DDR4"
+      ],
+      [
+        "Hiệu năng xử lý",
+        "Bộ xử lý tín hiệu hình ảnh và mã hóa video Ambarella; Phân tích tầm nhìn tại biên CVflow®"
+      ],
+      [
+        "[FleetFocus]",
+        "Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, Phanh gấp, Tăng tốc, Va chạm"
+      ],
+      [
+        "[FleetFocus+]",
+        "Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ; Mức độ tập trung; Sử dụng điện thoại; Đeo dây an toàn; Đeo kính; Đeo khẩu trang; Hút thuốc; Nhận diện khuôn mặt tài xế; Nhận diện sự sống động"
+      ],
+      [
+        "[DriverID]",
+        "Nhận diện lái xe, chống giả mạo"
+      ],
+      [
+        "[DATM]",
+        "Hiển thị thông tin học viên - giáo viên; Xác thực; Hiển thị thời gian, quãng đường của học viên đã luyện tập; Xác thực người học tần suất 15fps; Tự động cảnh báo các hành vi gian lận."
+      ]
+    ],
+    "Video": [
+      [
+        "Chuẩn nén",
+        "H.264"
+      ],
+      [
+        "Tốc độ khung hình",
+        "Lên đến 30 khung hình/giây ở độ phân giải Full HD\nLên đến 15 khung hình/giây ở độ phân giải 4K"
+      ],
+      [
+        "Đầu nhận âm thanh",
+        "Microphone*1"
+      ],
+      [
+        "Đầu ra âm thanh",
+        "Speaker*1"
+      ],
+      [
+        "Chuẩn mã hóa âm thanh",
+        "AAC-LC lên đến 48kHz"
+      ]
+    ],
+    "Network": [
+      [
+        "Kết nối có dây",
+        "1*USB-C; 1*Micro-USB (debug)"
+      ],
+      [
+        "Kết nối không dây",
+        "Wifi: 802.11b/g/n, 2.4GHz & 5GHz\nGPS: GPS & GLONASS hỗ trợ A-GPS\nDữ liệu di động: 4G LTE"
+      ],
+      [
+        "Giao thức",
+        "MK Vision SDK"
+      ],
+      [
+        "Giao diện lập trình ứng dụng",
+        "Dịch vụ API mở cho tích hợp phần mềm: metadata, sự kiện, báo cáo"
+      ],
+      [
+        "Hệ thống giám sát video",
+        "Tương thích với hệ thống quản lý video của MK Vision"
+      ],
+      [
+        "Mô-đun",
+        "Mô-đun camera DMS\nMô-đun đầu đọc thẻ ID tích hợp màn hình cảm ứng 7 inch"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "11.8 - 36.0V"
+      ]
+    ],
+    "Environment": [
+      [
+        "Điều kiện hoạt động",
+        "-20°C đến 65°C, độ ẩm 90% và không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-20°C đến 70°C, độ ẩm 90% và không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Nhựa ABS, Nhôm"
+      ],
+      [
+        "Màn hình",
+        "7 inch cảm ứng"
+      ],
+      [
+        "Kích thước",
+        "146 x 93 x 146 mm"
+      ],
+      [
+        "Trọng lượng",
+        "600g"
+      ],
+      [
+        "Phụ kiện",
+        "Bộ dây điện trực tiếp, Màng phim tĩnh điện, Gá dán kính"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "1024 MB NAND Flash, 1*Micro-SD slot (lên đến 512 GB)"
+      ],
+      [
+        "Chiếu sáng hồng ngoại",
+        "Khoảng cách hồng ngoại: 10m"
+      ],
+      [
+        "Module bảo mật",
+        "Hỗ trợ 2 SAM Slot"
+      ],
+      [
+        "An toàn thông tin",
+        "Ký số Firmware; Ký số Video; Ký số Sự kiện; Mật khẩu một lần (OTP); Bộ tạo số ngẫu nhiên thực (TRNG); Mã hoá mật khẩu; Khởi động an toàn TrustZone®; Mã hoá bộ nhớ; Xáo trộn DRAM"
+      ],
+      [
+        "ISO",
+        "ISO 9001:2015"
+      ],
+      [
+        "EMC",
+        "FCC, CE"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "CO",
+        "Sản xuất tại Việt Nam"
+      ],
+      [
+        "CQ",
+        "MK Vision CQ, Quatest"
+      ]
+    ]
+  },
+  "solutions": [
+    "dat"
+  ],
+  "documents": [
+    {
+      "title": "AutoSecure - DAT – Datasheet (Full version)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_full version.pdf"
+    },
+    {
+      "title": "Hướng dẫn lắp đặt & sử dụng AutoSecure",
+      "type": "hdsd",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HD lắp đặt.pdf"
+    },
+    {
+      "title": "Chứng nhận ISO 9001:2015 – MK Vision",
+      "type": "certificate",
+      "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/MKV_ISO 9001-2015.pdf"
+    }
+  ],
+  "image": "/img/products/autosecure.png",
+  "status": "",
+  "updatedAt": "2026-10-16",
+  "sources": [
+    "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_full version.pdf"
+  ],
+  "notes": "File 'AUTOSECURE_full version.pdf' thực chất là datasheet 'AutoSecure - DAT – Giải pháp Camera trường học lái xe' (trang 61 của catalog). So với bản Lite: thêm màn hình 7 inch cảm ứng, mô-đun đầu đọc thẻ ID tích hợp màn hình, tính năng [DATM], Module bảo mật 2 SAM Slot; không có LPR; chứng nhận ghi EMC FCC, CE thay vì QCVN; hồng ngoại 10m. Ảnh datasheet gồm camera + tablet/màn hình 7 inch; chưa có ảnh riêng nên dùng ảnh camera AutoSecure."
+}

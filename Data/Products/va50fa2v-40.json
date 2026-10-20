@@ -1,0 +1,247 @@
+{
+  "slug": "va50fa2v-40",
+  "model": "VA50FA2V-40",
+  "name": "Camera PTZ AI 5MP zoom quang 40x",
+  "series": "v-secure",
+  "category": "PTZ",
+  "resolution": "5MP",
+  "ipRating": "IP67",
+  "summary": "Camera PTZ AI xử lý tại biên “Make in Vietnam”, quan sát 360° ngang/90° dọc, zoom quang học 40x, tích hợp HDR Engine Gen3 và Ambarella CVflow. Phù hợp các dự án giám sát quy mô lớn, tầm xa.",
+  "features": [
+    "Zoom quang học 40x (ống kính 4.3-170mm) kết hợp zoom số",
+    "Phạm vi quan sát 360° ngang, 90° dọc; tốc độ quay ngang 0.1°~90°/s",
+    "Phạm vi phát hiện (25ppm) tới 3.400m(T)",
+    "Tầm chiếu hồng ngoại ≥ 200m",
+    "HDR Engine Gen3, WDR 120dB; phân tích video AI Ambarella CVflow",
+    "Chống va đập IK10, chống bụi/nước IP67; cổng mạng 10/100/1000Mbps"
+  ],
+  "aiFeatures": [
+    "AI Video Motion Detection",
+    "AI People Detection",
+    "AI Vehicle Detection",
+    "AI Face Detection",
+    "AI Face Recognition",
+    "AI License Plate Recognition"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "OmniVision 5M (1/2.7” Progressive CMOS)"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut tự động chuyển đổi"
+      ],
+      [
+        "Cường độ sáng tối thiểu",
+        "0 lux sử dụng IR LED"
+      ],
+      [
+        "Tầm chiếu hồng ngoại",
+        "≥ 200m"
+      ],
+      [
+        "Tốc độ màn chập",
+        "1 ~ 1/10.000 giây"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Tự động điều chỉnh tiêu cự: 4.3-170mm; 40x Optical Zoom, 16x Digital Zoom"
+      ],
+      [
+        "FOV",
+        "Horizontal: 64.5(W) - 1.8(T) °; Vertical: 48.9(W) - 1.4(T)°"
+      ],
+      [
+        "Phạm vi phát hiện (25ppm)",
+        "86m(W) - 3.400m(T)"
+      ],
+      [
+        "Phạm vi quan sát (62,5ppm)",
+        "34,4m(W) - 1.360m(T)"
+      ],
+      [
+        "Phạm vi nhận dạng (125ppm)",
+        "17,2m(W) - 680m(T)"
+      ],
+      [
+        "Phạm vi định danh (250ppm)",
+        "8,6m(W) - 340m(T)"
+      ],
+      [
+        "Chế độ PTZ",
+        "Góc quay cực đại theo phương ngang 0 ~360°, theo phương thẳng đứng -20 ~ 100°; Tốc độ quay theo phương ngang 0.1°~90°/s, theo phương thẳng đứng 0.1°~55°/s"
+      ]
+    ],
+    "AI": [
+      [
+        "SoC",
+        "Ambarella CV25"
+      ],
+      [
+        "Bộ xử lý",
+        "Quad-core ARM® Cortex® A53 1GHz"
+      ],
+      [
+        "Bộ nhớ ROM",
+        "NAND Flash"
+      ],
+      [
+        "Bộ nhớ RAM",
+        "1GB DDR4"
+      ],
+      [
+        "Xử lý thị giác AI Vision",
+        "CVflow® Computer Vision Engine @588MHz; DNN Accelerated Engine"
+      ],
+      [
+        "Hỗ trợ các chức năng thông minh",
+        "AI Video Motion Detection, AI People Detection, AI Vehicle Detection, AI Face Detection, AI Face Recognition, AI License Plate Recognition, ..."
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "5 Megapixels (2592H x 1944V)"
+      ],
+      [
+        "Chuẩn nén",
+        "H.265 / H.264 / Motion JPEG"
+      ],
+      [
+        "Tốc độ khung hình",
+        "5MP @30fps"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu (SNR)",
+        "≥ 50dB"
+      ],
+      [
+        "Cân bằng sáng",
+        "HDR Engine Gen3, WDR 120dB"
+      ],
+      [
+        "Hỗ trợ các chức năng xử lý hình ảnh",
+        "Cân bằng trắng tự động (AWB); Bù ngược sáng (BLC); Tự động khuếch đại tín hiệu (AGC), Tự động điều chỉnh khẩu độ (Auto Iris), Tự động lấy nét (Auto Focus)"
+      ]
+    ],
+    "Network": [
+      [
+        "Cổng kết nối",
+        "RJ45, 10/100/1000Mbps"
+      ],
+      [
+        "Hỗ trợ các giao thức",
+        "ARP, PPPoE, IPv4/v6, ICMP, IGMP, QoS, TCP, UDP, DHCP, UPnP, SNMP, SMTP, RTP, RTSP, HTTP, HTTPS, FTP, NTP, DDNS"
+      ],
+      [
+        "ONVIF®",
+        "Đáp ứng Profile S, G, T, M"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "24VAC; PoE IEEE 802.3bt, Type 3, Class 6"
+      ]
+    ],
+    "Environment": [
+      [
+        "Cấp bảo vệ bằng vỏ ngoài",
+        "IP67 - TCVN 4255:2025 (IEC 60529:2013); IK10 - TCVN 14227:2025 (IEC 62262:2021)"
+      ],
+      [
+        "Điều kiện hoạt động",
+        "-10°C đến 60°C, độ ẩm 95% không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-10°C đến 65°C, độ ẩm 95% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Kim loại"
+      ],
+      [
+        "Kích thước",
+        "Ø 241x349 mm"
+      ],
+      [
+        "Trọng lượng",
+        "5,5 kg"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "Hỗ trợ thẻ nhớ microSD / microSDHC / microSDXC"
+      ],
+      [
+        "Hệ thống quản lý chất lượng",
+        "ISO 9001:2015"
+      ],
+      [
+        "An toàn điện",
+        "TCVN 7326-1:2003 (IEC 60950-1:2001)"
+      ],
+      [
+        "An toàn thông tin",
+        "QCVN 135:2024/BTTTT; Đáp ứng NDAA, FIPS 140-2 Level 3"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ]
+    ]
+  },
+  "solutions": [
+    "do-thi",
+    "giao-thong",
+    "trai-giam",
+    "dien-luc",
+    "nha-may"
+  ],
+  "documents": [
+    {
+      "title": "Datasheet 16X VA50FA2V-40 PTZ R1 (Tiếng Việt, bản mới nhất)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/V-SECURE/16X VA50FA2V-40 PTZ R1.pdf"
+    },
+    {
+      "title": "Datasheet VA50FA2V-40 PTZ R1 (Tiếng Việt, zoom số 10x)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/V-SECURE/VA50FA2V-40 PTZ R1.pdf"
+    },
+    {
+      "title": "Datasheet VA50FA2V - PTZ 5MP 40X (Tiếng Việt, bản cũ)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V - PTZ 5MP 40X.pdf"
+    },
+    {
+      "title": "Datasheet VA50FA2V-40 (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V-40.pdf"
+    },
+    {
+      "title": "Slide giới thiệu V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "image": "/img/products/va50fa2v-40.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/V-SECURE/16X VA50FA2V-40 PTZ R1.pdf"
+  ],
+  "notes": "XUNG ĐỘT zoom số: '16X VA50FA2V-40 PTZ R1.pdf' (file mới nhất, 30/10/2025) và bản English ghi '16x Digital Zoom'; 'VA50FA2V-40 PTZ R1.pdf' (26/10/2025), 'VA50FA2V - PTZ 5MP 40X.pdf' và slide V-SECURE ghi 'zoom số 10x' (đoạn mô tả bản English cũng ghi 10x). Đã dùng 16x theo bản mới nhất — cần xác nhận với PM. Bản 'VA50FA2V - PTZ 5MP 40X.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English 'VA50FA2V-40.pdf' bị lỗi bảng Camera (Sensor ghi 'Ambarella CV25', FOV ghi tên CPU...; Identification 5,6m(W)-24m(T), Infrared ≥ 50m — sao chép nhầm từ model Dome), nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' — không dùng. Danh sách AI kết thúc bằng '...'."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "face-edge-ai",
+  "order": 7,
+  "name": "Nhận diện khuôn mặt tại biên (Edge AI)",
+  "shortName": "Face AI",
+  "industry": "Edge AI",
+  "summary": "Giải pháp phân tích hình ảnh thông minh ứng dụng trí tuệ nhân tạo (thương hiệu Pavana – Smart Security Camera) dùng Edge AI để phân loại đặc điểm khuôn mặt và so sánh với cơ sở dữ liệu, xác định danh tính nhanh chóng. Kết quả thực tế: độ chính xác nhận diện 99.8% (kiểm thử trên tập LFW), tốc độ từ 88 ms/mặt (<1000 mặt) đến 375 ms/mặt (100.000 mặt); phát hiện khuôn mặt 33fps (0.03s), độ chính xác 97%; kích thước khuôn mặt tối thiểu 120x120 px.",
+  "painPoints": [
+    "Cần xác định danh tính nhanh, chính xác tại chỗ",
+    "Chấm công bằng thẻ hoặc mã số kém hiệu quả"
+  ],
+  "architecture": "Xử lý AI trực tiếp trên thiết bị (SoC Ambarella CV25). Các dòng thiết bị ứng dụng Edge AI: Body Worn Camera (Citizen ID reader, sensor Sony, 4G, pin 9 giờ), Access Control (Citizen ID reader, LCD 5 inch, vân tay, sensor Sony), WiFi AI Series (CV25, 5 Mega Pixel, IP67), Thermal Camera (CV25, 5 Mega Pixel, Thermal 640x480).",
+  "modules": [],
+  "features": [
+    "Nhận diện khuôn mặt: nhận diện khách lạ, khách quen; nhận diện đúng đối tượng",
+    "Nhận diện và cảnh báo danh sách đen có sẵn trong dữ liệu",
+    "Phát hiện khuôn mặt, phát hiện người, đếm người",
+    "Dung lượng đến 100.000 mặt"
+  ],
+  "benefits": [],
+  "targetCustomers": [
+    "An ninh giám sát",
+    "chấm công & quản lý nhân sự",
+    "kiểm soát truy cập tòa nhà/khu công nghiệp",
+    "sân bay & biên giới",
+    "thực thi pháp luật"
+  ],
+  "relatedSeries": [
+    "biosecure",
+    "v-secure",
+    "mobisecure"
+  ],
+  "products": [
+    "a612"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/biosecure-1.png",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên_compressed.pdf"
+  ],
+  "notes": "Tài liệu mang thương hiệu Pavana. Có bảng so sánh với các hãng khác (Hikvision, Dahua, ZKTeco, Hanet) – không đưa lên web. Thiết bị 'Access Control' trong tài liệu có hình dáng giống A612 (suy luận từ hình ảnh, chưa xác nhận)."
+}

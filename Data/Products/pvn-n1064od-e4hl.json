@@ -1,0 +1,185 @@
+{
+  "slug": "pvn-n1064od-e4hl",
+  "model": "PVN-N1064OD-E4HL",
+  "name": "Đầu ghi hình NVR AI 16 ổ cứng",
+  "series": "cuvo",
+  "category": "NVR",
+  "resolution": "",
+  "ipRating": "",
+  "summary": "Đầu ghi hình mạng (NVR) hỗ trợ camera tới 12MP, băng thông vào/ra 640M, 16 khe SATA (tới 18TB mỗi ổ), RAID và nhiều chức năng AI như nhận diện khuôn mặt, phương tiện, biển số, đếm người.",
+  "features": [
+    "Hỗ trợ độ phân giải 12MP, 8MP, 5MP, 3MP, 2MP(1080P)...",
+    "Băng thông ghi: Inputs 640M / Out 640M",
+    "16 SATA HDD, up to 18TB (Enterprise-Class); RAID0/1/5/6/10",
+    "Xuất HDMI tới 7680*4320 (8K), Max 16CH playback",
+    "AI: Face/Pedestrian/Vehicle Detection, Heat Map, License Plate Detection..."
+  ],
+  "aiFeatures": [
+    "Face Detection",
+    "Pedestrian Detection",
+    "Vehicle Detection",
+    "Cross Counting",
+    "Heat Map",
+    "Crowd Density Detection",
+    "PerimeterIntrusion Detection",
+    "Line Crossing Detection",
+    "Queue Legth Detection",
+    "License Plate Detection",
+    "Rare Sound Detection"
+  ],
+  "specs": {
+    "Video": [
+      [
+        "Resolution",
+        "12MP,8MP,5MP, 3MP, 2MP(1080P), 1.3MP(960P), 1.0MP(720P)"
+      ],
+      [
+        "Recording Bandwidth - Inputs",
+        "640M"
+      ],
+      [
+        "Recording Bandwidth - Out",
+        "640M"
+      ],
+      [
+        "Compression",
+        "Audio: G.711A/G.711U; Video :H.264/H.265/H.264+/H.265+"
+      ],
+      [
+        "Frame rate",
+        "4K:240fps 4MP:480fps 2MP:960fps"
+      ],
+      [
+        "Event",
+        "MD(Sensitivity Level 1~8); Videlo loss; Beep,Email; Push notification to Mobile APP"
+      ],
+      [
+        "Playback function",
+        "Fast forward / backward (2x, 4x, 8x,16x); Slow forward (1/2x, 1/4x, 1/8x,1/16x)"
+      ],
+      [
+        "Playback",
+        "Max 16CH playback"
+      ],
+      [
+        "Fisheye",
+        "Support"
+      ]
+    ],
+    "AI": [
+      [
+        "AI",
+        "Face Detection, Pedestrian Detection, Vehicle Detection, Cross Counting, Heat Map, Crowd Density Detection, PerimeterIntrusion Detection, Line Crossing Detection, Queue Legth Detection, License Plate Detection, Rare Sound Detection"
+      ]
+    ],
+    "Network": [
+      [
+        "Ethernet",
+        "2 RJ45 1000 Base-T"
+      ],
+      [
+        "Local",
+        "UI5.0"
+      ],
+      [
+        "WEB",
+        "IE10/11; Safari V12.1 above; Firefox V.52 above; Google chrome V.57 above; Edge V.79 above"
+      ],
+      [
+        "Mobile viewer",
+        "Rxcamview"
+      ]
+    ],
+    "Power": [
+      [
+        "Input Voltage/Current",
+        "ATX 250W"
+      ],
+      [
+        "Power consumption (excluding hard disk)",
+        "8W"
+      ]
+    ],
+    "Environment": [
+      [
+        "Operating Temperature/Humidity",
+        "Temperature : -10°C~+50°C (14°F ~ 122°F); Humidity: Less than 90%RH"
+      ]
+    ],
+    "Physical": [
+      [
+        "Dimension (WxDxH)",
+        "440*460*149mm"
+      ]
+    ],
+    "Other": [
+      [
+        "RAID Type",
+        "RAID0, RAID1, RAID5, RAID6, RAID10"
+      ],
+      [
+        "HDD",
+        "16 SATA HDD, up to 18TB (Enterprise-Class)"
+      ],
+      [
+        "HDMI",
+        "3（1024*768, 1280*720, 1280*1024, 1440*900, 1920*1080 , 1920*1080,1600*1200，1920*1200, 3840*2160/7680*4320/EDID）Async out; 1（1024*768, 1280*720, 1280*1024, 1440*900, 1920*1080 /EDID）Async out"
+      ],
+      [
+        "HDMI note",
+        "*If the output resolution of HDMI 1 is set to 8K, the maximum output resolution of HDMI 3 and 4 will be limited to 1080P, and HDMI 2 will be disabled."
+      ],
+      [
+        "USB",
+        "USB2.0*1(front) USB3.0*2(rear)"
+      ],
+      [
+        "Audio out",
+        "1"
+      ],
+      [
+        "E-sata",
+        "1"
+      ],
+      [
+        "Line in",
+        "1"
+      ],
+      [
+        "RS232",
+        "1*RJ45"
+      ],
+      [
+        "RS485",
+        "1"
+      ],
+      [
+        "Alarm Input/out",
+        "16 in /4 out"
+      ],
+      [
+        "P/W Reset",
+        "YES"
+      ],
+      [
+        "OSD Language",
+        "English/French/Spanish/Portuguese/German/Ialian/Greek/Danish/Finnish/Russia/Hebrew/Turkish/Bulgarian/Arabc/Korean/Japanese/Thai/Hindi/Romanian/Dutch/Polish"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Catalogue sản phẩm 2024 (Cuvo/Pavana)",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+    }
+  ],
+  "image": "",
+  "status": "",
+  "updatedAt": "2024",
+  "sources": [
+    "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+  ],
+  "notes": "Catalogue không nêu số kênh camera; tên 'NVR' và '16 ổ cứng' dựa trên mục HDD '16 SATA HDD'. Thương hiệu trong catalogue là 'pavana'. Chính tả gốc giữ nguyên ('Videlo loss', 'Queue Legth', 'Ialian', 'Arabc')."
+}

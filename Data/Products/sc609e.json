@@ -1,0 +1,241 @@
+{
+  "slug": "sc609e",
+  "model": "SC609E",
+  "name": "Camera Bullet AI 5MP",
+  "series": "cuvo",
+  "category": "Bullet",
+  "resolution": "5MP",
+  "ipRating": "IP67",
+  "summary": "Camera IP thân trụ 5MP (2592×1944) ống kính motorized 2.7-13.5mm, hồng ngoại tới 45m, tích hợp nhiều chức năng thông minh như nhận diện khuôn mặt, biển số, vượt rào, đếm người.",
+  "features": [
+    "Độ phân giải 5MP 2592(H)×1944(V), Progressive CMOS 1/2.7\"",
+    "Ống kính Motorized(Ø14) 2.7-13.5mm",
+    "Smart Feature: Face Recognition, License Plate Recognition, Perimeter Intrusion, Line Crossing...",
+    "Triple-Stream, ONVIF( Profile S/G/T)",
+    "Alarm 1 input/1 output, Audio 1 in/1 out (RCA); IP67"
+  ],
+  "aiFeatures": [
+    "Face Recognition（FR）",
+    "Human&Vehicle Detection（PD&VD）",
+    "Perimeter Intrusion Detection（PID)",
+    "Line Crossing Detection（LCD）",
+    "Cross Counting（CC）",
+    "Stationary Object Detection（SOD)",
+    "Heat Map（HM）",
+    "Crowd Density Detection（CD）",
+    "Queue Lenght Detection（QD）",
+    "license Plate Recognition（LPR）",
+    "Rare Sound Detection（RSD）"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Imaging Device",
+        "1/2.7\""
+      ],
+      [
+        "Effective Pixels",
+        "5MP 2592(H)×1944(V)"
+      ],
+      [
+        "Scanning System",
+        "Progressive CMOS"
+      ],
+      [
+        "Min. Illumination",
+        "Color 0.003lux @ F1.6(AGC ON) ; B/W 0 lux @ IR ON"
+      ],
+      [
+        "IR Viewable Length",
+        "Up to 45m"
+      ],
+      [
+        "Day & Night",
+        "IR cut filter with auto switch（Day/Night/Auto/Image/Schedule）"
+      ],
+      [
+        "Backlight Compensation",
+        "Off/On (5 Zone)"
+      ],
+      [
+        "Wide Dynamic Range",
+        "WDR"
+      ],
+      [
+        "Digital Noise Reduction",
+        "3D DNR"
+      ],
+      [
+        "Gain Control",
+        "Auto"
+      ],
+      [
+        "White Balance",
+        "Auto/Manual"
+      ],
+      [
+        "Electronic Shutter Speed",
+        "1/5~ 1/20000s"
+      ]
+    ],
+    "Lens": [
+      [
+        "Focal Length (Zoom Ratio)",
+        "2.7-13.5mm"
+      ],
+      [
+        "Max. Aperture Ratio",
+        "F No. 1.8 (W) ~ 3.3(T)"
+      ],
+      [
+        "Angular Field of View",
+        "Horizontal: 31 ~102°, Vertical: 23 ~ 73°, Diagonal: 38 ~ 138°"
+      ],
+      [
+        "Min. Object Distance",
+        "0.3m~INF"
+      ],
+      [
+        "Lens Type",
+        "Motorized(Ø14)"
+      ]
+    ],
+    "AI": [
+      [
+        "Motion Detection",
+        "Off/On (8 Level)"
+      ],
+      [
+        "Privacy Masking",
+        "Off/On (4 Zone, Rectangle)"
+      ],
+      [
+        "Smart Feature",
+        "Face Recognition（FR） Human&Vehicle Detection（PD&VD） Perimeter Intrusion Detection（PID) Line Crossing Detection（LCD） Cross Counting（CC）Stationary Object Detection（SOD) Heat Map（HM）Crowd Density Detection（CD）Queue Lenght Detection（QD） license Plate Recognition（LPR）Rare Sound Detection（RSD）"
+      ]
+    ],
+    "Video": [
+      [
+        "Video Compression Format",
+        "H.265/H.264"
+      ],
+      [
+        "Resolution",
+        "Main Stream @30fps 5MP(2592x1944),4MP(2592x1520),3MP(2304x1296), 1080P(1920x1080), 960P(1280*960); Sub Steam @30fps 1080P(1920x1080)，720P(1280x720),VGA(640x480); Mobile Stream @30fps VGA(640x480), QVGA（320x240）"
+      ],
+      [
+        "Video Quality Ajustment",
+        "256Kbps ~ 8Mbps"
+      ],
+      [
+        "Bitrate control method",
+        "CBR/VBR"
+      ],
+      [
+        "Streaming Capability",
+        "Triple-Stream(Main/Sub/Moile)"
+      ]
+    ],
+    "Network": [
+      [
+        "Ethernet",
+        "RJ45(10/100BASE-T)"
+      ],
+      [
+        "Protocol",
+        "TCP/IP,HTTP,DHCP,DNS,DDNS,RTP/RTSP,SMTP,NTP,UPnP,SNMP,HTTPS,FTP"
+      ],
+      [
+        "Web browser",
+        "IE10/11; Safari V12.1 above; Firefox V.52 above; Google chrome V.57 above; Edge V.79 above"
+      ],
+      [
+        "Security",
+        "IP address filter;complicated password;Authenticated username and password"
+      ],
+      [
+        "Streaming Method",
+        "Unicast/Multicast"
+      ],
+      [
+        "Application Programming Interface",
+        "ONVIF( Profile S/G/T)"
+      ]
+    ],
+    "Power": [
+      [
+        "Input Voltage / Current",
+        "D12V/POE(IEEE802.3af)"
+      ],
+      [
+        "Power Consumption（IR OFF）",
+        "3.5W-4.5W"
+      ],
+      [
+        "Power Consumption（IR ON）",
+        "7.5W-9.5W"
+      ]
+    ],
+    "Environment": [
+      [
+        "Operating Conditions",
+        "-35～+60°C/less than ≤ 95% RH"
+      ],
+      [
+        "Ingress Protection",
+        "IP67"
+      ]
+    ],
+    "Physical": [
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "Dimensions (HxWxD)",
+        "242*87.4*83.88mm"
+      ],
+      [
+        "Weight",
+        "811g"
+      ]
+    ],
+    "Other": [
+      [
+        "Camera Title",
+        "On/Off"
+      ],
+      [
+        "On-Board Storage",
+        "Micro SD slot, up to 256GB"
+      ],
+      [
+        "Alarm",
+        "1 input, 1 output"
+      ],
+      [
+        "Audio",
+        "1 input (RCA), 1 output (RCA)"
+      ],
+      [
+        "Hardware Reset",
+        "Yes"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Catalogue sản phẩm 2024 (Cuvo/Pavana)",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+    }
+  ],
+  "image": "",
+  "status": "",
+  "updatedAt": "2024",
+  "sources": [
+    "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+  ],
+  "notes": "Category 'Bullet' suy từ ảnh trong catalogue (catalogue không ghi loại). Thương hiệu trong catalogue là 'pavana'. Tên chức năng AI giữ nguyên chính tả gốc (ví dụ 'Queue Lenght', 'license Plate')."
+}

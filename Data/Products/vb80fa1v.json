@@ -1,0 +1,197 @@
+{
+  "slug": "vb80fa1v",
+  "model": "VB80FA1V",
+  "name": "Camera Bullet AI ngoài trời 8MP",
+  "series": "v-secure",
+  "category": "Bullet",
+  "resolution": "8MP",
+  "ipRating": "IP67",
+  "summary": "Camera Bullet AI 8MP “Make in Vietnam” dùng cảm biến Sony IMX-415, ống kính 5-50mm, HDR Engine Gen3 và Ambarella CVflow. Bộ nhớ tích hợp 64GB eMMC, đạt IK10/IP67.",
+  "features": [
+    "Độ phân giải 8 Megapixels, cảm biến Sony IMX-415",
+    "Ống kính tự động điều chỉnh tiêu cự 5-50mm",
+    "HDR Engine Gen3; phân tích nội dung video AI Ambarella CVflow",
+    "Lưu trữ tích hợp 64GB EMMC Flash",
+    "Chống va đập IK10, chống bụi/nước IP67",
+    "Đáp ứng ONVIF Profile S/G/T/M, QCVN 135:2024/BTTTT, NDAA, FIPS 140-2 Level 3"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "Sony IMX-415 (1/2.8” Progressive CMOS)"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut tự động chuyển đổi"
+      ],
+      [
+        "Cường độ sáng tối thiểu",
+        "0 lux sử dụng IR LED"
+      ],
+      [
+        "Tầm chiếu hồng ngoại",
+        "≥ 50m"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Tự động điều chỉnh tiêu cự: 5-50mm"
+      ]
+    ],
+    "AI": [
+      [
+        "SoC",
+        "Ambarella CV25"
+      ],
+      [
+        "Bộ xử lý",
+        "Quad-core ARM® Cortex® A53 1GHz"
+      ],
+      [
+        "Bộ nhớ ROM",
+        "64GB eMMC"
+      ],
+      [
+        "Bộ nhớ RAM",
+        "1GB DDR4"
+      ],
+      [
+        "Xử lý thị giác AI Vision",
+        "CVflow® Computer Vision Engine @588MHz; DNN Accelerated Engine"
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "8 Megapixels (3864H x 2192V)"
+      ],
+      [
+        "Chuẩn nén",
+        "H.265 / H.264 / Motion JPEG"
+      ],
+      [
+        "Tốc độ khung hình",
+        "8MP @20fps"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu (SNR)",
+        "≥ 50dB"
+      ],
+      [
+        "Cân bằng sáng",
+        "HDR Engine Gen3, WDR ≥ 120dB"
+      ],
+      [
+        "Hỗ trợ các chức năng xử lý hình ảnh",
+        "Cân bằng trắng tự động (AWB); Bù ngược sáng (BLC); Tự động khuếch đại tín hiệu (AGC), Tự động điều chỉnh khẩu độ (Auto Iris), Tự động lấy nét (Auto Focus)"
+      ]
+    ],
+    "Network": [
+      [
+        "Cổng kết nối",
+        "RJ45, 10/100Mbps"
+      ],
+      [
+        "Hỗ trợ các giao thức",
+        "ARP, PPPoE, IPv4/v6, ICMP, IGMP, QoS, TCP, UDP, DHCP, UPnP, SNMP, SMTP, RTP, RTSP, HTTP, HTTPS, FTP, NTP, DDNS"
+      ],
+      [
+        "ONVIF®",
+        "Đáp ứng Profile S, G, T, M"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "12VDC; PoE IEEE 802.3af"
+      ]
+    ],
+    "Environment": [
+      [
+        "Cấp bảo vệ bằng vỏ ngoài",
+        "IP67 - TCVN 4255:2025 (IEC 60529:2013); IK10 - TCVN 14227:2025 (IEC 62262:2021)"
+      ],
+      [
+        "Điều kiện hoạt động",
+        "-10°C đến 60°C, độ ẩm 95% không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-10°C đến 65°C, độ ẩm 95% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Kim loại"
+      ],
+      [
+        "Kích thước",
+        "Ø 90x350 mm"
+      ],
+      [
+        "Trọng lượng",
+        "1,5kg"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "64GB EMMC Flash"
+      ],
+      [
+        "Hệ thống quản lý chất lượng",
+        "ISO 9001:2015"
+      ],
+      [
+        "An toàn điện",
+        "TCVN 73126-1:2003 (IEC 60950-1:2001)"
+      ],
+      [
+        "An toàn thông tin",
+        "QCVN 135:2024/BTTTT; Đáp ứng NDAA, FIPS 140-2 Level 3"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ]
+    ]
+  },
+  "solutions": [
+    "do-thi",
+    "giao-thong",
+    "dien-luc",
+    "nha-may"
+  ],
+  "documents": [
+    {
+      "title": "Datasheet VB80FA1V - Bullet 8MP (Tiếng Việt)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V - Bullet 8MP.pdf"
+    },
+    {
+      "title": "Datasheet VB80FA1V (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V.pdf"
+    },
+    {
+      "title": "Slide giới thiệu V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "image": "/img/products/vsecure-bullet.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/Datasheets/VB80FA1V - Bullet 8MP.pdf"
+  ],
+  "notes": "Không có bản R1; dùng bản tiếng Việt có tên 'VB80FA1V - Bullet 8MP.pdf'. XUNG ĐỘT với bản English 'VB80FA1V.pdf': cảm biến 1/2.8” (VN) vs 1/2.7” (EN); độ phân giải '8 Megapixels (3864H x 2192V)' (VN) vs '8 Megapixels (2592H x 1944V)' (EN — giống thông số 5MP, có thể sai); tốc độ khung hình '8MP @20fps' (VN) vs '8MP @30fps' (EN); WDR '≥ 120dB' (VN) vs 'WDR 132dB' (EN); An toàn điện VN ghi 'TCVN 73126-1:2003' (có thể lỗi đánh máy, EN ghi 'TCVN 7326-1:2003'). Cả hai bản đều KHÔNG liệt kê chức năng AI, FOV, phạm vi phát hiện và tốc độ màn chập — để trống, không suy từ model khác. Ảnh là ảnh chung dòng Bullet V-Secure."
+}

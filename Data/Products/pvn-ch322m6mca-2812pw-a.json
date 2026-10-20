@@ -1,0 +1,233 @@
+{
+  "slug": "pvn-ch322m6mca-2812pw-a",
+  "model": "PVN-CH322M6MCA-2812PW-A",
+  "name": "Camera Dome/Turret IP 2MP",
+  "series": "cuvo",
+  "category": "Dome",
+  "resolution": "2MP",
+  "ipRating": "IP67",
+  "summary": "Camera IP dạng bán cầu 2MP (1920×1080) ống kính 2.8-12mm, hồng ngoại tới 45m, hỗ trợ H.265/H.264, ONVIF, PoE và thẻ nhớ tới 256GB.",
+  "features": [
+    "Độ phân giải 2MP 1920(H)×1080(V), Progressive CMOS 1/2.7\"",
+    "Ống kính 2.8-12mm, F No. 1.8 (W) ~3.3(T)",
+    "Hồng ngoại tới 45m, 3D DNR, BLC, DWDR",
+    "Khe Micro SD tới 256GB",
+    "Nguồn D12V/POE(IEEE802.3af); chuẩn IP67"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Image": [
+      [
+        "Imaging Device",
+        "1/2.7\""
+      ],
+      [
+        "Effective Pixels",
+        "2MP 1920(H)×1080(V)"
+      ],
+      [
+        "Scanning System",
+        "Progressive CMOS"
+      ],
+      [
+        "Min.Illumination",
+        "Color 0.006lux @F1.6(AGC ON) ; B/W 0 lux @ IR ON"
+      ],
+      [
+        "IR Viewable Length",
+        "Up to 45m"
+      ],
+      [
+        "Day &Night",
+        "IR cut filter with auto switch（Day/Night/Auto/Image/Schedule）"
+      ],
+      [
+        "Backlight Compensation",
+        "Off/On (5 Zone)"
+      ],
+      [
+        "Wide Dynamic Range",
+        "DWDR"
+      ],
+      [
+        "Digital Noise Reduction",
+        "3D DNR"
+      ],
+      [
+        "Gain Control",
+        "Auto"
+      ],
+      [
+        "White Balance",
+        "Auto/Manual"
+      ],
+      [
+        "Electronic Shutter Speed",
+        "1/5 ~ 1/20000s"
+      ],
+      [
+        "Mirror",
+        "Flip/Rotation"
+      ]
+    ],
+    "Lens": [
+      [
+        "Focal Length (Zoom Ratio)",
+        "2.8-12mm"
+      ],
+      [
+        "Max. Aperture Ratio",
+        "F No. 1.8 (W) ~3.3(T)"
+      ],
+      [
+        "Angular Field of View",
+        "H:107°（W）-35°（T）V:54°（W）-20°（T）D:133°（W）-40°（T）"
+      ],
+      [
+        "Min. Object Distance",
+        "1.2m（W/T）"
+      ],
+      [
+        "Lens Type",
+        "Manual(Ø14)"
+      ]
+    ],
+    "AI": [
+      [
+        "Motion Detection",
+        "Off/On (8 Level)"
+      ],
+      [
+        "Privacy Masking",
+        "Off/On (4 Zone, Rectangle)"
+      ],
+      [
+        "Smart Feature",
+        "NA"
+      ]
+    ],
+    "Video": [
+      [
+        "Video Compression Format",
+        "H.265/H.264"
+      ],
+      [
+        "Resolution",
+        "Main Stream &30fps 1080P(1920x1080); Sub Steam &20fps VGA(640x480)"
+      ],
+      [
+        "Video Quality Ajustment",
+        "256Kbps ~ 4Mbps"
+      ],
+      [
+        "Bitrate control method",
+        "CBR/VBR"
+      ],
+      [
+        "Streaming Capability",
+        "Dual-Stream(Main/Sub)"
+      ]
+    ],
+    "Network": [
+      [
+        "Ethernet",
+        "RJ45(10/100BASE-T)"
+      ],
+      [
+        "Protocol",
+        "TCP/IP,HTTP,DHCP,DNS,DDNS,RTP/RTSP,SMTP,NTP,UPnP,SNMP,HTTPS,FTP"
+      ],
+      [
+        "Web browser",
+        "IE10/11"
+      ],
+      [
+        "Security",
+        "complicated password;Authenticated username and password"
+      ],
+      [
+        "Streaming Method",
+        "Unicast/Multicast"
+      ],
+      [
+        "Application Programming Interface",
+        "ONVIF"
+      ]
+    ],
+    "Power": [
+      [
+        "Input Voltage/ Current",
+        "D12V/POE(IEEE802.3af)"
+      ],
+      [
+        "Power Consumption（IR OFF）",
+        "1.5W-2.5W"
+      ],
+      [
+        "Power Consumption（IR ON）",
+        "5.5W-7.5W"
+      ]
+    ],
+    "Environment": [
+      [
+        "Operating Conditions",
+        "-35～+60°C/less than ≤ 90% RH"
+      ],
+      [
+        "Ingress Protection",
+        "IP67"
+      ]
+    ],
+    "Physical": [
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "Dimensions (HxWxD)",
+        "135.56*135.56*127mm"
+      ],
+      [
+        "Weight",
+        "821g"
+      ]
+    ],
+    "Other": [
+      [
+        "Camera Title",
+        "On/Off"
+      ],
+      [
+        "On-Board Storage",
+        "Micro SD slot, up to 256GB"
+      ],
+      [
+        "Alarm",
+        "NA"
+      ],
+      [
+        "Audio",
+        "1 input (RCA), 1 output (RCA)"
+      ],
+      [
+        "Hardware Reset",
+        "Yes"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Catalogue sản phẩm 2024 (Cuvo/Pavana)",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+    }
+  ],
+  "image": "",
+  "status": "",
+  "updatedAt": "2024",
+  "sources": [
+    "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
+  ],
+  "notes": "Catalogue không ghi loại camera; 'Dome' được suy từ ảnh (dạng bán cầu/turret) — cần xác nhận. Thương hiệu trong catalogue là 'pavana'. Trang giới thiệu ghi 'Motorized 4X zoom lens' nhưng bảng ghi Lens Type 'Manual(Ø14)'. Trang giới thiệu không nhắc audio nhưng bảng ghi Audio '1 input (RCA), 1 output (RCA)'. Smart Feature: NA."
+}

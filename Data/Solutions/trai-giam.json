@@ -1,0 +1,31 @@
+{
+  "slug": "trai-giam",
+  "order": 15,
+  "name": "Quản lý trại giam & cơ sở cai nghiện",
+  "shortName": "",
+  "industry": "An ninh – Tư pháp",
+  "summary": "Giám sát phạm nhân 24/7, phát hiện bạo lực, tự gây thương tích, vượt rào, trốn trại; điểm danh bằng nhận diện khuôn mặt; lưu trữ bằng chứng video phục vụ quản lý và khiếu nại.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "An ninh / Tư pháp"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [
+    "va50fa0v",
+    "va50fa2v-40",
+    "vb50fb1v"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/control-room-1.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}

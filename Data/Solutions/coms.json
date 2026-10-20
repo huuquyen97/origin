@@ -1,0 +1,82 @@
+{
+  "slug": "coms",
+  "order": 5,
+  "name": "COMS – Hệ thống quản lý vận hành camera đeo người",
+  "shortName": "COMS",
+  "industry": "Nền tảng phần mềm",
+  "summary": "COMS (Camera Operation Management System) là phần mềm web do MK Vision phát triển để kết nối, trao đổi dữ liệu và điều hành từ xa các camera đeo người MobiSecure: giám sát vị trí GPS, xem trực tiếp (live view), đàm thoại nội bộ, quản lý danh sách đen (blacklist) và nhiệm vụ, lưu trữ video/ảnh, tra cứu hành trình và thống kê sự kiện SOS / Blacklist.",
+  "painPoints": [
+    "Thiếu bằng chứng trực quan, minh bạch khi tác nghiệp hiện trường",
+    "Trung tâm chỉ huy không nắm được hình ảnh và vị trí lực lượng theo thời gian thực",
+    "Kiểm tra danh tính thủ công mất thời gian khi tuần tra, kiểm soát",
+    "Khó phát hiện kịp thời đối tượng truy nã / người mất tích",
+    "Liên lạc với nhóm cán bộ hiện trường trong điều kiện khắc nghiệt",
+    "Khó quản lý tập trung thiết bị camera đeo người và lực lượng sử dụng",
+    "Cần đảm bảo dữ liệu hình ảnh, âm thanh hiện trường được thu thập đầy đủ, an toàn",
+    "Cần phát hiện nhanh đối tượng truy nã, đối tượng tìm kiếm ngoài hiện trường"
+  ],
+  "architecture": "Camera BWC MobiSecure (ghi hình, GPS, AI nhận diện khuôn mặt tại biên, đọc CCCD qua NFC + thẻ SAM) → kết nối 4G LTE hoặc Wi-Fi tới máy chủ COMS: gửi bản tin định kỳ (1 phút: S/N, vị trí, trạng thái/RSSI LTE, trạng thái ghi hình; 30 phút: pin, dung lượng lưu trữ), sự kiện SOS / Blacklist kèm ảnh và tọa độ, live view 720p/480p tự điều chỉnh theo băng thông; tự động upload video/ảnh qua Wi-Fi và nhận cập nhật firmware OTA. Đế sạc (Docking station) vừa sạc vừa duy trì kết nối để upload dữ liệu (có thể nối USB tới máy trạm quản lý bằng chứng tại đơn vị cơ sở). Phía trung tâm: tường lửa → máy chủ nhận dữ liệu → máy chủ ứng dụng, lưu trữ, quản lý, dữ liệu dân cư; người dùng truy cập COMS qua trình duyệt với các phân hệ Trang chủ (thống kê camera, sự kiện trên bản đồ), Thiết bị (camera, Wi-Fi, OTA), Chỉ huy (giám sát 2/4/6/9 camera, liên lạc nội bộ), Nhiệm vụ (blacklist, giao nhiệm vụ cho camera), Lưu trữ, Hành trình, Người dùng (tổ chức, phân quyền). Dữ liệu có thể chia sẻ cho cơ quan liên quan (ví dụ tòa án, quản lý địa phương) theo sơ đồ kiến trúc trong slide.",
+  "modules": [
+    {
+      "name": "Quản lý thiết bị và người dùng",
+      "description": "Quản lý kết nối thiết bị và người sử dụng."
+    },
+    {
+      "name": "Thu thập và lưu trữ",
+      "description": "Thu thập, lưu trữ hình ảnh, âm thanh đầy đủ, an toàn."
+    },
+    {
+      "name": "Cảnh báo đối tượng",
+      "description": "Camera tự động cảnh báo đối tượng truy nã, đối tượng tìm kiếm theo ảnh."
+    }
+  ],
+  "features": [
+    "Thống kê camera (online/offline, pin, tín hiệu 4G) và vị trí trên bản đồ",
+    "Thống kê sự kiện SOS, Blacklist (phát hiện EID, phát hiện khuôn mặt)",
+    "Quản lý camera, gán camera cho người dùng, cài đặt Wi-Fi từ xa, quản lý OTA firmware",
+    "Chỉ huy: live view nhiều camera cùng lúc, bật/tắt âm thanh, đàm thoại trực tiếp",
+    "Liên lạc nội bộ: đàm thoại 1 chiều (voice message) và đàm thoại nhóm 2 chiều",
+    "Quản lý đối tượng Blacklist (ảnh, số CCCD) và giao nhiệm vụ truy tìm xuống camera",
+    "Nhận diện khuôn mặt blacklist tại biên: camera chụp ảnh, phát âm báo, gửi event + ảnh + GPS",
+    "Xác thực CCCD gắn chip (đối chiếu khuôn mặt chủ thẻ, so sánh blacklist)",
+    "Lưu trữ: tìm kiếm, xem, tải xuống, chia sẻ link video/ảnh",
+    "Hành trình: xem lại lịch sử di chuyển của camera theo ngày",
+    "Quản lý tổ chức, người dùng hệ thống, người dùng thiết bị, phân quyền chức năng",
+    "Giao diện Tiếng Việt / Tiếng Anh"
+  ],
+  "benefits": [
+    "Dành riêng cho thiết bị BWC của MK Vision",
+    "Hỗ trợ nghiệp vụ hiện trường theo thời gian thực"
+  ],
+  "targetCustomers": [
+    "Đội an ninh",
+    "Lực lượng tuần tra",
+    "Cảnh sát giao thông"
+  ],
+  "relatedSeries": [
+    "mobisecure"
+  ],
+  "products": [
+    "mk22fc1e",
+    "t8a",
+    "t8b",
+    "t8c"
+  ],
+  "documents": [
+    {
+      "title": "Kiến trúc hệ thống cơ bản",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx"
+    }
+  ],
+  "cover": "/img/scenes/mobisecure-1.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/HDSD/HDSD BWC_COMS.pdf",
+    "Data/MK Vision/Docs/Slide/3. Mobi Secure ver 0.9.pptx",
+    "Data/MK Vision/Docs/MOBISECURE/Mô tả chức năng BWC tích hợp COMS_stage2.2.docx",
+    "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx",
+    "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+  ],
+  "notes": ""
+}

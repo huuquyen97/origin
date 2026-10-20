@@ -1,0 +1,74 @@
+{
+  "slug": "mk-networks-thon-so",
+  "order": 1.5,
+  "name": "Hạ tầng mạng thôn số – Khu đô thị thông minh",
+  "shortName": "MK Networks",
+  "industry": "Hạ tầng mạng",
+  "summary": "Mô hình hạ tầng mạng cho thôn số và khu đô thị thông minh: trung tâm dữ liệu và điều hành tại tòa nhà trung tâm, mạng lõi Core Switch L3 kết nối các tòa nhà qua đường trục quang, mỗi tòa nhà có Switch Access và Wi-Fi AP, kết hợp camera giám sát an ninh đường phố. Giải pháp kết nối – an toàn – hiệu quả.",
+  "painPoints": [],
+  "architecture": "Trung tâm dữ liệu & điều hành (tòa nhà trung tâm):\n• Kết nối Internet: ISP 1, ISP 2\n• An toàn thông tin: SafeGate Enterprise Appliance Firewall (HA), SafeGate Z-entry (Zero Trust Access), SafeGate Data Diode (1 chiều)\n• Mạng lõi – Core: MKSX30/54-6550, 24/48 Port FO 10Gb, 06 Port FO 100Gb (Core Switch L3)\n• Máy chủ & lưu trữ: Server HCI Cluster, Storage SAN/NAS, Hệ thống quản lý mạng (NMS) & giám sát ATTT\n• Wi-Fi AP MKEAP-650 tại tòa nhà trung tâm\n\nCác tòa nhà / điểm kết nối (tòa nhà 3–7 tầng, nhà văn hóa thôn, trạm y tế xã/thôn):\n• Switch Access MKST/P28-3100: 24GE + 04 SFP+ 10Gb\n• Wi-Fi AP MKEAP-650\n\nĐường truyền:\n• Đường trục quang 10Gb/100Gb (Fiber Optic Backbone)\n• Kết nối mạng đồng 1GbE (Copper UTP)\n• Kết nối Wi-Fi (2.4/5GHz)\n\nGiám sát an ninh đường phố: camera IP PoE (2MP Full HD, hồng ngoại 40m, chuẩn nén H.265/H.265+, WDR 120dB, IP67, IK10, phát hiện thông minh AI: vượt ranh giới, xâm nhập, tụ tập, lảng vảng, đỗ xe…; nguồn 12VDC / PoE 802.3af).",
+  "modules": [
+    {
+      "name": "Mạng lõi – Core",
+      "description": "Core Switch L3 MKSX30/54-6550: 24/48 Port FO 10Gb, 06 Port FO 100Gb, đặt tại trung tâm dữ liệu."
+    },
+    {
+      "name": "Mạng truy nhập",
+      "description": "Switch Access MKST/P28-3100 (24GE + 04 SFP+ 10Gb) tại từng tòa nhà, kết nối về Core qua đường trục quang."
+    },
+    {
+      "name": "Wi-Fi",
+      "description": "Wi-Fi AP MKEAP-650 tại tòa nhà trung tâm và các tòa nhà, kết nối Wi-Fi 2.4/5GHz."
+    },
+    {
+      "name": "An toàn thông tin",
+      "description": "SafeGate Enterprise Appliance Firewall (HA), SafeGate Z-entry (Zero Trust Access), SafeGate Data Diode (1 chiều)."
+    },
+    {
+      "name": "Máy chủ & lưu trữ",
+      "description": "Server HCI Cluster, Storage SAN/NAS, hệ thống quản lý mạng (NMS) & giám sát ATTT."
+    },
+    {
+      "name": "Camera giám sát an ninh đường phố",
+      "description": "Camera IP PoE 2MP Full HD có phát hiện thông minh AI, kết nối vào mạng truy nhập."
+    }
+  ],
+  "features": [],
+  "benefits": [
+    "Kết nối ổn định, băng thông cao",
+    "An toàn – bảo mật nhiều lớp",
+    "Quản lý tập trung hiệu quả",
+    "Dễ mở rộng, linh hoạt",
+    "Tiết kiệm chi phí vận hành"
+  ],
+  "targetCustomers": [
+    "Giám sát an ninh",
+    "Điều hành thông minh",
+    "Dịch vụ công trực tuyến",
+    "Y tế – Giáo dục",
+    "Kinh tế số – Du lịch thông minh"
+  ],
+  "relatedSeries": [
+    "mk-networks",
+    "v-secure"
+  ],
+  "products": [
+    "mksx30-6550",
+    "mkeap-650"
+  ],
+  "documents": [
+    {
+      "title": "Sơ đồ mô hình hạ tầng mạng thôn số – Khu đô thị thông minh",
+      "type": "architecture",
+      "path": "Data/MK Vision/Docs/MK Networks/Solutions/viber_image_2026-07-31_16-00-12-087.jpg"
+    }
+  ],
+  "cover": "/img/solutions/mk-networks-thon-so.jpg",
+  "images": [
+    "/img/solutions/mk-networks-thon-so.jpg"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/MK Networks/Solutions/viber_image_2026-07-31_16-00-12-087.jpg"
+  ],
+  "notes": "Tên model trong sơ đồ khác cách ghi trên datasheet: sơ đồ ghi \"MKSX30/54-6550\" (datasheet MKSX30-6550 chỉ còn bản 24 cổng) và Switch Access \"MKST/P28-3100\" (dòng 3100, 28 cổng). Trong Data chưa có datasheet riêng cho MKST/P28-3100; MKST28-5150/MKSP28-5150 là model khác. Cần PM xác nhận model switch access đề xuất."
+}

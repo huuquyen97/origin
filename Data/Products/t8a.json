@@ -1,0 +1,161 @@
+{
+  "slug": "t8a",
+  "model": "T8A",
+  "name": "Camera nghiệp vụ an ninh T8A (bản nền tảng)",
+  "series": "mobisecure",
+  "category": "Body-worn",
+  "resolution": "Full HD",
+  "ipRating": "IP65",
+  "summary": "Phiên bản nền tảng của T8 Series: ghi hình Full HD và lưu trữ nội bộ 16GB cho lực lượng tác nghiệp tại chỗ, nhận diện khuôn mặt tại biên, GPS, Wi-Fi/BLE; trút dữ liệu an toàn qua đế sạc hoặc USB-C. Không có 4G LTE và NFC/RFID.",
+  "features": [
+    "Full HD 60fps, cảm biến Sony STARVIS 1/2.8\", góc nhìn 140°, F2.2",
+    "Lưu trữ 16GB ≈ 18 giờ ghi liên tục",
+    "Nhận diện đến 20.000 khuôn mặt tại biên, chính xác ≥ 90%",
+    "GPS, Wi-Fi 2.4G / 5G, BLE",
+    "Pin 4000 mAh, bền sức cho trọn ca trực",
+    "Vỏ ABS + PC, IP65, sản xuất tại Việt Nam"
+  ],
+  "aiFeatures": [
+    "Nhận diện khuôn mặt tại biên – đến 20.000 khuôn mặt, chính xác ≥ 90%, mã hoá thư viện"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến & ống kính",
+        "Sony 1/2.8\" STARVIS CMOS, tiêu cự cố định 2.8 mm, F2.2, góc nhìn 140°"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Chuyển đổi tự động, IR hồng ngoại, 0.001 lux ở chế độ màu"
+      ]
+    ],
+    "AI": [
+      [
+        "Bộ xử lý",
+        "Ambarella Quad-core Arm Cortex-A53 1 GHz, 1024 MB DDR4, CVflow"
+      ],
+      [
+        "Phân tích tại biên",
+        "Nhận diện đến 20.000 khuôn mặt, chính xác ≥ 90%, mã hoá thư viện"
+      ]
+    ],
+    "Video": [
+      [
+        "Video",
+        "Full HD 60 fps, H.265 / H.264, WDR ≥ 120 dB, SNR ≥ 50 dB, AWB / ABLC / AGC"
+      ],
+      [
+        "Âm thanh",
+        "Microphone + loa tích hợp, mã hoá AAC-LC đến 48 kHz"
+      ]
+    ],
+    "Network": [
+      [
+        "GPS",
+        "Có"
+      ],
+      [
+        "Wi-Fi 2.4G / 5G · BLE",
+        "Có"
+      ],
+      [
+        "4G LTE",
+        "Không"
+      ],
+      [
+        "Truyền hình trực tiếp",
+        "Không"
+      ],
+      [
+        "NFC / RFID",
+        "Không"
+      ],
+      [
+        "An toàn thông tin",
+        "Ký số firmware / video / sự kiện, TrustZone, OTP, TRNG, mã hoá bộ nhớ"
+      ],
+      [
+        "Tích hợp hệ thống",
+        "API mở cho metadata, sự kiện, báo cáo; SDK cho hệ thống quản lý video"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "Pin 4000 mAh, đế sạc 5V / 2A, cổng USB-C"
+      ]
+    ],
+    "Environment": [
+      [
+        "Chuẩn bảo vệ",
+        "IP65"
+      ],
+      [
+        "Nhiệt độ / độ ẩm",
+        "−20 °C đến 60 °C, độ ẩm 90% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "ABS + PC"
+      ],
+      [
+        "Màn hình",
+        "2.0 inch, 320 × 240, 600 cd/m², không cảm ứng"
+      ],
+      [
+        "Kích thước",
+        "101 × 64 × 31 mm"
+      ],
+      [
+        "Trọng lượng",
+        "205 g"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "16GB ≈ 18 giờ ghi liên tục"
+      ],
+      [
+        "Chứng nhận",
+        "ISO 9001:2015, FCC, CE"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ],
+      [
+        "Phụ kiện trong hộp",
+        "Đế sạc · Kẹp áo · Cáp USB-C · Bộ sạc 5V / 2A"
+      ],
+      [
+        "Ngàm tùy chọn",
+        "MNT-01 Kẹp gắn người · MNT-02 Ngàm gắn xe máy · MNT-03 Ngàm gắn ô tô · MNT-04 Ngàm gắn mũ"
+      ]
+    ]
+  },
+  "solutions": [
+    "coms"
+  ],
+  "documents": [
+    {
+      "title": "T8 Series 3 Datasheet v2",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
+    },
+    {
+      "title": "Brochure T8 Series (T8A · T8B · T8C)",
+      "type": "brochure",
+      "path": "Data/MK Vision/Docs/MOBISECURE/T8 Series.pdf"
+    }
+  ],
+  "image": "/img/products/t8a.png",
+  "status": "",
+  "updatedAt": "2026",
+  "sources": [
+    "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
+  ],
+  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn, 16/09/2026 17:49). Xung đột với brochure 'T8 Series.pdf' (16/09/2026 16:11): brochure ghi chuẩn bảo vệ IP67 (v2 ghi IP65 – đã dùng IP65); brochure nhắc kết nối phần mềm 'MK Vision CGMS' thay vì COMS. Cả hai đều ghi pin 4000 mAh và −20°C đến 60°C (khác datasheet MK22FC1E: 4500 mAh, -10°C đến 45°C). Ngàm MNT-01…04 lấy từ brochure. Datasheet v2 có ô 'Giá đề xuất' để trống – không ghi giá."
+}

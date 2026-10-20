@@ -1,0 +1,31 @@
+{
+  "slug": "toa-nha",
+  "order": 12,
+  "name": "An ninh tòa nhà & văn phòng",
+  "shortName": "",
+  "industry": "Tòa nhà & Doanh nghiệp",
+  "summary": "Chấm công không tiếp xúc bằng nhận diện khuôn mặt, kiểm soát khách ra vào, cảnh báo người lạ; giám sát khu kỹ thuật, cảnh báo sớm cháy, khói; thống kê lưu lượng người theo giờ/ngày.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "Tòa nhà / Doanh nghiệp"
+  ],
+  "relatedSeries": [
+    "v-secure",
+    "biosecure"
+  ],
+  "products": [
+    "va50fa0v",
+    "vb50fb1v"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/meeting-1.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}

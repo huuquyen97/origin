@@ -1,0 +1,238 @@
+{
+  "slug": "va50fa0v",
+  "model": "VA50FA0V",
+  "name": "Camera Dome AI ngoài trời 5MP",
+  "series": "v-secure",
+  "category": "Dome",
+  "resolution": "5MP",
+  "ipRating": "IP67",
+  "summary": "Camera Dome AI xử lý tại biên (AI on Edge) “Make in Vietnam” dùng SoC Ambarella CV25, HDR Engine Gen3 và phân tích nội dung video Ambarella CVflow. Đạt IK10/IP67, ONVIF Profile S/G/T/M và QCVN 135:2024/BTTTT.",
+  "features": [
+    "Phân tích nội dung video bằng Ambarella CVflow (AI on Edge)",
+    "HDR Engine Gen3, WDR 120dB cho hình ảnh rõ nét khi thiếu sáng",
+    "Ống kính tự động điều chỉnh tiêu cự 2.8-12mm, Auto Focus",
+    "Tầm chiếu hồng ngoại ≥ 50m",
+    "Chống va đập IK10, chống bụi/nước IP67",
+    "Đáp ứng ONVIF Profile S/G/T/M, QCVN 135:2024/BTTTT, NDAA, FIPS 140-2 Level 3"
+  ],
+  "aiFeatures": [
+    "AI Video Motion Detection",
+    "AI People Detection",
+    "AI Vehicle Detection",
+    "AI Face Detection",
+    "AI Face Recognition",
+    "AI License Plate Recognition"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "OmniVision 5M (1/2.7” Progressive CMOS)"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut tự động chuyển đổi"
+      ],
+      [
+        "Cường độ sáng tối thiểu",
+        "0 lux sử dụng IR LED"
+      ],
+      [
+        "Tầm chiếu hồng ngoại",
+        "≥ 50m"
+      ],
+      [
+        "Tốc độ màn chập",
+        "1 ~ 1/10.000 giây"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Tự động điều chỉnh tiêu cự: 2.8-12mm"
+      ],
+      [
+        "FOV",
+        "Horizontal: 102.1(W) - 31.5(T) °; Vertical: 70.3(W) - 22.7(T)°"
+      ],
+      [
+        "Phạm vi phát hiện (25ppm)",
+        "56m(W) - 240m(T)"
+      ],
+      [
+        "Phạm vi quan sát (62,5ppm)",
+        "22,4m(W) - 96m(T)"
+      ],
+      [
+        "Phạm vi nhận dạng (125ppm)",
+        "11,2m(W) - 48m(T)"
+      ],
+      [
+        "Phạm vi định danh (250ppm)",
+        "5,6m(W) - 24m(T)"
+      ]
+    ],
+    "AI": [
+      [
+        "SoC",
+        "Ambarella CV25"
+      ],
+      [
+        "Bộ xử lý",
+        "Quad-core ARM® Cortex® A53 1GHz"
+      ],
+      [
+        "Bộ nhớ ROM",
+        "NAND Flash"
+      ],
+      [
+        "Bộ nhớ RAM",
+        "1GB DDR4"
+      ],
+      [
+        "Xử lý thị giác AI Vision",
+        "CVflow® Computer Vision Engine @588MHz; DNN Accelerated Engine"
+      ],
+      [
+        "Hỗ trợ các chức năng thông minh",
+        "AI Video Motion Detection, AI People Detection, AI Vehicle Detection, AI Face Detection, AI Face Recognition, AI License Plate Recognition, ..."
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "5 Megapixels (2592H x 1944V)"
+      ],
+      [
+        "Chuẩn nén",
+        "H.265 / H.264 / Motion JPEG"
+      ],
+      [
+        "Tốc độ khung hình",
+        "5MP @30fps"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu (SNR)",
+        "≥ 50dB"
+      ],
+      [
+        "Cân bằng sáng",
+        "HDR Engine Gen3, WDR 120dB"
+      ],
+      [
+        "Hỗ trợ các chức năng xử lý hình ảnh",
+        "Cân bằng trắng tự động (AWB); Bù ngược sáng (BLC); Tự động khuếch đại tín hiệu (AGC), Tự động điều chỉnh khẩu độ (Auto Iris), Tự động lấy nét (Auto Focus)"
+      ]
+    ],
+    "Network": [
+      [
+        "Cổng kết nối",
+        "RJ45, 10/100Mbps"
+      ],
+      [
+        "Hỗ trợ các giao thức",
+        "ARP, PPPoE, IPv4/v6, ICMP, IGMP, QoS, TCP, UDP, DHCP, UPnP, SNMP, SMTP, RTP, RTSP, HTTP, HTTPS, FTP, NTP, DDNS"
+      ],
+      [
+        "ONVIF®",
+        "Đáp ứng Profile S, G, T, M"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "12VDC; PoE IEEE 802.3af"
+      ]
+    ],
+    "Environment": [
+      [
+        "Cấp bảo vệ bằng vỏ ngoài",
+        "IP67 - TCVN 4255:2025 (IEC 60529:2013); IK10 - TCVN 14227:2025 (IEC 62262:2021)"
+      ],
+      [
+        "Điều kiện hoạt động",
+        "-10°C đến 60°C, độ ẩm 95% không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-10°C đến 65°C, độ ẩm 95% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Kim loại"
+      ],
+      [
+        "Kích thước",
+        "Ø 133.8x117.4 mm"
+      ],
+      [
+        "Trọng lượng",
+        "760 g"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "Hỗ trợ thẻ nhớ microSD / microSDHC / microSDXC"
+      ],
+      [
+        "Hệ thống quản lý chất lượng",
+        "ISO 9001:2015"
+      ],
+      [
+        "An toàn điện",
+        "TCVN 7326-1:2003 (IEC 60950-1:2001)"
+      ],
+      [
+        "An toàn thông tin",
+        "QCVN 135:2024/BTTTT; Đáp ứng NDAA, FIPS 140-2 Level 3"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ]
+    ]
+  },
+  "solutions": [
+    "do-thi",
+    "truong-hoc",
+    "trai-giam",
+    "toa-nha",
+    "nha-may"
+  ],
+  "documents": [
+    {
+      "title": "Datasheet VA50FA0V Dome R1 (Tiếng Việt)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/V-SECURE/VA50FA0V Dome R1.pdf"
+    },
+    {
+      "title": "Datasheet VA50FA0V - Dome 5MP (Tiếng Việt, bản cũ)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V - Dome 5MP.pdf"
+    },
+    {
+      "title": "Datasheet VA50FA0V (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V.pdf"
+    },
+    {
+      "title": "Slide giới thiệu V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "image": "/img/products/va50fa0v.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/V-SECURE/VA50FA0V Dome R1.pdf"
+  ],
+  "notes": "Dùng bản R1 làm nguồn chính. Bản 'Datasheets/VA50FA0V - Dome 5MP.pdf' thiếu các dòng FOV, phạm vi phát hiện/quan sát/nhận dạng/định danh, tốc độ màn chập và danh sách chức năng AI; ghi 'WDR ≥ 120dB' (R1: 'WDR 120dB'); ghi An toàn điện 'TCVN 73126-1:2003' (lỗi đánh máy, R1: 'TCVN 7326-1:2003'). Bản tiếng Anh 'Datasheets/VA50FA0V.pdf' ghi Operating conditions '-5 ~ +60°C/ humidity ≤ 95% RH' và Storage '-15 ~ +65°C/ humidity ≤ 95% RH' (R1: -10°C đến 60°C / -10°C đến 65°C). Danh sách AI trong datasheet kết thúc bằng '...' (chưa đầy đủ). Không có ngày phát hành in trên datasheet."
+}

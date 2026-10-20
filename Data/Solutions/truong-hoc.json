@@ -1,0 +1,28 @@
+{
+  "slug": "truong-hoc",
+  "order": 14,
+  "name": "Trường học an toàn",
+  "shortName": "",
+  "industry": "Giáo dục",
+  "summary": "Giám sát khuôn viên, cảnh báo xâm nhập; nhận diện khuôn mặt điểm danh học sinh/giáo viên, nhận diện biển số xe đưa đón; phát hiện bắt nạt, đánh nhau, hút thuốc; báo cáo chuyên cần tự động.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [
+    "va50fa0v",
+    "vb50fb1v"
+  ],
+  "documents": [],
+  "cover": "",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}

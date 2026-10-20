@@ -1,0 +1,239 @@
+{
+  "slug": "vb50fb1v",
+  "model": "VB50FB1V",
+  "name": "Camera Bullet AI ngoài trời 5MP (2.8-12mm)",
+  "series": "v-secure",
+  "category": "Bullet",
+  "resolution": "5MP",
+  "ipRating": "IP67",
+  "summary": "Camera thân trụ (Bullet) AI 5MP “Make in Vietnam” dùng cảm biến Sony IMX-335, HDR Engine Gen3 và Ambarella CVflow, ống kính 2.8-12mm. Tích hợp bộ nhớ 64GB eMMC, đạt IK10/IP67.",
+  "features": [
+    "Cảm biến Sony IMX-335 (1/2.7” Progressive CMOS)",
+    "Ống kính tự động điều chỉnh tiêu cự 2.8-12mm",
+    "HDR Engine Gen3, WDR 120dB",
+    "Phân tích nội dung video AI Ambarella CVflow",
+    "Lưu trữ tích hợp 64GB EMMC Flash",
+    "Chống va đập IK10, chống bụi/nước IP67; ONVIF Profile S/G/T/M"
+  ],
+  "aiFeatures": [
+    "AI Video Motion Detection",
+    "AI People Detection",
+    "AI Vehicle Detection",
+    "AI Face Detection",
+    "AI Face Recognition",
+    "AI License Plate Recognition"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "Sony IMX-335 (1/2.7” Progressive CMOS)"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Bộ lọc IR-cut tự động chuyển đổi"
+      ],
+      [
+        "Cường độ sáng tối thiểu",
+        "0 lux sử dụng IR LED"
+      ],
+      [
+        "Tầm chiếu hồng ngoại",
+        "≥ 50m"
+      ],
+      [
+        "Tốc độ màn chập",
+        "1 ~ 1/10.000 giây"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Tự động điều chỉnh tiêu cự: 2.8-12mm"
+      ],
+      [
+        "FOV",
+        "Horizontal: 101(W) - 30(T) °; Vertical: 72(W) - 23(T)°"
+      ],
+      [
+        "Phạm vi phát hiện (25ppm)",
+        "56m(W) - 240m(T)"
+      ],
+      [
+        "Phạm vi quan sát (62,5ppm)",
+        "22,4m(W) - 96m(T)"
+      ],
+      [
+        "Phạm vi nhận dạng (125ppm)",
+        "11,2m(W) - 48m(T)"
+      ],
+      [
+        "Phạm vi định danh (250ppm)",
+        "5,6m(W) - 24m(T)"
+      ]
+    ],
+    "AI": [
+      [
+        "SoC",
+        "Ambarella CV25"
+      ],
+      [
+        "Bộ xử lý",
+        "Quad-core ARM® Cortex® A53 1GHz"
+      ],
+      [
+        "Bộ nhớ ROM",
+        "64GB eMMC"
+      ],
+      [
+        "Bộ nhớ RAM",
+        "1GB DDR4"
+      ],
+      [
+        "Xử lý thị giác AI Vision",
+        "CVflow® Vision Processor 588MHz; DNN Accelerated Engine"
+      ],
+      [
+        "Hỗ trợ các chức năng thông minh",
+        "AI Video Motion Detection, AI People Detection, AI Vehicle Detection, AI Face Detection, AI Face Recognition, AI License Plate Recognition, ..."
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "5 Megapixels (2592H x 1944V)"
+      ],
+      [
+        "Chuẩn nén",
+        "H.265 / H.264 / Motion JPEG"
+      ],
+      [
+        "Tốc độ khung hình",
+        "5MP @30fps"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu (SNR)",
+        "≥ 50dB"
+      ],
+      [
+        "Cân bằng sáng",
+        "HDR Engine Gen3, WDR 120dB"
+      ],
+      [
+        "Hỗ trợ các chức năng xử lý hình ảnh",
+        "Cân bằng trắng tự động (AWB); Bù ngược sáng (BLC); Tự động khuếch đại tín hiệu (AGC), Tự động điều chỉnh khẩu độ (Auto Iris), Tự động lấy nét (Auto Focus)"
+      ]
+    ],
+    "Network": [
+      [
+        "Cổng kết nối",
+        "RJ45, 10/100Mbps"
+      ],
+      [
+        "Hỗ trợ các giao thức",
+        "ARP, PPPoE, IPv4/v6, ICMP, IGMP, QoS, TCP, UDP, DHCP, UPnP, SNMP, SMTP, RTP, RTSP, HTTP, HTTPS, FTP, NTP, DDNS"
+      ],
+      [
+        "ONVIF®",
+        "Đáp ứng Profile S, G, T, M"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "12VDC; PoE IEEE 802.3af"
+      ]
+    ],
+    "Environment": [
+      [
+        "Cấp bảo vệ bằng vỏ ngoài",
+        "IP67 - TCVN 4255:2025 (IEC 60529:2013); IK10 - TCVN 14227:2025 (IEC 62262:2021)"
+      ],
+      [
+        "Điều kiện hoạt động",
+        "-10°C đến 60°C, độ ẩm 95% không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-10°C đến 65°C, độ ẩm 95% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Kim loại"
+      ],
+      [
+        "Kích thước",
+        "Ø 90x350 mm"
+      ],
+      [
+        "Trọng lượng",
+        "1,5kg"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "64GB EMMC Flash"
+      ],
+      [
+        "Hệ thống quản lý chất lượng",
+        "ISO 9001:2015"
+      ],
+      [
+        "An toàn điện",
+        "TCVN 7326-1:2003 (IEC 60950-1:2001)"
+      ],
+      [
+        "An toàn thông tin",
+        "QCVN 135:2024/BTTTT; Đáp ứng NDAA, FIPS 140-2 Level 3"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ]
+    ]
+  },
+  "solutions": [
+    "do-thi",
+    "giao-thong",
+    "truong-hoc",
+    "trai-giam",
+    "toa-nha",
+    "nha-may"
+  ],
+  "documents": [
+    {
+      "title": "Datasheet VB50FB1V 5MP R1 (Tiếng Việt)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/V-SECURE/VB50FB1V 5MP R1.pdf"
+    },
+    {
+      "title": "Datasheet VB50FB1V - Bullet 5MP (Tiếng Việt, bản cũ)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V - Bullet 5MP.pdf"
+    },
+    {
+      "title": "Datasheet VB50FB1V (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V.pdf"
+    },
+    {
+      "title": "Slide giới thiệu V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "image": "/img/products/vsecure-bullet.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/V-SECURE/VB50FB1V 5MP R1.pdf"
+  ],
+  "notes": "Dùng bản R1. Bản 'VB50FB1V - Bullet 5MP.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English: biểu tượng trang 1 ghi 'Sony Sensor IMX-415' nhưng mô tả và bảng thông số ghi Sony IMX-335; nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' (R1: -10°C đến 60°C / 65°C). Ảnh sản phẩm là ảnh chung dòng Bullet V-Secure (cùng kiểu vỏ trong datasheet). Danh sách AI kết thúc bằng '...'."
+}

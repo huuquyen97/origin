@@ -1,0 +1,227 @@
+{
+  "slug": "a612",
+  "model": "A612",
+  "name": "Thiết bị kiểm soát vào ra tại cổng – Đầu đọc thẻ e-ID và sinh trắc học A612",
+  "series": "biosecure",
+  "category": "Access Control",
+  "resolution": "2MP",
+  "ipRating": "",
+  "summary": "Thiết bị xác thực thẻ Căn cước sinh trắc học (dòng M6) của MK Vision, đọc thẻ Căn cước qua phương thức đối sánh vân tay/gương mặt (MOC) theo giao thức của Bộ Công An, kết nối với phần mềm kiểm soát ra vào do MK Vision phát triển. Phù hợp kiểm soát an ninh, xác minh danh tính và quản lý ra vào cho Chính phủ điện tử, Thành phố thông minh, Ngân hàng thanh toán trực tuyến, Y tế, Giao thông, Giáo dục, Viễn thông.",
+  "features": [
+    "Vân tay: quang học FAP 20",
+    "Giao tiếp NFC: hỗ trợ đọc CCCD gắn chip và hộ chiếu điện tử",
+    "Màn hình cảm ứng 5 inch",
+    "Wi-Fi 802.11 b/g/n",
+    "Tích hợp đèn trợ sáng LED trắng",
+    "Kết nối có dây LAN (PoE)",
+    "Đối sánh vân tay/gương mặt Match-on-Card (MOC) theo giao thức Bộ Công An",
+    "Sản xuất tại Việt Nam"
+  ],
+  "aiFeatures": [
+    "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện",
+    "Tỷ lệ nhận dạng khuôn mặt ≥90%",
+    "Hỗ trợ mã hóa thư viện khuôn mặt",
+    "Nhận diện vân tay với module vân tay quang học FAP20, tương thích dữ liệu vân tay trong Căn cước gắn chip",
+    "Tự động nhận diện vân tay sống",
+    "Phân tích tầm nhìn tại biên CVflow®"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến ảnh",
+        "Sony 1/ 2.8\" CMOS"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Chuyển đổi tự động"
+      ],
+      [
+        "Chiếu sáng tối thiểu",
+        "Chế độ màu: 0.001 lux, tại 50 IRE F2.2; Chế độ hồng ngoại: 0 lux"
+      ],
+      [
+        "Tỉ lệ tín hiệu trên nhiễu",
+        "≥ 50dB"
+      ],
+      [
+        "Dải cân bằng sáng (WDR)",
+        "≥ 120dB"
+      ],
+      [
+        "Điều chỉnh hình ảnh",
+        "Tự động cân bằng trắng, Tự động bù ngược sáng, Tự động điều chỉnh độ lợi, HDR"
+      ]
+    ],
+    "Lens": [
+      [
+        "Ống kính",
+        "Tiêu cự cố định, 2.8mm, F2.2, góc nhìn 140°"
+      ]
+    ],
+    "AI": [
+      [
+        "Bộ xử lý",
+        "Quad-core Arm® Cortex®-A53 1 GHz"
+      ],
+      [
+        "Bộ nhớ",
+        "1025 MB DDR4"
+      ],
+      [
+        "Hiệu năng xử lý",
+        "Bộ xử lý tín hiệu hình ảnh và mã hóa video Ambarella; Phân tích tầm nhìn tại biên CVflow®"
+      ],
+      [
+        "Tính năng thông minh",
+        "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện. Tỷ lệ nhận dạng khuôn mặt ≥90%. Hỗ trợ mã hóa thư viện khuôn mặt. Hỗ trợ nhận diện vân tay với module vân tay quang học FAP20, tương thích dữ liệu vân tay trong Căn cước gắn chip, tự động nhận diện vân tay sống."
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "2MP"
+      ],
+      [
+        "Chuẩn nén",
+        "H.264"
+      ],
+      [
+        "Tốc độ khung hình",
+        "Lên đến 30 khung hình/giây ở độ phân giải Full HD"
+      ]
+    ],
+    "Network": [
+      [
+        "Kết nối có dây",
+        "1*USB-C, 1*Relay port, 1*Alarm, 1*RJ45"
+      ],
+      [
+        "Kết nối không dây",
+        "Wifi: 802.11 b/g/n, 2.4GHz & 5GHz; Bluetooth: BLE 4.2; NFC: Hỗ trợ đọc thẻ giao thức không tiếp xúc ISO/IEC 14443"
+      ],
+      [
+        "Giao thức",
+        "MK Vision SDK"
+      ],
+      [
+        "Giao diện lập trình ứng dụng",
+        "Dịch vụ API mở cho tích hợp phần mềm: metadata, sự kiện, báo cáo"
+      ],
+      [
+        "Hệ thống giám sát video",
+        "Tương thích với hệ thống quản lý video của MK Vision"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "12VDC; PoE IEEE 802.3af"
+      ]
+    ],
+    "Environment": [
+      [
+        "Điều kiện hoạt động",
+        "-10°C đến 50°C, độ ẩm 90% và không ngưng tụ"
+      ],
+      [
+        "Điều kiện lưu trữ",
+        "-10°C đến 50°C, độ ẩm 90% và không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "Nhựa ABS, PC"
+      ],
+      [
+        "Màn hình",
+        "5 inch cảm ứng, 480x854 px"
+      ],
+      [
+        "Chiếu sáng",
+        "LED trắng: 0.5m"
+      ],
+      [
+        "Lưu trữ",
+        "64 GB EMMC Flash"
+      ],
+      [
+        "Kích thước",
+        "185 x 79 x 27 mm"
+      ],
+      [
+        "Trọng lượng",
+        "130 g"
+      ],
+      [
+        "Phụ kiện",
+        "Đế để bàn, Đế gắn tường, cáp Relay, cáp Alarm"
+      ]
+    ],
+    "Other": [
+      [
+        "Đầu nhận âm thanh",
+        "Microphone*1"
+      ],
+      [
+        "Đầu ra âm thanh",
+        "Loa*1"
+      ],
+      [
+        "An toàn thông tin",
+        "Ký số Firmware; Ký số Video; Ký số Sự kiện; Mật khẩu một lần (OTP); Bộ tạo số ngẫu nhiên thực (TRNG); Mã hoá mật khẩu; Khởi động an toàn TrustZone®; Mã hoá bộ nhớ; Xáo trộn DRAM"
+      ],
+      [
+        "Module bảo mật",
+        "Hỗ trợ 2 SAM Slot"
+      ],
+      [
+        "Chứng nhận ISO",
+        "ISO 9001:2016"
+      ],
+      [
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
+      ],
+      [
+        "CO",
+        "Sản xuất tại Việt Nam"
+      ],
+      [
+        "CQ",
+        "MK Vision CQ, Quatest"
+      ]
+    ]
+  },
+  "solutions": [
+    "ekyc",
+    "acp",
+    "ra-vao-camera-ai",
+    "face-edge-ai"
+  ],
+  "documents": [
+    {
+      "title": "BIOSECURE – Datasheet A612 (Tiếng Việt)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/BIOSECURE/BIOSECURE.pdf"
+    },
+    {
+      "title": "A612 Access control – Datasheet (English)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/Datasheets/A612 Access control.pdf"
+    },
+    {
+      "title": "HDSD ACP Web Client (Final)",
+      "type": "hdsd",
+      "path": "Data/MK Vision/Docs/HDSD/HDSD_ACP_WEB_CLIENT (Final).pdf"
+    }
+  ],
+  "image": "/img/products/a612.png",
+  "status": "",
+  "updatedAt": "2026-10-12",
+  "sources": [
+    "Data/MK Vision/Docs/BIOSECURE/BIOSECURE.pdf",
+    "Data/MK Vision/Docs/Datasheets/A612 Access control.pdf"
+  ],
+  "notes": "Specs lấy nguyên văn từ datasheet tiếng Việt (BIOSECURE.pdf), đã đối chiếu khớp với bản tiếng Anh (A612 Access control.pdf, bản mới nhất 2026-10-12). Datasheet ghi model A612 nhưng phần mô tả và nhãn góc trang gọi thiết bị là 'M6' (Thiết bị xác thực thẻ Căn cước sinh trắc học M6) → A612 có vẻ là mã model của dòng M6; cần xác nhận với PM. Mâu thuẫn trong chính datasheet: icon nổi bật ghi Wi-Fi 802.11 b/g/n (2.4 GHz), bảng thông số ghi 2.4GHz & 5GHz. 'Bộ nhớ 1025 MB DDR4' giữ nguyên văn (có thể là lỗi đánh máy của 1024 MB). Khác biệt so với tài liệu M6 ver.0.9 (cũ hơn): RAM 2GB ROM 16GB, camera Sony IMX327, WiFi 802.11 a/b/g/n 2.4GHz – ưu tiên datasheet A612. Không ghi chuẩn IP. Ảnh sản phẩm trích từ datasheet A612."
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "mkeap-650",
+  "model": "MKEAP-650",
+  "name": "Access Point Wi-Fi 6 băng tần kép IP55",
+  "series": "mk-networks",
+  "category": "Access Point",
+  "resolution": "",
+  "ipRating": "IP55",
+  "summary": "Điểm truy cập không dây (Access Point) chuẩn doanh nghiệp, Wi-Fi 6 băng tần kép hoạt động đồng thời, MU-MIMO 2x2:2, tổng băng thông lên tới 3 Gbps, chuẩn bảo vệ IP55. Tích hợp radio BLE và ZigBee, hoạt động độc lập hoặc quản lý tập trung qua MK Networks CLOUD, CLOUD-VPC hoặc bộ điều khiển EWS/VEWS.",
+  "features": [
+    "Wi-Fi 6 MU-MIMO 2x2 tốc độ lên đến 3 Gbps",
+    "Hỗ trợ tối đa 32 SSID",
+    "Bảo mật Wi-Fi cấp doanh nghiệp",
+    "Hỗ trợ BLE và ZigBee (ứng dụng iBeacon)",
+    "Chuẩn chống bụi nước IP55",
+    "Standalone Mode hoặc quản lý tập trung qua MK Networks CLOUD, CLOUD-VPC, EWS/VEWS"
+  ],
+  "aiFeatures": [],
+  "specs": {
+    "Network": [
+      [
+        "Chuẩn không dây",
+        "Wi-Fi 6 băng tần kép hoạt động đồng thời"
+      ],
+      [
+        "MU-MIMO",
+        "2x2:2 cho cả chiều uplink và downlink"
+      ],
+      [
+        "Tổng băng thông hợp nhất",
+        "lên tới 3 Gbps"
+      ],
+      [
+        "SSID",
+        "Hỗ trợ tối đa 32 SSID"
+      ],
+      [
+        "Radio tích hợp",
+        "Bluetooth Low Energy (BLE) và ZigBee"
+      ]
+    ],
+    "Environment": [
+      [
+        "Chuẩn bảo vệ",
+        "IP55"
+      ]
+    ],
+    "Other": [
+      [
+        "Chế độ hoạt động",
+        "Hoạt động độc lập (Standalone Mode) hoặc quản lý tập trung thông qua nền tảng MK Networks CLOUD, CLOUD-VPC hoặc các bộ điều khiển dòng EWS/VEWS"
+      ],
+      [
+        "Bảo mật",
+        "Bảo mật Wi-Fi cấp doanh nghiệp"
+      ]
+    ]
+  },
+  "solutions": [],
+  "documents": [
+    {
+      "title": "Datasheet MKEAP-650 (Tiếng Việt, v2.0)",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MK Networks/Datasheets/4. MKEAP-650_Datasheet 2.0.docx"
+    }
+  ],
+  "image": "/img/products/mkeap-650.png",
+  "status": "",
+  "updatedAt": "",
+  "sources": [
+    "Data/MK Vision/Docs/MK Networks/Datasheets/4. MKEAP-650_Datasheet 2.0.docx"
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có chuẩn 802.11 cụ thể, tốc độ từng băng tần, công suất phát, cổng Ethernet, nguồn/PoE, kích thước, trọng lượng, nhiệt độ...). Sơ đồ ứng dụng trong datasheet MKSP10-3100 ghi \"MKEAP-650-L 802.11ac Dual-Band Wireless FIT Access Point\" — mâu thuẫn với Wi-Fi 6 trong datasheet này, cần xác nhận. File có comment \"Sẽ update lại ảnh mẫu\" tại tên model. Ảnh sản phẩm dùng file \"MKEP-650.2.png\" (tên file ghi MKEP, ảnh có logo MK Networks); các ảnh \"EAP111_VESC-A_*\" trong cùng thư mục không dùng. Không có ngày phát hành in trên datasheet."
+}

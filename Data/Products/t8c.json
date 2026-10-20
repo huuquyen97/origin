@@ -1,0 +1,162 @@
+{
+  "slug": "t8c",
+  "model": "T8C",
+  "name": "Camera nghiệp vụ an ninh T8C (bản cao cấp 4G + NFC)",
+  "series": "mobisecure",
+  "category": "Body-worn",
+  "resolution": "Full HD",
+  "ipRating": "IP65",
+  "summary": "Phiên bản cao cấp của T8 Series: trọn bộ năng lực của T8B, cộng thêm NFC/RFID ISO 14443 A/B để định danh cán bộ, điểm danh ca trực và quét thẻ hiện trường ngay trên thiết bị; lưu trữ 64GB.",
+  "features": [
+    "Full HD 60fps, cảm biến Sony STARVIS 1/2.8\", góc nhìn 140°, F2.2",
+    "4G LTE + truyền hình trực tiếp về trung tâm điều hành",
+    "NFC / RFID ISO 14443 A/B: định danh cán bộ, điểm danh, quét thẻ hiện trường",
+    "Lưu trữ 64GB ≈ 72 giờ ghi liên tục",
+    "Nhận diện đến 20.000 khuôn mặt tại biên, chính xác ≥ 90%",
+    "Pin 4000 mAh, vỏ ABS + PC, IP65"
+  ],
+  "aiFeatures": [
+    "Nhận diện khuôn mặt tại biên – đến 20.000 khuôn mặt, chính xác ≥ 90%, mã hoá thư viện",
+    "Định danh qua thẻ NFC / RFID ISO 14443 A/B"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Cảm biến & ống kính",
+        "Sony 1/2.8\" STARVIS CMOS, tiêu cự cố định 2.8 mm, F2.2, góc nhìn 140°"
+      ],
+      [
+        "Chế độ ban đêm",
+        "Chuyển đổi tự động, IR hồng ngoại, 0.001 lux ở chế độ màu"
+      ]
+    ],
+    "AI": [
+      [
+        "Bộ xử lý",
+        "Ambarella Quad-core Arm Cortex-A53 1 GHz, 1024 MB DDR4, CVflow"
+      ],
+      [
+        "Phân tích tại biên",
+        "Nhận diện đến 20.000 khuôn mặt, chính xác ≥ 90%, mã hoá thư viện"
+      ]
+    ],
+    "Video": [
+      [
+        "Video",
+        "Full HD 60 fps, H.265 / H.264, WDR ≥ 120 dB, SNR ≥ 50 dB, AWB / ABLC / AGC"
+      ],
+      [
+        "Âm thanh",
+        "Microphone + loa tích hợp, mã hoá AAC-LC đến 48 kHz"
+      ]
+    ],
+    "Network": [
+      [
+        "GPS",
+        "Có"
+      ],
+      [
+        "Wi-Fi 2.4G / 5G · BLE",
+        "Có"
+      ],
+      [
+        "4G LTE",
+        "Có"
+      ],
+      [
+        "Truyền hình trực tiếp",
+        "Có"
+      ],
+      [
+        "NFC / RFID",
+        "ISO 14443 A/B"
+      ],
+      [
+        "An toàn thông tin",
+        "Ký số firmware / video / sự kiện, TrustZone, OTP, TRNG, mã hoá bộ nhớ"
+      ],
+      [
+        "Tích hợp hệ thống",
+        "API mở cho metadata, sự kiện, báo cáo; SDK cho hệ thống quản lý video"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn điện",
+        "Pin 4000 mAh, đế sạc 5V / 2A, cổng USB-C"
+      ]
+    ],
+    "Environment": [
+      [
+        "Chuẩn bảo vệ",
+        "IP65"
+      ],
+      [
+        "Nhiệt độ / độ ẩm",
+        "−20 °C đến 60 °C, độ ẩm 90% không ngưng tụ"
+      ]
+    ],
+    "Physical": [
+      [
+        "Vỏ",
+        "ABS + PC"
+      ],
+      [
+        "Màn hình",
+        "2.0 inch, 320 × 240, 600 cd/m², không cảm ứng"
+      ],
+      [
+        "Kích thước",
+        "101 × 64 × 31 mm"
+      ],
+      [
+        "Trọng lượng",
+        "205 g"
+      ]
+    ],
+    "Other": [
+      [
+        "Lưu trữ",
+        "64GB ≈ 72 giờ ghi liên tục"
+      ],
+      [
+        "Chứng nhận",
+        "ISO 9001:2015, FCC, CE"
+      ],
+      [
+        "Xuất xứ",
+        "Sản xuất tại Việt Nam"
+      ],
+      [
+        "Phụ kiện trong hộp",
+        "Đế sạc · Kẹp áo · Cáp USB-C · Bộ sạc 5V / 2A"
+      ],
+      [
+        "Ngàm tùy chọn",
+        "MNT-01 Kẹp gắn người · MNT-02 Ngàm gắn xe máy · MNT-03 Ngàm gắn ô tô · MNT-04 Ngàm gắn mũ"
+      ]
+    ]
+  },
+  "solutions": [
+    "coms"
+  ],
+  "documents": [
+    {
+      "title": "T8 Series 3 Datasheet v2",
+      "type": "datasheet",
+      "path": "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
+    },
+    {
+      "title": "Brochure T8 Series (T8A · T8B · T8C)",
+      "type": "brochure",
+      "path": "Data/MK Vision/Docs/MOBISECURE/T8 Series.pdf"
+    }
+  ],
+  "image": "/img/products/t8c.png",
+  "status": "",
+  "updatedAt": "2026",
+  "sources": [
+    "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
+  ],
+  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn). Brochure 'T8 Series.pdf' ghi IP67 (v2 ghi IP65 – đã dùng IP65). Cấu hình T8C (64GB, 4G LTE, NFC/RFID ISO 14443 A/B) tương đồng MK22FC1E nhưng pin (4000 vs 4500 mAh), frame rate (60 vs 30 fps), chuẩn nén (H.265/H.264 vs H.264) và dải nhiệt độ khác nhau; không có tài liệu xác nhận hai model là một. Không ghi giá."
+}

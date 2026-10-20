@@ -1,0 +1,114 @@
+{
+  "slug": "m6",
+  "model": "M6",
+  "name": "Thiết bị xác thực thông tin M6 – Đầu đọc thẻ thông minh, sinh trắc học nâng cao",
+  "series": "biosecure",
+  "category": "Access Control",
+  "resolution": "Full HD",
+  "ipRating": "",
+  "summary": "Thiết bị kiểm soát ra vào đọc thẻ CCCD gắn chip/thẻ CC kết hợp xác thực khuôn mặt và vân tay. Đọc thẻ thông minh tích hợp chip theo giao thức không tiếp xúc (NFC), tích hợp mô-đun sinh trắc học (khuôn mặt, vân tay) để so sánh với dữ liệu lưu trong chip (Match-on-Card), hoạt động trên nền tảng Linux; dùng trong giải pháp định danh khách hàng (eKYC) và quản lý ra vào kết nối Access Control Platform (ACP).",
+  "features": [
+    "Đọc thẻ thông minh tích hợp chip theo giao thức không tiếp xúc (NFC)",
+    "Hoạt động trên nền tảng Linux",
+    "Tích hợp mô-đun sinh trắc học (khuôn mặt, vân tay) để so sánh với dữ liệu khuôn mặt/vân tay lưu trong chip",
+    "Thiết bị nhỏ gọn, chịu va đập",
+    "Hỗ trợ kết nối qua wifi/ethernet",
+    "Cảm biến vân tay dạng module, bảo mật cao",
+    "SAM slot – kết nối bảo mật",
+    "Màn hình 5 inch độ sáng và độ nét cao",
+    "Made in Việt Nam – Make in Việt Nam"
+  ],
+  "aiFeatures": [
+    "So khớp khuôn mặt",
+    "So khớp vân tay",
+    "Xác thực Match-on-Card (MoC) với dữ liệu sinh trắc học trong chip CCCD",
+    "AI xử lý tại biên (AI on Edge)"
+  ],
+  "specs": {
+    "Image": [
+      [
+        "Camera",
+        "SONY IMX327"
+      ]
+    ],
+    "AI": [
+      [
+        "DSP Chip",
+        "Amba CV25"
+      ],
+      [
+        "Vi xử lý",
+        "Ambarella CV25 Quad-core 1.0 GHz"
+      ],
+      [
+        "Bộ nhớ",
+        "RAM 2GB ROM 16GB"
+      ]
+    ],
+    "Video": [
+      [
+        "Độ phân giải",
+        "1920x1080"
+      ]
+    ],
+    "Network": [
+      [
+        "Kết nối",
+        "Ethernet; WiFi 802.11 a/b/g/n, 2.4GHz; NFC; SAM slot"
+      ]
+    ],
+    "Power": [
+      [
+        "Nguồn",
+        "POE (802.1af)"
+      ]
+    ],
+    "Physical": [
+      [
+        "Màn hình",
+        "IPS 5 inch"
+      ]
+    ],
+    "Other": [
+      [
+        "Nút bấm",
+        "On/ Off power, Setting, Up/ Down, Select (Enter)"
+      ]
+    ]
+  },
+  "solutions": [
+    "ekyc",
+    "acp",
+    "ra-vao-camera-ai"
+  ],
+  "documents": [
+    {
+      "title": "Giải pháp định danh, xác thực khách hàng và quản lý ra vào sử dụng thiết bị M6 (ver.0.9) – PDF",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf"
+    },
+    {
+      "title": "M6 ver.0.9 – PowerPoint",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/M6/2. M6 ver.0.9.pptx"
+    },
+    {
+      "title": "Đề xuất giải pháp quản lý ra vào ứng dụng sinh trắc học kết hợp camera AI (v1.3)",
+      "type": "brochure",
+      "path": "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf"
+    },
+    {
+      "title": "HDSD ACP Web Client (Final)",
+      "type": "hdsd",
+      "path": "Data/MK Vision/Docs/HDSD/HDSD_ACP_WEB_CLIENT (Final).pdf"
+    }
+  ],
+  "image": "/img/products/m6.png",
+  "status": "",
+  "updatedAt": "2026-10-12",
+  "sources": [
+    "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf",
+    "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf"
+  ],
+  "notes": "Thông số lấy nguyên văn từ slide 'M6 - Thông số kỹ thuật' (bản 0.9), khớp với bảng 8.1 trong tài liệu đề xuất giải pháp. 'POE (802.1af)' giữ nguyên văn (bản đề xuất ghi 'PoE (802.laf)'; khả năng là IEEE 802.3af). Slide thông số chú thích WiFi '802.11 b/g/n' ở hình minh hoạ nhưng bảng ghi 'a/b/g/n'. Tài liệu không nêu model code; datasheet A612 (mới hơn) gọi thiết bị là M6 với cấu hình khác (1025 MB DDR4, 64 GB eMMC, Sony 1/2.8\" CMOS, 12VDC; PoE IEEE 802.3af) – M6 ver.0.9 có thể là thế hệ/phiên bản trước của A612, cần xác nhận. Không ghi chuẩn IP. Ảnh thiết bị lấy từ M6 ver.0.9.pptx (phiên bản vỏ màu bạc)."
+}

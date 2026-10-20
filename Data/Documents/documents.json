@@ -1,0 +1,720 @@
+[
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_full version.pdf",
+    "title": "AutoSecure - DAT – Datasheet (Full version)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Việt AutoSecure - DAT – Giải pháp Camera trường học lái xe (màn hình 7 inch, đầu đọc thẻ ID, DATM, 2 SAM Slot).",
+    "series": "autosecure",
+    "products": [
+      "autosecure-dat"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf",
+    "title": "AutoSecure – Datasheet (Lite version, Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet 2 trang camera hành trình thông minh AutoSecure: tính năng nổi bật và bảng thông số (có LPR, QCVN).",
+    "series": "autosecure",
+    "products": [
+      "autosecure",
+      "autosecure-dms"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Danh sách chức năng FMS tiêu chuẩn.pdf",
+    "title": "Danh sách chức năng FMS tiêu chuẩn",
+    "type": "other",
+    "description": "Bảng 22 chức năng của phần mềm FMS bản tiêu chuẩn kèm mô tả tóm tắt.",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/GCN bản quyền pm_FMS.pdf",
+    "title": "Giấy chứng nhận đăng ký quyền tác giả phần mềm FMS",
+    "type": "certificate",
+    "description": "Giấy chứng nhận đăng ký quyền tác giả 'Phần mềm hệ thống quản lý đội xe (FMS)', số 7541/2024/QTG, Cục Bản quyền tác giả cấp ngày 30/08/2024, chủ sở hữu Công ty Cổ phần MK Vision.",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/GCN hop quy Autosecure_Cuc VT.pdf",
+    "title": "Giấy chứng nhận hợp quy AutoSecure (model V1C)",
+    "type": "certificate",
+    "description": "Type Approval Certificate số C0404161023AA04A3 – Trung tâm Đo lường Chất lượng Viễn thông; model V1C, thiết bị đầu cuối thông tin di động mặt đất băng tần 2,4 GHz; QCVN 117:2020/BTTTT, QCVN 54:2020/BTTTT; hiệu lực 16/10/2023 – 16/10/2026.",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/MKV_ISO 9001-2015.pdf",
+    "title": "Chứng nhận ISO 9001:2015 – MK Vision",
+    "type": "certificate",
+    "description": "Chứng nhận hệ thống quản lý chất lượng ISO 9001:2015 của MK Vision (chưa đọc chi tiết nội dung).",
+    "series": "autosecure",
+    "products": [
+      "autosecure",
+      "autosecure-dat"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HD lắp đặt.pdf",
+    "title": "Hướng dẫn lắp đặt & sử dụng AutoSecure",
+    "type": "hdsd",
+    "description": "HDSD 20 trang: ứng dụng mobile AutoSecure, thiết bị trong hộp, thông tin camera & nút bấm, lắp nguồn qua hộp cầu chì (ACC/B+/GND), lắp gá kính chắn gió, ý nghĩa đèn LED, gỡ bỏ camera.",
+    "series": "autosecure",
+    "products": [
+      "autosecure",
+      "autosecure-dat",
+      "autosecure-dms"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HDSD FMS Tiêu chuẩn 2026.pdf",
+    "title": "HDSD FMS Tiêu chuẩn 2026",
+    "type": "hdsd",
+    "description": "Hướng dẫn sử dụng phần mềm quản lý đội xe FMS bản tiêu chuẩn 2026 (không đọc được chi tiết do giới hạn công cụ; nội dung tương ứng SRS FMS 2026).",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/Hướng dẫn cập nhật phần mềm camera Autosecure qua thẻ nhớ.pdf",
+    "title": "Hướng dẫn cập nhật phần mềm camera AutoSecure qua thẻ nhớ",
+    "type": "hdsd",
+    "description": "3 bước cập nhật firmware (.tsf) qua thẻ nhớ Micro-SD: chép file, lắp thẻ & giữ nguồn (~30s), xác nhận qua thông báo loa và đèn báo.",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/SRS/SRS FMS Tiêu chuẩn 2026 - v1.docx",
+    "title": "SRS FMS Tiêu chuẩn 2026 - v1",
+    "type": "srs",
+    "description": "Tài liệu đặc tả yêu cầu phần mềm FMS – bản tiêu chuẩn, V1.0 (16/03/2026): 22 yêu cầu chức năng FR-01..FR-22, 17 yêu cầu phi chức năng, 11 quy tắc nghiệp vụ, mô hình dữ liệu.",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Thiết bị/Cam hanh trinh.png",
+    "title": "Ảnh sản phẩm – Camera hành trình AutoSecure",
+    "type": "other",
+    "description": "Ảnh render camera AutoSecure (PNG, 300px).",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Thiết bị/DMS.png",
+    "title": "Ảnh sản phẩm – Mô-đun DMS",
+    "type": "other",
+    "description": "Ảnh render mô-đun camera DMS (PNG nhỏ).",
+    "series": "autosecure",
+    "products": [
+      "autosecure-dms"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Video Test/1789369398356_1851677166464980926_7181288221694998181.mp4",
+    "title": "Video test AutoSecure",
+    "type": "other",
+    "description": "Video test thực tế camera AutoSecure (MP4, ~9.9 MB; chưa xem nội dung).",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/Autosecure English (2).pdf",
+    "title": "AutoSecure – Datasheet (English)",
+    "type": "datasheet",
+    "description": "English datasheet 'Smart dash camera AutoSecure' – features and specification table (FCC, CE; IR 10m).",
+    "series": "autosecure",
+    "products": [
+      "autosecure"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/1. Autosecure ver.0.9.pptx",
+    "title": "Slide AutoSecure ver.0.9",
+    "type": "slide",
+    "description": "Bộ slide 23 trang tiếng Việt: giới thiệu MK Vision, camera hành trình AI AutoSecure, tính năng bảo vệ thông minh, DMS, an toàn xe khi đỗ, phần mềm FMS, kiến trúc tổng thể, lợi ích doanh nghiệp.",
+    "series": "autosecure",
+    "products": [
+      "autosecure",
+      "autosecure-dms"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/1.2. AutoSecure_ Smart Fleet Management & Driver Monitoring Solution.pptx",
+    "title": "Slide AutoSecure – Smart Fleet Management & Driver Monitoring Solution",
+    "type": "slide",
+    "description": "Bộ slide 14 trang (31/10/2025): thách thức quản lý fleet, AutoSecure AI-on-Edge, phần cứng, DMS, bảo mật xe, FMS, tối ưu hành trình, báo cáo & phân tích.",
+    "series": "autosecure",
+    "products": [
+      "autosecure",
+      "autosecure-dms"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/BIOSECURE/BIOSECURE.pdf",
+    "title": "BIOSECURE – Datasheet A612 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet 2 trang tiếng Việt của Đầu đọc thẻ e-ID và sinh trắc học / Thiết bị kiểm soát vào ra tại cổng A612: tính năng nổi bật (vân tay FAP 20, NFC, Wi-Fi, màn hình 5 inch, LED trợ sáng, PoE) và bảng thông số đầy đủ.",
+    "series": "biosecure",
+    "products": [
+      "a612"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/BIOSECURE/[MKV] Giới thiệu giải pháp kiểm soát ra vào.pdf",
+    "title": "Đề xuất giải pháp quản lý ra vào ứng dụng xác thực sinh trắc học kết hợp camera AI (bản trước)",
+    "type": "brochure",
+    "description": "Tài liệu đề xuất giải pháp (29 trang) cho khách hàng ngân hàng: thực trạng, phạm vi, mô hình On-premise/SaaS, thành phần (M6, cửa flap barrier, camera AI), quy trình vận hành, bảo mật, lợi ích, thông số kỹ thuật. Bản trước của v1.3, nội dung gần như trùng.",
+    "series": "biosecure",
+    "products": [
+      "m6"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf",
+    "title": "Đề xuất giải pháp quản lý ra vào ứng dụng xác thực sinh trắc học kết hợp camera AI (v1.3)",
+    "type": "brochure",
+    "description": "Phiên bản 1.3 (mới hơn) của tài liệu đề xuất giải pháp kiểm soát ra vào kết hợp camera AI giám sát an ninh và nhận diện khuôn mặt; bổ sung nội dung phân tích hành vi, phát hiện tụ tập/xâm nhập trái phép. Chứa tên khách hàng – chỉ dùng nội bộ.",
+    "series": "biosecure",
+    "products": [
+      "m6"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/A612 Access control.pdf",
+    "title": "A612 Access control – Datasheet (English)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh 2 trang của A612 e-ID Card Reader and Biometric Authentication Device / Access Control Device for Gate Entry; nội dung khớp bản tiếng Việt.",
+    "series": "biosecure",
+    "products": [
+      "a612"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf",
+    "title": "Giải pháp định danh, xác thực khách hàng và quản lý ra vào sử dụng thiết bị M6 (ver.0.9) – PDF",
+    "type": "slide",
+    "description": "Slide 28 trang: căn cứ pháp lý, giải pháp định danh MoC bằng CCCD gắn chip, lợi ích, lĩnh vực ứng dụng, mô hình quản lý ra vào, thông số và tính năng M6, trang quản trị ACP, quy trình vận hành, use cases, điểm vượt trội của M6, giới thiệu MK Vision.",
+    "series": "biosecure",
+    "products": [
+      "m6"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/M6/2. M6 ver.0.9.pptx",
+    "title": "M6 ver.0.9 – PowerPoint",
+    "type": "slide",
+    "description": "Bản PowerPoint gốc của slide M6 ver.0.9 (nguồn ảnh sản phẩm/bối cảnh). Bản trùng: Data/MK Vision/Docs/Slide/2. M6 ver.0.9.pptx.",
+    "series": "biosecure",
+    "products": [
+      "m6"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/2. M6 ver.0.9.pptx",
+    "title": "M6 ver.0.9 – PowerPoint (bản sao trong thư mục Slide)",
+    "type": "slide",
+    "description": "Bản trùng lặp (cùng kích thước) của M6/2. M6 ver.0.9.pptx.",
+    "series": "biosecure",
+    "products": [
+      "m6"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/HDSD/HDSD_ACP_WEB_CLIENT (Final).pdf",
+    "title": "Hướng dẫn sử dụng ACP Web Client (Final)",
+    "type": "hdsd",
+    "description": "Hướng dẫn sử dụng phần mềm quản trị Access Control Platform (ACP) trên web cho hệ thống kiểm soát ra vào dùng thiết bị M6/A612 (khoảng 100+ trang, 29MB). File quá lớn và không trích xuất được mục lục bằng công cụ hiện có – nội dung chi tiết chưa được tóm tắt.",
+    "series": "biosecure",
+    "products": [
+      "m6",
+      "a612"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx",
+    "title": "Các thuật toán AI trên camera",
+    "type": "ai",
+    "description": "Bảng tổng hợp thuật toán AI trên camera theo nhóm Face / People / Traffic / Others, kèm use case và độ chính xác (Face Recognition 99%, People Detection 99%, LPR ngày 96% / đêm 90%, Traffic Violation 95%).",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên.pdf",
+    "title": "Giới thiệu AI nhận diện khuôn mặt tại biên (bản gốc)",
+    "type": "ai",
+    "description": "Bản gốc dung lượng lớn (~52MB) của tài liệu giới thiệu giải pháp phân tích hình ảnh thông minh ứng dụng AI – nhận diện khuôn mặt tại biên (Pavana). Nội dung xem bản _compressed.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên_compressed.pdf",
+    "title": "Giới thiệu AI nhận diện khuôn mặt tại biên (bản nén)",
+    "type": "ai",
+    "description": "Slide 7 trang (thương hiệu Pavana): tổng quan Edge AI, tính năng nhận diện/phát hiện khuôn mặt, kết quả thực tế (99.8% trên LFW, 88–375 ms/mặt, đến 100.000 mặt, mặt tối thiểu 120x120 px), ứng dụng và các dòng sản phẩm Edge AI (Body Worn Camera, Access Control, WiFi AI Series, Thermal Camera). Có bảng so sánh đối thủ – chỉ dùng nội bộ.",
+    "series": "",
+    "products": [
+      "a612"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf",
+    "title": "[MKV] AI Function Description v1.0",
+    "type": "ai",
+    "description": "Tài liệu mô tả chức năng AI Camera (50 trang, v1.0 – 01/10/2026, lưu hành nội bộ): 12 tính năng chia nhóm An ninh – Con người và Giao thông; mỗi tính năng gồm chức năng, kịch bản, điều kiện hoạt động, yêu cầu lắp đặt, nguyên lý, điều kiện sự kiện; tích hợp ONVIF Analytics; hướng dẫn lắp đặt (camera PA02) và nghiệm thu.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf",
+    "title": "Datasheet MK22FC1E - BWC 2MB (23/02/2026)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh 2 trang của body camera MK22FC1E: key features và bảng thông số kỹ thuật đầy đủ.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/MOBISECURE.pdf",
+    "title": "Datasheet BWC tiếng Việt (MOBISECURE.pdf)",
+    "type": "datasheet",
+    "description": "Trang catalog tiếng Việt 'BWC – Body Camera (Camera gắn trên người)' với bảng thông số và 3 ảnh sản phẩm trên đế sạc.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/MOBISECURE.docx",
+    "title": "Datasheet BWC tiếng Việt (MOBISECURE.docx)",
+    "type": "datasheet",
+    "description": "Bản Word nguồn của trang catalog BWC tiếng Việt, cùng nội dung với MOBISECURE.pdf.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf",
+    "title": "T8 Series 3 Datasheet v2",
+    "type": "datasheet",
+    "description": "Datasheet 1 trang so sánh 3 phiên bản T8A · T8B · T8C và cấu hình tổng quan toàn series.",
+    "series": "mobisecure",
+    "products": [
+      "t8a",
+      "t8b",
+      "t8c"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/T8 Series.pdf",
+    "title": "Brochure T8 Series",
+    "type": "brochure",
+    "description": "Brochure 2 trang T8 Series: ba phiên bản, phối cảnh sản phẩm 6 mặt, bảng so sánh và phụ kiện ngàm MNT-01…04.",
+    "series": "mobisecure",
+    "products": [
+      "t8a",
+      "t8b",
+      "t8c"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/3. Mobi Secure ver 0.9.pptx",
+    "title": "Slide Camera đeo người MobiSecure ver 0.9",
+    "type": "slide",
+    "description": "Bộ slide giới thiệu ứng dụng, điểm khác biệt, sơ đồ kiến trúc hệ thống và ứng dụng thực tiễn của MobiSecure.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/HDSD/HDSD BWC_COMS.pdf",
+    "title": "Hướng dẫn sử dụng BWC và COMS",
+    "type": "hdsd",
+    "description": "Tài liệu 51 trang hướng dẫn thao tác thiết bị BWC (nút bấm, LED, ghi hình, SOS, CCCD) và sử dụng phần mềm COMS.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/Mô tả chức năng BWC tích hợp COMS_stage2.2.docx",
+    "title": "Mô tả chức năng BWC tích hợp COMS Stage 2.2",
+    "type": "srs",
+    "description": "Tài liệu mô tả yêu cầu chức năng firmware BWC tích hợp hệ thống COMS (v1.0, 23/09/2025), dùng cho phát triển và kiểm thử.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/PRD_PVN_BWC_MASTER.pdf",
+    "title": "PRD Body Worn Camera (tài liệu yêu cầu sản phẩm gốc)",
+    "type": "other",
+    "description": "Tài liệu yêu cầu sản phẩm (PRD, 2021) mô tả thiết kế, thông số dự kiến, thao tác và đế sạc của BWC – chỉ dùng tham khảo nội bộ.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MOBISECURE/GCN bản quyền pm_COMS.pdf",
+    "title": "Giấy chứng nhận đăng ký quyền tác giả phần mềm COMS",
+    "type": "certificate",
+    "description": "Giấy chứng nhận đăng ký quyền tác giả số 7977/2024/QTG (17/09/2024) cho 'Phần mềm hệ thống quản lý vận hành camera (COMS)', chủ sở hữu Công ty Cổ phần MK Vision.",
+    "series": "mobisecure",
+    "products": [
+      "mk22fc1e",
+      "t8a",
+      "t8b",
+      "t8c"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Solutions/EMS/EMS_Dao_tao_Sales_lv.pptx",
+    "title": "Đào tạo sản phẩm EMS cho team Sales",
+    "type": "slide",
+    "description": "Bộ slide đào tạo Sales về hệ thống EMS: bối cảnh, 9 menu chức năng, luồng dữ liệu, kiến trúc và lưu ý khi tư vấn (10/2026).",
+    "series": "EMS",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Solutions/VMS/SRS_VIDEO MANAGEMENT SYSTEM_PLATFORM (1).docx",
+    "title": "SRS Video Management System Platform",
+    "type": "srs",
+    "description": "Tài liệu đặc tả yêu cầu chức năng và phi chức năng của nền tảng VMS (Live View, PTZ, Playback, quản lý thiết bị, người dùng).",
+    "series": "VMS",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx",
+    "title": "Kiến trúc hệ thống cơ bản",
+    "type": "architecture",
+    "description": "Tổng quan kiến trúc các nền tảng FMS, ACP, COMS, VMS, IVA do MK Vision phát triển (Ver.1 – 18/12/2025).",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/AI Factory/AI Factory.pptx",
+    "title": "AI Factory",
+    "type": "slide",
+    "description": "Slide giới thiệu nền tảng AI Capability Center (quản lý dữ liệu, Model Factory, Engineering Engine) và mô hình hợp tác, do đối tác công nghệ cung cấp.",
+    "series": "AI Factory",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/BÁO CÁO TÓM TẮT VỀ NĂNG LỰC CỦA MK VISION.pdf",
+    "title": "Báo cáo tóm tắt về năng lực của MK Vision",
+    "type": "profile",
+    "description": "Báo cáo 2 trang về khát vọng \"Make in Vietnam\", chuỗi giá trị, nhà máy, đối tác và hệ sinh thái sản phẩm đề xuất.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/MK Vision Năng lực công nghệ.pdf",
+    "title": "Báo cáo năng lực công nghệ – AI Camera xử lý tại biên",
+    "type": "profile",
+    "description": "Báo cáo 38 trang về 7 lĩnh vực công nghệ lõi, quy trình R&D, chuỗi cung ứng, sản xuất, QC, mức độ làm chủ và tiêu chuẩn áp dụng.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/MK Vision Profile (EN).pdf",
+    "title": "MK Vision Profile (EN)",
+    "type": "profile",
+    "description": "Hồ sơ năng lực tiếng Anh: giới thiệu công ty, dịch vụ ODM/OEM, R&D, phần cứng, chipset, nhà máy, QC và tổng quan sản phẩm.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/[Pavana][FW]Camera&Multimedia-Overview202609.pptx",
+    "title": "Camera & Multimedia Overview (PVN Firmware Team)",
+    "type": "slide",
+    "description": "Slide kỹ thuật nội bộ về line-up sản phẩm, kiến thức camera, multimedia, giao thức streaming, chất lượng hình ảnh, sự kiện và tính năng AI.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/5.1. CUVO_CONNECT_2021_MASTER.pptx",
+    "title": "CUVO Connect 2021 Master",
+    "type": "slide",
+    "description": "Slide giới thiệu hệ thống hội nghị truyền hình CUVO/Pavana: Conference Speaker, SC100, SC360 và webcam W100.",
+    "series": "CUVO Connect",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf",
+    "title": "Eng Catalogue Product 3",
+    "type": "catalog",
+    "description": "Catalog sản phẩm tiếng Anh: công nghệ AI on Edge, ứng dụng theo ngành, camera lắp trên xe, camera chuyên dụng, camera giao thông, camera an ninh, COMS và thông số kỹ thuật.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Catalogs/30-12Eng Catalogue Product 3.pdf",
+    "title": "30-12 Eng Catalogue Product 3",
+    "type": "catalog",
+    "description": "Phiên bản catalog sản phẩm tiếng Anh (bản 30-12), cùng nội dung với Eng Catalogue Product 3.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Catalogs/View Catalogue Product 3.pdf",
+    "title": "View Catalogue Product 3",
+    "type": "catalog",
+    "description": "Catalog sản phẩm (bản xem), cùng bộ sản phẩm với catalog tiếng Anh.",
+    "series": "",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V - Dome 5MP.pdf",
+    "title": "Datasheet VA50FA0V - Dome 5MP (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Việt camera Dome AI 5MP VA50FA0V (bản cũ, thiếu FOV và danh sách AI).",
+    "series": "v-secure",
+    "products": [
+      "va50fa0v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V.pdf",
+    "title": "Datasheet VA50FA0V (English)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh camera AI Outdoor Dome VA50FA0V.",
+    "series": "v-secure",
+    "products": [
+      "va50fa0v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V - PTZ 5MP 40X.pdf",
+    "title": "Datasheet VA50FA2V - PTZ 5MP 40X (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Việt camera PTZ 5MP zoom quang 40x VA50FA2V-40 (bản cũ, zoom số 10x).",
+    "series": "v-secure",
+    "products": [
+      "va50fa2v-40"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V-40.pdf",
+    "title": "Datasheet VA50FA2V-40 (English)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh camera PTZ VA50FA2V-40 (bảng Camera có lỗi sao chép).",
+    "series": "v-secure",
+    "products": [
+      "va50fa2v-40"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V - Bullet 5MP.pdf",
+    "title": "Datasheet VB50FB1V - Bullet 5MP (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Việt camera Bullet AI 5MP VB50FB1V (bản cũ).",
+    "series": "v-secure",
+    "products": [
+      "vb50fb1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V.pdf",
+    "title": "Datasheet VB50FB1V (English)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh camera 5MP AI Outdoor Bullet VB50FB1V.",
+    "series": "v-secure",
+    "products": [
+      "vb50fb1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V - Bullet 8MP.pdf",
+    "title": "Datasheet VB80FA1V - Bullet 8MP (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Việt camera Bullet AI 8MP VB80FA1V.",
+    "series": "v-secure",
+    "products": [
+      "vb80fa1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V.pdf",
+    "title": "Datasheet VB80FA1V (English)",
+    "type": "datasheet",
+    "description": "Datasheet tiếng Anh camera 8MP AI Outdoor Bullet VB80FA1V (một số thông số khác bản tiếng Việt).",
+    "series": "v-secure",
+    "products": [
+      "vb80fa1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf",
+    "title": "Catalogue sản phẩm 2024 (Cuvo/Pavana)",
+    "type": "catalog",
+    "description": "Catalogue 2024 thương hiệu pavana gồm camera IP 2MP/5MP và đầu ghi NVR PVN-N1064OD-E4HL.",
+    "series": "cuvo",
+    "products": [
+      "pvn-ch222m6nd-2812pw-a",
+      "pvn-ch322m6mca-2812pw-a",
+      "pvn-n1064od-e4hl",
+      "sc609e"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/V-SECURE/16X VA50FA2V-40 PTZ R1.pdf",
+    "title": "Datasheet 16X VA50FA2V-40 PTZ R1 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet R1 mới nhất camera PTZ 40x VA50FA2V-40 với zoom số 16x.",
+    "series": "v-secure",
+    "products": [
+      "va50fa2v-40"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/V-SECURE/VA50FA0V Dome R1.pdf",
+    "title": "Datasheet VA50FA0V Dome R1 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet R1 đầy đủ camera Dome AI 5MP VA50FA0V.",
+    "series": "v-secure",
+    "products": [
+      "va50fa0v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/V-SECURE/VA50FA2V-40 PTZ R1.pdf",
+    "title": "Datasheet VA50FA2V-40 PTZ R1 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet R1 camera PTZ 40x VA50FA2V-40 (phiên bản ghi zoom số 10x).",
+    "series": "v-secure",
+    "products": [
+      "va50fa2v-40"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/V-SECURE/VB50FA1V 5MP R1.pdf",
+    "title": "Datasheet VB50FA1V 5MP R1 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet R1 camera Bullet AI 5MP ống kính 5-50mm VB50FA1V.",
+    "series": "v-secure",
+    "products": [
+      "vb50fa1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/V-SECURE/VB50FB1V 5MP R1.pdf",
+    "title": "Datasheet VB50FB1V 5MP R1 (Tiếng Việt)",
+    "type": "datasheet",
+    "description": "Datasheet R1 đầy đủ camera Bullet AI 5MP VB50FB1V.",
+    "series": "v-secure",
+    "products": [
+      "vb50fb1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx",
+    "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+    "type": "slide",
+    "description": "Bộ slide giới thiệu dòng AI Camera V-Secure và các giải pháp theo ngành (đô thị, giao thông, trường học, trại giam, tòa nhà, điện lực, nhà máy).",
+    "series": "v-secure",
+    "products": [
+      "va50fa0v",
+      "va50fa2v-40",
+      "vb50fb1v",
+      "vb80fa1v"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/Slide/5. CUVO camera sale kit.pptx",
+    "title": "Sale kit camera CUVO",
+    "type": "slide",
+    "description": "Sale kit giải pháp an ninh gia đình CUVO: camera không dây dùng pin, chuông cửa video, camera đèn an ninh và gói cước đám mây.",
+    "series": "cuvo",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/HDSD/HDSD camera AI.pdf",
+    "title": "Hướng dẫn sử dụng AI Camera (v1.0)",
+    "type": "hdsd",
+    "description": "HDSD giao diện web local của AI camera: kết nối (IP mặc định 193.169.0.2), đăng nhập, xem trực tuyến/xem lại, quản lý người dùng, luồng video, ghi hình, sự kiện, mạng (Ethernet/Wifi/RTSP), lưu trữ và âm thanh.",
+    "series": "v-secure",
+    "products": []
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Datasheets/1.1 MKSX30-6550_VN_2.0.docx",
+    "title": "Datasheet MKSX30-6550 (Tiếng Việt, v2.0)",
+    "type": "datasheet",
+    "description": "Datasheet switch Core Layer 3 MKSX30-6550: 24 cổng 10G SFP+, 6 cổng uplink 100G QSFP28.",
+    "series": "mk-networks",
+    "products": [
+      "mksx30-6550"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Datasheets/2. 3 MKST28-5150_VN 2.0.docx",
+    "title": "Datasheet MKST28-5150 / MKSP28-5150 (Tiếng Việt, v2.0)",
+    "type": "datasheet",
+    "description": "Datasheet switch Access L2+/Lite L3 24 cổng GE + 4 uplink 10G SFP+, bản không quạt (MKST28) và bản PoE 370W (MKSP28).",
+    "series": "mk-networks",
+    "products": [
+      "mkst28-5150",
+      "mksp28-5150"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Datasheets/4. MKEAP-650_Datasheet 2.0.docx",
+    "title": "Datasheet MKEAP-650 (Tiếng Việt, v2.0)",
+    "type": "datasheet",
+    "description": "Datasheet Access Point Wi-Fi 6 băng tần kép MKEAP-650, MU-MIMO 2x2, IP55, tích hợp BLE và ZigBee.",
+    "series": "mk-networks",
+    "products": [
+      "mkeap-650"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Datasheets/5.MKISP12-5510_VN 2.0.docx",
+    "title": "Datasheet MKISP12-5510 (Tiếng Việt, v2.0)",
+    "type": "datasheet",
+    "description": "Datasheet switch công nghiệp PoE MKISP12-5510: 8 cổng PoE Gigabit, 4 cổng SFP+ 10G, PoE 802.3bt 480 W, -40 ~ 75 ˚C.",
+    "series": "mk-networks",
+    "products": [
+      "mkisp12-5510"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Datasheets/6.1 MKSP10-3100_VN 2.0.docx",
+    "title": "Datasheet MKSP10-3100 (Tiếng Việt, v2.0)",
+    "type": "datasheet",
+    "description": "Datasheet switch Access L2+ MKSP10-3100 với 8 cổng RJ45 1000Mb và cổng uplink SFP.",
+    "series": "mk-networks",
+    "products": [
+      "mksp10-3100"
+    ]
+  },
+  {
+    "path": "Data/MK Vision/Docs/MK Networks/Solutions/viber_image_2026-07-31_16-00-12-087.jpg",
+    "title": "Sơ đồ mô hình hạ tầng mạng thôn số – Khu đô thị thông minh",
+    "type": "architecture",
+    "description": "Sơ đồ giải pháp: trung tâm dữ liệu & điều hành, Core Switch MKSX30/54-6550, Switch Access và Wi-Fi AP MKEAP-650 tại các tòa nhà, camera giám sát đường phố.",
+    "series": "mk-networks",
+    "products": [
+      "mksx30-6550",
+      "mkeap-650"
+    ]
+  }
+]

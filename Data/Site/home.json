@@ -1,0 +1,91 @@
+{
+  "features": [
+    {
+      "eyebrow": "V-Secure · Edge AI",
+      "quote": "AI xử lý ngay tại camera, huấn luyện trên dữ liệu người Việt.",
+      "who": "V-Secure Series",
+      "role": "Ambarella CV25 / CVflow® · ONVIF Profile S/G/T/M · QCVN 135:2024/BTTTT",
+      "image": "/img/scenes/solutions.jpg",
+      "href": "/san-pham?series=v-secure",
+      "cta": "Xem dòng V-Secure"
+    },
+    {
+      "eyebrow": "MobiSecure · Body-worn",
+      "quote": "Camera đeo người đầu tiên tại Việt Nam ứng dụng AI nhận diện khuôn mặt cho người Việt.",
+      "who": "MobiSecure Series",
+      "role": "Theo slide giới thiệu MobiSecure · kết nối nền tảng COMS",
+      "image": "/img/scenes/mobisecure-1.jpg",
+      "href": "/san-pham?series=mobisecure",
+      "cta": "Xem dòng MobiSecure"
+    },
+    {
+      "eyebrow": "AutoSecure · Fleet",
+      "quote": "Camera hành trình AI đầu tiên tại Việt Nam tích hợp giám sát hành vi tài xế.",
+      "who": "AutoSecure + FMS",
+      "role": "Theo tài liệu giới thiệu AutoSecure · Nghị định 10/2020/NĐ-CP",
+      "image": "/img/scenes/autosecure-2.jpg",
+      "href": "/giai-phap/fms",
+      "cta": "Xem giải pháp FMS"
+    },
+    {
+      "eyebrow": "BioSecure · Định danh",
+      "quote": "Đọc CCCD gắn chip chuẩn ICAO, đối sánh sinh trắc học Match-on-Card.",
+      "who": "BioSecure Series",
+      "role": "Đầu đọc A612 / M6 · nền tảng ACP",
+      "image": "/img/scenes/biosecure-2.png",
+      "href": "/san-pham?series=biosecure",
+      "cta": "Xem dòng BioSecure"
+    }
+  ],
+  "featuredProducts": [
+    "va50fa2v-40",
+    "vb50fb1v",
+    "va50fa0v",
+    "vb80fa1v",
+    "mk22fc1e",
+    "t8c",
+    "autosecure",
+    "a612",
+    "m6",
+    "mksx30-6550",
+    "mkisp12-5510"
+  ],
+  "stats": [
+    {
+      "value": "25+",
+      "label": "Năm kinh nghiệm của MK Group trong bảo mật, an toàn dữ liệu và định danh",
+      "sub": "Nguồn: Hồ sơ năng lực MK Vision",
+      "image": "/img/scenes/meeting-1.jpg"
+    },
+    {
+      "value": "2 triệu",
+      "label": "Sản phẩm/năm là công suất nhà máy tại KCN Thăng Long 3, Vĩnh Phúc",
+      "sub": "Khoảng 95.000 camera/tháng · 2 dây chuyền SMT + 2 dây chuyền lắp ráp",
+      "image": "/img/scenes/rnd-1.jpg"
+    },
+    {
+      "value": "82%",
+      "label": "Tỷ lệ làm chủ công nghệ trung bình trên 7 lĩnh vực, từ cơ khí, điện tử đến AI và VMS",
+      "sub": "Nguồn: Báo cáo tóm tắt năng lực MK Vision",
+      "image": "/img/scenes/products.jpg"
+    },
+    {
+      "value": "ISO 7",
+      "label": "Phòng sạch sản xuất cấp 10.000, kiểm thử SPI 3D, AOI 3D, X-Ray, ICT/FCT",
+      "sub": "ISO 9001:2015 · IK10 · IP67 · NDAA",
+      "image": "/img/scenes/building-1.jpg"
+    }
+  ],
+  "searchSuggestions": [
+    "PTZ 40x",
+    "Bullet 8MP",
+    "camera đeo người",
+    "nhận diện khuôn mặt",
+    "biển số",
+    "CCCD gắn chip",
+    "quản lý đội xe",
+    "IP67",
+    "VMS",
+    "datasheet"
+  ]
+}

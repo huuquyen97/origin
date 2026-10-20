@@ -1,0 +1,32 @@
+{
+  "slug": "giao-thong",
+  "order": 8,
+  "name": "AI Camera cho quản lý giao thông đô thị",
+  "shortName": "",
+  "industry": "Đô thị & Giao thông",
+  "summary": "Lắp tại cửa ngõ, trục chính, giao lộ: thu thập lưu lượng/mật độ, phân loại phương tiện; phát hiện vượt đèn đỏ, sai làn, ngược chiều, dừng đỗ sai, không đội mũ bảo hiểm; cảnh báo tai nạn, ùn tắc; nhận diện biển số hỗ trợ điều tra.",
+  "painPoints": [],
+  "architecture": "",
+  "modules": [],
+  "features": [],
+  "benefits": [],
+  "targetCustomers": [
+    "Giao thông"
+  ],
+  "relatedSeries": [
+    "v-secure"
+  ],
+  "products": [
+    "va50fa2v-40",
+    "vb50fb1v",
+    "vb80fa1v",
+    "vb50fa1v"
+  ],
+  "documents": [],
+  "cover": "/img/scenes/solutions.jpg",
+  "images": [],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  ],
+  "notes": ""
+}
