@@ -7,7 +7,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "face-recognition"
   },
   {
     "name": "Facial and body attribute recognition",
@@ -17,7 +18,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "face-attributes"
   },
   {
     "name": "Liveness Detection",
@@ -27,7 +29,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "liveness"
   },
   {
     "name": "People Detection",
@@ -37,7 +40,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "people-detection"
   },
   {
     "name": "Pedestrian Attribute Recognition",
@@ -47,7 +51,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "pedestrian-attributes"
   },
   {
     "name": "Vehicle detection and tracking",
@@ -57,7 +62,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "vehicle-detection"
   },
   {
     "name": "License plate recognition",
@@ -67,7 +73,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "lpr"
   },
   {
     "name": "Traffic Violation",
@@ -77,7 +84,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "traffic-violation"
   },
   {
     "name": "Vehicle attribute recognition",
@@ -87,7 +95,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "vehicle-attributes"
   },
   {
     "name": "Vehicle counting and classification",
@@ -97,7 +106,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "vehicle-counting"
   },
   {
     "name": "Sidewalk Encroachment",
@@ -107,7 +117,8 @@
     "supportedOn": [],
     "sources": [
       "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ]
+    ],
+    "feature": "encroachment"
   },
   {
     "name": "Face Recognition",
@@ -120,7 +131,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "face-recognition"
   },
   {
     "name": "People Counting",
@@ -132,7 +144,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "people-counting"
   },
   {
     "name": "Crowd Detection",
@@ -144,7 +157,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "crowd"
   },
   {
     "name": "Intrusion Detection",
@@ -156,7 +170,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "intrusion"
   },
   {
     "name": "Line Crossing Detection",
@@ -168,7 +183,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "line-crossing"
   },
   {
     "name": "ANPR – Automatic Number Plate Recognition",
@@ -180,7 +196,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "lpr"
   },
   {
     "name": "Vehicle Classification and Traffic Counting",
@@ -192,7 +209,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "vehicle-counting"
   },
   {
     "name": "Red Light Violation Detection",
@@ -204,7 +222,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "red-light"
   },
   {
     "name": "Wrong-way Detection",
@@ -216,7 +235,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "wrong-way"
   },
   {
     "name": "Solid Line Crossing Detection",
@@ -228,7 +248,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "solid-line"
   },
   {
     "name": "Illegal Parking/Stopping Detection",
@@ -240,7 +261,8 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "illegal-parking"
   },
   {
     "name": "Sidewalk/Roadway Encroachment Detection",
@@ -252,6 +274,7 @@
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
-    ]
+    ],
+    "feature": "encroachment"
   }
 ]

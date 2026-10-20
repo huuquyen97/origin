@@ -70,5 +70,12 @@
   "sources": [
     "Data/MK Vision/Docs/MK Networks/Datasheets/4. MKEAP-650_Datasheet 2.0.docx"
   ],
-  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có chuẩn 802.11 cụ thể, tốc độ từng băng tần, công suất phát, cổng Ethernet, nguồn/PoE, kích thước, trọng lượng, nhiệt độ...). Sơ đồ ứng dụng trong datasheet MKSP10-3100 ghi \"MKEAP-650-L 802.11ac Dual-Band Wireless FIT Access Point\" — mâu thuẫn với Wi-Fi 6 trong datasheet này, cần xác nhận. File có comment \"Sẽ update lại ảnh mẫu\" tại tên model. Ảnh sản phẩm dùng file \"MKEP-650.2.png\" (tên file ghi MKEP, ảnh có logo MK Networks); các ảnh \"EAP111_VESC-A_*\" trong cùng thư mục không dùng. Không có ngày phát hành in trên datasheet."
+  "unconfirmed": [
+    {
+      "group": "Network",
+      "label": "Chuẩn không dây",
+      "note": "Datasheet MKEAP-650 ghi Wi-Fi 6, còn sơ đồ trong datasheet MKSP10-3100 ghi \"MKEAP-650-L 802.11ac\"; cần xác nhận chuẩn Wi-Fi và biến thể -L."
+    }
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Đặc tính nổi bật\", không có bảng thông số kỹ thuật chi tiết (không có chuẩn 802.11 cụ thể, tốc độ từng băng tần, công suất phát, cổng Ethernet, nguồn/PoE, kích thước, trọng lượng, nhiệt độ...); ảnh nhúng chỉ là ảnh sản phẩm và sơ đồ triển khai Appliance-base / Cloud-base. Sơ đồ ứng dụng trong datasheet MKSP10-3100 ghi \"MKEAP-650-L 802.11ac Dual-Band Wireless FIT Access Point\" — mâu thuẫn với Wi-Fi 6. Sơ đồ giải pháp thôn số ghi \"WIFI AP MKEAP-650\", \"Kết nối WiFi (2.4/5GHz)\". File có comment \"Sẽ update lại ảnh mẫu\" tại tên model. Ảnh sản phẩm dùng file \"MKEP-650.2.png\". Không có ngày phát hành in trên datasheet."
 }

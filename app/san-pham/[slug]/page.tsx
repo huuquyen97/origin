@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronDown, Columns3, Download, Info } from "lucide-react";
+import { AlertTriangle, ChevronDown, Columns3, Download, Info } from "lucide-react";
 import { PageHero } from "@/components/hero";
 import { DocRow, ProductCard, ProductMedia, SolutionCard } from "@/components/cards";
-import { CopyLinkButton, CopySpecsButton } from "@/components/products/copy-buttons";
-import { getProduct, getProducts, getSolution, seriesName, toCard } from "@/lib/data";
+import { CopyLinkButton, CopyShortButton, CopySpecsButton } from "@/components/products/copy-buttons";
+import { aiFeatureName, getAiFeatures, getProduct, getProducts, getSolution, keySpecs, seriesName, toCard, type Doc } from "@/lib/data";
+import { catLabel, specLabel } from "@/lib/labels";
 import { SPEC_GROUPS } from "@/lib/data/schema";
-import { SPEC_GROUP_LABEL, T } from "@/lib/strings";
+import { DOC_STATUS, SPEC_GROUP_LABEL, T } from "@/lib/strings";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,17 +27,31 @@ export default async function ProductPage({ params }: Props) {
 
   const sName = seriesName(p.series);
   const groups = [...SPEC_GROUPS.filter((g) => p.specs[g]?.length), ...Object.keys(p.specs).filter((g) => !(SPEC_GROUPS as readonly string[]).includes(g))];
-  const datasheet = p.sources[0] ?? p.documents.find((d) => d.type === "datasheet");
+  // Nút Datasheet: ưu tiên datasheet gửi khách được, bản PDF; không có thì lấy datasheet bất kỳ và ghi rõ trạng thái
+  const rank = (d: Doc) => (d.status === "public" ? 0 : d.status === "old" ? 2 : 1) * 2 + (d.ext === "pdf" ? 0 : 1);
+  const datasheet = [...p.sources, ...p.documents].filter((d) => d.type === "datasheet").sort((a, b) => rank(a) - rank(b))[0];
+  const source = p.sources[0];
+  const docOrder: Record<Doc["status"], number> = { public: 0, old: 1, internal: 2, expired: 3 };
+  const docs = [...p.documents].sort((a, b) => docOrder[a.status] - docOrder[b.status] || Number(b.type === "datasheet") - Number(a.type === "datasheet"));
   const sols = p.solutions.map(getSolution).filter((s) => s !== undefined);
   const related = getProducts().filter((x) => x.series === p.series && x.slug !== p.slug).slice(0, 4);
-  const keyFacts = [["Dòng", sName], ["Loại", p.category], ["Độ phân giải", p.resolution], ["Chuẩn bảo vệ", p.ipRating]];
+  const keyFacts: [string, string][] = [["Dòng", sName], ["Loại", catLabel(p.category)], ...keySpecs(p)];
+  const flag = (g: string, k: string) => p.unconfirmed.find((u) => u.group === g && u.label === k)?.note ?? "";
+  const aiFeatures = getAiFeatures().filter((f) => p.ai.includes(f.id));
 
   const specText = [`${p.model} — ${p.name}`, `Dòng: ${sName}`];
   for (const g of groups) {
     specText.push("", `[${SPEC_GROUP_LABEL[g] ?? g}]`);
-    for (const [k, v] of p.specs[g]) specText.push(`${k}: ${v || T.missing}`);
+    for (const [k, v] of p.specs[g]) specText.push(`${specLabel(k)}: ${v || T.missing}${flag(g, k) ? " (chưa chốt)" : ""}`);
   }
-  if (datasheet) specText.push("", `Nguồn: ${datasheet.path.split("/").pop()}`);
+  if (source) specText.push("", `Nguồn: ${source.path.split("/").pop()}`);
+  const shortText = [
+    `${p.model} – ${p.name}`,
+    `• ${catLabel(p.category)} · ${sName}`,
+    ...keyFacts.slice(2).filter(([, v]) => v).map(([l, v]) => `• ${l}: ${v}`),
+    ...p.features.slice(0, 4).map((x) => `• ${x}`),
+    ...(p.ai.length ? [`• AI: ${p.ai.slice(0, 6).map(aiFeatureName).join(", ")}`] : []),
+  ].join("\n");
 
   return (
     <>
@@ -64,17 +79,25 @@ export default async function ProductPage({ params }: Props) {
               </div>
               {p.summary && <p className="lead !text-ink-2">{p.summary}</p>}
               <div className="mt-1.5 flex flex-wrap gap-2">
-                {datasheet && <a className="btn btn-dark" href={datasheet.url} target="_blank" rel="noopener"><Download /> Datasheet</a>}
+                {datasheet && (
+                  <a className="btn btn-dark" href={datasheet.url} target="_blank" rel="noopener" title={datasheet.title}>
+                    <Download /> Datasheet{datasheet.status !== "public" && <span className="text-white/70">({DOC_STATUS[datasheet.status].label.toLowerCase()})</span>}
+                  </a>
+                )}
                 <CopySpecsButton text={specText.join("\n")} />
-                <Link className="btn btn-ghost" href={`/so-sanh?ids=${p.slug}`}><Columns3 /> So sánh</Link>
+                <CopyShortButton text={shortText} />
+                <Link className="btn btn-ghost" href={`/so-sanh?add=${p.slug}`}><Columns3 /> So sánh</Link>
                 <CopyLinkButton />
               </div>
             </div>
 
-            <div className={`mt-6 flex gap-2.5 rounded-2xl px-4 py-3.5 text-[13.5px] ${datasheet ? "bg-brand-navy-50 text-brand-navy-600" : "bg-[#fbf6e8] text-[#7a5a12]"}`}>
+            <div className={`mt-6 flex gap-2.5 rounded-2xl px-4 py-3.5 text-[13.5px] ${source ? "bg-brand-navy-50 text-brand-navy-600" : "bg-brand-gold-50 text-brand-gold-700"}`}>
               <Info className="mt-0.5 size-[17px] shrink-0" />
-              {datasheet ? (
-                <span>Thông số dưới đây lấy nguyên văn từ <a className="underline underline-offset-2" href={datasheet.url} target="_blank" rel="noopener">{datasheet.path.split("/").pop()}</a>. Ô “{T.missing}” nghĩa là datasheet không ghi.</span>
+              {source ? (
+                <span>
+                  Thông số dưới đây lấy nguyên văn từ <a className="underline underline-offset-2" href={source.url} target="_blank" rel="noopener">{source.path.split("/").pop()}</a>. Ô “{T.missing}” nghĩa là datasheet không ghi.
+                  {p.unconfirmed.some((u) => u.label) && <> Thông số có biểu tượng <AlertTriangle className="inline size-3.5 align-[-2px]" /> đang chưa chốt giữa các tài liệu — xác nhận với PM trước khi báo khách.</>}
+                </span>
               ) : (
                 <span>Chưa có datasheet gốc cho sản phẩm này.</span>
               )}
@@ -90,9 +113,17 @@ export default async function ProductPage({ params }: Props) {
             {p.aiFeatures.length > 0 && (
               <section className="mt-9">
                 <h3 className="mb-3.5 text-lg">Tính năng AI</h3>
-                <div className="flex flex-wrap gap-1.5">
-                  {p.aiFeatures.map((a) => <Link key={a} className="pill" href={`/thuat-toan-ai?q=${encodeURIComponent(a)}`}>{a}</Link>)}
-                </div>
+                {aiFeatures.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5">
+                    {aiFeatures.map((f) => <Link key={f.id} className="pill" href={`/thuat-toan-ai#${f.id}`} title={f.name}>{f.nameVi}</Link>)}
+                  </div>
+                )}
+                <details className="group mt-3 text-[13.5px] text-muted">
+                  <summary className="inline-flex min-h-11 cursor-pointer list-none items-center gap-1.5 font-medium text-ink-2 md:min-h-8 [&::-webkit-details-marker]:hidden">
+                    Mô tả nguyên văn trong datasheet <ChevronDown className="size-4 transition group-open:rotate-180" />
+                  </summary>
+                  <ul className="mt-1 grid list-disc gap-1 pl-5">{p.aiFeatures.map((a) => <li key={a}>{a}</li>)}</ul>
+                </details>
               </section>
             )}
 
@@ -107,12 +138,23 @@ export default async function ProductPage({ params }: Props) {
                     </summary>
                     <table className="w-full border-collapse text-sm max-sm:block">
                       <tbody className="max-sm:block">
-                        {p.specs[g].map(([k, v], j) => (
-                          <tr key={`${k}-${j}`} className="border-t border-line max-sm:block max-sm:px-4 max-sm:py-2.5">
-                            <th scope="row" className="w-[38%] px-4 py-2.5 text-left align-top font-medium text-muted max-sm:block max-sm:w-full max-sm:p-0 max-sm:text-[12.5px]">{k}</th>
-                            <td className="px-4 py-2.5 align-top tabular-nums [overflow-wrap:anywhere] max-sm:block max-sm:p-0">{v || T.missing}</td>
-                          </tr>
-                        ))}
+                        {p.specs[g].map(([k, v], j) => {
+                          const note = flag(g, k);
+                          return (
+                            <tr key={`${k}-${j}`} className="border-t border-line max-sm:block max-sm:px-4 max-sm:py-2.5">
+                              <th scope="row" className="w-[38%] px-4 py-2.5 text-left align-top font-medium text-muted max-sm:block max-sm:w-full max-sm:p-0 max-sm:text-[12.5px]" title={specLabel(k) !== k ? `Datasheet ghi: ${k}` : undefined}>{specLabel(k)}</th>
+                              <td className="px-4 py-2.5 align-top tabular-nums [overflow-wrap:anywhere] max-sm:block max-sm:p-0">
+                                {v || T.missing}
+                                {note && (
+                                  <span className="mt-1 flex gap-1.5 text-[12.5px] text-brand-gold-700">
+                                    <AlertTriangle className="mt-0.5 size-3.5 shrink-0" aria-hidden />
+                                    <span><b className="font-semibold">Chưa chốt:</b> {note}</span>
+                                  </span>
+                                )}
+                              </td>
+                            </tr>
+                          );
+                        })}
                       </tbody>
                     </table>
                   </details>
@@ -122,17 +164,10 @@ export default async function ProductPage({ params }: Props) {
               )}
             </section>
 
-            {p.notes && (
-              <div className="mt-9 flex gap-2.5 rounded-2xl bg-[#fbf6e8] px-4 py-3.5 text-[13.5px] text-[#7a5a12]">
-                <Info className="mt-0.5 size-[17px] shrink-0" />
-                <span><b>Ghi chú dữ liệu:</b> {p.notes}</span>
-              </div>
-            )}
-
-            {p.documents.length > 0 && (
+            {docs.length > 0 && (
               <section className="mt-9">
                 <h3 className="mb-3.5 text-lg">Tài liệu</h3>
-                <div className="grid gap-2">{p.documents.map((d) => <DocRow key={d.path} d={d} />)}</div>
+                <div className="grid gap-2">{docs.map((d) => <DocRow key={d.path} d={d} />)}</div>
               </section>
             )}
 

@@ -7,6 +7,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowUpRight, Search } from "lucide-react";
 import type { SearchItem } from "@/lib/search/build-index";
 import { norm } from "@/lib/search/normalize";
+import { score, terms } from "@/lib/search/rank";
 import { SEARCH_GROUPS, T } from "@/lib/strings";
 
 const EVENT = "mkv:search";
@@ -67,17 +68,26 @@ export function SearchDialog({ suggestions }: { suggestions: string[] }) {
     if (open) setTimeout(() => input.current?.focus(), 20);
   }, [open]);
 
+  // Fuse chỉ dùng khi không có kết quả khớp đủ từ (bắt lỗi gõ), chỉ xét tiêu đề + từ khoá
   const fuse = useMemo(
-    () => (index ? new Fuse(index, { keys: [{ name: "nt", weight: 3 }, { name: "nk", weight: 1.5 }, { name: "nx", weight: 1 }], threshold: 0.34, ignoreLocation: true, minMatchCharLength: 2 }) : null),
+    () => (index ? new Fuse(index, { keys: [{ name: "nt", weight: 3 }, { name: "nk", weight: 1 }], threshold: 0.3, ignoreLocation: true, minMatchCharLength: 3 }) : null),
     [index],
   );
 
+  /** Kết quả đã xếp hạng; nhóm hiển thị theo thứ tự của kết quả tốt nhất trong nhóm */
   const results = useMemo(() => {
     const nq = norm(q);
-    if (!nq || !fuse) return [];
-    const ranked = fuse.search(nq, { limit: 30 }).map((r, i) => [r.item, i] as const);
-    return ranked.sort((a, b) => SEARCH_GROUPS.indexOf(a[0].type) - SEARCH_GROUPS.indexOf(b[0].type) || a[1] - b[1]).map((x) => x[0]);
-  }, [q, fuse]);
+    if (!nq || !index || !fuse) return [];
+    const ts = terms(q);
+    const ranked = index
+      .map((item, i) => ({ item, s: score(item, ts, q), i }))
+      .filter((x) => x.s > 0)
+      .sort((a, b) => b.s - a.s || SEARCH_GROUPS.indexOf(a.item.type) - SEARCH_GROUPS.indexOf(b.item.type) || a.i - b.i)
+      .map((x) => x.item);
+    const list = ranked.length ? ranked : fuse.search(nq, { limit: 20 }).map((r) => r.item);
+    const groups = [...new Set(list.map((r) => r.type))];
+    return groups.flatMap((g) => list.filter((r) => r.type === g).slice(0, 8));
+  }, [q, index, fuse]);
 
   const go = (r: SearchItem) => {
     close();
@@ -141,10 +151,10 @@ export function SearchDialog({ suggestions }: { suggestions: string[] }) {
             <div className="px-4 py-8 text-center text-sm text-muted">
               Không tìm thấy kết quả cho “{q}”.
               <br />
-              Thử tìm theo model (VB50FB1V), loại (Bullet, Body-worn) hoặc tính năng (LPR, khuôn mặt).
+              Thử tìm theo model (VB50FB1V), loại (Bullet, camera đeo người) hoặc tính năng (biển số, khuôn mặt).
             </div>
           ) : (
-            SEARCH_GROUPS.map((g) => {
+            [...new Set(results.map((r) => r.type))].map((g) => {
               const items = results.filter((r) => r.type === g);
               if (!items.length) return null;
               return (

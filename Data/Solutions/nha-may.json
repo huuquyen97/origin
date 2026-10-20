@@ -4,14 +4,44 @@
   "name": "Nhà máy & khu công nghiệp",
   "shortName": "",
   "industry": "Công nghiệp & Năng lượng",
-  "summary": "Phát hiện vi phạm quy trình, xâm nhập khu cấm; giám sát dây chuyền; cảnh báo cháy, khói, rò rỉ hóa chất, vi phạm an toàn lao động (không đội mũ bảo hộ); nhận diện biển số, quản lý cổng ra/vào tự động.",
-  "painPoints": [],
+  "summary": "AI Camera MK Vision là trợ lý quản lý thông minh cho nhà máy và khu công nghiệp, giám sát 24/7 thay thế cán bộ quản lý truyền thống: phát hiện vi phạm quy trình, xâm nhập khu cấm, cảnh báo cháy, khói, rò rỉ hóa chất, vi phạm an toàn lao động và quản lý phương tiện ra vào bằng nhận diện biển số.",
+  "painPoints": [
+    "Vi phạm quy trình sản xuất, xâm nhập trái phép khu vực cấm, hành vi bất thường đe dọa an ninh nhà máy",
+    "Gián đoạn hoặc chậm trễ trong dây chuyền, khó theo dõi hiệu suất từng công đoạn",
+    "Nguy cơ cháy, khói, nhiệt độ bất thường, rò rỉ hóa chất, khí độc; vi phạm an toàn lao động (không đội mũ bảo hộ, vào khu vực nguy hiểm)",
+    "Quản lý cổng ra/vào, xe container, xe tải trong khu công nghiệp tốn nhân sự bảo vệ, nguy cơ thất thoát hàng hóa"
+  ],
   "architecture": "",
-  "modules": [],
+  "modules": [
+    {
+      "name": "Bảo vệ an ninh toàn diện",
+      "description": "Phát hiện tức thời: vi phạm quy trình sản xuất; xâm nhập trái phép vào khu vực cấm; hành vi bất thường đe dọa an ninh nhà máy."
+    },
+    {
+      "name": "Giám sát sản xuất thông minh",
+      "description": "Theo dõi liên tục quy trình vận hành máy móc, hiệu suất làm việc của từng công đoạn; phát hiện gián đoạn hoặc chậm trễ trong dây chuyền."
+    },
+    {
+      "name": "Cảnh báo nguy hiểm sớm",
+      "description": "Phát hiện ngay lập tức: cháy, khói, nhiệt độ bất thường; rò rỉ hóa chất, khí độc; vi phạm an toàn lao động (không đội mũ bảo hộ, vào khu vực nguy hiểm)."
+    },
+    {
+      "name": "Quản lý phương tiện tự động",
+      "description": "Nhận diện biển số xe tự động; quản lý cổng ra/vào không cần nhân viên; theo dõi lộ trình xe container, xe tải trong khu công nghiệp."
+    }
+  ],
   "features": [],
-  "benefits": [],
+  "benefits": [
+    "Ngăn chặn sự cố trước khi xảy ra, giảm thiểu rủi ro và thiệt hại",
+    "Tối ưu năng suất, giảm thời gian ngừng máy, nâng cao hiệu quả sản xuất",
+    "Bảo vệ tính mạng công nhân, tuân thủ quy định an toàn lao động nghiêm ngặt",
+    "Tiết kiệm nhân sự bảo vệ, tăng tốc độ xử lý xe, chống thất thoát hàng hóa",
+    "Một lần đầu tư, bảo vệ lâu dài"
+  ],
   "targetCustomers": [
-    "Sản xuất / Công nghiệp"
+    "Sản xuất / Công nghiệp",
+    "Nhà máy",
+    "Khu công nghiệp"
   ],
   "relatedSeries": [
     "v-secure"
@@ -22,11 +52,18 @@
     "vb50fb1v",
     "vb80fa1v"
   ],
-  "documents": [],
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "configuration": [],
   "cover": "/img/scenes/rnd-1.jpg",
   "images": [],
   "sources": [
     "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
   ],
-  "notes": ""
+  "notes": "Nội dung lấy từ slide 21 của file pptx V-SECURE ver.0.9. Khác các ngành khác, slide minh họa đi kèm (slide 20) chưa có sơ đồ 3D: chỉ có bản vẽ mặt bằng bố trí camera của một kho/nhà máy cụ thể kèm ghi chú nội bộ 'Nhờ đội Design dựng giúp mô hình 3D tương tự với nhà kho, nhà máy', nên không dùng làm ảnh minh họa và không có danh sách 'Sản phẩm đề xuất' hay cấu hình. Vì vậy features (chức năng AI trên sơ đồ) và configuration để trống. Catalogue không có mục riêng cho nhà máy/khu công nghiệp."
 }

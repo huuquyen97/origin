@@ -261,5 +261,22 @@
   "sources": [
     "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf"
   ],
-  "notes": "Spec lấy nguyên văn từ datasheet tiếng Việt 'AUTOSECURE_Lite version.pdf' (bản có LPR, QCVN – được coi là bản mới nhất). Khác biệt so với datasheet English: (1) English ghi 'Night mode: Automatic IR-cut filter', bản VN ghi 'Bộ lọc IR-cut cố định'; (2) English ghi 'IR Light: Infrared: 10m', Lite ghi 'Chiếu sáng hồng ngoại camera cabin: 3m'; (3) English ghi 'EMC: FCC, CE Certified', Lite thay bằng 'QCVN 117:2023/BTTTT ; QCVN 54:2020/BTTTT' (GCN hợp quy thực tế ghi QCVN 117:2020/BTTTT); (4) English không có LPR, không có 'đeo khẩu trang' trong FleetFocus+ và API không có 'quản lý thiết bị'; (5) English nguồn '11.8 - 36.0V' không ghi chống ngược cực. Datasheet ghi 'Trước cabin: 8MP' (nguyên văn; English ghi 'Front: 8MP'). GCN hợp quy (số C0404161023AA04A3, hiệu lực 16/10/2023–16/10/2026) và file firmware trong HDSD cập nhật đều ghi model V1C. Phụ kiện theo HDSD: Camera AutoSecure *1, Bộ gá dán kính lái *1, Film bảo vệ kính lái *2, Dây nguồn *1, Đầu nối cầu chì *6. Nút bấm: nhấn giữ 2s tạo sự kiện thủ công, 4s khởi động lại camera. Ứng dụng mobile 'AutoSecure' (phiên bản mobile của FMS) có trên App Store/Google Play. Ảnh chất lượng cao hơn: assets/img/products/autosecure-hq.png."
+  "notes": "Spec lấy nguyên văn từ datasheet tiếng Việt 'AUTOSECURE_Lite version.pdf' (bản có LPR, QCVN – được coi là bản mới nhất). Khác biệt so với datasheet English: (1) English ghi 'Night mode: Automatic IR-cut filter', bản VN ghi 'Bộ lọc IR-cut cố định'; (2) English ghi 'IR Light: Infrared: 10m', Lite ghi 'Chiếu sáng hồng ngoại camera cabin: 3m'; (3) English ghi 'EMC: FCC, CE Certified', Lite thay bằng 'QCVN 117:2023/BTTTT ; QCVN 54:2020/BTTTT' (GCN hợp quy thực tế ghi QCVN 117:2020/BTTTT); (4) English không có LPR, không có 'đeo khẩu trang' trong FleetFocus+ và API không có 'quản lý thiết bị'; (5) English nguồn '11.8 - 36.0V' không ghi chống ngược cực. Datasheet ghi 'Trước cabin: 8MP' (nguyên văn; English ghi 'Front: 8MP'). GCN hợp quy (số C0404161023AA04A3, hiệu lực 16/10/2023–16/10/2026) và file firmware trong HDSD cập nhật đều ghi model V1C. Phụ kiện theo HDSD: Camera AutoSecure *1, Bộ gá dán kính lái *1, Film bảo vệ kính lái *2, Dây nguồn *1, Đầu nối cầu chì *6. Nút bấm: nhấn giữ 2s tạo sự kiện thủ công, 4s khởi động lại camera. Ứng dụng mobile 'AutoSecure' (phiên bản mobile của FMS) có trên App Store/Google Play. Ảnh chất lượng cao hơn: assets/img/products/autosecure-hq.png.",
+  "unconfirmed": [
+    {
+      "group": "Image",
+      "label": "Chế độ ban đêm",
+      "note": "Datasheet VN (Lite) ghi 'Bộ lọc IR-cut cố định', bản English ghi 'Automatic IR-cut filter'; cần xác nhận với PM."
+    },
+    {
+      "group": "Other",
+      "label": "Chiếu sáng hồng ngoại camera cabin",
+      "note": "Datasheet VN (Lite) ghi hồng ngoại cabin 3m, bản English ghi 10m; cần xác nhận với PM."
+    },
+    {
+      "group": "Other",
+      "label": "QCVN",
+      "note": "Datasheet ghi QCVN 117:2023/BTTTT, giấy chứng nhận hợp quy thực tế ghi QCVN 117:2020/BTTTT; cần xác nhận với PM."
+    }
+  ]
 }

@@ -7,7 +7,11 @@
     "series": "autosecure",
     "products": [
       "autosecure-dat"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf",
@@ -18,7 +22,11 @@
     "products": [
       "autosecure",
       "autosecure-dms"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Danh sách chức năng FMS tiêu chuẩn.pdf",
@@ -28,7 +36,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/GCN bản quyền pm_FMS.pdf",
@@ -38,7 +50,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/GCN hop quy Autosecure_Cuc VT.pdf",
@@ -48,18 +64,26 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "Liên hệ PM để lấy chứng nhận hợp quy mới.",
+    "validFrom": "2023-10-16",
+    "validTo": "2026-10-16"
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Giấy chứng nhận/MKV_ISO 9001-2015.pdf",
     "title": "Chứng nhận ISO 9001:2015 – MK Vision",
     "type": "certificate",
     "description": "Chứng nhận hệ thống quản lý chất lượng ISO 9001:2015 của MK Vision (chưa đọc chi tiết nội dung).",
-    "series": "autosecure",
+    "series": "",
     "products": [
       "autosecure",
       "autosecure-dat"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HD lắp đặt.pdf",
@@ -71,7 +95,11 @@
       "autosecure",
       "autosecure-dat",
       "autosecure-dms"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/HDSD FMS Tiêu chuẩn 2026.pdf",
@@ -81,7 +109,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/HDSD/Hướng dẫn cập nhật phần mềm camera Autosecure qua thẻ nhớ.pdf",
@@ -91,7 +123,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/SRS/SRS FMS Tiêu chuẩn 2026 - v1.docx",
@@ -101,7 +137,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Tài liệu đặc tả yêu cầu phần mềm, dùng cho phát triển.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Thiết bị/Cam hanh trinh.png",
@@ -111,7 +151,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Thiết bị/DMS.png",
@@ -121,7 +165,11 @@
     "series": "autosecure",
     "products": [
       "autosecure-dms"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Video Test/1789369398356_1851677166464980926_7181288221694998181.mp4",
@@ -131,7 +179,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Video test nội bộ.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/Autosecure English (2).pdf",
@@ -141,7 +193,11 @@
     "series": "autosecure",
     "products": [
       "autosecure"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/1. Autosecure ver.0.9.pptx",
@@ -152,7 +208,11 @@
     "products": [
       "autosecure",
       "autosecure-dms"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/1.2. AutoSecure_ Smart Fleet Management & Driver Monitoring Solution.pptx",
@@ -163,7 +223,11 @@
     "products": [
       "autosecure",
       "autosecure-dms"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/BIOSECURE/BIOSECURE.pdf",
@@ -173,7 +237,11 @@
     "series": "biosecure",
     "products": [
       "a612"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/BIOSECURE/[MKV] Giới thiệu giải pháp kiểm soát ra vào.pdf",
@@ -183,7 +251,11 @@
     "series": "biosecure",
     "products": [
       "m6"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản trước của đề xuất cho một khách hàng cụ thể, có tên khách hàng.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf",
@@ -193,7 +265,11 @@
     "series": "biosecure",
     "products": [
       "m6"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Đề xuất làm cho một khách hàng cụ thể, có tên khách hàng.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/A612 Access control.pdf",
@@ -203,7 +279,11 @@
     "series": "biosecure",
     "products": [
       "a612"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf",
@@ -213,7 +293,11 @@
     "series": "biosecure",
     "products": [
       "m6"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/M6/2. M6 ver.0.9.pptx",
@@ -223,7 +307,11 @@
     "series": "biosecure",
     "products": [
       "m6"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/2. M6 ver.0.9.pptx",
@@ -233,7 +321,11 @@
     "series": "biosecure",
     "products": [
       "m6"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/HDSD/HDSD_ACP_WEB_CLIENT (Final).pdf",
@@ -244,7 +336,11 @@
     "products": [
       "m6",
       "a612"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx",
@@ -252,7 +348,11 @@
     "type": "ai",
     "description": "Bảng tổng hợp thuật toán AI trên camera theo nhóm Face / People / Traffic / Others, kèm use case và độ chính xác (Face Recognition 99%, People Detection 99%, LPR ngày 96% / đêm 90%, Traffic Violation 95%).",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Bảng tính làm việc, có số liệu độ chính xác chưa công bố.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên.pdf",
@@ -260,7 +360,11 @@
     "type": "ai",
     "description": "Bản gốc dung lượng lớn (~52MB) của tài liệu giới thiệu giải pháp phân tích hình ảnh thông minh ứng dụng AI – nhận diện khuôn mặt tại biên (Pavana). Nội dung xem bản _compressed.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên_compressed.pdf",
@@ -270,7 +374,11 @@
     "series": "",
     "products": [
       "a612"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf",
@@ -278,7 +386,11 @@
     "type": "ai",
     "description": "Tài liệu mô tả chức năng AI Camera (50 trang, v1.0 – 01/10/2026, lưu hành nội bộ): 12 tính năng chia nhóm An ninh – Con người và Giao thông; mỗi tính năng gồm chức năng, kịch bản, điều kiện hoạt động, yêu cầu lắp đặt, nguyên lý, điều kiện sự kiện; tích hợp ONVIF Analytics; hướng dẫn lắp đặt (camera PA02) và nghiệm thu.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Tài liệu ghi \"lưu hành nội bộ\".",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf",
@@ -288,7 +400,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/MOBISECURE.pdf",
@@ -298,7 +414,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/MOBISECURE.docx",
@@ -308,7 +428,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word nguồn; gửi khách dùng MOBISECURE.pdf.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf",
@@ -320,7 +444,11 @@
       "t8a",
       "t8b",
       "t8c"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/T8 Series.pdf",
@@ -332,7 +460,11 @@
       "t8a",
       "t8b",
       "t8c"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/3. Mobi Secure ver 0.9.pptx",
@@ -342,7 +474,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/HDSD/HDSD BWC_COMS.pdf",
@@ -352,7 +488,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/Mô tả chức năng BWC tích hợp COMS_stage2.2.docx",
@@ -362,7 +502,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Tài liệu mô tả yêu cầu firmware, dùng cho phát triển.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/PRD_PVN_BWC_MASTER.pdf",
@@ -372,7 +516,11 @@
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Tài liệu yêu cầu sản phẩm (PRD) gốc.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MOBISECURE/GCN bản quyền pm_COMS.pdf",
@@ -385,7 +533,11 @@
       "t8a",
       "t8b",
       "t8c"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Solutions/EMS/EMS_Dao_tao_Sales_lv.pptx",
@@ -393,7 +545,11 @@
     "type": "slide",
     "description": "Bộ slide đào tạo Sales về hệ thống EMS: bối cảnh, 9 menu chức năng, luồng dữ liệu, kiến trúc và lưu ý khi tư vấn (10/2026).",
     "series": "EMS",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Slide đào tạo nội bộ cho Sales.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Solutions/VMS/SRS_VIDEO MANAGEMENT SYSTEM_PLATFORM (1).docx",
@@ -401,7 +557,11 @@
     "type": "srs",
     "description": "Tài liệu đặc tả yêu cầu chức năng và phi chức năng của nền tảng VMS (Live View, PTZ, Playback, quản lý thiết bị, người dùng).",
     "series": "VMS",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Tài liệu đặc tả yêu cầu phần mềm, dùng cho phát triển.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Architecture/Kiến trúc hệ thống.pptx",
@@ -409,7 +569,11 @@
     "type": "architecture",
     "description": "Tổng quan kiến trúc các nền tảng FMS, ACP, COMS, VMS, IVA do MK Vision phát triển (Ver.1 – 18/12/2025).",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Tài liệu kiến trúc kỹ thuật.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/AI Factory/AI Factory.pptx",
@@ -417,7 +581,11 @@
     "type": "slide",
     "description": "Slide giới thiệu nền tảng AI Capability Center (quản lý dữ liệu, Model Factory, Engineering Engine) và mô hình hợp tác, do đối tác công nghệ cung cấp.",
     "series": "AI Factory",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Deck của đối tác, không phải tài liệu MK Vision.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/BÁO CÁO TÓM TẮT VỀ NĂNG LỰC CỦA MK VISION.pdf",
@@ -425,7 +593,11 @@
     "type": "profile",
     "description": "Báo cáo 2 trang về khát vọng \"Make in Vietnam\", chuỗi giá trị, nhà máy, đối tác và hệ sinh thái sản phẩm đề xuất.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/MK Vision Năng lực công nghệ.pdf",
@@ -433,7 +605,11 @@
     "type": "profile",
     "description": "Báo cáo 38 trang về 7 lĩnh vực công nghệ lõi, quy trình R&D, chuỗi cung ứng, sản xuất, QC, mức độ làm chủ và tiêu chuẩn áp dụng.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/MK Vision Profile (EN).pdf",
@@ -441,7 +617,11 @@
     "type": "profile",
     "description": "Hồ sơ năng lực tiếng Anh: giới thiệu công ty, dịch vụ ODM/OEM, R&D, phần cứng, chipset, nhà máy, QC và tổng quan sản phẩm.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/[Pavana][FW]Camera&Multimedia-Overview202609.pptx",
@@ -449,7 +629,11 @@
     "type": "slide",
     "description": "Slide kỹ thuật nội bộ về line-up sản phẩm, kiến thức camera, multimedia, giao thức streaming, chất lượng hình ảnh, sự kiện và tính năng AI.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "internal",
+    "statusNote": "Slide kỹ thuật nội bộ của team firmware.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/5.1. CUVO_CONNECT_2021_MASTER.pptx",
@@ -457,7 +641,11 @@
     "type": "slide",
     "description": "Slide giới thiệu hệ thống hội nghị truyền hình CUVO/Pavana: Conference Speaker, SC100, SC360 và webcam W100.",
     "series": "CUVO Connect",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf",
@@ -465,7 +653,11 @@
     "type": "catalog",
     "description": "Catalog sản phẩm tiếng Anh: công nghệ AI on Edge, ứng dụng theo ngành, camera lắp trên xe, camera chuyên dụng, camera giao thông, camera an ninh, COMS và thông số kỹ thuật.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Catalogs/30-12Eng Catalogue Product 3.pdf",
@@ -473,7 +665,11 @@
     "type": "catalog",
     "description": "Phiên bản catalog sản phẩm tiếng Anh (bản 30-12), cùng nội dung với Eng Catalogue Product 3.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Catalogs/View Catalogue Product 3.pdf",
@@ -481,7 +677,11 @@
     "type": "catalog",
     "description": "Catalog sản phẩm (bản xem), cùng bộ sản phẩm với catalog tiếng Anh.",
     "series": "",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V - Dome 5MP.pdf",
@@ -491,7 +691,11 @@
     "series": "v-secure",
     "products": [
       "va50fa0v"
-    ]
+    ],
+    "status": "old",
+    "statusNote": "Đã có bản mới: Datasheet VA50FA0V Dome R1.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VA50FA0V.pdf",
@@ -501,7 +705,11 @@
     "series": "v-secure",
     "products": [
       "va50fa0v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V - PTZ 5MP 40X.pdf",
@@ -511,7 +719,11 @@
     "series": "v-secure",
     "products": [
       "va50fa2v-40"
-    ]
+    ],
+    "status": "old",
+    "statusNote": "Đã có bản mới: Datasheet 16X VA50FA2V-40 PTZ R1.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VA50FA2V-40.pdf",
@@ -521,7 +733,11 @@
     "series": "v-secure",
     "products": [
       "va50fa2v-40"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V - Bullet 5MP.pdf",
@@ -531,7 +747,11 @@
     "series": "v-secure",
     "products": [
       "vb50fb1v"
-    ]
+    ],
+    "status": "old",
+    "statusNote": "Đã có bản mới: Datasheet VB50FB1V 5MP R1.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VB50FB1V.pdf",
@@ -541,7 +761,11 @@
     "series": "v-secure",
     "products": [
       "vb50fb1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V - Bullet 8MP.pdf",
@@ -551,7 +775,11 @@
     "series": "v-secure",
     "products": [
       "vb80fa1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/VB80FA1V.pdf",
@@ -561,7 +789,11 @@
     "series": "v-secure",
     "products": [
       "vb80fa1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf",
@@ -574,7 +806,11 @@
       "pvn-ch322m6mca-2812pw-a",
       "pvn-n1064od-e4hl",
       "sc609e"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/V-SECURE/16X VA50FA2V-40 PTZ R1.pdf",
@@ -584,7 +820,11 @@
     "series": "v-secure",
     "products": [
       "va50fa2v-40"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/V-SECURE/VA50FA0V Dome R1.pdf",
@@ -594,7 +834,11 @@
     "series": "v-secure",
     "products": [
       "va50fa0v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/V-SECURE/VA50FA2V-40 PTZ R1.pdf",
@@ -604,7 +848,11 @@
     "series": "v-secure",
     "products": [
       "va50fa2v-40"
-    ]
+    ],
+    "status": "old",
+    "statusNote": "Đã có bản mới: Datasheet 16X VA50FA2V-40 PTZ R1 (zoom số 16x).",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/V-SECURE/VB50FA1V 5MP R1.pdf",
@@ -614,7 +862,11 @@
     "series": "v-secure",
     "products": [
       "vb50fa1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/V-SECURE/VB50FB1V 5MP R1.pdf",
@@ -624,7 +876,11 @@
     "series": "v-secure",
     "products": [
       "vb50fb1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx",
@@ -637,7 +893,11 @@
       "va50fa2v-40",
       "vb50fb1v",
       "vb80fa1v"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/Slide/5. CUVO camera sale kit.pptx",
@@ -645,7 +905,11 @@
     "type": "slide",
     "description": "Sale kit giải pháp an ninh gia đình CUVO: camera không dây dùng pin, chuông cửa video, camera đèn an ninh và gói cước đám mây.",
     "series": "cuvo",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/HDSD/HDSD camera AI.pdf",
@@ -653,7 +917,11 @@
     "type": "hdsd",
     "description": "HDSD giao diện web local của AI camera: kết nối (IP mặc định 193.169.0.2), đăng nhập, xem trực tuyến/xem lại, quản lý người dùng, luồng video, ghi hình, sự kiện, mạng (Ethernet/Wifi/RTSP), lưu trữ và âm thanh.",
     "series": "v-secure",
-    "products": []
+    "products": [],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Datasheets/1.1 MKSX30-6550_VN_2.0.docx",
@@ -663,7 +931,11 @@
     "series": "mk-networks",
     "products": [
       "mksx30-6550"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word đang chỉnh sửa (có comment), chờ bản PDF chính thức.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Datasheets/2. 3 MKST28-5150_VN 2.0.docx",
@@ -674,7 +946,11 @@
     "products": [
       "mkst28-5150",
       "mksp28-5150"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word đang chỉnh sửa (có comment), chờ bản PDF chính thức.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Datasheets/4. MKEAP-650_Datasheet 2.0.docx",
@@ -684,7 +960,11 @@
     "series": "mk-networks",
     "products": [
       "mkeap-650"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word đang chỉnh sửa (có comment), chờ bản PDF chính thức.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Datasheets/5.MKISP12-5510_VN 2.0.docx",
@@ -694,7 +974,11 @@
     "series": "mk-networks",
     "products": [
       "mkisp12-5510"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word đang chỉnh sửa (có comment), chờ bản PDF chính thức.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Datasheets/6.1 MKSP10-3100_VN 2.0.docx",
@@ -704,7 +988,11 @@
     "series": "mk-networks",
     "products": [
       "mksp10-3100"
-    ]
+    ],
+    "status": "internal",
+    "statusNote": "Bản Word đang chỉnh sửa (có comment), chờ bản PDF chính thức.",
+    "validFrom": "",
+    "validTo": ""
   },
   {
     "path": "Data/MK Vision/Docs/MK Networks/Solutions/viber_image_2026-07-31_16-00-12-087.jpg",
@@ -715,6 +1003,10 @@
     "products": [
       "mksx30-6550",
       "mkeap-650"
-    ]
+    ],
+    "status": "public",
+    "statusNote": "",
+    "validFrom": "",
+    "validTo": ""
   }
 ]

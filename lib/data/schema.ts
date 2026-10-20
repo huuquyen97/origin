@@ -2,6 +2,8 @@ import { z } from "zod";
 
 export const SPEC_GROUPS = ["Image", "Lens", "AI", "Video", "Audio", "Network", "Storage", "Power", "Environment", "Physical", "Other"] as const;
 
+export const DOC_STATUSES = ["public", "internal", "old", "expired"] as const;
+
 export const DOC_TYPES = ["datasheet", "brochure", "slide", "hdsd", "certificate", "catalog", "srs", "ai", "profile", "architecture", "media", "other"] as const;
 
 const docType = z.string().transform((t) => ((DOC_TYPES as readonly string[]).includes(t) ? (t as (typeof DOC_TYPES)[number]) : "other"));
@@ -31,6 +33,8 @@ export const ProductSchema = z.object({
   updatedAt: z.string(),
   sources: z.array(z.string()),
   notes: z.string(),
+  /** Thông số đang xung đột giữa các tài liệu; group/label rỗng = cấp sản phẩm */
+  unconfirmed: z.array(z.object({ group: z.string(), label: z.string(), note: z.string() })).default([]),
 });
 
 export const SolutionSchema = z.object({
@@ -53,6 +57,8 @@ export const SolutionSchema = z.object({
   images: z.array(z.string()),
   sources: z.array(z.string()),
   notes: z.string(),
+  /** Cấu hình đề xuất: hạng mục theo tài liệu; product chỉ điền khi tài liệu nêu đúng model */
+  configuration: z.array(z.object({ item: z.string(), product: z.string().default(""), note: z.string().default("") })).default([]),
 });
 
 export const DocumentSchema = z.object({
@@ -62,6 +68,11 @@ export const DocumentSchema = z.object({
   description: z.string(),
   series: z.string(),
   products: z.array(z.string()),
+  status: z.enum(["public", "internal", "old"]).default("internal"),
+  statusNote: z.string().default(""),
+  /** YYYY-MM-DD; validTo đã qua thì tài liệu tự chuyển "Hết hạn" */
+  validFrom: z.string().default(""),
+  validTo: z.string().default(""),
 });
 
 export const AiSchema = z.object({
@@ -71,6 +82,17 @@ export const AiSchema = z.object({
   description: z.string(),
   supportedOn: z.array(z.string()),
   sources: z.array(z.string()),
+  feature: z.string(),
+});
+
+/** Từ điển tính năng AI chuẩn; aliases = chuỗi nguyên văn trong aiFeatures của sản phẩm */
+export const AiFeatureSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(1),
+  nameVi: z.string().min(1),
+  group: z.string(),
+  keywords: z.array(z.string()),
+  aliases: z.array(z.string()),
 });
 
 export const SeriesSchema = z.object({
@@ -109,6 +131,8 @@ export const HomeSchema = z.object({
 });
 
 export type DocType = (typeof DOC_TYPES)[number];
+export type DocStatus = (typeof DOC_STATUSES)[number];
+export type AiFeature = z.infer<typeof AiFeatureSchema>;
 export type Product = z.infer<typeof ProductSchema>;
 export type Solution = z.infer<typeof SolutionSchema>;
 export type DocumentMeta = z.infer<typeof DocumentSchema>;

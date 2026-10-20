@@ -223,11 +223,23 @@
       "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
     }
   ],
-  "image": "",
+  "image": "/img/products/pvn-ch222m6nd-2812pw-a.png",
   "status": "",
   "updatedAt": "2024",
   "sources": [
     "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
   ],
-  "notes": "File tên 'Cuvo catalogue 2024' nhưng nội dung mang thương hiệu 'pavana Smart Security Camera' (pavana.tech) — xếp series CUVO theo tên file, cần xác nhận thương hiệu. Mâu thuẫn nội bộ: trang giới thiệu ghi 'motorized 4X zoom lens' nhưng bảng thông số ghi Lens Type 'Manual(Ø14)'. Smart Feature: NA (không có AI). Ảnh sản phẩm chỉ có trong PDF, không trích xuất được."
+  "notes": "File tên 'Cuvo catalogue 2024' nhưng nội dung mang thương hiệu 'pavana Smart Security Camera' (pavana.tech) — xếp series CUVO theo tên file, cần xác nhận thương hiệu. Mâu thuẫn nội bộ: trang giới thiệu ghi 'motorized 4X zoom lens' nhưng bảng thông số ghi Lens Type 'Manual(Ø14)'. Smart Feature: NA (không có AI). Ảnh sản phẩm chỉ có trong PDF, không trích xuất được.",
+  "unconfirmed": [
+    {
+      "group": "Lens",
+      "label": "Lens Type",
+      "note": "Catalogue: trang giới thiệu ghi 'motorized 4X zoom lens', bảng thông số ghi 'Manual(Ø14)'; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Catalogue mang thương hiệu 'pavana', chỉ xếp vào dòng CUVO theo tên file 'Cuvo catalogue 2024'; cần xác nhận thương hiệu với PM."
+    }
+  ]
 }

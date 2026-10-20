@@ -1,0 +1,297 @@
+[
+  {
+    "id": "face-recognition",
+    "name": "Face Recognition",
+    "nameVi": "Nhận diện khuôn mặt",
+    "group": "Khuôn mặt",
+    "keywords": ["khuôn mặt", "face", "FR", "IDVision", "so khớp khuôn mặt", "chấm công"],
+    "aliases": [
+      "AI Face Recognition",
+      "Face Recognition（FR）",
+      "Face Recognition (IDVision) – thư viện đến 20,000 khuôn mặt, mã hoá thư viện",
+      "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện",
+      "Tỷ lệ nhận dạng khuôn mặt ≥90%",
+      "Hỗ trợ mã hóa thư viện khuôn mặt",
+      "So khớp khuôn mặt",
+      "Nhận diện khuôn mặt tại biên – đến 20.000 khuôn mặt, chính xác ≥ 90%, mã hoá thư viện"
+    ]
+  },
+  {
+    "id": "face-detection",
+    "name": "Face Detection",
+    "nameVi": "Phát hiện khuôn mặt",
+    "group": "Khuôn mặt",
+    "keywords": ["khuôn mặt", "face"],
+    "aliases": ["AI Face Detection", "Face Detection"]
+  },
+  {
+    "id": "face-attributes",
+    "name": "Facial Attribute Recognition",
+    "nameVi": "Nhận diện thuộc tính khuôn mặt",
+    "group": "Khuôn mặt",
+    "keywords": ["khuôn mặt", "giới tính", "độ tuổi"],
+    "aliases": []
+  },
+  {
+    "id": "liveness",
+    "name": "Liveness Detection",
+    "nameVi": "Chống giả mạo khuôn mặt (phát hiện người thật)",
+    "group": "Khuôn mặt",
+    "keywords": ["chống giả mạo", "anti-spoofing", "sự sống"],
+    "aliases": []
+  },
+  {
+    "id": "fingerprint",
+    "name": "Fingerprint Recognition",
+    "nameVi": "Nhận diện vân tay",
+    "group": "Sinh trắc học",
+    "keywords": ["vân tay", "fingerprint", "sinh trắc"],
+    "aliases": [
+      "Nhận diện vân tay với module vân tay quang học FAP20, tương thích dữ liệu vân tay trong Căn cước gắn chip",
+      "Tự động nhận diện vân tay sống",
+      "So khớp vân tay"
+    ]
+  },
+  {
+    "id": "eid",
+    "name": "Chip-based ID Authentication",
+    "nameVi": "Xác thực CCCD gắn chip",
+    "group": "Sinh trắc học",
+    "keywords": ["CCCD", "căn cước", "e-ID", "eKYC", "MoC", "e-Passport"],
+    "aliases": [
+      "Xác thực Match-on-Card (MoC) với dữ liệu sinh trắc học trong chip CCCD",
+      "Xác thực CCCD gắn chip & e-Passport (MK e-ID)"
+    ]
+  },
+  {
+    "id": "card-id",
+    "name": "NFC / RFID Identification",
+    "nameVi": "Định danh qua thẻ NFC / RFID",
+    "group": "Sinh trắc học",
+    "keywords": ["NFC", "RFID", "thẻ"],
+    "aliases": ["Định danh qua thẻ NFC / RFID ISO 14443 A/B"]
+  },
+  {
+    "id": "blacklist-search",
+    "name": "Subject Search",
+    "nameVi": "Tìm kiếm đối tượng (danh sách đen)",
+    "group": "Khuôn mặt",
+    "keywords": ["truy nã", "blacklist", "danh sách đen"],
+    "aliases": ["Subject searching – tìm kiếm đối tượng truy nã / blacklist"]
+  },
+  {
+    "id": "people-detection",
+    "name": "People Detection",
+    "nameVi": "Phát hiện người",
+    "group": "Người",
+    "keywords": ["người", "human", "pedestrian", "người đi bộ"],
+    "aliases": ["AI People Detection", "Pedestrian Detection", "Human&Vehicle Detection（PD&VD）"]
+  },
+  {
+    "id": "pedestrian-attributes",
+    "name": "Pedestrian Attribute Recognition",
+    "nameVi": "Nhận diện thuộc tính người",
+    "group": "Người",
+    "keywords": ["quần áo", "thuộc tính"],
+    "aliases": []
+  },
+  {
+    "id": "people-counting",
+    "name": "People Counting",
+    "nameVi": "Đếm người / đếm qua vạch",
+    "group": "Người",
+    "keywords": ["đếm người", "people counting", "cross counting", "đếm"],
+    "aliases": ["Cross Counting", "Cross Counting（CC）"]
+  },
+  {
+    "id": "crowd",
+    "name": "Crowd Density Detection",
+    "nameVi": "Phát hiện đám đông",
+    "group": "Hành vi",
+    "keywords": ["đám đông", "tụ tập", "crowd"],
+    "aliases": ["Crowd Density Detection", "Crowd Density Detection（CD）"]
+  },
+  {
+    "id": "heat-map",
+    "name": "Heat Map",
+    "nameVi": "Bản đồ nhiệt",
+    "group": "Hành vi",
+    "keywords": ["heatmap", "mật độ"],
+    "aliases": ["Heat Map", "Heat Map（HM）"]
+  },
+  {
+    "id": "queue",
+    "name": "Queue Length Detection",
+    "nameVi": "Phát hiện hàng chờ",
+    "group": "Hành vi",
+    "keywords": ["xếp hàng", "hàng đợi", "queue"],
+    "aliases": ["Queue Legth Detection", "Queue Lenght Detection（QD）"]
+  },
+  {
+    "id": "intrusion",
+    "name": "Intrusion Detection",
+    "nameVi": "Phát hiện xâm nhập vùng cấm",
+    "group": "Hành vi",
+    "keywords": ["xâm nhập", "vùng cấm", "perimeter", "intrusion"],
+    "aliases": ["PerimeterIntrusion Detection", "Perimeter Intrusion Detection（PID)"]
+  },
+  {
+    "id": "line-crossing",
+    "name": "Line Crossing Detection",
+    "nameVi": "Phát hiện vượt hàng rào ảo",
+    "group": "Hành vi",
+    "keywords": ["vượt rào", "hàng rào ảo", "tripwire"],
+    "aliases": ["Line Crossing Detection", "Line Crossing Detection（LCD）"]
+  },
+  {
+    "id": "stationary-object",
+    "name": "Stationary Object Detection",
+    "nameVi": "Phát hiện vật thể bỏ quên",
+    "group": "Hành vi",
+    "keywords": ["bỏ quên", "vật thể lạ"],
+    "aliases": ["Stationary Object Detection（SOD)"]
+  },
+  {
+    "id": "motion",
+    "name": "Video Motion Detection",
+    "nameVi": "Phát hiện chuyển động",
+    "group": "Hành vi",
+    "keywords": ["chuyển động", "motion"],
+    "aliases": ["AI Video Motion Detection"]
+  },
+  {
+    "id": "sound",
+    "name": "Rare Sound Detection",
+    "nameVi": "Phát hiện âm thanh bất thường",
+    "group": "Hành vi",
+    "keywords": ["âm thanh", "tiếng động"],
+    "aliases": ["Rare Sound Detection", "Rare Sound Detection（RSD）"]
+  },
+  {
+    "id": "vehicle-detection",
+    "name": "Vehicle Detection",
+    "nameVi": "Phát hiện phương tiện",
+    "group": "Phương tiện",
+    "keywords": ["xe", "phương tiện", "vehicle", "ô tô"],
+    "aliases": ["AI Vehicle Detection", "Vehicle Detection", "Human&Vehicle Detection（PD&VD）"]
+  },
+  {
+    "id": "lpr",
+    "name": "License Plate Recognition (LPR / ANPR)",
+    "nameVi": "Nhận diện biển số",
+    "group": "Phương tiện",
+    "keywords": ["biển số", "LPR", "ANPR", "license plate", "bien so"],
+    "aliases": [
+      "AI License Plate Recognition",
+      "license Plate Recognition（LPR）",
+      "[LPR] Nhận diện biển số các xe đi phía trước",
+      "License Plate Recognition (giới thiệu trên trang bìa datasheet)"
+    ]
+  },
+  {
+    "id": "plate-detection",
+    "name": "License Plate Detection",
+    "nameVi": "Phát hiện biển số",
+    "group": "Phương tiện",
+    "keywords": ["biển số", "license plate"],
+    "aliases": ["License Plate Detection"]
+  },
+  {
+    "id": "vehicle-attributes",
+    "name": "Vehicle Attribute Recognition",
+    "nameVi": "Nhận diện thuộc tính phương tiện",
+    "group": "Phương tiện",
+    "keywords": ["màu xe", "loại xe", "hãng xe"],
+    "aliases": []
+  },
+  {
+    "id": "vehicle-counting",
+    "name": "Vehicle Counting & Classification",
+    "nameVi": "Đếm và phân loại phương tiện",
+    "group": "Phương tiện",
+    "keywords": ["lưu lượng", "đếm xe", "phân loại xe"],
+    "aliases": []
+  },
+  {
+    "id": "traffic-violation",
+    "name": "Traffic Violation Detection",
+    "nameVi": "Phát hiện vi phạm giao thông",
+    "group": "Giao thông",
+    "keywords": ["vi phạm", "giao thông"],
+    "aliases": []
+  },
+  {
+    "id": "red-light",
+    "name": "Red Light Violation Detection",
+    "nameVi": "Vượt đèn đỏ",
+    "group": "Giao thông",
+    "keywords": ["đèn đỏ", "đèn tín hiệu"],
+    "aliases": []
+  },
+  {
+    "id": "wrong-way",
+    "name": "Wrong-way Detection",
+    "nameVi": "Đi ngược chiều",
+    "group": "Giao thông",
+    "keywords": ["ngược chiều"],
+    "aliases": []
+  },
+  {
+    "id": "solid-line",
+    "name": "Solid Line Crossing Detection",
+    "nameVi": "Đè vạch liền",
+    "group": "Giao thông",
+    "keywords": ["vạch liền", "lấn làn"],
+    "aliases": []
+  },
+  {
+    "id": "illegal-parking",
+    "name": "Illegal Parking / Stopping Detection",
+    "nameVi": "Dừng đỗ xe trái quy định",
+    "group": "Giao thông",
+    "keywords": ["đỗ xe", "dừng xe", "đậu xe"],
+    "aliases": []
+  },
+  {
+    "id": "encroachment",
+    "name": "Sidewalk / Roadway Encroachment",
+    "nameVi": "Lấn chiếm lòng đường, vỉa hè",
+    "group": "Giao thông",
+    "keywords": ["lấn chiếm", "vỉa hè", "trật tự đô thị"],
+    "aliases": []
+  },
+  {
+    "id": "driver-monitoring",
+    "name": "Driver Monitoring (DMS)",
+    "nameVi": "Giám sát hành vi tài xế",
+    "group": "Lái xe",
+    "keywords": ["DMS", "buồn ngủ", "tài xế", "điện thoại", "dây an toàn", "hút thuốc", "FleetFocus+"],
+    "aliases": [
+      "[FleetFocus+] Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ; Mức độ tập trung; Sử dụng điện thoại; Đeo dây an toàn; Đeo kính; Đeo khẩu trang; Hút thuốc; Nhận diện khuôn mặt tài xế; Nhận diện sự sống động",
+      "[FleetFocus+] Buồn ngủ, mức độ tập trung, sử dụng điện thoại, đeo dây an toàn, đeo kính, đeo khẩu trang, hút thuốc, nhận diện khuôn mặt tài xế, nhận diện sự sống động",
+      "[FleetFocus+] Phát hiện 7 sự kiện liên quan đến hành vi: Buồn ngủ, mức độ tập trung, sử dụng điện thoại, đeo dây an toàn, đeo kính, đeo khẩu trang, hút thuốc, nhận diện khuôn mặt tài xế, nhận diện sự sống động"
+    ]
+  },
+  {
+    "id": "driving-events",
+    "name": "Driving Event Detection",
+    "nameVi": "Phát hiện sự kiện lái xe (cua gấp, phanh gấp…)",
+    "group": "Lái xe",
+    "keywords": ["phanh gấp", "cua gấp", "tăng tốc", "va chạm", "FleetFocus"],
+    "aliases": [
+      "[FleetFocus] Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, Phanh gấp, Tăng tốc, Va chạm",
+      "[FleetFocus] Phát hiện 4 sự kiện liên quan đến tốc độ: Cua gấp, phanh gấp, tăng tốc, va chạm"
+    ]
+  },
+  {
+    "id": "driver-id",
+    "name": "Driver Identification",
+    "nameVi": "Nhận diện người lái, chống giả mạo",
+    "group": "Lái xe",
+    "keywords": ["DriverID", "tài xế", "học viên", "DATM"],
+    "aliases": [
+      "[DriverID] Nhận diện lái xe, chống giả mạo",
+      "[DATM] Hiển thị thông tin học viên - giáo viên; Xác thực; Hiển thị thời gian, quãng đường của học viên đã luyện tập; Xác thực người học tần suất 15fps; Tự động cảnh báo các hành vi gian lận."
+    ]
+  }
+]

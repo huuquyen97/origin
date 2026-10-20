@@ -10,12 +10,13 @@ export default function DocsPage() {
   const series = getSeries();
   const docs = getDocuments().map((d) => ({
     path: d.path, url: d.url, ext: d.ext, title: d.title, type: d.type, description: d.description,
+    status: d.status, statusNote: d.statusNote, validFrom: d.validFrom, validTo: d.validTo,
     topic: series.find((s) => s.id === d.series)?.name ?? (d.series || "Chung"),
     products: d.products.map(getProduct).filter((p) => p !== undefined).map((p) => ({ slug: p.slug, model: p.model })),
   }));
   return (
     <>
-      <PageHero image="/img/scenes/docs.jpg" crumbs={[{ label: "Tài liệu" }]} eyebrow="Thư viện" title="Tài liệu chính thống" lead="Datasheet, catalogue, slide, hướng dẫn sử dụng và chứng nhận. Mở trực tiếp file gốc, không qua bản sao." />
+      <PageHero image="/img/scenes/docs.jpg" crumbs={[{ label: "Tài liệu" }]} eyebrow="Thư viện" title="Tài liệu chính thống" lead="Datasheet, catalogue, slide, hướng dẫn sử dụng và chứng nhận. Mỗi tài liệu có nhãn Gửi khách được / Nội bộ / Bản cũ / Hết hạn — kiểm tra nhãn trước khi gửi khách." />
       <main className="container-x py-12 md:py-14">
         <Suspense fallback={<DocsBrowserView docs={docs} initial={{}} />}>
           <DocsBrowser docs={docs} />

@@ -158,5 +158,12 @@
   "sources": [
     "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
   ],
-  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn). Brochure 'T8 Series.pdf' ghi IP67 (v2 ghi IP65 – đã dùng IP65). Cấu hình T8C (64GB, 4G LTE, NFC/RFID ISO 14443 A/B) tương đồng MK22FC1E nhưng pin (4000 vs 4500 mAh), frame rate (60 vs 30 fps), chuẩn nén (H.265/H.264 vs H.264) và dải nhiệt độ khác nhau; không có tài liệu xác nhận hai model là một. Không ghi giá."
+  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn). Brochure 'T8 Series.pdf' ghi IP67 (v2 ghi IP65 – đã dùng IP65). Cấu hình T8C (64GB, 4G LTE, NFC/RFID ISO 14443 A/B) tương đồng MK22FC1E nhưng pin (4000 vs 4500 mAh), frame rate (60 vs 30 fps), chuẩn nén (H.265/H.264 vs H.264) và dải nhiệt độ khác nhau; không có tài liệu xác nhận hai model là một. Không ghi giá.",
+  "unconfirmed": [
+    {
+      "group": "Environment",
+      "label": "Chuẩn bảo vệ",
+      "note": "Datasheet v2 ghi IP65, brochure 'T8 Series' ghi IP67; cần xác nhận với PM."
+    }
+  ]
 }

@@ -239,5 +239,6 @@
   "sources": [
     "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_full version.pdf"
   ],
-  "notes": "File 'AUTOSECURE_full version.pdf' thực chất là datasheet 'AutoSecure - DAT – Giải pháp Camera trường học lái xe' (trang 61 của catalog). So với bản Lite: thêm màn hình 7 inch cảm ứng, mô-đun đầu đọc thẻ ID tích hợp màn hình, tính năng [DATM], Module bảo mật 2 SAM Slot; không có LPR; chứng nhận ghi EMC FCC, CE thay vì QCVN; hồng ngoại 10m. Ảnh datasheet gồm camera + tablet/màn hình 7 inch; chưa có ảnh riêng nên dùng ảnh camera AutoSecure."
+  "notes": "File 'AUTOSECURE_full version.pdf' thực chất là datasheet 'AutoSecure - DAT – Giải pháp Camera trường học lái xe' (trang 61 của catalog). So với bản Lite: thêm màn hình 7 inch cảm ứng, mô-đun đầu đọc thẻ ID tích hợp màn hình, tính năng [DATM], Module bảo mật 2 SAM Slot; không có LPR; chứng nhận ghi EMC FCC, CE thay vì QCVN; hồng ngoại 10m. Ảnh datasheet gồm camera + tablet/màn hình 7 inch; chưa có ảnh riêng nên dùng ảnh camera AutoSecure.",
+  "unconfirmed": []
 }

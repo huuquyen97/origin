@@ -231,11 +231,23 @@
       "path": "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
     }
   ],
-  "image": "",
+  "image": "/img/products/sc609e.png",
   "status": "",
   "updatedAt": "2024",
   "sources": [
     "Data/MK Vision/Docs/Datasheets/Cuvo catalogue 2024.pdf"
   ],
-  "notes": "Category 'Bullet' suy từ ảnh trong catalogue (catalogue không ghi loại). Thương hiệu trong catalogue là 'pavana'. Tên chức năng AI giữ nguyên chính tả gốc (ví dụ 'Queue Lenght', 'license Plate')."
+  "notes": "Category 'Bullet' suy từ ảnh trong catalogue (catalogue không ghi loại). Thương hiệu trong catalogue là 'pavana'. Tên chức năng AI giữ nguyên chính tả gốc (ví dụ 'Queue Lenght', 'license Plate').",
+  "unconfirmed": [
+    {
+      "group": "",
+      "label": "",
+      "note": "Catalogue mang thương hiệu 'pavana', chỉ xếp vào dòng CUVO theo tên file 'Cuvo catalogue 2024'; cần xác nhận thương hiệu với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Catalogue không ghi loại camera, 'Bullet' chỉ suy từ ảnh; cần xác nhận với PM."
+    }
+  ]
 }

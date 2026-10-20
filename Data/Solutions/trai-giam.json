@@ -4,14 +4,49 @@
   "name": "Quản lý trại giam & cơ sở cai nghiện",
   "shortName": "",
   "industry": "An ninh – Tư pháp",
-  "summary": "Giám sát phạm nhân 24/7, phát hiện bạo lực, tự gây thương tích, vượt rào, trốn trại; điểm danh bằng nhận diện khuôn mặt; lưu trữ bằng chứng video phục vụ quản lý và khiếu nại.",
-  "painPoints": [],
+  "summary": "Giải pháp quản lý thông minh cho trại giam và cơ sở cai nghiện: giám sát phạm nhân 24/7, cảnh báo tức thời bạo lực, tự gây thương tích, vượt rào, trốn trại; điểm danh bằng nhận diện khuôn mặt và lưu trữ bằng chứng video phục vụ quản lý, khiếu nại.",
+  "painPoints": [
+    "Cần giám sát phạm nhân liên tục trong khu giam giữ, khu thăm gặp",
+    "Nguy cơ tụ tập, đánh nhau, gây rối, vượt rào, trốn trại, phá hoại tài sản, hành vi tự hại",
+    "Điểm danh, kiểm tra, ghi nhận hoạt động giám sát thủ công",
+    "Cần minh chứng đầy đủ cho kiểm tra, khiếu nại, tranh chấp và bảo vệ cán bộ khỏi cáo buộc sai"
+  ],
   "architecture": "",
-  "modules": [],
-  "features": [],
-  "benefits": [],
+  "modules": [
+    {
+      "name": "Giám sát phạm nhân liên tục",
+      "description": "Theo dõi phạm nhân 24/7 trong khu giam giữ, khu thăm gặp; nhận diện hành vi bất thường, phát hiện dấu hiệu bạo lực hoặc tự gây thương tích; đảm bảo tuân thủ nội quy và an toàn trong từng khu vực."
+    },
+    {
+      "name": "Cảnh báo hành vi nguy hiểm tức thời",
+      "description": "Phát hiện tụ tập, đánh nhau, gây rối; vượt rào, trốn trại; phá hoại tài sản, hành vi tự hại; cảnh báo ngay lập tức đến trung tâm giám sát."
+    },
+    {
+      "name": "Hỗ trợ công tác quản lý hành chính",
+      "description": "Điểm danh phạm nhân bằng nhận diện khuôn mặt; kiểm tra, ghi nhận bằng chứng video cho các hoạt động giám sát; xử lý nhanh các tình huống khẩn cấp với dữ liệu rõ ràng; lưu trữ và tra cứu video khi cần."
+    },
+    {
+      "name": "Tuân thủ quy định & bảo vệ quyền con người",
+      "description": "Ghi lại đầy đủ hoạt động để kiểm tra, giám sát; bảo vệ quyền lợi hợp pháp của phạm nhân; cung cấp minh chứng trong các vụ khiếu nại, tranh chấp; tuân thủ các tiêu chuẩn nhân đạo và pháp luật Việt Nam."
+    }
+  ],
+  "features": [
+    "Giám sát phạm nhân",
+    "Giám sát phân trại",
+    "Định danh và giám sát khu thăm gặp",
+    "Điểm danh kiểm diện",
+    "Hàng rào điện tử"
+  ],
+  "benefits": [
+    "Phát hiện sớm nguy cơ, ngăn chặn sự cố trước khi leo thang, bảo vệ cả phạm nhân và cán bộ",
+    "Phản ứng nhanh trong tình huống khẩn cấp, giảm thiểu thương vong và thiệt hại",
+    "Giảm tải công việc thủ công, tăng tính minh bạch, cung cấp bằng chứng pháp lý đầy đủ",
+    "Minh bạch hoạt động, bảo vệ cán bộ quản lý khỏi cáo buộc sai, nâng cao uy tín cơ sở"
+  ],
   "targetCustomers": [
-    "An ninh / Tư pháp"
+    "An ninh / Tư pháp",
+    "Trại giam",
+    "Cơ sở cai nghiện"
   ],
   "relatedSeries": [
     "v-secure"
@@ -21,11 +56,31 @@
     "va50fa2v-40",
     "vb50fb1v"
   ],
-  "documents": [],
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "configuration": [
+    {
+      "item": "Sản phẩm đề xuất – Camera Bullet",
+      "product": "",
+      "note": "Bullet; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera đeo người (điểm danh kiểm diện)",
+      "product": "",
+      "note": "Body camera; slide chỉ có ảnh, không ghi model"
+    }
+  ],
   "cover": "/img/scenes/control-room-1.jpg",
-  "images": [],
+  "images": [
+    "/img/solutions/trai-giam-1.jpg"
+  ],
   "sources": [
     "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
   ],
-  "notes": ""
+  "notes": "Nội dung lấy từ slide 14 (sơ đồ TRẠI GIAM – CƠ SỞ CAI NGHIỆN) và slide 15 của file pptx V-SECURE ver.0.9. Catalogue không có mục riêng cho trại giam. Slide không có phần 'thực trạng' riêng: painPoints là các bài toán slide nêu cần xử lý. Slide ghi 'Tự tập, đánh nhau, gây rối' (nhiều khả năng là lỗi chính tả của 'Tụ tập'); dữ liệu ghi 'tụ tập'. Khung 'Sản phẩm đề xuất' chỉ có ảnh, không ghi model; ngoài Bullet và camera đeo người còn thiết bị dạng màn hình đứng và một hộp thiết bị màu xám chưa xác định được từ ảnh nên không đưa vào cấu hình. Slide không có camera PTZ trong khung sản phẩm đề xuất, nhưng products (có VA50FA2V-40) giữ nguyên vì tài liệu không cho thấy là sai."
 }

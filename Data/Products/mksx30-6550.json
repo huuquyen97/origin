@@ -45,6 +45,14 @@
       [
         "Bảo vệ vòng Ring",
         "ERPS G.8032 < 50ms"
+      ],
+      [
+        "L2 VPN / OAM",
+        "dịch vụ L2 VPN, các chức năng OAM (Operations, Administration and Maintenance) nâng cao nhằm đảm bảo các cam kết chất lượng dịch vụ (SLA – Service Level Agreement)"
+      ],
+      [
+        "IPv6",
+        "Quản trị IPv6 nâng cao, bảo mật IPv6, điều khiển multicast IPv6"
       ]
     ],
     "Power": [
@@ -84,5 +92,12 @@
   "sources": [
     "Data/MK Vision/Docs/MK Networks/Datasheets/1.1 MKSX30-6550_VN_2.0.docx"
   ],
-  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, forwarding rate, VLAN, công suất tiêu thụ, kích thước, trọng lượng...). Mục \"Tính năng chính\" ghi \"24/48 cổng 10G SFP+\" và đoạn giới thiệu nói dòng gồm hai mẫu 24 hoặc 48 cổng; comment trong file (06/05/2026) yêu cầu \"Bỏ option 48 cổng, cả ảnh minh họa, không phân phối dòng này\" → chỉ ghi 24 cổng theo tiêu đề datasheet (\"24 cổng 10G SFP+, 06QSFP28 100G\"). Danh sách định tuyến xuất hiện 2 lần, khác nhau: mục đầu ghi \"UDP help\" và lặp \"VRRP\"; dùng danh sách ở đoạn \"Các tính năng định tuyến L3\" (ghi \"UDP Helper\"), chỉ chuẩn hóa khoảng trắng quanh dấu phẩy. Không có ngày phát hành in trên datasheet."
+  "unconfirmed": [
+    {
+      "group": "Network",
+      "label": "Cổng",
+      "note": "Datasheet ghi \"24/48 cổng\" và sơ đồ giải pháp ghi \"MKSX30/54-6550 24/48 Port\", trong khi comment datasheet yêu cầu bỏ option 48 cổng; cần xác nhận chỉ phân phối bản 24 cổng."
+    }
+  ],
+  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, forwarding rate, VLAN, công suất tiêu thụ, kích thước, trọng lượng...); ảnh nhúng chỉ là ảnh mặt trước thiết bị và logo mkCLOUD, không có bảng thông số. Mục \"Tính năng chính\" ghi \"24/48 cổng 10G SFP+\"; comment trong file (06/05/2026) yêu cầu \"Bỏ option 48 cổng, cả ảnh minh họa, không phân phối dòng này\" → chỉ ghi 24 cổng theo tiêu đề datasheet. Sơ đồ giải pháp \"Mô hình hạ tầng mạng thôn số\" vẫn ghi \"MKSX30/54-6550 24/48 Port FO 10Gb, 06 Port FO 100Gb (Core Switch L3)\". Danh sách định tuyến xuất hiện 2 lần, khác nhau (\"UDP help\", lặp \"VRRP\"); dùng danh sách ở đoạn \"Các tính năng định tuyến L3\". Hàng \"L2 VPN / OAM\" và \"IPv6\" lấy nguyên văn từ đoạn giới thiệu. Không có ngày phát hành in trên datasheet."
 }

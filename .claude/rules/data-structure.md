@@ -17,7 +17,8 @@ Data/
   Products/<slug>.json   # mỗi sản phẩm 1 file
   Solutions/<slug>.json  # mỗi giải pháp 1 file
   Documents/documents.json  # mô tả tài liệu (tiêu đề, loại, dòng, sản phẩm liên quan)
-  AI/algorithms.json     # thuật toán AI
+  AI/algorithms.json     # mô tả thuật toán AI theo tài liệu (feature = id trong features.json)
+  AI/features.json       # từ điển tính năng AI chuẩn (nameVi + name EN, keywords, aliases = chuỗi aiFeatures nguyên văn)
   Site/series.json | company.json | home.json   # dòng sản phẩm, công ty, nội dung trang chủ
 ```
 
@@ -26,6 +27,11 @@ Data/
 - zod ở `lib/data/schema.ts`; đọc, validate, liên kết ở `lib/data/index.ts`. File sai làm build dừng và báo rõ tên file.
 - Sản phẩm: `slug, model, name, series, category, resolution, ipRating, summary, features, aiFeatures, specs` (nhóm: Image, Lens, AI, Video, Audio, Network, Storage, Power, Environment, Physical, Other), `solutions, documents, image, status, updatedAt, sources, notes`.
 - Giải pháp: `slug, order, name, shortName, industry, summary, painPoints, architecture, modules, features, benefits, targetCustomers, relatedSeries, products, documents, cover, images, sources, notes`. `order` quyết định thứ tự (trang chủ lấy 3 giải pháp đầu).
+- Sản phẩm có `unconfirmed: [{group, label, note}]`: thông số đang xung đột giữa tài liệu; `group`/`label` khớp đúng một hàng trong `specs` (rỗng = cấp sản phẩm). Giao diện hiện cảnh báo tại ô; `notes` chỉ dành cho người bảo trì, không hiển thị.
+- Giải pháp có `configuration: [{item, product, note}]` (cấu hình đề xuất); `product` chỉ điền khi tài liệu nêu đúng model.
+- Tài liệu (`documents.json`) có `status`: `public` (Gửi khách được) / `internal` (Nội bộ) / `old` (Bản cũ), `statusNote`, `validFrom`/`validTo` (YYYY-MM-DD). Quá `validTo` thì tự thành "Hết hạn" lúc build. File chưa mô tả mặc định Nội bộ.
+- `aiFeatures` của sản phẩm giữ nguyên văn datasheet; thêm chuỗi mới thì gắn vào `aliases` của tính năng chuẩn trong `AI/features.json` (check-data cảnh báo chuỗi chưa gắn).
+- Nhãn hiển thị tiếng Việt cho `category` và label thông số nằm ở `lib/labels.ts` (dữ liệu vẫn nguyên văn); label mới cùng nghĩa với label đã có thì thêm vào bảng để bảng so sánh xếp cùng hàng.
 - Liên kết sản phẩm ↔ giải pháp là hai chiều: khai báo ở một phía là đủ.
 - Trường văn bản (`summary`, `notes`, `architecture`) là chuỗi, không phải mảng.
 

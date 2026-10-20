@@ -4,14 +4,59 @@
   "name": "AI Camera cho quản lý giao thông đô thị",
   "shortName": "",
   "industry": "Đô thị & Giao thông",
-  "summary": "Lắp tại cửa ngõ, trục chính, giao lộ: thu thập lưu lượng/mật độ, phân loại phương tiện; phát hiện vượt đèn đỏ, sai làn, ngược chiều, dừng đỗ sai, không đội mũ bảo hiểm; cảnh báo tai nạn, ùn tắc; nhận diện biển số hỗ trợ điều tra.",
-  "painPoints": [],
+  "summary": "AI Camera MK Vision lắp tại cửa ngõ vào thành phố, tuyến đường chính (vành đai, trục xuyên tâm) và giao lộ then chốt, hỗ trợ lực lượng chức năng quản lý và điều tiết giao thông. Hệ thống thu thập lưu lượng, phát hiện vi phạm tự động, cảnh báo sự cố và nhận diện biển số hỗ trợ điều tra.",
+  "painPoints": [
+    "Ùn tắc giao thông, cần dữ liệu lưu lượng, mật độ, vận tốc để điều tiết đèn tín hiệu và quy hoạch",
+    "Vi phạm giao thông: quá tốc độ, vượt đèn đỏ, sai làn, ngược chiều, dừng đỗ sai quy định, không đội mũ bảo hiểm",
+    "Tai nạn, xe hỏng, vật cản trên đường, đua xe, lạng lách cần phát hiện và ứng phó nhanh",
+    "Truy vết phương tiện liên quan đến vụ án, lưu trữ video để điều tra tai nạn"
+  ],
   "architecture": "",
-  "modules": [],
-  "features": [],
-  "benefits": [],
+  "modules": [
+    {
+      "name": "Giám sát & phân tích dòng phương tiện",
+      "description": "Theo dõi thông minh 24/7: tự động thu thập dữ liệu lưu lượng, mật độ phương tiện; phân tích vận tốc trung bình theo thời gian thực; theo dõi phân loại phương tiện; cung cấp thống kê theo giờ cao điểm, giờ thấp điểm."
+    },
+    {
+      "name": "Phát hiện vi phạm giao thông tự động",
+      "description": "Vi phạm tốc độ (chạy quá tốc độ cho phép); vượt đèn đỏ tại giao lộ; đi sai làn đường, đi ngược chiều; dừng đỗ không đúng quy định; không đội mũ bảo hiểm (xe máy)."
+    },
+    {
+      "name": "Cảnh báo sự cố & ứng phó khẩn cấp",
+      "description": "Phát hiện tai nạn giao thông ngay lập tức; cảnh báo ùn tắc bất thường; nhận diện xe hỏng, vật cản trên đường; phát hiện vi phạm nghiêm trọng (đua xe, lạng lách)."
+    },
+    {
+      "name": "Xây dựng hệ thống giao thông văn minh",
+      "description": "Dữ liệu để quy hoạch đường mới, mở rộng đường cũ; xác định điểm đen tai nạn để cải tạo; đánh giá hiệu quả các giải pháp giao thông; hỗ trợ xây dựng thành phố thông minh (Smart City)."
+    },
+    {
+      "name": "Hỗ trợ điều tra & an ninh",
+      "description": "Truy vết phương tiện liên quan đến vụ án; nhận diện biển số xe trong các vụ truy nã; lưu trữ video để điều tra tai nạn; hỗ trợ công tác an ninh đô thị."
+    }
+  ],
+  "features": [
+    "Giám sát tốc độ",
+    "Phát hiện đỗ xe, đón trả sai quy định",
+    "Điều khiển đèn giao thông thông minh",
+    "Phát hiện không đội mũ bảo hiểm",
+    "Phát hiện đi ngược chiều",
+    "Phát hiện vượt đèn đỏ",
+    "Nhận diện hành vi tài xế",
+    "Chở quá số người quy định",
+    "Tìm kiếm truy vết đối tượng (nhận diện biển số)",
+    "Phân tích lưu lượng giao thông"
+  ],
+  "benefits": [
+    "Dữ liệu chính xác để điều tiết đèn tín hiệu thông minh, quy hoạch giao thông khoa học, giảm ùn tắc hiệu quả",
+    "Xử lý vi phạm nhanh chóng, công bằng, giảm tải công việc cho CSGT, răn đe hiệu quả, nâng cao ý thức người tham gia giao thông",
+    "Điều xe cứu thương, CSGT đến hiện trường nhanh nhất, giảm thiểu hậu quả tai nạn, xử lý ùn tắc kịp thời",
+    "Ra quyết định dựa trên dữ liệu thực tế, tối ưu ngân sách đầu tư, nâng cao chất lượng sống người dân",
+    "Tăng tỷ lệ phá án, răn đe tội phạm, bảo vệ an ninh trật tự đô thị",
+    "Tích hợp vào hệ thống giao thông thông minh (ITS), giảm ùn tắc và tai nạn, tăng ý thức chấp hành luật an toàn giao thông (Catalogue, mục Traffic Monitoring and Management)"
+  ],
   "targetCustomers": [
-    "Giao thông"
+    "Giao thông",
+    "Lực lượng chức năng quản lý, điều tiết giao thông (CSGT)"
   ],
   "relatedSeries": [
     "v-secure"
@@ -22,11 +67,42 @@
     "vb80fa1v",
     "vb50fa1v"
   ],
-  "documents": [],
-  "cover": "/img/scenes/solutions.jpg",
-  "images": [],
-  "sources": [
-    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    },
+    {
+      "title": "Eng Catalogue Product 3",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+    }
   ],
-  "notes": ""
+  "configuration": [
+    {
+      "item": "Sản phẩm đề xuất – Camera Bullet",
+      "product": "",
+      "note": "Bullet; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera PTZ",
+      "product": "",
+      "note": "PTZ; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera đeo người",
+      "product": "",
+      "note": "Body camera; slide chỉ có ảnh, không ghi model"
+    }
+  ],
+  "cover": "/img/scenes/solutions.jpg",
+  "images": [
+    "/img/solutions/giao-thong-1.jpg"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx",
+    "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+  ],
+  "notes": "Nội dung lấy từ slide 10 (sơ đồ GIAO THÔNG) và slide 11 của file pptx V-SECURE ver.0.9; mục Traffic Monitoring and Management trang 7 của Eng Catalogue Product 3. Slide không có phần 'thực trạng' riêng: painPoints là các bài toán slide nêu cần xử lý. Khung 'Sản phẩm đề xuất' chỉ có ảnh, không ghi model; ngoài Bullet, PTZ, camera đeo người còn thiết bị màu đen dạng gắn kính và một thiết bị dạng tủ rack chưa xác định được từ ảnh nên không đưa vào cấu hình. VB50FA1V có trong products từ trước nhưng không xuất hiện trong slide V-SECURE ver.0.9; giữ nguyên vì tài liệu không cho thấy là sai."
 }

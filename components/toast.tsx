@@ -9,7 +9,7 @@ export function toast(message: string) {
   window.dispatchEvent(new CustomEvent(EVENT, { detail: message }));
 }
 
-export async function copyText(text: string) {
+export async function copyText(text: string, message: string = T.copied) {
   try {
     await navigator.clipboard.writeText(text);
   } catch {
@@ -22,7 +22,7 @@ export async function copyText(text: string) {
     document.execCommand("copy");
     ta.remove();
   }
-  toast(T.copied);
+  toast(message);
 }
 
 export function Toaster() {

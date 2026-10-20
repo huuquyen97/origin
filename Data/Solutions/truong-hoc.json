@@ -4,13 +4,59 @@
   "name": "Trường học an toàn",
   "shortName": "",
   "industry": "Giáo dục",
-  "summary": "Giám sát khuôn viên, cảnh báo xâm nhập; nhận diện khuôn mặt điểm danh học sinh/giáo viên, nhận diện biển số xe đưa đón; phát hiện bắt nạt, đánh nhau, hút thuốc; báo cáo chuyên cần tự động.",
-  "painPoints": [],
+  "summary": "AI Camera MK Vision giúp xây dựng trường học an toàn, văn minh, hiện đại: bảo vệ toàn diện học sinh và giáo viên, quản lý ra vào bằng nhận diện khuôn mặt và biển số xe đưa đón, phát hiện bắt nạt, đánh nhau, hút thuốc và tự động thống kê chuyên cần.",
+  "painPoints": [
+    "Nguy cơ xâm nhập trái phép, người lạ, hành vi khả nghi trong khuôn viên trường",
+    "Bạo lực học đường: bắt nạt, đánh nhau; hút thuốc, vi phạm nội quy",
+    "Khu vực nhạy cảm cần giám sát: cổng trường, bãi đỗ xe, sân chơi, khu đón trả, thang máy, tầng thượng, hồ bơi",
+    "Điểm danh, chấm công, thống kê vắng mặt thủ công tốn thời gian hành chính"
+  ],
   "architecture": "",
-  "modules": [],
-  "features": [],
-  "benefits": [],
-  "targetCustomers": [],
+  "modules": [
+    {
+      "name": "An ninh toàn diện trong & ngoài trường",
+      "description": "Bảo vệ 24/7: giám sát an ninh toàn bộ khuôn viên trường, cảnh báo ngay khi phát hiện xâm nhập trái phép, bảo vệ an toàn cho học sinh và giáo viên."
+    },
+    {
+      "name": "Quản lý ra vào thông minh",
+      "description": "Nhận diện khuôn mặt tự động cho học sinh, giáo viên, cán bộ; nhận diện biển số xe đưa đón học sinh; điểm danh và chấm công tự động; thông báo tức thì cho phụ huynh khi con đến/về trường."
+    },
+    {
+      "name": "Giám sát khu vực nhạy cảm",
+      "description": "Theo dõi khu vực cổng trường, bãi đỗ xe, sân chơi; giám sát hoạt động đón trả học sinh an toàn và trật tự; kiểm soát khu vực nguy hiểm (thang máy, tầng thượng, hồ bơi)."
+    },
+    {
+      "name": "Phát hiện & cảnh báo hành vi nguy hiểm",
+      "description": "Phát hiện hành vi bắt nạt, đánh nhau; cảnh báo hút thuốc, vi phạm nội quy học đường; nhận diện người lạ hoặc hành vi khả nghi trong trường; ghi lại bằng chứng rõ ràng để xử lý kỷ luật công bằng."
+    },
+    {
+      "name": "Hỗ trợ quản lý & báo cáo",
+      "description": "Thống kê tự động học sinh đi học, vắng mặt; báo cáo hoạt động an ninh hàng ngày; lưu trữ video để kiểm tra khi có sự cố hoặc khiếu nại; cung cấp dữ liệu cho ban giám hiệu ra quyết định."
+    }
+  ],
+  "features": [
+    "Điểm danh chấm công",
+    "Chào mừng",
+    "Nhận diện biển số",
+    "Quản lý xe đưa đón học sinh",
+    "Khu vực phụ huynh đón học sinh",
+    "Cảnh báo xâm nhập an ninh",
+    "Tìm kiếm người, phương tiện",
+    "Quản lý giám sát, lưu giữ",
+    "Giám sát thi cử, quản lý phòng học",
+    "Thiết bị giám sát và điểm danh tích hợp sinh trắc học và thẻ thông minh (Catalogue, mục Education)"
+  ],
+  "benefits": [
+    "Phụ huynh yên tâm, học sinh học tập trong môi trường an toàn, ngăn chặn các nguy cơ từ bên ngoài",
+    "Tiết kiệm thời gian hành chính, tăng tính minh bạch, phụ huynh theo dõi con qua app",
+    "Phòng ngừa tai nạn, xử lý nhanh tình huống khẩn cấp, bảo vệ trẻ em tối đa",
+    "Ngăn chặn bạo lực học đường, bảo vệ học sinh yếu thế, tạo môi trường học tập lành mạnh",
+    "Giảm gánh nặng hành chính, quản lý minh bạch, nâng cao chất lượng giáo dục"
+  ],
+  "targetCustomers": [
+    "Trường học / Cơ sở giáo dục",
+    "Ban giám hiệu"
+  ],
   "relatedSeries": [
     "v-secure"
   ],
@@ -18,11 +64,37 @@
     "va50fa0v",
     "vb50fb1v"
   ],
-  "documents": [],
-  "cover": "",
-  "images": [],
-  "sources": [
-    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    },
+    {
+      "title": "Eng Catalogue Product 3",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+    }
   ],
-  "notes": ""
+  "configuration": [
+    {
+      "item": "Sản phẩm đề xuất – Camera Bullet",
+      "product": "",
+      "note": "Bullet; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera đeo người",
+      "product": "",
+      "note": "Body camera; slide chỉ có ảnh, không ghi model"
+    }
+  ],
+  "cover": "/img/solutions/truong-hoc-1.jpg",
+  "images": [
+    "/img/solutions/truong-hoc-1.jpg"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx",
+    "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+  ],
+  "notes": "Nội dung lấy từ slide 12 (sơ đồ TRƯỜNG HỌC) và slide 13 của file pptx V-SECURE ver.0.9; mục Education trang 8 của Eng Catalogue Product 3. Slide không có phần 'thực trạng' riêng: painPoints là các bài toán slide nêu cần xử lý. Khung 'Sản phẩm đề xuất' chỉ có ảnh, không ghi model; ngoài Bullet và camera đeo người còn 3 thiết bị chưa xác định được từ ảnh (thiết bị dạng màn hình đứng, thiết bị màu đen dạng gắn kính, thiết bị màu đỏ có biểu tượng không tiếp xúc) nên không đưa vào cấu hình. Tính năng 'thông báo cho phụ huynh qua app' được nêu trên slide nhưng tài liệu không nói rõ ứng dụng nào."
 }

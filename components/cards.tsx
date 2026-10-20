@@ -1,17 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { DOC_TYPE_LABEL } from "@/lib/strings";
-import type { DocType } from "@/lib/data/schema";
+import { DOC_STATUS, DOC_TYPE_LABEL } from "@/lib/strings";
+import type { DocStatus, DocType } from "@/lib/data/schema";
 
 export type ProductCardProps = {
   slug: string;
   model: string;
   name: string;
   seriesName: string;
-  category: string;
-  resolution: string;
-  ipRating: string;
+  categoryLabel: string;
+  keySpecs: [string, string][];
   image: string;
 };
 
@@ -28,7 +27,8 @@ export function ProductMedia({ image, model, alt, className = "" }: { image: str
 }
 
 export function ProductCard({ p, compare }: { p: ProductCardProps; compare?: React.ReactNode }) {
-  const tags = [...new Set([p.category, p.resolution, p.ipRating].filter(Boolean))].slice(0, 3);
+  // Thẻ ngắn: loại + thông số chính ngắn gọn (camera: độ phân giải, IP; switch thường dài nên chỉ hiện loại)
+  const tags = [...new Set([p.categoryLabel, ...p.keySpecs.map(([, v]) => v).filter((v) => v && v.length <= 12)])].slice(0, 3);
   return (
     <div className="card card-link group">
       {compare}
@@ -79,7 +79,23 @@ export function SolutionCard({ s }: { s: SolutionCardProps }) {
   );
 }
 
-export type DocRowProps = { url: string; ext: string; title: string; type: DocType; seriesLabel?: string };
+export type DocRowProps = {
+  url: string; ext: string; title: string; type: DocType; seriesLabel?: string;
+  status: DocStatus; statusNote?: string; validFrom?: string; validTo?: string; description?: string;
+};
+
+const vnDate = (iso: string) => iso.split("-").reverse().join("/");
+
+export function DocStatusTag({ status }: { status: DocStatus }) {
+  const s = DOC_STATUS[status];
+  return <span className={`tag ${s.cls}`}>{s.label}</span>;
+}
+
+/** Dòng phụ: hiệu lực + lý do trạng thái (nếu có) */
+export function docStatusText(d: Pick<DocRowProps, "statusNote" | "validFrom" | "validTo">) {
+  const validity = d.validTo ? `Hiệu lực ${d.validFrom ? vnDate(d.validFrom) + " – " : "đến "}${vnDate(d.validTo)}` : "";
+  return [validity, d.statusNote].filter(Boolean).join(". ");
+}
 
 export function DocIcon({ ext }: { ext: string }) {
   return <span className="doc-ic" data-ext={ext}>{(ext || "file").toUpperCase()}</span>;
@@ -92,7 +108,9 @@ export function DocRow({ d }: { d: DocRowProps }) {
       <DocIcon ext={d.ext} />
       <div className="min-w-0">
         <div className="text-sm font-medium leading-snug [overflow-wrap:anywhere]">{d.title}</div>
-        <div className="mt-0.5 text-[12.5px] text-muted">{sub}</div>
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12.5px] text-muted"><DocStatusTag status={d.status} />{sub}</div>
+        {d.description && <div className="mt-1 line-clamp-2 text-[12.5px] text-muted">{d.description}</div>}
+        {docStatusText(d) && <div className={`mt-1 text-[12.5px] ${d.status === "public" ? "text-muted" : "font-medium text-ink-2"}`}>{docStatusText(d)}</div>}
       </div>
       <ArrowUpRight className="size-4 text-muted" />
     </a>

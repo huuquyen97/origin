@@ -235,5 +235,22 @@
   "sources": [
     "Data/MK Vision/Docs/V-SECURE/VB50FB1V 5MP R1.pdf"
   ],
-  "notes": "Dùng bản R1. Bản 'VB50FB1V - Bullet 5MP.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English: biểu tượng trang 1 ghi 'Sony Sensor IMX-415' nhưng mô tả và bảng thông số ghi Sony IMX-335; nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' (R1: -10°C đến 60°C / 65°C). Ảnh sản phẩm là ảnh chung dòng Bullet V-Secure (cùng kiểu vỏ trong datasheet). Danh sách AI kết thúc bằng '...'."
+  "notes": "Dùng bản R1. Bản 'VB50FB1V - Bullet 5MP.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English: biểu tượng trang 1 ghi 'Sony Sensor IMX-415' nhưng mô tả và bảng thông số ghi Sony IMX-335; nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' (R1: -10°C đến 60°C / 65°C). Ảnh sản phẩm là ảnh chung dòng Bullet V-Secure (cùng kiểu vỏ trong datasheet). Danh sách AI kết thúc bằng '...'.",
+  "unconfirmed": [
+    {
+      "group": "Image",
+      "label": "Cảm biến ảnh",
+      "note": "Datasheet English: biểu tượng trang 1 ghi Sony IMX-415, mô tả và bảng thông số ghi Sony IMX-335; cần xác nhận với PM."
+    },
+    {
+      "group": "Environment",
+      "label": "Điều kiện hoạt động",
+      "note": "Datasheet R1 ghi -10°C đến 60°C, bản English ghi -5 ~ +60°C; cần xác nhận với PM."
+    },
+    {
+      "group": "Environment",
+      "label": "Điều kiện lưu trữ",
+      "note": "Datasheet R1 ghi -10°C đến 65°C, bản English ghi -15 ~ +65°C; cần xác nhận với PM."
+    }
+  ]
 }

@@ -196,8 +196,7 @@
   "solutions": [
     "ekyc",
     "acp",
-    "ra-vao-camera-ai",
-    "face-edge-ai"
+    "ra-vao-camera-ai"
   ],
   "documents": [
     {
@@ -223,5 +222,22 @@
     "Data/MK Vision/Docs/BIOSECURE/BIOSECURE.pdf",
     "Data/MK Vision/Docs/Datasheets/A612 Access control.pdf"
   ],
-  "notes": "Specs lấy nguyên văn từ datasheet tiếng Việt (BIOSECURE.pdf), đã đối chiếu khớp với bản tiếng Anh (A612 Access control.pdf, bản mới nhất 2026-10-12). Datasheet ghi model A612 nhưng phần mô tả và nhãn góc trang gọi thiết bị là 'M6' (Thiết bị xác thực thẻ Căn cước sinh trắc học M6) → A612 có vẻ là mã model của dòng M6; cần xác nhận với PM. Mâu thuẫn trong chính datasheet: icon nổi bật ghi Wi-Fi 802.11 b/g/n (2.4 GHz), bảng thông số ghi 2.4GHz & 5GHz. 'Bộ nhớ 1025 MB DDR4' giữ nguyên văn (có thể là lỗi đánh máy của 1024 MB). Khác biệt so với tài liệu M6 ver.0.9 (cũ hơn): RAM 2GB ROM 16GB, camera Sony IMX327, WiFi 802.11 a/b/g/n 2.4GHz – ưu tiên datasheet A612. Không ghi chuẩn IP. Ảnh sản phẩm trích từ datasheet A612."
+  "notes": "Specs lấy nguyên văn từ datasheet tiếng Việt (BIOSECURE.pdf), đã đối chiếu khớp với bản tiếng Anh (A612 Access control.pdf, bản mới nhất 2026-10-12). Datasheet ghi model A612 nhưng phần mô tả và nhãn góc trang gọi thiết bị là 'M6' (Thiết bị xác thực thẻ Căn cước sinh trắc học M6) → A612 có vẻ là mã model của dòng M6; cần xác nhận với PM. Mâu thuẫn trong chính datasheet: icon nổi bật ghi Wi-Fi 802.11 b/g/n (2.4 GHz), bảng thông số ghi 2.4GHz & 5GHz. 'Bộ nhớ 1025 MB DDR4' giữ nguyên văn (có thể là lỗi đánh máy của 1024 MB). Khác biệt so với tài liệu M6 ver.0.9 (cũ hơn): RAM 2GB ROM 16GB, camera Sony IMX327, WiFi 802.11 a/b/g/n 2.4GHz – ưu tiên datasheet A612. Không ghi chuẩn IP. Ảnh sản phẩm trích từ datasheet A612.",
+  "unconfirmed": [
+    {
+      "group": "Network",
+      "label": "Kết nối không dây",
+      "note": "Cùng datasheet: biểu tượng nổi bật ghi Wi-Fi 2.4 GHz, bảng thông số ghi 2.4GHz & 5GHz; cần xác nhận với PM."
+    },
+    {
+      "group": "AI",
+      "label": "Bộ nhớ",
+      "note": "Datasheet ghi '1025 MB DDR4', nhiều khả năng là lỗi đánh máy của 1024 MB; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Datasheet ghi model A612 nhưng phần mô tả gọi thiết bị là M6 (tài liệu M6 ver.0.9 có cấu hình khác); cần xác nhận A612 và M6 có phải cùng sản phẩm với PM."
+    }
+  ]
 }

@@ -4,14 +4,53 @@
   "name": "An ninh tòa nhà & văn phòng",
   "shortName": "",
   "industry": "Tòa nhà & Doanh nghiệp",
-  "summary": "Chấm công không tiếp xúc bằng nhận diện khuôn mặt, kiểm soát khách ra vào, cảnh báo người lạ; giám sát khu kỹ thuật, cảnh báo sớm cháy, khói; thống kê lưu lượng người theo giờ/ngày.",
-  "painPoints": [],
+  "summary": "Giải pháp an ninh thông minh cho tòa nhà và văn phòng, xây dựng môi trường làm việc an toàn, minh bạch, hiện đại: chấm công không tiếp xúc bằng nhận diện khuôn mặt, kiểm soát khách ra vào, cảnh báo cháy, khói và thống kê lưu lượng người phục vụ vận hành tòa nhà.",
+  "painPoints": [
+    "Chấm công thủ công, gian lận giờ làm, tranh chấp về chấm công",
+    "Kiểm soát khách ra vào, người lạ hoặc khách không đăng ký",
+    "Khu vực kỹ thuật, khu vực hạn chế; nguy cơ cháy, khói, rò rỉ hóa chất, khí gas",
+    "Thiếu dữ liệu lưu lượng người để bố trí không gian và tối ưu vận hành"
+  ],
   "architecture": "",
-  "modules": [],
-  "features": [],
-  "benefits": [],
+  "modules": [
+    {
+      "name": "Quản lý chấm công & nhân viên tự động",
+      "description": "Chấm công không tiếp xúc bằng nhận diện khuôn mặt; điểm danh thiết bị (laptop, điện thoại) ra vào tòa nhà; theo dõi giờ làm việc chính xác, chống gian lận."
+    },
+    {
+      "name": "Kiểm soát khách ra vào",
+      "description": "Nhận diện và đăng ký khách tự động tại quầy lễ tân; theo dõi lịch sử ra vào của từng khách; cảnh báo khi có người lạ hoặc khách không đăng ký."
+    },
+    {
+      "name": "Giám sát an toàn & phòng cháy",
+      "description": "Giám sát khu vực kỹ thuật, khu vực hạn chế; cảnh báo sớm cháy, khói; phát hiện rò rỉ hóa chất, khí gas nguy hiểm."
+    },
+    {
+      "name": "Tối ưu vận hành tòa nhà",
+      "description": "Thống kê số lượng người ra vào theo giờ, theo ngày; phát hiện khu vực đông đúc, hỗ trợ bố trí không gian hợp lý; cung cấp báo cáo tự động cho ban quản lý."
+    }
+  ],
+  "features": [
+    "Nhận diện biển số",
+    "Tìm kiếm người, phương tiện",
+    "Điểm danh chấm công",
+    "Cảnh báo cháy, khói",
+    "Giám sát khu vực hạn chế",
+    "Cảnh báo xâm nhập an ninh",
+    "Quản lý khách ra vào",
+    "Quản lý giám sát, lưu giữ",
+    "Nhận diện khuôn mặt, phân tích nhân khẩu học, nhận diện cảm xúc"
+  ],
+  "benefits": [
+    "Loại bỏ chấm công thủ công, giảm tranh chấp, tăng tính minh bạch và công bằng",
+    "Nâng cao an ninh tòa nhà, hỗ trợ lễ tân làm việc hiệu quả hơn, tạo ấn tượng chuyên nghiệp",
+    "Tuân thủ quy định PCCC, phản ứng nhanh khi có sự cố, bảo vệ nhân viên và tài sản",
+    "Ra quyết định dựa trên dữ liệu, tối ưu chi phí vận hành, nâng cao trải nghiệm nhân viên"
+  ],
   "targetCustomers": [
-    "Tòa nhà / Doanh nghiệp"
+    "Tòa nhà / Doanh nghiệp",
+    "Văn phòng",
+    "Ban quản lý tòa nhà"
   ],
   "relatedSeries": [
     "v-secure",
@@ -21,11 +60,36 @@
     "va50fa0v",
     "vb50fb1v"
   ],
-  "documents": [],
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    }
+  ],
+  "configuration": [
+    {
+      "item": "Sản phẩm đề xuất – Camera Bullet",
+      "product": "",
+      "note": "Bullet; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera Dome",
+      "product": "",
+      "note": "Dome; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera PTZ",
+      "product": "",
+      "note": "PTZ; slide chỉ có ảnh, không ghi model"
+    }
+  ],
   "cover": "/img/scenes/meeting-1.jpg",
-  "images": [],
+  "images": [
+    "/img/solutions/toa-nha-1.jpg"
+  ],
   "sources": [
     "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
   ],
-  "notes": ""
+  "notes": "Nội dung lấy từ slide 16 (sơ đồ VĂN PHÒNG, chú thích 'Nhận diện khuôn mặt, phân tích nhân khẩu học, nhận diện cảm xúc') và slide 17 của file pptx V-SECURE ver.0.9. Catalogue không có mục riêng cho tòa nhà/văn phòng. Slide không có phần 'thực trạng' riêng: painPoints là các bài toán slide nêu cần xử lý. Khung 'Sản phẩm đề xuất' chỉ có ảnh, không ghi model; ngoài Bullet, Dome, PTZ còn thiết bị dạng màn hình đứng chưa xác định được từ ảnh nên không đưa vào cấu hình. Slide nêu 'điểm danh thiết bị (laptop, điện thoại) ra vào tòa nhà' và 'phát hiện rò rỉ hóa chất, khí gas' nhưng không nói thuật toán/thiết bị nào thực hiện; chưa đối chiếu được với danh sách thuật toán AI."
 }

@@ -4,14 +4,65 @@
   "name": "AI Camera cho quản lý trật tự đô thị",
   "shortName": "",
   "industry": "Đô thị & Giao thông",
-  "summary": "Giám sát 24/7 chợ, phố đi bộ, công viên; phát hiện tụ tập, gây rối, đánh nhau, xả rác, lấn chiếm vỉa hè; hỗ trợ truy vết đối tượng, giải quyết khiếu nại và quy hoạch đô thị thông minh.",
-  "painPoints": [],
+  "summary": "AI Camera MK Vision đóng vai trò thay thế và hỗ trợ đắc lực cho cán bộ quản lý trật tự đô thị: giám sát 24/7 chợ, phố đi bộ, công viên, quảng trường; phát hiện tụ tập, gây rối, đánh nhau, xả rác, lấn chiếm vỉa hè. Dữ liệu và video hỗ trợ truy vết, giải quyết khiếu nại và quy hoạch đô thị thông minh.",
+  "painPoints": [
+    "Tụ tập đông người, gây rối trật tự, hành vi bạo lực, đánh nhau tại nơi công cộng",
+    "Xả rác, vứt rác bừa bãi, bãi rác tự phát, buôn bán lấn chiếm vỉa hè",
+    "Xâm nhập khu vực cấm, phá hoại tài sản công; phương tiện gây ảnh hưởng (xe không phép, loa phường)",
+    "Cần bằng chứng video rõ ràng để xử phạt, điều tra và giải quyết tranh chấp, khiếu nại liên quan đến quản lý đô thị"
+  ],
   "architecture": "",
-  "modules": [],
-  "features": [],
-  "benefits": [],
+  "modules": [
+    {
+      "name": "Đảm bảo an ninh & trật tự đô thị",
+      "description": "Giám sát toàn diện 24/7 tại cơ sở kinh doanh, khu chợ, chợ đêm, phố đi bộ, công viên, quảng trường công cộng; phát hiện hành vi gây rối trật tự, tụ tập đông người bất thường; cảnh báo kịp thời các nguy cơ an ninh trong đô thị."
+    },
+    {
+      "name": "Tuân thủ cam kết đô thị văn minh",
+      "description": "Giám sát các tiêu chí văn minh đô thị: phát hiện xả rác, vứt rác bừa bãi nơi công cộng; giám sát vệ sinh môi trường, bãi rác tự phát; theo dõi hoạt động buôn bán lấn chiếm vỉa hè."
+    },
+    {
+      "name": "Phát hiện & cảnh báo hành vi vi phạm",
+      "description": "Xử lý vi phạm kịp thời: tụ tập đám đông, gây rối trật tự công cộng; xâm nhập khu vực cấm, phá hoại tài sản công; hành vi bạo lực, đánh nhau nơi công cộng; vi phạm về phương tiện gây ảnh hưởng (xe không phép, loa phường)."
+    },
+    {
+      "name": "Hỗ trợ truy vết & điều tra",
+      "description": "Truy vết đối tượng tình nghi qua mạng lưới camera; hỗ trợ công an điều tra các vụ án hình sự; cung cấp bằng chứng video rõ nét, chính xác; giám sát các phương tiện gây án."
+    },
+    {
+      "name": "Giải quyết tranh chấp & khiếu nại",
+      "description": "Cung cấp bằng chứng khách quan cho tranh chấp dân sự; hỗ trợ giải quyết khiếu nại liên quan đến quản lý đô thị; xác minh nguồn gốc các vấn đề về hạ tầng, môi trường; bảo vệ quyền lợi chính đáng của chính quyền địa phương."
+    },
+    {
+      "name": "Hỗ trợ quy hoạch & phát triển bền vững",
+      "description": "Thống kê mật độ người, phương tiện theo khu vực; đánh giá hiệu quả sử dụng không gian công cộng; xác định điểm nóng cần can thiệp cải tạo; hỗ trợ xây dựng chiến lược phát triển đô thị thông minh."
+    }
+  ],
+  "features": [
+    "Phát hiện lấn chiếm vỉa hè",
+    "Cảnh báo tội phạm truy nã xuất hiện ở khu vực",
+    "Cảnh sát tuần tra (camera đeo người)",
+    "Cảnh báo dừng, đỗ xe sai quy định",
+    "Tìm kiếm, truy vết người và phương tiện (nhận diện biển số)",
+    "Cảnh báo sớm hành vi bạo lực đánh nhau",
+    "Phát hiện xe chở phế thải",
+    "Cảnh báo mật độ lưu lượng xe, tắc đường",
+    "Đăng kí lưu trú",
+    "Phát hiện hành vi bất thường như đánh nhau, ngã, tụ tập, đám đông, hút thuốc",
+    "Phát hiện đối tượng, giám sát đám đông, nhận diện sự cố đánh nhau hoặc sử dụng vũ khí, ngăn lấn chiếm vỉa hè và lòng đường (Catalogue, mục Urban Security)"
+  ],
+  "benefits": [
+    "Tăng cường an toàn cho người dân và du khách, xử lý nhanh các tình huống bất ổn, nâng cao hình ảnh đô thị văn minh",
+    "Xây dựng đô thị xanh, sạch, đẹp; nâng cao ý thức người dân; tạo môi trường sống văn minh, hiện đại",
+    "Phản ứng nhanh, xử phạt công bằng với bằng chứng rõ ràng, răn đe hiệu quả, giảm tải công việc cho lực lượng chức năng",
+    "Tăng tỷ lệ phá án, bảo vệ tính mạng và tài sản người dân, giữ vững an ninh trật tự đô thị",
+    "Giải quyết nhanh chóng, minh bạch; tăng niềm tin của người dân vào chính quyền; giảm thiểu tranh cãi",
+    "Quy hoạch khoa học dựa trên dữ liệu thực tế, tối ưu ngân sách đầu tư, phát triển đô thị bền vững"
+  ],
   "targetCustomers": [
-    "Đô thị / Chính quyền"
+    "Đô thị / Chính quyền",
+    "Lực lượng quản lý trật tự đô thị",
+    "Công an (hỗ trợ điều tra, truy vết)"
   ],
   "relatedSeries": [
     "v-secure"
@@ -22,11 +73,42 @@
     "vb50fb1v",
     "vb80fa1v"
   ],
-  "documents": [],
-  "cover": "/img/scenes/building-1.jpg",
-  "images": [],
-  "sources": [
-    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+  "documents": [
+    {
+      "title": "Slide giới thiệu sản phẩm V-SECURE ver.0.9",
+      "type": "slide",
+      "path": "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx"
+    },
+    {
+      "title": "Eng Catalogue Product 3",
+      "type": "catalog",
+      "path": "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+    }
   ],
-  "notes": ""
+  "configuration": [
+    {
+      "item": "Sản phẩm đề xuất – Camera Bullet",
+      "product": "",
+      "note": "Bullet; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera PTZ",
+      "product": "",
+      "note": "PTZ; slide chỉ có ảnh, không ghi model"
+    },
+    {
+      "item": "Sản phẩm đề xuất – Camera đeo người (cảnh sát tuần tra)",
+      "product": "",
+      "note": "Body camera; slide chỉ có ảnh, không ghi model"
+    }
+  ],
+  "cover": "/img/scenes/building-1.jpg",
+  "images": [
+    "/img/solutions/do-thi-1.jpg"
+  ],
+  "sources": [
+    "Data/MK Vision/Docs/Slide/4. V-SECURE ver.0.9.pptx",
+    "Data/MK Vision/Docs/Catalogs/Eng Catalogue Product 3.pdf"
+  ],
+  "notes": "Nội dung lấy từ slide 8 (sơ đồ ĐÔ THỊ) và slide 9 của file pptx V-SECURE ver.0.9; mục Urban Security trang 7 của Eng Catalogue Product 3. Slide không có phần 'thực trạng' riêng: painPoints là các bài toán slide nêu cần xử lý. Khung 'Sản phẩm đề xuất' chỉ có ảnh thiết bị, không ghi model; ngoài Bullet, PTZ, camera đeo người còn 2 thiết bị chưa xác định được từ ảnh (thiết bị dạng màn hình đứng và thiết bị màu đen dạng gắn kính) nên không đưa vào cấu hình. Danh sách products giữ nguyên, tài liệu không nêu model cụ thể cho ngành này."
 }

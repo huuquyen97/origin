@@ -234,5 +234,17 @@
   "sources": [
     "Data/MK Vision/Docs/V-SECURE/VA50FA0V Dome R1.pdf"
   ],
-  "notes": "Dùng bản R1 làm nguồn chính. Bản 'Datasheets/VA50FA0V - Dome 5MP.pdf' thiếu các dòng FOV, phạm vi phát hiện/quan sát/nhận dạng/định danh, tốc độ màn chập và danh sách chức năng AI; ghi 'WDR ≥ 120dB' (R1: 'WDR 120dB'); ghi An toàn điện 'TCVN 73126-1:2003' (lỗi đánh máy, R1: 'TCVN 7326-1:2003'). Bản tiếng Anh 'Datasheets/VA50FA0V.pdf' ghi Operating conditions '-5 ~ +60°C/ humidity ≤ 95% RH' và Storage '-15 ~ +65°C/ humidity ≤ 95% RH' (R1: -10°C đến 60°C / -10°C đến 65°C). Danh sách AI trong datasheet kết thúc bằng '...' (chưa đầy đủ). Không có ngày phát hành in trên datasheet."
+  "notes": "Dùng bản R1 làm nguồn chính. Bản 'Datasheets/VA50FA0V - Dome 5MP.pdf' thiếu các dòng FOV, phạm vi phát hiện/quan sát/nhận dạng/định danh, tốc độ màn chập và danh sách chức năng AI; ghi 'WDR ≥ 120dB' (R1: 'WDR 120dB'); ghi An toàn điện 'TCVN 73126-1:2003' (lỗi đánh máy, R1: 'TCVN 7326-1:2003'). Bản tiếng Anh 'Datasheets/VA50FA0V.pdf' ghi Operating conditions '-5 ~ +60°C/ humidity ≤ 95% RH' và Storage '-15 ~ +65°C/ humidity ≤ 95% RH' (R1: -10°C đến 60°C / -10°C đến 65°C). Danh sách AI trong datasheet kết thúc bằng '...' (chưa đầy đủ). Không có ngày phát hành in trên datasheet.",
+  "unconfirmed": [
+    {
+      "group": "Environment",
+      "label": "Điều kiện hoạt động",
+      "note": "Datasheet R1 ghi -10°C đến 60°C, bản English ghi -5 ~ +60°C; cần xác nhận với PM."
+    },
+    {
+      "group": "Environment",
+      "label": "Điều kiện lưu trữ",
+      "note": "Datasheet R1 ghi -10°C đến 65°C, bản English ghi -15 ~ +65°C; cần xác nhận với PM."
+    }
+  ]
 }

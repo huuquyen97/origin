@@ -207,7 +207,6 @@
     "do-thi",
     "giao-thong",
     "trai-giam",
-    "dien-luc",
     "nha-may"
   ],
   "documents": [
@@ -243,5 +242,22 @@
   "sources": [
     "Data/MK Vision/Docs/V-SECURE/16X VA50FA2V-40 PTZ R1.pdf"
   ],
-  "notes": "XUNG ĐỘT zoom số: '16X VA50FA2V-40 PTZ R1.pdf' (file mới nhất, 30/10/2025) và bản English ghi '16x Digital Zoom'; 'VA50FA2V-40 PTZ R1.pdf' (26/10/2025), 'VA50FA2V - PTZ 5MP 40X.pdf' và slide V-SECURE ghi 'zoom số 10x' (đoạn mô tả bản English cũng ghi 10x). Đã dùng 16x theo bản mới nhất — cần xác nhận với PM. Bản 'VA50FA2V - PTZ 5MP 40X.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English 'VA50FA2V-40.pdf' bị lỗi bảng Camera (Sensor ghi 'Ambarella CV25', FOV ghi tên CPU...; Identification 5,6m(W)-24m(T), Infrared ≥ 50m — sao chép nhầm từ model Dome), nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' — không dùng. Danh sách AI kết thúc bằng '...'."
+  "notes": "XUNG ĐỘT zoom số: '16X VA50FA2V-40 PTZ R1.pdf' (file mới nhất, 30/10/2025) và bản English ghi '16x Digital Zoom'; 'VA50FA2V-40 PTZ R1.pdf' (26/10/2025), 'VA50FA2V - PTZ 5MP 40X.pdf' và slide V-SECURE ghi 'zoom số 10x' (đoạn mô tả bản English cũng ghi 10x). Đã dùng 16x theo bản mới nhất — cần xác nhận với PM. Bản 'VA50FA2V - PTZ 5MP 40X.pdf' thiếu FOV/phạm vi/tốc độ màn chập/chức năng AI, ghi 'WDR ≥ 120dB' và 'TCVN 73126-1:2003' (lỗi đánh máy). Bản English 'VA50FA2V-40.pdf' bị lỗi bảng Camera (Sensor ghi 'Ambarella CV25', FOV ghi tên CPU...; Identification 5,6m(W)-24m(T), Infrared ≥ 50m — sao chép nhầm từ model Dome), nhiệt độ '-5 ~ +60°C' / '-15 ~ +65°C' — không dùng. Danh sách AI kết thúc bằng '...'.",
+  "unconfirmed": [
+    {
+      "group": "Lens",
+      "label": "Ống kính",
+      "note": "Bản R1 mới nhất (30/10/2025) và bản English ghi zoom số 16x; bản R1 26/10/2025, bản 'PTZ 5MP 40X' và slide V-SECURE ghi 10x; cần xác nhận với PM."
+    },
+    {
+      "group": "Environment",
+      "label": "Điều kiện hoạt động",
+      "note": "Datasheet R1 ghi -10°C đến 60°C, bản English ghi -5 ~ +60°C; cần xác nhận với PM."
+    },
+    {
+      "group": "Environment",
+      "label": "Điều kiện lưu trữ",
+      "note": "Datasheet R1 ghi -10°C đến 65°C, bản English ghi -15 ~ +65°C; cần xác nhận với PM."
+    }
+  ]
 }

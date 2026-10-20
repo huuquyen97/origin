@@ -39,5 +39,6 @@
     "Data/MK Vision/Docs/AUTOSECURE/Ảnh SP/Thiết bị/DMS.png",
     "Data/MK Vision/Docs/AUTOSECURE/AUTOSECURE_Lite version.pdf"
   ],
-  "notes": "Không có datasheet riêng cho mô-đun DMS; datasheet AutoSecure chỉ liệt kê 'Mô-đun camera DMS' trong mục Mô-đun. Thông số camera trong cabin (Sony 1/2.8\" CMOS, 1.5mm, F2.8, 190°, 5MP) được ghi chung trong datasheet AutoSecure, không xác định rõ thuộc mô-đun DMS hay thân camera nên không gán vào đây. Có thể gộp làm phụ kiện của 'autosecure' nếu không cần trang riêng."
+  "notes": "Không có datasheet riêng cho mô-đun DMS; datasheet AutoSecure chỉ liệt kê 'Mô-đun camera DMS' trong mục Mô-đun. Thông số camera trong cabin (Sony 1/2.8\" CMOS, 1.5mm, F2.8, 190°, 5MP) được ghi chung trong datasheet AutoSecure, không xác định rõ thuộc mô-đun DMS hay thân camera nên không gán vào đây. Có thể gộp làm phụ kiện của 'autosecure' nếu không cần trang riêng.",
+  "unconfirmed": []
 }

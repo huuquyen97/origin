@@ -306,5 +306,22 @@
   "sources": [
     "Data/MK Vision/Docs/MK Networks/Datasheets/5.MKISP12-5510_VN 2.0.docx"
   ],
-  "notes": "Bảng thông số lấy từ bảng \"Product Model MKISP12-5510\"; danh sách tính năng L2/QoS/Security/IPv6/Management lấy từ các mục phía sau (tiếng Anh, giữ nguyên). Mâu thuẫn: mục \"Tính năng chính\" ghi \"Hỗ trợ ERPS Ring phục hồi <20ms\", mục L2 Features ghi \"ITU-T G.8032 Ethernet Ring Protection: Sub 50 msec convergence\" → trong specs ghi theo L2 Features, cần xác nhận. \"Packet Buffer 12 Mb\" (đơn vị Mb, giữ nguyên). Lỗi chính tả giữ nguyên: \"sccess filtering\", \"SFTPserver\", \"viaTFTP\"; danh sách cổng ở L2 Features ghi \"FP+ 10 Gigabit Uplink Ports\" (thiếu chữ S). Kích thước ghi \"Est.\" (ước tính). Bảo hành: datasheet chỉ dẫn tới https://mk.com.vn/, không ghi thời hạn. Cuối datasheet còn đoạn giới thiệu \"MK Group Networks Corporation\" nhắc www.edge-core.com và Accton, ghi địa chỉ \"Tầng 2 Tòa nhà The Vista\" và điện thoại +84-24 7100 6781 (khác thông tin công ty: Tầng G, hotline +84 247 100 6785) — không đưa vào specs. File có comment \"Vẫn còn các nội dung tiếng anh bên dưới\". Tên file ảnh ghi \"MK1SP12-5510\", datasheet và nhãn trên thiết bị ghi \"MKISP12-5510\". Không có ngày phát hành in trên datasheet (chỉ có \"© Copyright 2025\")."
+  "unconfirmed": [
+    {
+      "group": "Network",
+      "label": "ITU-T G.8032 Ethernet Ring Protection",
+      "note": "Mục \"Tính năng chính\" ghi ERPS phục hồi <20ms, mục L2 Features ghi Sub 50 msec; cần xác nhận thời gian hội tụ."
+    },
+    {
+      "group": "Physical",
+      "label": "Dimension (W x D x H)",
+      "note": "Datasheet ghi kích thước là ước tính (\"Est.\"); cần xác nhận kích thước chính thức."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Datasheet có watermark \"Preliminary\", thông số có thể còn thay đổi; cần PM xác nhận bản chính thức."
+    }
+  ],
+  "notes": "Bảng thông số lấy từ bảng \"Product Model MKISP12-5510\"; danh sách tính năng L2/QoS/Security/IPv6/Management lấy từ các mục phía sau (tiếng Anh, giữ nguyên). Datasheet có watermark \"Preliminary\" (ảnh nền trong file). Mâu thuẫn: \"Tính năng chính\" ghi \"Hỗ trợ ERPS Ring phục hồi <20ms\", mục L2 Features ghi \"Sub 50 msec convergence\" → specs ghi theo L2 Features. \"Packet Buffer 12 Mb\" (đơn vị Mb, giữ nguyên). Lỗi chính tả giữ nguyên: \"sccess filtering\", \"SFTPserver\", \"viaTFTP\"; L2 Features ghi \"FP+ 10 Gigabit Uplink Ports\". Kích thước ghi \"Est.\" (ước tính). Bảo hành: chỉ dẫn tới https://mk.com.vn/, không ghi thời hạn. Đoạn cuối \"MK Group Networks Corporation\" nhắc edge-core.com/Accton, ghi \"Tầng 2 Tòa nhà The Vista\" và +84-24 7100 6781 (khác thông tin công ty) — không đưa vào specs. File có comment \"Vẫn còn các nội dung tiếng anh bên dưới\". Tên file ảnh ghi \"MK1SP12-5510\". Không có ngày phát hành (chỉ có \"© Copyright 2025\")."
 }

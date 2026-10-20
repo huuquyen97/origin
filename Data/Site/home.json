@@ -1,7 +1,7 @@
 {
   "features": [
     {
-      "eyebrow": "V-Secure · Edge AI",
+      "eyebrow": "V-Secure · AI xử lý tại biên",
       "quote": "AI xử lý ngay tại camera, huấn luyện trên dữ liệu người Việt.",
       "who": "V-Secure Series",
       "role": "Ambarella CV25 / CVflow® · ONVIF Profile S/G/T/M · QCVN 135:2024/BTTTT",
@@ -10,7 +10,7 @@
       "cta": "Xem dòng V-Secure"
     },
     {
-      "eyebrow": "MobiSecure · Body-worn",
+      "eyebrow": "MobiSecure · Camera đeo người",
       "quote": "Camera đeo người đầu tiên tại Việt Nam ứng dụng AI nhận diện khuôn mặt cho người Việt.",
       "who": "MobiSecure Series",
       "role": "Theo slide giới thiệu MobiSecure · kết nối nền tảng COMS",
@@ -19,7 +19,7 @@
       "cta": "Xem dòng MobiSecure"
     },
     {
-      "eyebrow": "AutoSecure · Fleet",
+      "eyebrow": "AutoSecure · Quản lý đội xe",
       "quote": "Camera hành trình AI đầu tiên tại Việt Nam tích hợp giám sát hành vi tài xế.",
       "who": "AutoSecure + FMS",
       "role": "Theo tài liệu giới thiệu AutoSecure · Nghị định 10/2020/NĐ-CP",

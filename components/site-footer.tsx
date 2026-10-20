@@ -37,7 +37,7 @@ export function SiteFooter() {
           {col("Tra cứu", [
             { href: "/san-pham", label: "Tất cả sản phẩm" },
             { href: "/so-sanh", label: "So sánh" },
-            { href: "/thuat-toan-ai", label: "Thuật toán AI" },
+            { href: "/thuat-toan-ai", label: "Tính năng AI" },
             { href: "/tai-lieu", label: "Thư viện tài liệu" },
           ])}
           {col("Công ty", [

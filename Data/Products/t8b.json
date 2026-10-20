@@ -157,5 +157,17 @@
   "sources": [
     "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
   ],
-  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn). Brochure 'T8 Series.pdf' ghi IP67 (v2 ghi IP65 – đã dùng IP65) và nêu truyền hình trực tiếp về 'CGMS'. Ảnh sản phẩm dùng chung thân máy cho cả 3 phiên bản (theo tài liệu: 'Cùng thân máy, cùng chất lượng ghi hình'). Không ghi giá."
+  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn). Brochure 'T8 Series.pdf' ghi IP67 (v2 ghi IP65 – đã dùng IP65) và nêu truyền hình trực tiếp về 'CGMS'. Ảnh sản phẩm dùng chung thân máy cho cả 3 phiên bản (theo tài liệu: 'Cùng thân máy, cùng chất lượng ghi hình'). Không ghi giá.",
+  "unconfirmed": [
+    {
+      "group": "Environment",
+      "label": "Chuẩn bảo vệ",
+      "note": "Datasheet v2 ghi IP65, brochure 'T8 Series' ghi IP67; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Brochure 'T8 Series' ghi truyền hình trực tiếp về 'CGMS', các tài liệu khác dùng nền tảng COMS; cần xác nhận với PM."
+    }
+  ]
 }

@@ -60,6 +60,16 @@ for (const d of read("Data/Documents/documents.json") || []) {
 }
 for (const a of read("Data/AI/algorithms.json") || []) for (const s of a.sources || []) if (!fileExists(s)) errors.push(`Data/AI/algorithms.json: "${a.name}" nguồn không tồn tại — ${s}`);
 
+// Thông số chưa chốt phải trỏ đúng hàng trong specs
+for (const [f, p] of products)
+  for (const u of p.unconfirmed || [])
+    if (u.label && !(p.specs[u.group] || []).some(([k]) => k === u.label)) errors.push(`${f}: unconfirmed trỏ tới hàng không có trong specs — ${u.group} / ${u.label}`);
+// Tính năng AI nguyên văn chưa có trong từ điển Data/AI/features.json
+const aliases = new Set((read("Data/AI/features.json") || []).flatMap((x) => x.aliases));
+for (const [f, p] of products) for (const a of p.aiFeatures || []) if (!aliases.has(a)) warns.push(`${f}: tính năng AI chưa gắn tính năng chuẩn (Data/AI/features.json) — "${a}"`);
+for (const [f, s] of solutions) for (const c of s.configuration || []) if (c.product && !pSlugs.has(c.product)) errors.push(`${f}: cấu hình đề xuất trỏ tới sản phẩm không tồn tại — ${c.product}`);
+for (const d of read("Data/Documents/documents.json") || []) if (!d.status) warns.push(`Data/Documents/documents.json: "${d.title}" chưa gắn trạng thái (mặc định Nội bộ)`);
+
 console.log(`check-data: ${products.length} sản phẩm, ${solutions.length} giải pháp`);
 if (warns.length) console.log(`Cảnh báo (${warns.length}):\n` + warns.map((w) => "  - " + w).join("\n"));
 if (errors.length) {

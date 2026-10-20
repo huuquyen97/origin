@@ -110,5 +110,22 @@
     "Data/MK Vision/Docs/M6/2.1. M6 ver.0.9.pdf",
     "Data/MK Vision/Docs/BIOSECURE/[MKV] giới thiệu giải pháp kiểm soát ra vào_1.3.pdf"
   ],
-  "notes": "Thông số lấy nguyên văn từ slide 'M6 - Thông số kỹ thuật' (bản 0.9), khớp với bảng 8.1 trong tài liệu đề xuất giải pháp. 'POE (802.1af)' giữ nguyên văn (bản đề xuất ghi 'PoE (802.laf)'; khả năng là IEEE 802.3af). Slide thông số chú thích WiFi '802.11 b/g/n' ở hình minh hoạ nhưng bảng ghi 'a/b/g/n'. Tài liệu không nêu model code; datasheet A612 (mới hơn) gọi thiết bị là M6 với cấu hình khác (1025 MB DDR4, 64 GB eMMC, Sony 1/2.8\" CMOS, 12VDC; PoE IEEE 802.3af) – M6 ver.0.9 có thể là thế hệ/phiên bản trước của A612, cần xác nhận. Không ghi chuẩn IP. Ảnh thiết bị lấy từ M6 ver.0.9.pptx (phiên bản vỏ màu bạc)."
+  "notes": "Thông số lấy nguyên văn từ slide 'M6 - Thông số kỹ thuật' (bản 0.9), khớp với bảng 8.1 trong tài liệu đề xuất giải pháp. 'POE (802.1af)' giữ nguyên văn (bản đề xuất ghi 'PoE (802.laf)'; khả năng là IEEE 802.3af). Slide thông số chú thích WiFi '802.11 b/g/n' ở hình minh hoạ nhưng bảng ghi 'a/b/g/n'. Tài liệu không nêu model code; datasheet A612 (mới hơn) gọi thiết bị là M6 với cấu hình khác (1025 MB DDR4, 64 GB eMMC, Sony 1/2.8\" CMOS, 12VDC; PoE IEEE 802.3af) – M6 ver.0.9 có thể là thế hệ/phiên bản trước của A612, cần xác nhận. Không ghi chuẩn IP. Ảnh thiết bị lấy từ M6 ver.0.9.pptx (phiên bản vỏ màu bạc).",
+  "unconfirmed": [
+    {
+      "group": "Network",
+      "label": "Kết nối",
+      "note": "Slide M6 ver.0.9: hình minh hoạ ghi Wi-Fi 802.11 b/g/n, bảng thông số ghi a/b/g/n; cần xác nhận với PM."
+    },
+    {
+      "group": "Power",
+      "label": "Nguồn",
+      "note": "Slide ghi 'POE (802.1af)', tài liệu đề xuất ghi '802.laf', nhiều khả năng là IEEE 802.3af; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Datasheet A612 (mới hơn) cũng gọi thiết bị là M6 nhưng cấu hình khác (RAM, bộ nhớ, cảm biến, nguồn); cần xác nhận M6 ver.0.9 có phải bản cũ của A612 với PM."
+    }
+  ]
 }

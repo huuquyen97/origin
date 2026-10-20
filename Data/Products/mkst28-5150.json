@@ -23,12 +23,24 @@
         "24 cổng GE + 4 uplink 10G SFP+"
       ],
       [
+        "Cổng (header datasheet)",
+        "24 Port 10/100/1000Mbps,04 SFP+ 10G"
+      ],
+      [
         "Định tuyến",
         "Hỗ trợ L2+/Lite L3 Rounting"
       ],
       [
         "Bảo vệ vòng Ring",
         "Hỗ trợ bảo vệ vòng Ring L2 ERPS G.8032 <50ms"
+      ],
+      [
+        "Tính năng tích hợp",
+        "HA, QoS, VLAN, multicast, bảo mật truy cập và quản lý IPv4/IPv6"
+      ],
+      [
+        "Bảo mật, IPv6, multicast",
+        "Tích hợp bảo mật, IPv6, multicast nâng cao"
       ]
     ],
     "Environment": [
@@ -76,5 +88,22 @@
   "sources": [
     "Data/MK Vision/Docs/MK Networks/Datasheets/2. 3 MKST28-5150_VN 2.0.docx"
   ],
-  "notes": "Datasheet chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, MAC table, VLAN, kích thước, trọng lượng, công suất tiêu thụ...). Một datasheet chung cho \"MKST28/ MKSP28\" (không ghi hậu tố -5150; model MKST28-5150 lấy theo tên file và nhãn trên ảnh sản phẩm). Datasheet phân biệt biến thể bằng tên Edgecore trong ngoặc: \"Không quạt, chạy êm (ECS4150-28T)\" và \"PoE 370W chuẩn af/at (ECS4150-28P)\"; ảnh minh họa trong file ghi ECS4150-28T/ECS4150-28P. Việc gán ECS4150-28T → MKST28-5150 và ECS4150-28P → MKSP28-5150 là suy luận từ tên model (T/P) và ảnh sản phẩm (ảnh MKSP28-5150 có đèn PoE), cần xác nhận. Dòng \"Không quạt\" được datasheet gắn với ECS4150-28T nên chỉ ghi cho MKST28-5150. Datasheet ghi \"Rounting\" (lỗi chính tả, giữ nguyên). Tiêu đề trang 1 ghi \"Chuyển mạch Access L2+/Lite L3\", header ghi \"Chuyển mạch lớp 2\"; đoạn giới thiệu ghi \"switch truy cập Layer 2\". File có comment \"Đổi tên thiết bị MK Networks\" tại các chỗ ghi tên ECS4150. Không có ngày phát hành in trên datasheet."
+  "unconfirmed": [
+    {
+      "group": "Physical",
+      "label": "Tản nhiệt",
+      "note": "Datasheet gắn \"Không quạt\" với ECS4150-28T; việc gán biến thể này cho MKST28-5150 là suy luận từ tên model, cần PM xác nhận."
+    },
+    {
+      "group": "Network",
+      "label": "Định tuyến",
+      "note": "Tiêu đề datasheet ghi L2+/Lite L3 nhưng header ghi \"Chuyển mạch lớp 2\" và phần giới thiệu ghi \"Layer 2\"; cần xác nhận khả năng định tuyến."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Sơ đồ giải pháp thôn số dùng Switch Access \"MKST/P28-3100\", không phải -5150; cần xác nhận model dùng trong giải pháp."
+    }
+  ],
+  "notes": "Datasheet chung cho \"MKST28/ MKSP28\", chỉ có trang giới thiệu và \"Tính năng chính\", không có bảng thông số kỹ thuật chi tiết (không có switching capacity, forwarding rate, MAC table, số VLAN, kích thước, trọng lượng, công suất tiêu thụ...). Đã kiểm tra document, header, footer, comment và 5 ảnh nhúng: ảnh chỉ là logo mkCLOUD và ảnh mặt trước Edgecore ECS4150-28T/ECS4150-28P (lặp 2 lần), không có bảng thông số. Model -5150 lấy theo tên file và nhãn ảnh sản phẩm. Datasheet phân biệt biến thể bằng tên Edgecore: \"Không quạt, chạy êm (ECS4150-28T)\" và \"PoE 370W chuẩn af/at (ECS4150-28P)\"; gán 28T → MKST28-5150, 28P → MKSP28-5150 là suy luận, nên dòng \"Không quạt\" chỉ ghi cho MKST28-5150. Hàng \"Cổng (header datasheet)\" lấy nguyên văn text box ở header. Tiêu đề ghi \"L2+/Lite L3\", header ghi \"Chuyển mạch lớp 2\", giới thiệu ghi \"switch truy cập Layer 2\". Datasheet ghi \"Rounting\" (giữ nguyên). Sơ đồ giải pháp thôn số dùng \"MKST/P28-3100 24GE + 04 SFP+ 10Gb\" — model khác, không liên kết. Không có ngày phát hành in trên datasheet."
 }

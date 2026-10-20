@@ -167,7 +167,6 @@
   "solutions": [
     "do-thi",
     "giao-thong",
-    "dien-luc",
     "nha-may"
   ],
   "documents": [
@@ -193,5 +192,32 @@
   "sources": [
     "Data/MK Vision/Docs/Datasheets/VB80FA1V - Bullet 8MP.pdf"
   ],
-  "notes": "Không có bản R1; dùng bản tiếng Việt có tên 'VB80FA1V - Bullet 8MP.pdf'. XUNG ĐỘT với bản English 'VB80FA1V.pdf': cảm biến 1/2.8” (VN) vs 1/2.7” (EN); độ phân giải '8 Megapixels (3864H x 2192V)' (VN) vs '8 Megapixels (2592H x 1944V)' (EN — giống thông số 5MP, có thể sai); tốc độ khung hình '8MP @20fps' (VN) vs '8MP @30fps' (EN); WDR '≥ 120dB' (VN) vs 'WDR 132dB' (EN); An toàn điện VN ghi 'TCVN 73126-1:2003' (có thể lỗi đánh máy, EN ghi 'TCVN 7326-1:2003'). Cả hai bản đều KHÔNG liệt kê chức năng AI, FOV, phạm vi phát hiện và tốc độ màn chập — để trống, không suy từ model khác. Ảnh là ảnh chung dòng Bullet V-Secure."
+  "notes": "Không có bản R1; dùng bản tiếng Việt có tên 'VB80FA1V - Bullet 8MP.pdf'. XUNG ĐỘT với bản English 'VB80FA1V.pdf': cảm biến 1/2.8” (VN) vs 1/2.7” (EN); độ phân giải '8 Megapixels (3864H x 2192V)' (VN) vs '8 Megapixels (2592H x 1944V)' (EN — giống thông số 5MP, có thể sai); tốc độ khung hình '8MP @20fps' (VN) vs '8MP @30fps' (EN); WDR '≥ 120dB' (VN) vs 'WDR 132dB' (EN); An toàn điện VN ghi 'TCVN 73126-1:2003' (có thể lỗi đánh máy, EN ghi 'TCVN 7326-1:2003'). Cả hai bản đều KHÔNG liệt kê chức năng AI, FOV, phạm vi phát hiện và tốc độ màn chập — để trống, không suy từ model khác. Ảnh là ảnh chung dòng Bullet V-Secure.",
+  "unconfirmed": [
+    {
+      "group": "Image",
+      "label": "Cảm biến ảnh",
+      "note": "Datasheet VN ghi cảm biến 1/2.8”, bản English ghi 1/2.7”; cần xác nhận với PM."
+    },
+    {
+      "group": "Video",
+      "label": "Độ phân giải",
+      "note": "Datasheet VN ghi 3864H x 2192V, bản English ghi 2592H x 1944V (giống model 5MP); cần xác nhận với PM."
+    },
+    {
+      "group": "Video",
+      "label": "Tốc độ khung hình",
+      "note": "Datasheet VN ghi 8MP @20fps, bản English ghi 8MP @30fps; cần xác nhận với PM."
+    },
+    {
+      "group": "Video",
+      "label": "Cân bằng sáng",
+      "note": "Datasheet VN ghi WDR ≥ 120dB, bản English ghi WDR 132dB; cần xác nhận với PM."
+    },
+    {
+      "group": "Other",
+      "label": "An toàn điện",
+      "note": "Datasheet VN ghi 'TCVN 73126-1:2003' (nhiều khả năng lỗi đánh máy), bản English ghi TCVN 7326-1:2003; cần xác nhận với PM."
+    }
+  ]
 }

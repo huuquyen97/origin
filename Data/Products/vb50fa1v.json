@@ -200,8 +200,7 @@
     ]
   },
   "solutions": [
-    "giao-thong",
-    "dien-luc"
+    "giao-thong"
   ],
   "documents": [
     {
@@ -216,5 +215,12 @@
   "sources": [
     "Data/MK Vision/Docs/V-SECURE/VB50FA1V 5MP R1.pdf"
   ],
-  "notes": "Chỉ có 1 datasheet (R1). Mâu thuẫn nội bộ: biểu tượng trang 1 ghi 'Sony Sensor IMX-415', còn đoạn mô tả và bảng thông số ghi 'Sony IMX-335 (1/2.7” Progressive CMOS)' — đã dùng giá trị trong bảng thông số, cần xác nhận. Model không xuất hiện trong slide V-SECURE ver.0.9. Ảnh là ảnh chung dòng Bullet V-Secure. Danh sách AI kết thúc bằng '...'."
+  "notes": "Chỉ có 1 datasheet (R1). Mâu thuẫn nội bộ: biểu tượng trang 1 ghi 'Sony Sensor IMX-415', còn đoạn mô tả và bảng thông số ghi 'Sony IMX-335 (1/2.7” Progressive CMOS)' — đã dùng giá trị trong bảng thông số, cần xác nhận. Model không xuất hiện trong slide V-SECURE ver.0.9. Ảnh là ảnh chung dòng Bullet V-Secure. Danh sách AI kết thúc bằng '...'.",
+  "unconfirmed": [
+    {
+      "group": "Image",
+      "label": "Cảm biến ảnh",
+      "note": "Datasheet R1: biểu tượng trang 1 ghi Sony IMX-415, mô tả và bảng thông số ghi Sony IMX-335; cần xác nhận với PM."
+    }
+  ]
 }

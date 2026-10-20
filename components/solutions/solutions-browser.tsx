@@ -15,10 +15,10 @@ export function SolutionsBrowserView({ solutions, initialIndustry }: { solutions
   const list = solutions.filter((s) => !cur || s.industry === cur);
   return (
     <>
-      <div className="scrollbar-none mb-6.5 flex gap-2 overflow-x-auto pb-0.5">
+      <div className="mb-6.5 flex flex-wrap gap-2">
         <button type="button" className="pill" aria-pressed={!cur} onClick={() => setCur("")}>{T.all}</button>
         {industries.map((i) => (
-          <button key={i} type="button" className="pill" aria-pressed={cur === i} onClick={() => setCur(i)}>
+          <button key={i} type="button" className="pill" aria-pressed={cur === i} onClick={() => setCur(cur === i ? "" : i)}>
             {i} <span className="count">{solutions.filter((s) => s.industry === i).length}</span>
           </button>
         ))}

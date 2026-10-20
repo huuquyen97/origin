@@ -273,5 +273,27 @@
   "sources": [
     "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf"
   ],
-  "notes": "Specs lấy nguyên văn từ datasheet MK22FC1E (23/02/2026, bản mới nhất). Xung đột nội bộ datasheet: trang Key Features ghi 'IP67' nhưng bảng Specifications ghi 'IP65' (đã dùng IP65 theo bảng thông số); slide ver 0.9 cũng ghi IP67, 'Pin 4500 mAh, hoạt động trên 8 giờ', trong khi datasheet ghi '12+ hours'. Trang bìa datasheet có tiêu đề 'Body Camera & AutoSecure' và giới thiệu License Plate Recognition (kèm hình camera xe), nhưng bảng thông số không có mục LPR. Datasheet tiếng Việt cũ hơn (MOBISECURE.pdf/.docx, 10/2025, không ghi model, thông số gần như trùng khớp) có thêm: 'Chế độ hồng ngoại: 0 lux', 'Module bảo mật: Hỗ trợ 2 SAM Slot', Giao thức 'MK Vision SDK' (thay vì ONVIF profile G,S,T), Phụ kiện có 'Kẹp áo'; bản này không ghi bảo hành. Slide còn nêu: 4G SIM + 2 SAMs, cổng kết nối camera ngoài / pin, nút chế độ im lặng, đạt chuẩn QCVN 135:2024/BTTTT. HDSD/tài liệu chức năng: ghi hình mặc định 720p 30fps, live view 720p/480p tự điều chỉnh theo băng thông. Cùng kích thước/khối lượng (101 x 64 x 31 mm, 205 g) với T8 Series — có thể là cùng nền tảng phần cứng, nhưng không có tài liệu xác nhận nên giữ là model riêng."
+  "notes": "Specs lấy nguyên văn từ datasheet MK22FC1E (23/02/2026, bản mới nhất). Xung đột nội bộ datasheet: trang Key Features ghi 'IP67' nhưng bảng Specifications ghi 'IP65' (đã dùng IP65 theo bảng thông số); slide ver 0.9 cũng ghi IP67, 'Pin 4500 mAh, hoạt động trên 8 giờ', trong khi datasheet ghi '12+ hours'. Trang bìa datasheet có tiêu đề 'Body Camera & AutoSecure' và giới thiệu License Plate Recognition (kèm hình camera xe), nhưng bảng thông số không có mục LPR. Datasheet tiếng Việt cũ hơn (MOBISECURE.pdf/.docx, 10/2025, không ghi model, thông số gần như trùng khớp) có thêm: 'Chế độ hồng ngoại: 0 lux', 'Module bảo mật: Hỗ trợ 2 SAM Slot', Giao thức 'MK Vision SDK' (thay vì ONVIF profile G,S,T), Phụ kiện có 'Kẹp áo'; bản này không ghi bảo hành. Slide còn nêu: 4G SIM + 2 SAMs, cổng kết nối camera ngoài / pin, nút chế độ im lặng, đạt chuẩn QCVN 135:2024/BTTTT. HDSD/tài liệu chức năng: ghi hình mặc định 720p 30fps, live view 720p/480p tự điều chỉnh theo băng thông. Cùng kích thước/khối lượng (101 x 64 x 31 mm, 205 g) với T8 Series — có thể là cùng nền tảng phần cứng, nhưng không có tài liệu xác nhận nên giữ là model riêng.",
+  "unconfirmed": [
+    {
+      "group": "Environment",
+      "label": "IP",
+      "note": "Datasheet: trang Key Features và slide ver 0.9 ghi IP67, bảng thông số ghi IP65; cần xác nhận với PM."
+    },
+    {
+      "group": "Power",
+      "label": "Operation time",
+      "note": "Datasheet ghi '12+ hours', slide ver 0.9 ghi 'hoạt động trên 8 giờ'; cần xác nhận với PM."
+    },
+    {
+      "group": "Network",
+      "label": "Protocol",
+      "note": "Datasheet English ghi ONVIF profile G,S,T, datasheet tiếng Việt cũ hơn ghi MK Vision SDK; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Trang bìa datasheet giới thiệu License Plate Recognition nhưng bảng thông số không có LPR; cần xác nhận với PM."
+    }
+  ]
 }

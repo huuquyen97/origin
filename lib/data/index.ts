@@ -3,12 +3,14 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { z } from "zod";
 import { fileUrl, pathKey } from "@/lib/file-slug.mjs";
+import { catLabel, kindOf, KEY_SPEC_LABELS, specLabel, type NeedId } from "@/lib/labels";
 import {
-  AiSchema, CompanySchema, DocumentSchema, HomeSchema, ProductSchema, SeriesSchema, SolutionSchema,
-  type AiAlgorithm, type Company, type DocType, type Home, type Product, type Series, type Solution,
+  AiFeatureSchema, AiSchema, CompanySchema, DocumentSchema, HomeSchema, ProductSchema, SeriesSchema, SolutionSchema,
+  type AiAlgorithm, type AiFeature, type Company, type DocStatus, type DocType, type Home, type Product, type Series, type Solution,
 } from "./schema";
 
 const ROOT = process.cwd();
+const TODAY = new Date().toISOString().slice(0, 10);
 const DATA = join(ROOT, "Data");
 
 /* ---------- Kiểu dữ liệu đã liên kết (dùng ở UI) ---------- */
@@ -22,8 +24,15 @@ export type Doc = {
   series: string;
   products: string[];
   size: number;
+  /** "expired" được tính từ validTo so với ngày build */
+  status: DocStatus;
+  statusNote: string;
+  validFrom: string;
+  validTo: string;
 };
-export type ProductFull = Omit<Product, "documents" | "sources"> & { documents: Doc[]; sources: Doc[] };
+/** ai: id tính năng AI chuẩn (Data/AI/features.json) suy từ aiFeatures nguyên văn */
+export type ProductFull = Omit<Product, "documents" | "sources"> & { documents: Doc[]; sources: Doc[]; ai: string[] };
+export type AiFeatureFull = AiFeature & { products: string[]; algorithms: AiFull[] };
 export type SolutionFull = Omit<Solution, "documents" | "sources"> & { documents: Doc[]; sources: Doc[] };
 export type AiFull = Omit<AiAlgorithm, "sources"> & { sources: Doc[] };
 
@@ -85,6 +94,7 @@ function load() {
   const solutions = readDir("Solutions", SolutionSchema);
   const docsMeta = readArray("Documents/documents.json", DocumentSchema);
   const ai = readArray("AI/algorithms.json", AiSchema);
+  const features = readArray("AI/features.json", AiFeatureSchema);
   const series = readArray("Site/series.json", SeriesSchema).sort((a, b) => a.order - b.order);
   const company = parse(CompanySchema, readJson(join(DATA, "Site/company.json")), "Data/Site/company.json");
   const home = parse(HomeSchema, readJson(join(DATA, "Site/home.json")), "Data/Site/home.json");
@@ -105,6 +115,11 @@ function load() {
       series: meta.series ?? "",
       products: meta.products ?? [],
       size: m?.size ?? 0,
+      // File chưa có mô tả trong documents.json: coi là nội bộ cho tới khi được phân loại
+      status: meta.validTo && meta.validTo < TODAY ? "expired" : (meta.status ?? "internal"),
+      statusNote: meta.statusNote ?? "",
+      validFrom: meta.validFrom ?? "",
+      validTo: meta.validTo ?? "",
     };
   };
   const docFor = (path: string, meta?: { title?: string; type?: DocType }): Doc => {
@@ -125,12 +140,16 @@ function load() {
     docs.set(key, makeDoc(key, { series: folder ? FOLDER_SERIES[folder] : "" }));
   }
 
+  const featureOf = new Map<string, string[]>();
+  for (const f of features) for (const a of f.aliases) featureOf.set(a, [...(featureOf.get(a) ?? []), f.id]);
+
   const productMap = new Map<string, ProductFull>();
   for (const p of products) {
     if (productMap.has(p.slug)) throw new Error(`[Data] Trùng slug sản phẩm: ${p.slug}`);
     const documents = p.documents.map((d) => docFor(d.path, d));
     for (const d of documents) if (!d.products.includes(p.slug)) d.products.push(p.slug);
-    productMap.set(p.slug, { ...p, documents, sources: p.sources.map((s) => docFor(s)) });
+    const aiIds = [...new Set(p.aiFeatures.flatMap((a) => featureOf.get(a) ?? []))];
+    productMap.set(p.slug, { ...p, documents, sources: p.sources.map((s) => docFor(s)), ai: features.map((f) => f.id).filter((id) => aiIds.includes(id)) });
   }
   // Tài liệu gắn với sản phẩm từ phía documents.json
   for (const d of docs.values()) {
@@ -157,8 +176,14 @@ function load() {
   );
   const documents = [...docs.values()].sort((a, b) => (a.series || "zz").localeCompare(b.series || "zz") || a.title.localeCompare(b.title));
   const aiList: AiFull[] = ai.map((a) => ({ ...a, sources: a.sources.map((x) => docFor(x)) }));
+  const featureList: AiFeatureFull[] = features.map((f) => ({
+    ...f,
+    products: productList.filter((p) => p.ai.includes(f.id)).map((p) => p.slug),
+    algorithms: aiList.filter((a) => a.feature === f.id),
+  }));
+  for (const a of aiList) if (!features.some((f) => f.id === a.feature)) throw new Error(`[Data] Data/AI/algorithms.json: "${a.name}" gắn tính năng không có trong features.json — ${a.feature}`);
 
-  return { products: productList, productMap, solutions: solutionList, solutionMap, documents, ai: aiList, series, company, home };
+  return { products: productList, productMap, solutions: solutionList, solutionMap, documents, ai: aiList, features: featureList, series, company, home };
 }
 
 let cache: ReturnType<typeof load> | null = null;
@@ -172,18 +197,52 @@ export const getSolutions = () => getData().solutions;
 export const getSolution = (slug: string) => getData().solutionMap.get(slug);
 export const getDocuments = () => getData().documents;
 export const getAi = () => getData().ai;
+export const getAiFeatures = () => getData().features;
+export const aiFeatureName = (id: string) => getData().features.find((f) => f.id === id)?.nameVi ?? id;
 export const getSeries = (): Series[] => getData().series;
 export const getCompany = (): Company => getData().company;
 export const getHome = (): Home => getData().home;
 export const seriesName = (id: string) => getData().series.find((s) => s.id === id)?.name ?? id;
 
+/* ---------- Thông số chính, nhu cầu (dùng chung cho card, trang chi tiết, bộ lọc) ---------- */
+/** Giá trị của hàng thông số đầu tiên có nhãn hiển thị trùng label */
+export function specValue(p: Pick<Product, "specs">, label: string): string {
+  for (const rows of Object.values(p.specs)) for (const [k, v] of rows) if (specLabel(k) === label && v) return v;
+  return "";
+}
+
+/** [nhãn, giá trị] theo loại thiết bị: switch hiện cổng / uplink / PoE thay vì độ phân giải */
+export function keySpecs(p: ProductFull): [string, string][] {
+  const kind = kindOf(p.category);
+  if (kind === "camera") return [["Độ phân giải", p.resolution], ["Chuẩn bảo vệ", p.ipRating]];
+  return KEY_SPEC_LABELS[kind].map((l) => [l, specValue(p, l) || (l === "PoE budget" ? specValue(p, "PoE") : "")]);
+}
+
+export function needsOf(p: ProductFull): NeedId[] {
+  const text = JSON.stringify([p.name, p.summary, p.features, p.specs]);
+  const out: NeedId[] = [];
+  if (p.ai.includes("lpr")) out.push("lpr");
+  if (p.ai.includes("face-recognition")) out.push("face");
+  if (/\bPoE\b/i.test(text)) out.push("poe");
+  if (/NDAA/i.test(text)) out.push("ndaa");
+  if (/IP6[6-9]/.test(p.ipRating) || /outdoor|ngoài trời/i.test(text)) out.push("outdoor");
+  return out;
+}
+
 /* ---------- Bản rút gọn cho Client Component ---------- */
-export type ProductCardData = Pick<ProductFull, "slug" | "model" | "name" | "series" | "category" | "resolution" | "ipRating" | "image" | "aiFeatures"> & { seriesName: string; searchText: string };
+export type ProductCardData = Pick<ProductFull, "slug" | "model" | "name" | "series" | "category" | "resolution" | "ipRating" | "image" | "ai"> & {
+  seriesName: string;
+  categoryLabel: string;
+  keySpecs: [string, string][];
+  needs: NeedId[];
+  searchText: string;
+};
 export function toCard(p: ProductFull): ProductCardData {
   const specText = Object.values(p.specs).flat().map((r) => r.join(" ")).join(" ");
   return {
     slug: p.slug, model: p.model, name: p.name, series: p.series, category: p.category, resolution: p.resolution,
-    ipRating: p.ipRating, image: p.image, aiFeatures: p.aiFeatures, seriesName: seriesName(p.series),
-    searchText: `${p.model} ${p.name} ${p.category} ${p.summary} ${p.aiFeatures.join(" ")} ${specText}`,
+    ipRating: p.ipRating, image: p.image, ai: p.ai, seriesName: seriesName(p.series), categoryLabel: catLabel(p.category),
+    keySpecs: keySpecs(p), needs: needsOf(p),
+    searchText: `${p.model} ${p.name} ${p.category} ${catLabel(p.category)} ${p.summary} ${p.ai.map(aiFeatureName).join(" ")} ${p.aiFeatures.join(" ")} ${specText}`,
   };
 }

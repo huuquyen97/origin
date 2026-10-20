@@ -157,5 +157,17 @@
   "sources": [
     "Data/MK Vision/Docs/MOBISECURE/Datasheet Design/T8 Series 3 Datasheet v2.pdf"
   ],
-  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn, 16/09/2026 17:49). Xung đột với brochure 'T8 Series.pdf' (16/09/2026 16:11): brochure ghi chuẩn bảo vệ IP67 (v2 ghi IP65 – đã dùng IP65); brochure nhắc kết nối phần mềm 'MK Vision CGMS' thay vì COMS. Cả hai đều ghi pin 4000 mAh và −20°C đến 60°C (khác datasheet MK22FC1E: 4500 mAh, -10°C đến 45°C). Ngàm MNT-01…04 lấy từ brochure. Datasheet v2 có ô 'Giá đề xuất' để trống – không ghi giá."
+  "notes": "Specs theo 'T8 Series 3 Datasheet v2' (bản mới hơn, 16/09/2026 17:49). Xung đột với brochure 'T8 Series.pdf' (16/09/2026 16:11): brochure ghi chuẩn bảo vệ IP67 (v2 ghi IP65 – đã dùng IP65); brochure nhắc kết nối phần mềm 'MK Vision CGMS' thay vì COMS. Cả hai đều ghi pin 4000 mAh và −20°C đến 60°C (khác datasheet MK22FC1E: 4500 mAh, -10°C đến 45°C). Ngàm MNT-01…04 lấy từ brochure. Datasheet v2 có ô 'Giá đề xuất' để trống – không ghi giá.",
+  "unconfirmed": [
+    {
+      "group": "Environment",
+      "label": "Chuẩn bảo vệ",
+      "note": "Datasheet v2 ghi IP65, brochure 'T8 Series' ghi IP67; cần xác nhận với PM."
+    },
+    {
+      "group": "",
+      "label": "",
+      "note": "Brochure 'T8 Series' ghi kết nối phần mềm 'MK Vision CGMS', các tài liệu khác dùng nền tảng COMS; cần xác nhận với PM."
+    }
+  ]
 }

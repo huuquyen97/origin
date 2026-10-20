@@ -6,6 +6,12 @@
   --color-brand-navy-600: #003d7a;
   --color-brand-navy-50: #eef4fb;
   --color-brand-gold: #debb5c;
+  --color-brand-gold-50: #fbf6e8;
+  --color-brand-gold-700: #7a5a12;
+  --color-danger: #b42318;
+  --color-danger-50: #fdeceb;
+  --color-ok: #1f6b45;
+  --color-ok-50: #e8f4ee;
 
   --color-ink: #161512;
   --color-ink-2: #3a3934;
@@ -51,9 +57,9 @@
   .btn-light { @apply bg-white text-ink hover:bg-[#f2f1ee]; }
   .btn-ghost { @apply border border-line-2 bg-white hover:border-ink; }
   .btn-glass { @apply border border-white/25 bg-white/10 text-white backdrop-blur-md hover:bg-white/20; }
-  .btn-sm { @apply min-h-9 px-3.5 text-[13px]; }
+  .btn-sm { @apply min-h-11 px-3.5 text-[13px] md:min-h-9; }
 
-  .pill { @apply inline-flex min-h-9 items-center gap-2 whitespace-nowrap rounded-full border border-line bg-white px-3.5 text-[13px] font-medium text-ink-2 transition-colors duration-200 hover:border-line-2 hover:bg-surface; }
+  .pill { @apply inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-full border border-line bg-white px-3.5 text-[13px] font-medium text-ink-2 transition-colors duration-200 hover:border-line-2 hover:bg-surface md:min-h-9; }
   .pill[aria-pressed="true"], .pill.is-active { @apply border-ink bg-ink text-white; }
   .pill .count { @apply text-[11.5px] text-faint; }
   .pill[aria-pressed="true"] .count, .pill.is-active .count { @apply text-white/60; }
@@ -61,6 +67,16 @@
   .tag { @apply inline-flex h-6 items-center gap-1.5 whitespace-nowrap rounded-full bg-surface-2 px-2.5 text-xs font-medium text-ink-2; }
   .tag-navy { @apply bg-brand-navy-50 text-brand-navy; }
   .tag-dark { @apply bg-white/15 text-white backdrop-blur; }
+  /* Trạng thái tài liệu */
+  .tag-ok { @apply bg-ok-50 text-ok; }
+  .tag-warn { @apply bg-brand-gold-50 text-brand-gold-700; }
+  .tag-danger { @apply bg-danger-50 text-danger; }
+  .tag-internal { @apply bg-ink-2 text-white; }
+
+  /* Biểu tượng cảnh báo cạnh thông số chưa chốt; ghi chú hiện khi hover / focus */
+  .unconfirmed { @apply relative ml-1.5 inline-grid size-5 cursor-help place-items-center rounded-full bg-brand-gold-50 align-[-4px] text-brand-gold-700; }
+  .unconfirmed svg { @apply size-3.5; }
+  .note-warn { @apply flex gap-2.5 rounded-2xl bg-brand-gold-50 px-4 py-3.5 text-[13.5px] text-brand-gold-700; }
 
   .card { @apply relative flex flex-col overflow-hidden rounded-xl2 border border-line bg-white transition duration-300; transition-timing-function: var(--ease-soft); }
   .card-link:hover { @apply -translate-y-[3px] border-line-2; box-shadow: var(--shadow-soft); }

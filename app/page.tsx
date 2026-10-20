@@ -21,10 +21,10 @@ export default function HomePage() {
         <Image src="/img/scenes/hero.jpg" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
         <SiteHeader />
         <div className="grid flex-1 grid-cols-[minmax(0,1fr)] content-end gap-5.5 px-5 pb-6 pt-18 md:px-12 md:pb-7 md:pt-30">
-          <span className="eyebrow eyebrow-dark">Cổng tra cứu nội bộ · Sales & Presales</span>
+          <span className="eyebrow eyebrow-dark">Cổng tra cứu nội bộ  - MK Vision Docs</span>
           <h1 className="heading-display max-w-[16ch]">Hỏi gì về sản phẩm, có ngay câu trả lời.</h1>
           <p className="lead text-white/75">
-            Thông số, tính năng AI, giải pháp và tài liệu chính thống của MK Vision ở một nơi. Tìm bằng model, nhu cầu khách hàng hay tên tài liệu, không cần gõ dấu.
+            Thông số, tính năng AI, giải pháp và tài liệu chính thống của MK Vision ở một nơi. Tìm bằng model, nhu cầu khách hàng hay tên tài liệu.
           </p>
           <HeroSearch />
           <div className="scrollbar-none mt-1.5 flex gap-2 overflow-x-auto border-t border-white/15 pt-4.5" aria-label="Dòng sản phẩm">
