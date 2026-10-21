@@ -1,229 +1,197 @@
 {
   "slug": "mk22fc1e",
   "model": "MK22FC1E",
-  "name": "Camera đeo người MobiSecure BWC 2MP",
+  "name": "Camera nghiệp vụ an ninh MobiSecure",
   "series": "mobisecure",
   "category": "Body-worn",
   "resolution": "2MP",
   "ipRating": "IP65",
-  "summary": "Body-worn camera chuyên dụng cho lực lượng an ninh, tích hợp giải pháp MK e-ID đọc chip CCCD / hộ chiếu điện tử qua NFC, nhận diện khuôn mặt tại biên (IDVision), 4G LTE, GPS & GLONASS và kết nối 2 chiều về trung tâm chỉ huy. Sản xuất tại Việt Nam.",
+  "summary": "Mobi Secure là dòng camera chuyên biệt sử dụng cho các nhiệm vụ giám sát, ghi lại sự việc, quá trình làm việc của cá nhân để làm bằng chứng. Camera thường được dùng làm thiết bị ghi hình chuyên dụng cho lực lượng bảo vệ, cảnh sát... Đặc biệt trong các tình huống khẩn cấp khi cần phản hồi nhanh, các chỉ đạo từ trung tâm điều hành, giúp đảm bảo mọi hoạt động luôn được theo dõi, hỗ trợ và quản lý một cách toàn diện nhất.",
   "features": [
-    "Ghi hình Full HD 1080p30, cảm biến Sony 1/2.8\" CMOS, góc nhìn 140°",
-    "NFC đọc chip CCCD gắn chip và hộ chiếu điện tử (RFID ISO14443 A/B)",
-    "Nhận diện khuôn mặt tại biên: thư viện đến 20,000 khuôn mặt, tỷ lệ nhận dạng ≥90%",
-    "Ambarella Quad-core Arm Cortex-A53 1 GHz, CVflow vision edge analytics, NPU riêng",
-    "Kết nối 4G LTE, Wi-Fi 2.4GHz & 5GHz, BLE 4.2, GPS & GLONASS / A-GPS",
-    "Pin 4500 mAh, thời gian hoạt động 12+ giờ cho 1 lần sạc",
-    "Bảo mật: Signed firmware / video / event, TrustZone secure boot, DRAM scrambling",
-    "Tương thích MK Vision VMS, Open API cho metadata, event, report"
+    "Tính năng giám sát: nhận diện khuôn mặt phục vụ truy nã, lưu trữ hành trình theo GPS, lưu trữ video bảo mật, báo cáo tình trạng thiết bị, kết nối với phần mềm quản lý COMS",
+    "Chip xử lý AI, license AI Engine",
+    "Hỗ trợ đọc căn cước gắn chip và hộ chiếu điện tử",
+    "GPS & GLONASS / A-GPS, 4G LTE",
+    "Cảm biến Sony Starvis 1/ 2.8\" CMOS, tiêu cự cố định 2.8mm, góc nhìn 140°",
+    "Video 2MP, H.264, lên đến 30 khung hình/giây ở độ phân giải Full HD",
+    "Pin 4500 mAh (tương đương 8 tiếng sử dụng liên tục)",
+    "Ký số Firmware / Video / Sự kiện, khởi động an toàn TrustZone®, hỗ trợ 2 SAM Slot",
+    "Đạt chuẩn IP65, trọng lượng 205 g"
   ],
   "aiFeatures": [
-    "Face Recognition (IDVision) – thư viện đến 20,000 khuôn mặt, mã hoá thư viện",
-    "Subject searching – tìm kiếm đối tượng truy nã / blacklist",
-    "Xác thực CCCD gắn chip & e-Passport (MK e-ID)",
-    "License Plate Recognition (giới thiệu trên trang bìa datasheet)"
+    "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện",
+    "Nhận diện khuôn mặt phục vụ truy nã",
+    "Hỗ trợ đọc căn cước gắn chip và hộ chiếu điện tử"
   ],
   "specs": {
     "Image": [
       [
-        "Image sensor",
-        "Sony 1/ 2.8\" CMOS"
+        "Cảm biến ảnh",
+        "Sony Starvis 1/ 2.8\" CMOS"
       ],
       [
-        "Night mode",
-        "Automatic switch"
+        "Chế độ ban đêm",
+        "Chuyển đổi tự động"
       ],
       [
-        "Minimum illumination",
-        "0.001 lux, at 50 IRE F2.2"
+        "Chiếu sáng tối thiểu",
+        "Chế độ màu: 0.001 lux, tại 50 IRE F2.2; Chế độ hồng ngoại: 0 lux"
       ],
       [
-        "S/N ratio",
-        ">50dB"
+        "Tỉ lệ tín hiệu trên nhiễu",
+        "≥ 50dB"
       ],
       [
-        "WDR",
-        "up to 120dB"
+        "Dải cân bằng sáng (WDR)",
+        "≥ 120dB"
       ],
       [
-        "Image setting",
-        "Auto White Balance, Auto Backlight Compensation, Auto Gain Control"
+        "Điều chỉnh hình ảnh",
+        "Tự động cân bằng trắng, Tự động bù ngược sáng, Tự động điều chỉnh độ lợi"
       ]
     ],
     "Lens": [
       [
-        "Lens",
-        "Fixed focal, 2.8mm, F2.2, 140° FOV"
+        "Ống kính",
+        "Tiêu cự cố định, 2.8mm, F2.2, góc nhìn 140°"
       ]
     ],
     "AI": [
       [
-        "SoC",
-        "Ambarella Quad-core Arm® Cortex®-A53 1 GHz"
+        "Bộ xử lý",
+        "Quad-core Arm® Cortex®-A53 1 GHz"
       ],
       [
-        "Memory",
+        "Bộ nhớ",
         "1024 MB DDR4"
       ],
       [
-        "Processing power",
-        "Ambarella image signal processor and video codec; CVflow® vision edge analytics"
+        "Hiệu năng xử lý",
+        "Bộ xử lý tín hiệu hình ảnh và mã hóa video Ambarella; Phân tích tầm nhìn tại"
       ],
       [
-        "AI Analytics",
-        "(IDVision) Support up to 20,000 faces library. Face recognition rate ≥90%. Supports face library encryption"
+        "Tính năng thông minh",
+        "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện. Tỷ lệ nhận dạng khuôn mặt ≥90%. Hỗ trợ mã hóa thư viện khuôn mặt."
       ]
     ],
     "Video": [
       [
-        "Resolution",
+        "Độ phân giải",
         "2MP"
       ],
       [
-        "Video compression",
+        "Chuẩn nén",
         "H.264"
       ],
       [
-        "Frame Rate",
-        "up to 30 fps in Full HD"
-      ],
+        "Tốc độ khung hình",
+        "Lên đến 30 khung hình/giây ở độ phân giải Full HD"
+      ]
+    ],
+    "Audio": [
       [
-        "Audio input",
+        "Đầu nhận âm thanh",
         "Microphone*1"
       ],
       [
-        "Audio output",
-        "Speaker*1"
-      ],
-      [
-        "Audio Encoding",
-        "AAC-LC up to 48kHz"
+        "Đầu ra âm thanh",
+        "Loa*1"
       ]
     ],
     "Network": [
       [
-        "Wired connectivity",
+        "Kết nối có dây",
         "1*USB-C"
       ],
       [
-        "Wifi",
-        "802.11 b/g/n, 2.4GHz & 5GHz"
+        "Kết nối không dây",
+        "Bluetooth: BLE 4,2; RFID: ISO14443 A/B; GPS: GPS & GLONASS hỗ trợ A-GPS; Dữ liệu di động: 4G LTE"
       ],
       [
-        "Bluetooth",
-        "BLE 4,2"
+        "Giao thức",
+        "MK Vision SDK"
       ],
       [
-        "RFID",
-        "ISO14443 A/B"
+        "An toàn thông tin",
+        "Ký số Firmware; Ký số Video; Ký số Sự kiện; Mật khẩu một lần (OTP); Bộ tạo số ngẫu nhiên thực (TRNG); Mã hoá mật khẩu; Khởi động an toànTrustZone®; Mã hoá bộ nhớ; Xáo trộn DRAM"
       ],
       [
-        "GPS",
-        "GPS & GLONASS support A-GPS"
+        "Giao diện lập trình ứng dụng",
+        "Dịch vụ API mở cho tích hợp phần mềm: metadata, sự kiện, báo cáo"
       ],
       [
-        "Cellular",
-        "4G LTE"
-      ],
-      [
-        "Protocol",
-        "ONVIF profile G,S,T"
-      ],
-      [
-        "Cyber security",
-        "Signed firmware, Signed video, Signed event, OTP, TRNG, Password protection, TrustZone® secure boot, secure memory, DRAM scrambling"
-      ],
-      [
-        "API",
-        "Open API service for software integration: metadata, event, report"
-      ],
-      [
-        "VMS",
-        "Compatible with MK Vision VMS"
+        "Hệ thống giám sát video",
+        "Tương thích với hệ thống quản lý video của MK Vision"
       ]
     ],
     "Power": [
       [
-        "Battery",
-        "4500 mAh"
-      ],
-      [
-        "Charging",
-        "5V-2A"
-      ],
-      [
-        "Operation time",
-        "12+ hours (for 1 time charging)"
+        "Nguồn điện",
+        "Pin: 4500 mAh (Tương đương 8 tiếng sử dụng liên tục); Bộ sạc: 5V-2A"
       ]
     ],
     "Environment": [
       [
-        "IP",
+        "Chuẩn bảo vệ",
         "IP65"
       ],
       [
-        "Operating condition",
-        "-10°C to 45°C, 90% non-condensing"
+        "Điều kiện hoạt động",
+        "-10°C đến 45°C, độ ẩm 90% và không ngưng tụ"
       ],
       [
-        "Storage condition",
-        "-10°C to 50°C, 90% non-condensing"
+        "Điều kiện lưu trữ",
+        "-10°C đến 50°C, độ ẩm 90% và không ngưng tụ"
       ]
     ],
     "Physical": [
       [
-        "Housing",
-        "ABS, PC"
+        "Vỏ",
+        "Nhựa ABS, PC"
       ],
       [
-        "Screen",
-        "2 inch non-touch, 320x240, 600 cd/m2"
+        "Màn hình",
+        "2 inch không cảm ứng, 320x240, 600 cd/m2"
       ],
       [
-        "Connector",
-        "1*USB-C"
-      ],
-      [
-        "Dimensions",
+        "Kích thước",
         "101 x 64 x 31 mm"
       ],
       [
-        "Weight",
+        "Trọng lượng",
         "205 g"
+      ]
+    ],
+    "Storage": [
+      [
+        "Lưu trữ",
+        "64 GB EMMC Flash"
       ]
     ],
     "Other": [
       [
-        "Storage",
-        "64 GB EMMC Flash"
+        "Module bảo mật",
+        "Hỗ trợ 2 SAM Slot"
       ],
       [
         "ISO",
         "ISO 9001:2015"
       ],
       [
-        "EMC",
-        "FCC, CE"
+        "Phụ kiện",
+        "Đế sạc, Kẹp áo, USB-C cable, 5V-2A charger"
       ],
       [
-        "Accessories",
-        "Charging dock, USB-C cable, 5V-2A charger"
-      ],
-      [
-        "Supported languages",
-        "English, Vietnamese"
+        "Ngôn ngữ hỗ trợ",
+        "Tiếng Anh, Tiếng Việt"
       ],
       [
         "CO",
-        "Made in Vietnam"
+        "Sản xuất tại Việt Nam"
       ],
       [
         "CQ",
-        "MK Vision CQ, Quatest"
-      ],
-      [
-        "Warranty period",
-        "1 year from purchase date"
+        "MK Vision CQ"
       ]
     ]
   },
@@ -232,12 +200,12 @@
   ],
   "documents": [
     {
-      "title": "Datasheet MK22FC1E - BWC 2MB (23/02/2026)",
+      "title": "Datasheet Mobi Secure (tiếng Việt)",
       "type": "datasheet",
-      "path": "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf"
+      "path": "Data/MK Vision/Docs/Datasheets/Datasheet _Mobi Secure.pdf"
     },
     {
-      "title": "Datasheet BWC (Tiếng Việt) - MOBISECURE.pdf",
+      "title": "Datasheet BWC tiếng Việt (bản cũ) - MOBISECURE.pdf",
       "type": "datasheet",
       "path": "Data/MK Vision/Docs/MOBISECURE/MOBISECURE.pdf"
     },
@@ -269,31 +237,21 @@
   ],
   "image": "/img/products/mk22fc1e.png",
   "status": "",
-  "updatedAt": "23/02/2026",
+  "updatedAt": "",
   "sources": [
-    "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf"
+    "Data/MK Vision/Docs/Datasheets/Datasheet _Mobi Secure.pdf"
   ],
-  "notes": "Specs lấy nguyên văn từ datasheet MK22FC1E (23/02/2026, bản mới nhất). Xung đột nội bộ datasheet: trang Key Features ghi 'IP67' nhưng bảng Specifications ghi 'IP65' (đã dùng IP65 theo bảng thông số); slide ver 0.9 cũng ghi IP67, 'Pin 4500 mAh, hoạt động trên 8 giờ', trong khi datasheet ghi '12+ hours'. Trang bìa datasheet có tiêu đề 'Body Camera & AutoSecure' và giới thiệu License Plate Recognition (kèm hình camera xe), nhưng bảng thông số không có mục LPR. Datasheet tiếng Việt cũ hơn (MOBISECURE.pdf/.docx, 10/2025, không ghi model, thông số gần như trùng khớp) có thêm: 'Chế độ hồng ngoại: 0 lux', 'Module bảo mật: Hỗ trợ 2 SAM Slot', Giao thức 'MK Vision SDK' (thay vì ONVIF profile G,S,T), Phụ kiện có 'Kẹp áo'; bản này không ghi bảo hành. Slide còn nêu: 4G SIM + 2 SAMs, cổng kết nối camera ngoài / pin, nút chế độ im lặng, đạt chuẩn QCVN 135:2024/BTTTT. HDSD/tài liệu chức năng: ghi hình mặc định 720p 30fps, live view 720p/480p tự điều chỉnh theo băng thông. Cùng kích thước/khối lượng (101 x 64 x 31 mm, 205 g) với T8 Series — có thể là cùng nền tảng phần cứng, nhưng không có tài liệu xác nhận nên giữ là model riêng.",
+  "notes": "Thông số và mô tả lấy nguyên văn từ 'Datasheet _Mobi Secure.pdf' (tiếng Việt, 2 trang, không ghi ngày/phiên bản) theo yêu cầu người dùng 21/10/2026; datasheet cũ 'MK22FC1E - BWC 2MB_23022026.pdf' đã bị người dùng xóa, không dùng nữa. Datasheet này không ghi tên model: giữ model/slug MK22FC1E để không gãy liên kết. Dòng 'Hiệu năng xử lý' trong bản gốc bị cắt ở '…Phân tích tầm nhìn tại' (MOBISECURE.pdf cũ ghi tiếp 'biên CVflow®') — giữ nguyên văn. So với MOBISECURE.pdf (bản tiếng Việt cũ hơn): bản mới bỏ Wi-Fi 802.11b/g/n, chuẩn mã hóa âm thanh AAC-LC, EMC FCC/CE, 'Quatest' trong CQ; thêm 'Starvis' và 'Pin tương đương 8 tiếng sử dụng liên tục'. Không còn mục LPR, ONVIF, bảo hành (chỉ có trong datasheet đã xóa). Slide ver 0.9 ghi IP67, datasheet ghi IP65.",
   "unconfirmed": [
     {
       "group": "Environment",
-      "label": "IP",
-      "note": "Datasheet: trang Key Features và slide ver 0.9 ghi IP67, bảng thông số ghi IP65; cần xác nhận với PM."
+      "label": "Chuẩn bảo vệ",
+      "note": "Datasheet ghi IP65, slide giới thiệu ver 0.9 ghi IP67; cần xác nhận với PM."
     },
     {
-      "group": "Power",
-      "label": "Operation time",
-      "note": "Datasheet ghi '12+ hours', slide ver 0.9 ghi 'hoạt động trên 8 giờ'; cần xác nhận với PM."
-    },
-    {
-      "group": "Network",
-      "label": "Protocol",
-      "note": "Datasheet English ghi ONVIF profile G,S,T, datasheet tiếng Việt cũ hơn ghi MK Vision SDK; cần xác nhận với PM."
-    },
-    {
-      "group": "",
-      "label": "",
-      "note": "Trang bìa datasheet giới thiệu License Plate Recognition nhưng bảng thông số không có LPR; cần xác nhận với PM."
+      "group": "AI",
+      "label": "Hiệu năng xử lý",
+      "note": "Câu trong datasheet bị cắt ở \"Phân tích tầm nhìn tại\"; bản tiếng Việt cũ ghi \"…tại biên CVflow®\"."
     }
   ]
 }

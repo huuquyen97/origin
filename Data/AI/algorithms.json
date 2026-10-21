@@ -1,133 +1,11 @@
 [
   {
     "name": "Face Recognition",
-    "nameVi": "Nhận diện khuôn mặt (chấm công)",
-    "category": "Khuôn mặt",
-    "description": "Nhận diện khuôn mặt, ứng dụng chấm công (Face Recognition – Attendance). Độ chính xác: 99%.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "face-recognition"
-  },
-  {
-    "name": "Facial and body attribute recognition",
-    "nameVi": "Nhận diện thuộc tính khuôn mặt",
-    "category": "Khuôn mặt",
-    "description": "Nhận diện thuộc tính khuôn mặt: ước lượng giới tính, chủng tộc, độ tuổi.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "face-attributes"
-  },
-  {
-    "name": "Liveness Detection",
-    "nameVi": "Phát hiện khuôn mặt sống (chống giả mạo)",
-    "category": "Khuôn mặt",
-    "description": "Phát hiện khuôn mặt sống, chống tấn công bằng ảnh in (print-attack detection).",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "liveness"
-  },
-  {
-    "name": "People Detection",
-    "nameVi": "Phát hiện người",
-    "category": "Người",
-    "description": "Phát hiện người, ứng dụng: đếm người, phát hiện đám đông, phát hiện vượt đường (line cross), phát hiện xâm nhập. Độ chính xác: 99%.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "people-detection"
-  },
-  {
-    "name": "Pedestrian Attribute Recognition",
-    "nameVi": "Nhận diện thuộc tính người đi bộ",
-    "category": "Người",
-    "description": "Nhận diện thuộc tính người đi bộ (pedestrian attribute recognition).",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "pedestrian-attributes"
-  },
-  {
-    "name": "Vehicle detection and tracking",
-    "nameVi": "Phát hiện và theo dõi phương tiện",
-    "category": "Phương tiện",
-    "description": "Phát hiện, phân loại và theo dõi phương tiện.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "vehicle-detection"
-  },
-  {
-    "name": "License plate recognition",
-    "nameVi": "Nhận diện biển số",
-    "category": "Phương tiện",
-    "description": "Nhận diện biển số xe. Hiện chỉ hỗ trợ biển số Việt Nam. Độ chính xác: ban ngày 96%, ban đêm 90%.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "lpr"
-  },
-  {
-    "name": "Traffic Violation",
-    "nameVi": "Phát hiện vi phạm giao thông",
-    "category": "Phương tiện",
-    "description": "Phát hiện vi phạm giao thông: vượt đèn đỏ, đi ngược chiều/sai làn, dừng đỗ trái phép. Độ chính xác: 95%.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "traffic-violation"
-  },
-  {
-    "name": "Vehicle attribute recognition",
-    "nameVi": "Nhận diện thuộc tính phương tiện",
-    "category": "Phương tiện",
-    "description": "Nhận diện thuộc tính phương tiện: phân loại loại xe và màu xe.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "vehicle-attributes"
-  },
-  {
-    "name": "Vehicle counting and classification",
-    "nameVi": "Đếm và phân loại phương tiện",
-    "category": "Phương tiện",
-    "description": "Đếm và phân loại phương tiện.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "vehicle-counting"
-  },
-  {
-    "name": "Sidewalk Encroachment",
-    "nameVi": "Lấn chiếm vỉa hè",
-    "category": "Khác",
-    "description": "Phát hiện lấn chiếm vỉa hè.",
-    "supportedOn": [],
-    "sources": [
-      "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx"
-    ],
-    "feature": "encroachment"
-  },
-  {
-    "name": "Face Recognition",
     "nameVi": "Nhận diện khuôn mặt",
-    "category": "Khuôn mặt",
+    "category": "An ninh – Con người",
     "description": "Phát hiện, theo dõi và nhận diện danh tính khuôn mặt ngay trên camera, so khớp với CSDL khuôn mặt trên thiết bị (chế độ cục bộ) hoặc gửi véc-tơ đặc trưng để máy chủ ngoài so khớp; kèm quản lý CSDL khuôn mặt (thêm, sửa, xóa, tìm kiếm). Lọc khuôn mặt theo vùng quan tâm, kích thước, độ trực diện; chống tạo sự kiện trùng lặp. Sự kiện tạo khi khuôn mặt được nhận diện lần đầu.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25 (danh sách tính năng có thể khác nhau giữa các dòng)",
-      "Thông số lắp đặt khuyến nghị cho camera PA02"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -137,10 +15,10 @@
   {
     "name": "People Counting",
     "nameVi": "Đếm người",
-    "category": "Người",
+    "category": "An ninh – Con người",
     "description": "Phát hiện người theo đầu trong các vùng đa giác, theo dõi và gán mã cho từng người; tạo sự kiện khi một người lần đầu vào vùng đếm, kèm số người đang có mặt trong vùng và mã vùng. Phát hiện theo đầu giúp hiệu quả trong cảnh đông người. Lưu ý: báo số người hiện có trong vùng, không phải lưu lượng cộng dồn.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -150,10 +28,10 @@
   {
     "name": "Crowd Detection",
     "nameVi": "Phát hiện đám đông",
-    "category": "Hành vi",
+    "category": "An ninh – Con người",
     "description": "Cảnh báo khi trong vùng giám sát xuất hiện nhóm người đứng gần nhau với số lượng đạt ngưỡng cấu hình: phát hiện người, gom cụm người đứng gần nhau, chỉ phát một cảnh báo cho mỗi lần đám đông xuất hiện trong một vùng. Đám đông kết thúc khi vùng không còn cụm đủ số người trong khoảng thời gian liên tục (mặc định 10 giây).",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -163,10 +41,10 @@
   {
     "name": "Intrusion Detection",
     "nameVi": "Phát hiện xâm nhập",
-    "category": "Hành vi",
+    "category": "An ninh – Con người",
     "description": "Cảnh báo khi người đi vào và lưu lại trong vùng cấu hình quá thời gian cho phép (ngưỡng từ 0 giây = cảnh báo ngay). Hỗ trợ nhiều vùng có mã số riêng; hai chế độ: thường (cảnh báo lại mỗi khi người quay lại vùng) và đếm (chỉ cảnh báo một lần cho mỗi người tại mỗi vùng).",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -176,10 +54,10 @@
   {
     "name": "Line Crossing Detection",
     "nameVi": "Phát hiện vượt rào",
-    "category": "Hành vi",
+    "category": "An ninh – Con người",
     "description": "Cảnh báo hoặc đếm người di chuyển cắt qua đường ảo theo hướng cấu hình (một chiều hoặc hai chiều). Theo dõi quỹ đạo điểm chân; hai chế độ: thường (báo lại mỗi lần vượt) và đếm (mỗi người chỉ đếm một lần cho mỗi đường).",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -188,11 +66,11 @@
   },
   {
     "name": "ANPR – Automatic Number Plate Recognition",
-    "nameVi": "Nhận diện biển số",
-    "category": "Phương tiện",
+    "nameVi": "Nhận diện biển số (ANPR)",
+    "category": "Giao thông",
     "description": "Phát hiện, phân loại, theo dõi phương tiện (xe buýt, ô tô, xe máy, xe tải), đọc biển số và gắn vào đúng phương tiện; gửi sự kiện kèm loại xe, khung bao, chuỗi biển số và độ tin cậy. Hỗ trợ biển Việt Nam một dòng và hai dòng: dân sự, nước ngoài và ngoại giao (NN, NG), quân đội, tạm thời (T). Cung cấp biển số cho các tính năng vi phạm giao thông trên cùng camera.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -202,10 +80,10 @@
   {
     "name": "Vehicle Classification and Traffic Counting",
     "nameVi": "Phân loại phương tiện và đo đếm lưu lượng",
-    "category": "Phương tiện",
+    "category": "Giao thông",
     "description": "Đếm phương tiện theo loại và theo hướng di chuyển. Tính năng đang trong quá trình phát triển.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -215,10 +93,10 @@
   {
     "name": "Red Light Violation Detection",
     "nameVi": "Không chấp hành hiệu lệnh đèn tín hiệu",
-    "category": "Phương tiện",
+    "category": "Giao thông",
     "description": "Phát hiện phương tiện vượt đèn đỏ tại nút giao: đọc trạng thái đèn từ vùng cấu hình, theo dõi quỹ đạo phương tiện; vi phạm khi phương tiện cắt vạch dừng giới hạn khi đèn đỏ rồi cắt tiếp đường vi phạm của làn (2 – 4 đường: 1 vạch dừng và 1 – 3 đường vi phạm). Sự kiện kèm loại phương tiện và biển số (nếu đọc được), phục vụ xử phạt nguội.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -228,10 +106,10 @@
   {
     "name": "Wrong-way Detection",
     "nameVi": "Đi ngược chiều",
-    "category": "Phương tiện",
+    "category": "Giao thông",
     "description": "Phát hiện phương tiện di chuyển theo chiều bị cấm trong vùng giám sát; mỗi vùng cấu hình một chiều vi phạm theo trục dọc của ảnh (đi xuống hoặc đi lên). Sự kiện kèm loại phương tiện và biển số (nếu đọc được).",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -241,10 +119,10 @@
   {
     "name": "Solid Line Crossing Detection",
     "nameVi": "Đè vạch liền",
-    "category": "Phương tiện",
+    "category": "Giao thông",
     "description": "Phát hiện phương tiện vượt qua vạch kẻ đường không được phép vượt (vạch liền, vạch cấm chuyển làn). Người vận hành vẽ các cặp đường hai bên vạch; vi phạm khi phương tiện lần lượt cắt hai đường theo hướng cấu hình (một chiều hoặc hai chiều). Chạm vạch rồi quay lại không tính vi phạm. Sự kiện kèm biển số (nếu đọc được).",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -254,10 +132,10 @@
   {
     "name": "Illegal Parking/Stopping Detection",
     "nameVi": "Dừng đỗ xe trái quy định",
-    "category": "Phương tiện",
+    "category": "Giao thông",
     "description": "Phát hiện phương tiện ở lại trong vùng cấm dừng, cấm đỗ lâu hơn thời gian cho phép (ngưỡng một mức theo cấu hình); tạo một sự kiện vi phạm mỗi phiên, kèm loại phương tiện và biển số (nếu đọc được). Đo thời gian có mặt trong vùng, không kiểm tra phương tiện có đứng yên hay không.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"
@@ -267,10 +145,10 @@
   {
     "name": "Sidewalk/Roadway Encroachment Detection",
     "nameVi": "Lấn chiếm lòng đường vỉa hè",
-    "category": "Khác",
+    "category": "Giao thông",
     "description": "Phát hiện vật thể lấn chiếm vỉa hè, lòng đường. Tính năng đang trong quá trình phát triển.",
     "supportedOn": [
-      "Dòng camera AI dùng Ambarella CV25"
+      "Dòng camera AI sử dụng bộ vi xử lý Ambarella CV25; danh sách tính năng khả dụng có thể khác nhau giữa các dòng camera"
     ],
     "sources": [
       "Data/MK Vision/Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf"

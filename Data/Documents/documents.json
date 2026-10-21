@@ -343,18 +343,6 @@
     "validTo": ""
   },
   {
-    "path": "Data/MK Vision/Docs/AI/Các thuật toán AI trên camera.xlsx",
-    "title": "Các thuật toán AI trên camera",
-    "type": "ai",
-    "description": "Bảng tổng hợp thuật toán AI trên camera theo nhóm Face / People / Traffic / Others, kèm use case và độ chính xác (Face Recognition 99%, People Detection 99%, LPR ngày 96% / đêm 90%, Traffic Violation 95%).",
-    "series": "",
-    "products": [],
-    "status": "internal",
-    "statusNote": "Bảng tính làm việc, có số liệu độ chính xác chưa công bố.",
-    "validFrom": "",
-    "validTo": ""
-  },
-  {
     "path": "Data/MK Vision/Docs/AI/Giới thiệu AI nhận diện khuôn mặt tại biên.pdf",
     "title": "Giới thiệu AI nhận diện khuôn mặt tại biên (bản gốc)",
     "type": "ai",
@@ -393,10 +381,10 @@
     "validTo": ""
   },
   {
-    "path": "Data/MK Vision/Docs/Datasheets/MK22FC1E - BWC 2MB_23022026.pdf",
-    "title": "Datasheet MK22FC1E - BWC 2MB (23/02/2026)",
+    "path": "Data/MK Vision/Docs/Datasheets/Datasheet _Mobi Secure.pdf",
+    "title": "Datasheet Mobi Secure (tiếng Việt)",
     "type": "datasheet",
-    "description": "Datasheet tiếng Anh 2 trang của body camera MK22FC1E: key features và bảng thông số kỹ thuật đầy đủ.",
+    "description": "Datasheet tiếng Việt 2 trang của camera nghiệp vụ an ninh MobiSecure: giới thiệu, tính năng nổi bật và bảng thông số kỹ thuật đầy đủ. Datasheet chuẩn của dòng.",
     "series": "mobisecure",
     "products": [
       "mk22fc1e"
@@ -415,8 +403,8 @@
     "products": [
       "mk22fc1e"
     ],
-    "status": "public",
-    "statusNote": "",
+    "status": "old",
+    "statusNote": "Đã thay bằng Datasheet _Mobi Secure.pdf (bản chuẩn).",
     "validFrom": "",
     "validTo": ""
   },
@@ -429,8 +417,8 @@
     "products": [
       "mk22fc1e"
     ],
-    "status": "internal",
-    "statusNote": "Bản Word nguồn; gửi khách dùng MOBISECURE.pdf.",
+    "status": "old",
+    "statusNote": "Đã thay bằng Datasheet _Mobi Secure.pdf (bản chuẩn).",
     "validFrom": "",
     "validTo": ""
   },
@@ -505,20 +493,6 @@
     ],
     "status": "internal",
     "statusNote": "Tài liệu mô tả yêu cầu firmware, dùng cho phát triển.",
-    "validFrom": "",
-    "validTo": ""
-  },
-  {
-    "path": "Data/MK Vision/Docs/MOBISECURE/PRD_PVN_BWC_MASTER.pdf",
-    "title": "PRD Body Worn Camera (tài liệu yêu cầu sản phẩm gốc)",
-    "type": "other",
-    "description": "Tài liệu yêu cầu sản phẩm (PRD, 2021) mô tả thiết kế, thông số dự kiến, thao tác và đế sạc của BWC – chỉ dùng tham khảo nội bộ.",
-    "series": "mobisecure",
-    "products": [
-      "mk22fc1e"
-    ],
-    "status": "internal",
-    "statusNote": "Tài liệu yêu cầu sản phẩm (PRD) gốc.",
     "validFrom": "",
     "validTo": ""
   },

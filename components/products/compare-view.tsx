@@ -148,7 +148,7 @@ export function CompareView({ products, series, initial }: Props & { initial: Re
       ) : (
         <>
           <div className="mb-3.5 flex flex-wrap gap-2">
-            <button type="button" className="btn btn-dark btn-sm" onClick={() => copyText(toTsv(), "Đã copy bảng — dán vào Excel hoặc email")}><ClipboardCopy /> Copy bảng</button>
+            <button type="button" className="btn btn-primary btn-sm" onClick={() => copyText(toTsv(), "Đã copy bảng — dán vào Excel hoặc email")}><ClipboardCopy /> Copy bảng</button>
             <button type="button" className="btn btn-ghost btn-sm" onClick={download}><Download /> Tải CSV (Excel)</button>
             <button type="button" className="btn btn-ghost btn-sm" onClick={() => copyText(toShort(), "Đã copy bản rút gọn — dán vào Zalo")}><MessageSquareText /> Copy rút gọn (Zalo)</button>
           </div>

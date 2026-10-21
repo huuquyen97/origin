@@ -80,7 +80,7 @@ export default async function ProductPage({ params }: Props) {
               {p.summary && <p className="lead !text-ink-2">{p.summary}</p>}
               <div className="mt-1.5 flex flex-wrap gap-2">
                 {datasheet && (
-                  <a className="btn btn-dark" href={datasheet.url} target="_blank" rel="noopener" title={datasheet.title}>
+                  <a className="btn btn-primary" href={datasheet.url} target="_blank" rel="noopener" title={datasheet.title}>
                     <Download /> Datasheet{datasheet.status !== "public" && <span className="text-white/70">({DOC_STATUS[datasheet.status].label.toLowerCase()})</span>}
                   </a>
                 )}

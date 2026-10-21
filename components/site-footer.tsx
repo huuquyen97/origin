@@ -9,26 +9,27 @@ export function SiteFooter() {
   const sols = getSolutions().slice(0, 6);
   const col = (title: string, items: { href: string; label: string; external?: boolean }[]) => (
     <div>
-      <h4 className="mb-3 text-[13px] font-semibold tracking-normal">{title}</h4>
+      <h4 className="mb-3 text-base font-bold text-white">{title}</h4>
       {items.map((i) =>
         i.external ? (
-          <a key={i.href} href={i.href} target="_blank" rel="noopener" className="block py-1.5 text-[13.5px] text-muted hover:text-ink">{i.label}</a>
+          <a key={i.href} href={i.href} target="_blank" rel="noopener" className="block py-1.5 text-[15px] text-white/70 transition-colors hover:text-white">{i.label}</a>
         ) : (
-          <Link key={i.href} href={i.href} className="block py-1.5 text-[13.5px] text-muted hover:text-ink">{i.label}</Link>
+          <Link key={i.href} href={i.href} className="block py-1.5 text-[15px] text-white/70 transition-colors hover:text-white">{i.label}</Link>
         ),
       )}
     </div>
   );
 
   return (
-    <footer className="container-x pb-7 pt-16">
+    <footer className="bg-footer text-white">
+      <div className="container-x pb-7 pt-14 md:pt-16">
       <div className="grid gap-10 lg:grid-cols-[1.3fr_2fr] lg:gap-16">
         <div>
-          <Image src="/brand/mk-vision.png" alt="MK Vision" width={88} height={44} className="h-11 w-auto" />
-          <p className="mt-3.5 max-w-[40ch] text-sm text-muted">{T.footerText}</p>
+          <span className="inline-flex rounded-full bg-white px-4 py-2"><Image src="/brand/mk-vision.png" alt="MK Vision" width={80} height={40} className="h-10 w-auto" /></span>
+          <p className="mt-4 max-w-[42ch] text-[15px] text-white/70">{T.footerText}</p>
           <div className="mt-5 flex flex-wrap gap-2">
-            <a className="btn btn-ghost btn-sm" href={`mailto:${c.email}`}>{c.email}</a>
-            <a className="btn btn-dark btn-sm" href={`tel:${c.hotline.replace(/\s/g, "")}`}>Hotline {c.hotline}</a>
+            <a className="btn btn-outline-light btn-sm" href={`mailto:${c.email}`}>{c.email}</a>
+            <a className="btn btn-primary btn-sm" href={`tel:${c.hotline.replace(/\s/g, "")}`}>Hotline {c.hotline}</a>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-7 sm:grid-cols-4">
@@ -47,11 +48,12 @@ export function SiteFooter() {
           ])}
         </div>
       </div>
-      <div className="mt-12 flex flex-wrap justify-between gap-3 border-t border-line pt-5 text-[12.5px] text-faint">
+      <div className="mt-12 flex flex-wrap justify-between gap-3 border-t border-white/15 pt-5 text-[13.5px] text-white/55">
         <span>© {new Date().getFullYear()} {c.name} · {T.internalOnly}</span>
         <span>
           Dữ liệu: {getProducts().length} sản phẩm · {getSolutions().length} giải pháp · {getDocuments().length} tài liệu
         </span>
+      </div>
       </div>
     </footer>
   );

@@ -8,7 +8,6 @@
     "aliases": [
       "AI Face Recognition",
       "Face Recognition（FR）",
-      "Face Recognition (IDVision) – thư viện đến 20,000 khuôn mặt, mã hoá thư viện",
       "[IDVision] Hỗ trợ lên đến 20,000 khuôn mặt trong thư viện",
       "Tỷ lệ nhận dạng khuôn mặt ≥90%",
       "Hỗ trợ mã hóa thư viện khuôn mặt",
@@ -23,22 +22,6 @@
     "group": "Khuôn mặt",
     "keywords": ["khuôn mặt", "face"],
     "aliases": ["AI Face Detection", "Face Detection"]
-  },
-  {
-    "id": "face-attributes",
-    "name": "Facial Attribute Recognition",
-    "nameVi": "Nhận diện thuộc tính khuôn mặt",
-    "group": "Khuôn mặt",
-    "keywords": ["khuôn mặt", "giới tính", "độ tuổi"],
-    "aliases": []
-  },
-  {
-    "id": "liveness",
-    "name": "Liveness Detection",
-    "nameVi": "Chống giả mạo khuôn mặt (phát hiện người thật)",
-    "group": "Khuôn mặt",
-    "keywords": ["chống giả mạo", "anti-spoofing", "sự sống"],
-    "aliases": []
   },
   {
     "id": "fingerprint",
@@ -60,7 +43,7 @@
     "keywords": ["CCCD", "căn cước", "e-ID", "eKYC", "MoC", "e-Passport"],
     "aliases": [
       "Xác thực Match-on-Card (MoC) với dữ liệu sinh trắc học trong chip CCCD",
-      "Xác thực CCCD gắn chip & e-Passport (MK e-ID)"
+      "Hỗ trợ đọc căn cước gắn chip và hộ chiếu điện tử"
     ]
   },
   {
@@ -77,7 +60,7 @@
     "nameVi": "Tìm kiếm đối tượng (danh sách đen)",
     "group": "Khuôn mặt",
     "keywords": ["truy nã", "blacklist", "danh sách đen"],
-    "aliases": ["Subject searching – tìm kiếm đối tượng truy nã / blacklist"]
+    "aliases": ["Nhận diện khuôn mặt phục vụ truy nã"]
   },
   {
     "id": "people-detection",
@@ -86,14 +69,6 @@
     "group": "Người",
     "keywords": ["người", "human", "pedestrian", "người đi bộ"],
     "aliases": ["AI People Detection", "Pedestrian Detection", "Human&Vehicle Detection（PD&VD）"]
-  },
-  {
-    "id": "pedestrian-attributes",
-    "name": "Pedestrian Attribute Recognition",
-    "nameVi": "Nhận diện thuộc tính người",
-    "group": "Người",
-    "keywords": ["quần áo", "thuộc tính"],
-    "aliases": []
   },
   {
     "id": "people-counting",
@@ -184,8 +159,7 @@
     "aliases": [
       "AI License Plate Recognition",
       "license Plate Recognition（LPR）",
-      "[LPR] Nhận diện biển số các xe đi phía trước",
-      "License Plate Recognition (giới thiệu trên trang bìa datasheet)"
+      "[LPR] Nhận diện biển số các xe đi phía trước"
     ]
   },
   {
@@ -197,27 +171,11 @@
     "aliases": ["License Plate Detection"]
   },
   {
-    "id": "vehicle-attributes",
-    "name": "Vehicle Attribute Recognition",
-    "nameVi": "Nhận diện thuộc tính phương tiện",
-    "group": "Phương tiện",
-    "keywords": ["màu xe", "loại xe", "hãng xe"],
-    "aliases": []
-  },
-  {
     "id": "vehicle-counting",
     "name": "Vehicle Counting & Classification",
     "nameVi": "Đếm và phân loại phương tiện",
     "group": "Phương tiện",
     "keywords": ["lưu lượng", "đếm xe", "phân loại xe"],
-    "aliases": []
-  },
-  {
-    "id": "traffic-violation",
-    "name": "Traffic Violation Detection",
-    "nameVi": "Phát hiện vi phạm giao thông",
-    "group": "Giao thông",
-    "keywords": ["vi phạm", "giao thông"],
     "aliases": []
   },
   {

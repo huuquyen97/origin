@@ -7,24 +7,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Item = { slug: string; model: string; name: string; seriesName: string; image: string };
 
-export function ProductCarousel({ eyebrow, title, items }: { eyebrow: string; title: string; items: Item[] }) {
+export function ProductCarousel({ title, items }: { title: string; items: Item[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const scroll = (d: number) => {
     const el = ref.current;
     const w = (el?.firstElementChild as HTMLElement | null)?.getBoundingClientRect().width ?? 300;
     el?.scrollBy({ left: (w + 14) * d, behavior: "smooth" });
   };
-  const navBtn = "grid size-11 place-items-center rounded-full border border-line bg-white transition hover:scale-105";
+  const navBtn = "round-nav border border-line bg-white text-ink hover:border-ink";
   return (
     <>
-      <div className="mb-8 flex items-end justify-between gap-5">
-        <div className="grid gap-3">
-          <span className="eyebrow">{eyebrow}</span>
-          <h2 className="heading-2">{title}</h2>
-        </div>
-        <div className="flex gap-2">
-          <button type="button" className={navBtn} onClick={() => scroll(-1)} aria-label="Trước"><ChevronLeft className="size-4" /></button>
-          <button type="button" className={navBtn} onClick={() => scroll(1)} aria-label="Sau"><ChevronRight className="size-4" /></button>
+      <div className="section-head reveal">
+        <h2 className="heading-1">{title}</h2>
+        <div className="flex gap-2.5">
+          <button type="button" className={navBtn} onClick={() => scroll(-1)} aria-label="Trước"><ChevronLeft className="size-5" /></button>
+          <button type="button" className={navBtn} onClick={() => scroll(1)} aria-label="Sau"><ChevronRight className="size-5" /></button>
         </div>
       </div>
       <div
@@ -35,13 +32,13 @@ export function ProductCarousel({ eyebrow, title, items }: { eyebrow: string; ti
           <Link
             key={p.slug}
             href={`/san-pham/${p.slug}`}
-            className="shade-product group relative isolate flex aspect-[4/5] snap-start flex-col justify-end overflow-hidden rounded-xl2 bg-gradient-to-b from-[#f3f2ee] to-[#e6e4de]"
+            className="shade-product group relative isolate flex aspect-[4/5] snap-start flex-col justify-end overflow-hidden rounded-xl2 bg-surface transition-shadow duration-300 hover:shadow-[var(--shadow-soft)]"
           >
-            {p.image && <Image src={p.image} alt={p.name || p.model} fill sizes="(min-width: 980px) 340px, 78vw" className="-z-20 object-contain px-7 pb-[110px] pt-7 mix-blend-multiply transition-transform duration-500 group-hover:scale-[1.04]" />}
+            {p.image && <Image src={p.image} alt={p.name || p.model} fill sizes="(min-width: 980px) 340px, 78vw" className="-z-20 object-contain px-7 pb-[118px] pt-7 mix-blend-multiply transition-transform duration-500 group-hover:scale-[1.06]" />}
             <div className="grid gap-2 p-5">
               <span className="tag justify-self-start">{p.seriesName}</span>
-              <div className="text-[19px] font-semibold tracking-tight tabular-nums">{p.model}</div>
-              <div className="text-[13.5px] text-muted">{p.name}</div>
+              <div className="text-xl font-bold tabular-nums">{p.model}</div>
+              <div className="text-[15px] text-muted">{p.name}</div>
             </div>
           </Link>
         ))}

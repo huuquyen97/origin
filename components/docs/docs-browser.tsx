@@ -90,7 +90,7 @@ export function DocsBrowserView({ docs, initial }: { docs: DocItem[]; initial: R
                 </div>
               )}
               <div className="mt-auto flex gap-2">
-                <a className="btn btn-dark btn-sm" href={d.url} target="_blank" rel="noopener">Mở <ArrowUpRight /></a>
+                <a className="btn btn-primary btn-sm" href={d.url} target="_blank" rel="noopener">Mở <ArrowUpRight /></a>
                 <button type="button" className="btn btn-ghost btn-sm" onClick={() => copyText(new URL(d.url, location.origin).href)}><Copy /> Copy link</button>
               </div>
             </div>

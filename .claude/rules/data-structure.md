@@ -17,8 +17,8 @@ Data/
   Products/<slug>.json   # mỗi sản phẩm 1 file
   Solutions/<slug>.json  # mỗi giải pháp 1 file
   Documents/documents.json  # mô tả tài liệu (tiêu đề, loại, dòng, sản phẩm liên quan)
-  AI/algorithms.json     # mô tả thuật toán AI theo tài liệu (feature = id trong features.json)
-  AI/features.json       # từ điển tính năng AI chuẩn (nameVi + name EN, keywords, aliases = chuỗi aiFeatures nguyên văn)
+  AI/algorithms.json     # mô tả tính năng AI, chỉ lấy từ Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf (thay file Excel cũ); feature = id trong features.json
+  AI/features.json       # từ điển tính năng AI chuẩn theo thiết bị (nameVi + name EN, keywords, aliases = chuỗi aiFeatures nguyên văn); tính năng không có model và không có mô tả thì không giữ
   Site/series.json | company.json | home.json   # dòng sản phẩm, công ty, nội dung trang chủ
 ```
 

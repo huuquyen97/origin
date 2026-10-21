@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 import { SearchDialog } from "@/components/search-dialog";
 import { Toaster } from "@/components/toast";
 import { getHome } from "@/lib/data";
 import { T } from "@/lib/strings";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin", "vietnamese"], variable: "--font-inter", display: "swap" });
+const openSans = Open_Sans({ subsets: ["latin", "vietnamese"], variable: "--font-open-sans", display: "swap" });
 
 export const metadata: Metadata = {
   title: { default: T.siteName, template: `%s · MK Vision` },
@@ -18,12 +19,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={inter.variable}>
+    <html lang="vi" className={openSans.variable}>
       <body>
-        <div className="p-2.5 md:p-3.5">
-          {children}
-          <SiteFooter />
-        </div>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
         <SearchDialog suggestions={getHome().searchSuggestions} />
         <Toaster />
       </body>

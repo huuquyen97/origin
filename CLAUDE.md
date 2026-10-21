@@ -32,7 +32,7 @@ Quy tắc chi tiết nằm trong `.claude/rules/`. Rule có `paths` chỉ nạp 
 | `company-and-products.md` | Thông tin công ty, các dòng sản phẩm | luôn |
 | `data-integrity.md` | Thông số chỉ lấy từ datasheet, xử lý xung đột | `Data/**`, `public/img/products/**` |
 | `data-structure.md` | Cấu trúc `/Data`, schema, copy tài liệu, thêm sản phẩm | `Data/**`, `lib/data/**`, `lib/file-slug.mjs`, `scripts/**` |
-| `design.md` | Design system phong cách Primefold | `app/**`, `components/**`, `public/img/**` |
+| `design.md` | Design system tham khảo hikvision.com/vn (từ 21/10/2026) | `app/**`, `components/**`, `public/img/**` |
 | `frontend-code.md` | Quy ước Next.js / React / Tailwind | file code trong `app/`, `components/`, `lib/` |
 | `features.md` | Tính năng và route từng trang | `app/**`, `components/**`, `lib/search/**` |
 
@@ -46,7 +46,7 @@ Git: repo local nhánh `main`, remote `origin` = https://github.com/huuquyen97/o
 | Phần | Trạng thái |
 |---|---|
 | Website 7 trang (trang chủ, sản phẩm, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu) | Chạy ổn: lint 0 lỗi (4 cảnh báo `<img>`), build 50 trang tĩnh |
-| Dữ liệu | 24 sản phẩm, 17 giải pháp, 73 tài liệu, 33 tính năng AI chuẩn, 23 mô tả thuật toán |
+| Dữ liệu | 24 sản phẩm, 17 giải pháp, 73 tài liệu, 28 tính năng AI chuẩn, 12 mô tả thuật toán (từ 21/10) |
 | Rules | CLAUDE.md tách thành 8 file trong `.claude/rules/` theo chuẩn Claude Code |
 | QA toàn site | Đã chạy (ảnh `screenshots/qa-*`); 18 hạng mục cải tiến đã làm, xem dưới |
 | Nhãn tài liệu | Gửi khách được 49 · Nội bộ 19 · Bản cũ 4 · Hết hạn 1 (chứng nhận hợp quy AutoSecure V1C, hết hạn 16/10/2026) |
@@ -58,6 +58,9 @@ Git: repo local nhánh `main`, remote `origin` = https://github.com/huuquyen97/o
 | So sánh | Thêm model vào danh sách (`?add=`), link chia sẻ `?ids=` không ghi đè; copy bảng, CSV, copy rút gọn Zalo |
 | Sản phẩm | Bộ lọc nhu cầu (LPR, khuôn mặt, PoE, NDAA, ngoài trời), số đếm theo bộ lọc khác, chip xuống dòng, mobile thu gọn, vùng chạm 44px |
 | Ảnh CUVO | 4 ảnh cắt từ `Cuvo catalogue 2024.pdf` (SC609E mờ vì gốc chỉ 232px) |
+| Giao diện kiểu Hikvision (21/10) | Open Sans, chữ #333, header cố định đổi nền khi cuộn, hero tràn viền, tab trang chủ có vạch tiến trình tự chuyển, card ảnh hover, footer xám; logo + ô Ctrl K +20%. Ảnh `screenshots/10-*` |
+| MobiSecure MK22FC1E (21/10) | Thông số + mô tả lấy lại từ `Datasheet _Mobi Secure.pdf` (người dùng xóa datasheet `MK22FC1E - BWC 2MB_23022026.pdf`); MOBISECURE.pdf/.docx chuyển "Bản cũ"; bỏ LPR, Wi-Fi, ONVIF, bảo hành (không có trong datasheet chuẩn). Ảnh `screenshots/11-mobisecure-*` |
+| Tính năng AI (21/10) | Mô tả chỉ lấy từ `[MKV]-AI_Function_Description_v1.0.pdf` (thay file Excel cũ đã xóa): 12 mô tả trong `algorithms.json`. Từ điển `features.json` vẫn giữ tính năng theo thiết bị (28, link từ trang sản phẩm); bỏ 5 tính năng chỉ có ở Excel và không model nào ghi (thuộc tính khuôn mặt / người / phương tiện, Liveness, vi phạm giao thông chung). Ảnh `screenshots/13-*` |
 
 ### Chưa xong / chờ người khác
 - **PM cung cấp datasheet đầy đủ** cho MKST28/MKSP28 (và MKSX30, MKSP10, MKEAP-650): file docx hiện có không có bảng thông số chi tiết. Có rồi thì nhập vào `specs`, gỡ mục `unconfirmed` tương ứng, đổi nhãn tài liệu sang `public` nếu là PDF chính thức.
@@ -82,4 +85,5 @@ Git: repo local nhánh `main`, remote `origin` = https://github.com/huuquyen97/o
 - **Lọc "PoE" tính cả camera cấp nguồn PoE**, "ngoài trời" = IP66+ hoặc datasheet ghi outdoor/ngoài trời.
 - **Bỏ giải pháp Edge AI và Điện lực** theo yêu cầu người dùng (Edge AI là năng lực, không phải giải pháp ngành).
 - **Gộp `MKSP28-5150` vào loại "Switch truy cập L2+"** (cùng loại MKST28); PoE tách thành bộ lọc nhu cầu.
+- **Đổi phong cách từ Primefold sang Hikvision nhưng giữ màu navy MK Vision** cho nút chính/vạch menu (không dùng đỏ Hikvision) để đúng nhận diện thương hiệu; header chuyển ra layout và `fixed` vì header nằm trong hero (có `isolate`) sẽ bị nội dung phía dưới đè khi cuộn.
 - **Tài liệu gốc (`Data/MK Vision`, `Data/Design`, ~640MB) không đưa lên git**: dung lượng lớn và là tài liệu nội bộ; clone sang máy khác phải chép riêng trước khi build.
