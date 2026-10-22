@@ -6,6 +6,8 @@ import { parseCsv } from "./parse";
 /** Nguồn tồn kho: Google Sheet (thật) hoặc file CSV trên máy (chạy thử). */
 export type InventorySource = {
   kind: "google" | "file";
+  /** Định danh nguồn (ID Sheet / đường dẫn file): đổi nguồn thì không dùng lại cache cũ */
+  id: string;
   sheetUrl: string | null;
   /** Rẻ: chỉ đọc thời điểm sửa file để biết có cần đọc lại không */
   modifiedTime(): Promise<string>;
@@ -34,6 +36,7 @@ function googleSource(sheetId: string): InventorySource {
 
   return {
     kind: "google",
+    id: `google:${sheetId}:${range}`,
     sheetUrl: `https://docs.google.com/spreadsheets/d/${sheetId}`,
     async modifiedTime() {
       const f = await get(`https://www.googleapis.com/drive/v3/files/${encodeURIComponent(sheetId)}?fields=modifiedTime&supportsAllDrives=true`);
@@ -51,6 +54,7 @@ function googleSource(sheetId: string): InventorySource {
 function fileSource(path: string): InventorySource {
   return {
     kind: "file",
+    id: `file:${path}`,
     sheetUrl: null,
     async modifiedTime() {
       return (await stat(path)).mtime.toISOString();
@@ -61,9 +65,9 @@ function fileSource(path: string): InventorySource {
   };
 }
 
-/** null = chưa cấu hình (web ẩn phần tồn kho) */
+/** null = chưa cấu hình (web ẩn phần tồn kho). File CSV thử (INVENTORY_LOCAL_FILE) ưu tiên hơn Google Sheet để chạy thử trên máy. */
 export function getSource(): InventorySource | null {
-  if (process.env.INVENTORY_SHEET_ID) return googleSource(process.env.INVENTORY_SHEET_ID);
   if (process.env.INVENTORY_LOCAL_FILE) return fileSource(process.env.INVENTORY_LOCAL_FILE);
+  if (process.env.INVENTORY_SHEET_ID) return googleSource(process.env.INVENTORY_SHEET_ID);
   return null;
 }

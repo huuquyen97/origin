@@ -17,3 +17,6 @@ lib/generated/
 /Data/MK Vision/*
 !/Data/MK Vision/Logo/
 /Data/Design/
+
+# Bản tồn kho đọc thành công gần nhất (lib/inventory/last-good.ts) khi không dùng Vercel Blob
+/.data/

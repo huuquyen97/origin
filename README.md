@@ -28,7 +28,11 @@ Chạy thử trên máy không có OAuth Client: đặt `AUTH_DISABLED=1` (bỏ 
 
 ## Tồn kho (Google Sheet)
 
-Trang `/ton-kho`, ô Tồn kho ở trang chi tiết, nhãn trên thẻ sản phẩm, bộ lọc "Còn hàng" và hàng "Tồn kho" ở bảng so sánh đọc số từ một Google Sheet chung. Server kiểm tra thời điểm sửa file mỗi 60 giây (`INVENTORY_POLL_SECONDS`) và chỉ đọc lại bảng khi file đổi; Google lỗi thì giữ số lần đọc trước và hiện cảnh báo.
+Trang `/ton-kho`, ô Tồn kho ở trang chi tiết, nhãn trên thẻ sản phẩm, bộ lọc "Còn hàng" và hàng "Tồn kho" ở bảng so sánh đọc số từ một Google Sheet chung.
+
+- Kết quả kiểm tra nguồn nằm trong Data Cache của Next.js (`unstable_cache`, `revalidate` = `INVENTORY_POLL_SECONDS`, mặc định 60s): dùng chung giữa các instance và còn sau khi khởi động lại (Vercel: Data Cache; server nội bộ: `.next/cache`). Hết hạn thì request đầu tiên vẫn nhận số cũ và kích hoạt làm mới nền, nên số mới hiện sau khoảng 1–2 chu kỳ.
+- Mỗi lần làm mới chỉ gọi Drive lấy `modifiedTime`; file chưa đổi thì không đọc lại bảng.
+- Bản đọc thành công gần nhất được lưu bền vững: Vercel Blob private (`BLOB_READ_WRITE_TOKEN`) hoặc file `.data/inventory-last-good.json`. Google lỗi (kể cả khi instance vừa khởi động) thì web hiện bản này kèm cảnh báo.
 
 1. Tạo Google Sheet (không phải file .xlsx tải lên) từ mẫu `templates/ton-kho-mau.csv`: cột **Model**, **Tồn kho**, tùy chọn **Kho**, **Ghi chú**. Một model nhiều kho thì nhiều dòng, web tự cộng. Model so khớp không phân biệt hoa thường, bỏ dấu cách / gạch nối.
 2. Google Cloud: bật **Google Sheets API** và **Google Drive API**; tạo service account, tải key JSON đặt trên server (không commit).
