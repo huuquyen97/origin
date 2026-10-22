@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState, useSyncExternalStore } from "react";
 import { Menu, Search, X } from "lucide-react";
 import { NAV, T } from "@/lib/strings";
+import { UserMenu } from "./auth/user-menu";
 import { openSearch } from "./search-dialog";
 
 const subscribe = (cb: () => void) => {
@@ -63,6 +64,7 @@ export function SiteHeader() {
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
+          <UserMenu solid={solid} />
         </div>
       </nav>
       <div id="mobile-nav" className={`border-t border-line bg-white px-4 pb-4 pt-2 shadow-[0_20px_40px_-20px_rgba(0,0,0,.25)] lg:hidden ${open ? "grid" : "hidden"}`}>

@@ -14,6 +14,18 @@ npm run check-data   # chỉ kiểm tra dữ liệu
 npm run screenshot -- <tên> <url> [chiều cao]   # chụp desktop 1440px + mobile 375px vào screenshots/
 ```
 
+## Đăng nhập và triển khai
+
+Website chỉ dành cho tài khoản Google `@mkvision.com` (Auth.js + Google OAuth, cấu hình ở `auth.ts`, chặn truy cập ở `proxy.ts`).
+
+1. Google Cloud Console (tài khoản công ty) → APIs & Services:
+   - OAuth consent screen: User type **Internal**.
+   - Credentials → Create OAuth client ID → **Web application**. Authorized redirect URI: `https://<tên-miền>/api/auth/callback/google` (dev: `http://localhost:3000/api/auth/callback/google`).
+2. Chép `.env.example` thành `.env.local` (hoặc đặt biến môi trường trên server), điền `AUTH_SECRET` (`npx auth secret`), `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, `AUTH_URL`.
+3. `npm run build` → `npm start` (Node 24) sau reverse proxy HTTPS (IIS / Nginx) trỏ tới cổng 3000. Tài liệu gốc `Data/MK Vision`, `Data/Design` phải được chép sẵn lên server trước khi build.
+
+Chạy thử trên máy không có OAuth Client: đặt `AUTH_DISABLED=1` (bỏ qua đăng nhập). Không đặt biến này trên server thật.
+
 ## Dữ liệu (`/Data`)
 
 | Đường dẫn | Nội dung |

@@ -2,6 +2,10 @@ node_modules/
 .next/
 out/
 next-env.d.ts
+
+# Biến môi trường chứa bí mật (OAuth, service account, API key); mẫu nằm ở .env.example
+.env*
+!.env.example
 *.tsbuildinfo
 
 # Sinh lúc build từ /Data (scripts/copy-assets.mjs)

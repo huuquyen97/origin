@@ -60,5 +60,23 @@ export const T = {
   copied: "Đã copy vào clipboard",
 };
 
+/** Đăng nhập Google Workspace (auth.ts) */
+export const AUTH = {
+  title: "Đăng nhập",
+  heading: "Đăng nhập để tra cứu",
+  lead: "Cổng tra cứu nội bộ của MK Vision. Dùng tài khoản Google công ty (@mkvision.com) để tiếp tục.",
+  button: "Đăng nhập bằng Google",
+  redirecting: "Đang chuyển tới Google…",
+  note: "Chỉ tài khoản @mkvision.com được truy cập. Phiên đăng nhập giữ 7 ngày trên trình duyệt này.",
+  signOut: "Đăng xuất",
+  signedInAs: "Đang đăng nhập",
+  errors: {
+    AccessDenied: "Tài khoản này không được phép truy cập. Chỉ tài khoản @mkvision.com đã xác minh mới đăng nhập được.",
+    Configuration: "Đăng nhập chưa được cấu hình trên server (thiếu AUTH_SECRET / AUTH_GOOGLE_ID / AUTH_GOOGLE_SECRET). Liên hệ quản trị website.",
+    Verification: "Liên kết đăng nhập đã hết hạn. Vui lòng thử lại.",
+    Default: "Không đăng nhập được. Vui lòng thử lại hoặc liên hệ quản trị website.",
+  } as Record<string, string>,
+};
+
 export const SEARCH_GROUPS = ["Sản phẩm", "Giải pháp", "Tính năng AI", "Tài liệu"] as const;
 export type SearchGroup = (typeof SEARCH_GROUPS)[number];

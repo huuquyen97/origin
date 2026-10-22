@@ -8,7 +8,8 @@ Ngôn ngữ giao diện: tiếng Việt. Thuật ngữ kỹ thuật giữ nguyê
 ## Stack
 
 - Next.js 16 (App Router, Turbopack), React 19, TypeScript strict, Tailwind CSS v4, Fuse.js, zod, lucide-react. Node 24. Windows + PowerShell.
-- Không database, không backend. Dữ liệu đọc từ `/Data` lúc build; mọi trang sinh tĩnh (`generateStaticParams`), chỉ mục tìm kiếm là route tĩnh `/search-index.json`.
+- Không database. Dữ liệu đọc từ `/Data` lúc build; mọi trang sinh tĩnh (`generateStaticParams`), chỉ mục tìm kiếm là route tĩnh `/search-index.json`. Phần động chỉ gồm `proxy.ts` và route `/api/*`; không gọi `auth()`/`cookies()` trong layout hay trang (sẽ làm mất sinh tĩnh) — phiên lấy phía client qua `SessionProvider`.
+- Đăng nhập: Auth.js v5 (`next-auth@5.0.0-beta.32`, ghim bản) + Google, chỉ tài khoản `@mkvision.com` (`auth.ts`). `proxy.ts` chặn mọi trang, `/files/*`, `/search-index.json`; API chưa đăng nhập trả 401. Biến môi trường xem `.env.example` (`.env*` không commit). Chạy server thật (`next start`) sau reverse proxy HTTPS, đặt `AUTH_URL`.
 - Hạn chế thêm dependency; nếu cần thì nêu lý do.
 
 ## Lệnh
@@ -19,6 +20,7 @@ npm run build        # prebuild: copy-assets + check-data, rồi next build
 npm run lint         # eslint (eslint-config-next)
 npm run check-data   # kiểm tra dữ liệu
 npm run screenshot -- <tên> <url> [chiều cao]   # chụp desktop 1440px + mobile 375px vào screenshots/
+# Chụp trang nội bộ cần bỏ đăng nhập trên máy: chạy server với AUTH_DISABLED=1 (không đặt trên server thật)
 ```
 
 ## Rules
@@ -38,18 +40,20 @@ Quy tắc chi tiết nằm trong `.claude/rules/`. Rule có `paths` chỉ nạp 
 
 Agent `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Manager, chỉ báo cáo, không sửa. Mở phiên mới mới nạp được.
 
-## Trạng thái dự án (cập nhật 20/10/2026)
+## Trạng thái dự án (cập nhật 22/10/2026)
 
-Git: repo local nhánh `main`, remote `origin` = https://github.com/huuquyen97/origin.git (private). Commit đầu `532820a`; push lần đầu cần chạy `git push -u origin main` trong terminal VS Code để đăng nhập GitHub. Toàn bộ thay đổi của đợt tối ưu sau QA (bên dưới) **chưa commit**.
+Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). Toàn bộ code đã commit và push: `main` = `origin/main` = `27264af` (đã gộp nhánh `feature/update_giao_dien_hikvision`). Làm tính năng mới thì tách nhánh từ `main`.
 
 ### Đã xong
 | Phần | Trạng thái |
 |---|---|
 | Website 7 trang (trang chủ, sản phẩm, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu) | Chạy ổn: lint 0 lỗi (4 cảnh báo `<img>`), build 50 trang tĩnh |
-| Dữ liệu | 24 sản phẩm, 17 giải pháp, 73 tài liệu, 28 tính năng AI chuẩn, 12 mô tả thuật toán (từ 21/10) |
+| Dữ liệu | 24 sản phẩm, 17 giải pháp, 71 tài liệu có mô tả trong `documents.json` (105 file trong thư viện, file chưa mô tả mặc định Nội bộ), 28 tính năng AI chuẩn, 12 mô tả thuật toán |
 | Rules | CLAUDE.md tách thành 8 file trong `.claude/rules/` theo chuẩn Claude Code |
 | QA toàn site | Đã chạy (ảnh `screenshots/qa-*`); 18 hạng mục cải tiến đã làm, xem dưới |
-| Nhãn tài liệu | Gửi khách được 49 · Nội bộ 19 · Bản cũ 4 · Hết hạn 1 (chứng nhận hợp quy AutoSecure V1C, hết hạn 16/10/2026) |
+| Nhãn tài liệu (trong `documents.json`) | Gửi khách được 48 · Nội bộ 16 · Bản cũ 6 · Hết hạn 1 (chứng nhận hợp quy AutoSecure V1C, hết hạn 16/10/2026) |
+| Đăng nhập Google (22/10, nhánh `feature/login-google`) | `/dang-nhap`, chỉ `@mkvision.com`; chặn trang, `/files`, chỉ mục tìm kiếm; menu tài khoản + Đăng xuất. Đã kiểm bằng curl + cookie phiên giả; **chưa thử với OAuth Client thật** (chờ tạo trên Google Cloud). Ảnh `screenshots/14-*` |
+| MK Networks | Dùng datasheet docx hiện có (không có bản mới hơn); thông số chưa có trong tài liệu để trống, mục `unconfirmed` giữ nguyên |
 | Tính năng AI chuẩn | `Data/AI/features.json`; dùng chung cho sản phẩm, bộ lọc, trang AI, tìm kiếm |
 | Thông số chưa chốt | Trường `unconfirmed` cho cả 24 sản phẩm, hiện cảnh báo tại ô; bỏ hiển thị "Ghi chú dữ liệu" |
 | Nhãn thông số / loại thiết bị tiếng Việt | `lib/labels.ts`; switch so sánh được theo Cổng / Uplink / PoE / MAC… |
@@ -63,17 +67,18 @@ Git: repo local nhánh `main`, remote `origin` = https://github.com/huuquyen97/o
 | Tính năng AI (21/10) | Mô tả chỉ lấy từ `[MKV]-AI_Function_Description_v1.0.pdf` (thay file Excel cũ đã xóa): 12 mô tả trong `algorithms.json`. Từ điển `features.json` vẫn giữ tính năng theo thiết bị (28, link từ trang sản phẩm); bỏ 5 tính năng chỉ có ở Excel và không model nào ghi (thuộc tính khuôn mặt / người / phương tiện, Liveness, vi phạm giao thông chung). Ảnh `screenshots/13-*` |
 
 ### Chưa xong / chờ người khác
-- **PM cung cấp datasheet đầy đủ** cho MKST28/MKSP28 (và MKSX30, MKSP10, MKEAP-650): file docx hiện có không có bảng thông số chi tiết. Có rồi thì nhập vào `specs`, gỡ mục `unconfirmed` tương ứng, đổi nhãn tài liệu sang `public` nếu là PDF chính thức.
-- **PM cấp chứng nhận hợp quy AutoSecure mới** → thêm vào `documents.json` với `validFrom`/`validTo`.
+- **Chứng nhận hợp quy AutoSecure mới**: người dùng sẽ bổ sung sau. Khi có file → thêm vào `documents.json` với `validFrom`/`validTo`, status `public`. Đến lúc đó Sales chỉ có bản Hết hạn.
+- **Datasheet MK Networks** (MKST28, MKSP28, MKSX30, MKSP10, MKEAP-650): tạm dùng bản docx hiện có, không chờ bản mới. Nếu sau này có PDF chính thức thì nhập `specs`, gỡ `unconfirmed`, đổi nhãn sang `public`.
 - **PM chốt các thông số xung đột** (danh sách trong `unconfirmed` của từng sản phẩm: zoom số VA50FA2V-40 16x/10x, VB80FA1V bản VN/EN, IP65/IP67 của T8, Wi-Fi 6/802.11ac MKEAP-650, ERPS MKISP12…).
 - **Cấu hình đề xuất giải pháp ngành chưa có model cụ thể** (slide chỉ có ảnh thiết bị); Nhà máy chưa có ảnh/sơ đồ.
 - Xác nhận cách gọi CUVO / Pavana; ảnh SC609E rõ hơn.
+- **MobiSecure**: `Datasheet _Mobi Secure.pdf` không ghi tên model (web vẫn dùng MK22FC1E); IP65 (datasheet) vs IP67 (slide); dòng "Hiệu năng xử lý" bị cắt ở "Phân tích tầm nhìn tại".
+- **16 tính năng AI theo thiết bị chưa có mô tả** (Heat Map, vân tay, DMS…): `AI_Function_Description_v1.0.pdf` chỉ mô tả 12 tính năng.
 
 ### Bước tiếp theo (session sau)
-1. Commit thay đổi đợt này, push lên GitHub (nếu đã đăng nhập).
-2. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
-3. Nhập dữ liệu mới khi PM gửi (mục trên), chạy `check-data` → build → screenshot.
-4. Các góp ý QA chưa làm: số liệu trang chủ ("2 triệu sản phẩm/năm" vs "95.000 camera/tháng") chưa có nguồn rõ; hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; lightbox ảnh giải pháp chưa đóng bằng Esc; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
+1. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
+2. Bổ sung chứng nhận hợp quy AutoSecure khi người dùng gửi; nhập dữ liệu PM chốt, chạy `check-data` → build → screenshot.
+3. Các góp ý QA chưa làm: số liệu trang chủ ("2 triệu sản phẩm/năm" vs "95.000 camera/tháng") chưa có nguồn rõ; hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; lightbox ảnh giải pháp chưa đóng bằng Esc; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
 
 ### Quyết định quan trọng và lý do
 - **Dữ liệu giữ nguyên văn, chuẩn hoá chỉ ở lớp hiển thị** (`lib/labels.ts`, `features.json` aliases): datasheet là nguồn tin cậy; đổi tên ngay trong JSON sẽ mất dấu vết với tài liệu gốc.
