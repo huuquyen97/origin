@@ -43,18 +43,20 @@ Agent `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Man
 
 ## Trạng thái dự án (cập nhật 22/10/2026)
 
-Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). Toàn bộ code đã commit và push: `main` = `origin/main` = `27264af` (đã gộp nhánh `feature/update_giao_dien_hikvision`). Làm tính năng mới thì tách nhánh từ `main`.
+Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). `main` đã gộp `feature/update_giao_dien_hikvision`, `feature/login-google`, `feature/inventory` và được push cuối session 22/10. Làm tính năng mới thì tách nhánh từ `main`.
+
+Triển khai: hướng tới Vercel (`AUTH_URL=https://mk-vision-docs.vercel.app`, OAuth Client có redirect URI localhost:3000 + Vercel). Secret đặt trong `.env.local` (máy dev) và Environment Variables của Vercel, **không** ghi vào `.env.example` (file mẫu được commit). File JSON OAuth Client / service account nằm ngoài repo: `../Private Docs MKV Docs/`.
 
 ### Đã xong
 | Phần | Trạng thái |
 |---|---|
-| Website 7 trang (trang chủ, sản phẩm, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu) | Chạy ổn: lint 0 lỗi (4 cảnh báo `<img>`), build 50 trang tĩnh |
+| Website 8 trang (trang chủ, sản phẩm, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu, tồn kho) + đăng nhập | Chạy ổn: lint 0 lỗi (4 cảnh báo `<img>`), build 52 trang |
 | Dữ liệu | 24 sản phẩm, 17 giải pháp, 71 tài liệu có mô tả trong `documents.json` (105 file trong thư viện, file chưa mô tả mặc định Nội bộ), 28 tính năng AI chuẩn, 12 mô tả thuật toán |
 | Rules | CLAUDE.md tách thành 8 file trong `.claude/rules/` theo chuẩn Claude Code |
 | QA toàn site | Đã chạy (ảnh `screenshots/qa-*`); 18 hạng mục cải tiến đã làm, xem dưới |
 | Nhãn tài liệu (trong `documents.json`) | Gửi khách được 48 · Nội bộ 16 · Bản cũ 6 · Hết hạn 1 (chứng nhận hợp quy AutoSecure V1C, hết hạn 16/10/2026) |
-| Đăng nhập Google (22/10, nhánh `feature/login-google`) | `/dang-nhap`, chỉ `@mkvision.com`; chặn trang, `/files`, chỉ mục tìm kiếm; menu tài khoản + Đăng xuất. Đã kiểm bằng curl + cookie phiên giả; **chưa thử với OAuth Client thật** (chờ tạo trên Google Cloud). Ảnh `screenshots/14-*` |
-| Tồn kho (22/10, nhánh `feature/inventory`, tách từ `feature/login-google`) | `/ton-kho`, ô tồn kho trang chi tiết, nhãn thẻ sản phẩm, lọc "Còn hàng", hàng "Tồn kho" ở so sánh. Đã kiểm bằng CSV thử (cộng nhiều kho, "1.200", model không khớp, tự cập nhật ~20s, giữ số cũ khi lỗi); **chưa thử với Google Sheet thật** (chờ service account + link Sheet). Header 7 mục: ô tìm kiếm thu thành nút ở 1024–1279px. Ảnh `screenshots/15-*` |
+| Đăng nhập Google (22/10, đã gộp `main`) | `/dang-nhap`, chỉ `@mkvision.com` đã xác minh (`hd` + đuôi email); chặn trang, `/files`, chỉ mục tìm kiếm; API chưa đăng nhập trả 401; menu tài khoản + Đăng xuất. OAuth Client thật (project `mk-vision-docs`) đã cấu hình trong `.env.local`; đã kiểm: chuyển sang Google đúng client_id + `hd`, cookie phiên vào được, đăng xuất xoá cookie. **Chưa đăng nhập thử trọn vòng bằng trình duyệt**. Ảnh `screenshots/14-*` |
+| Tồn kho (22/10, đã gộp `main`) | `/ton-kho`, ô tồn kho trang chi tiết, nhãn thẻ sản phẩm, lọc "Còn hàng", hàng "Tồn kho" ở so sánh. Google Sheet thật "MKV Inventory Template" (tab `ton-kho-mau`, service account `inventory-reader@mk-vision-docs.iam.gserviceaccount.com` quyền Viewer): khớp 24/24 model. Đã kiểm: cộng nhiều kho, "1.200", model không khớp, cache trong chu kỳ, stale-while-revalidate, nguồn lỗi giữ số cũ, cold start lấy bản dự phòng, không có dự phòng vẫn không sập. Header 7 mục: ô tìm kiếm thu thành nút ở 1024–1279px. Ảnh `screenshots/15-*` |
 | MK Networks | Dùng datasheet docx hiện có (không có bản mới hơn); thông số chưa có trong tài liệu để trống, mục `unconfirmed` giữ nguyên |
 | Tính năng AI chuẩn | `Data/AI/features.json`; dùng chung cho sản phẩm, bộ lọc, trang AI, tìm kiếm |
 | Thông số chưa chốt | Trường `unconfirmed` cho cả 24 sản phẩm, hiện cảnh báo tại ô; bỏ hiển thị "Ghi chú dữ liệu" |
@@ -77,10 +79,15 @@ Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). Toàn
 - **MobiSecure**: `Datasheet _Mobi Secure.pdf` không ghi tên model (web vẫn dùng MK22FC1E); IP65 (datasheet) vs IP67 (slide); dòng "Hiệu năng xử lý" bị cắt ở "Phân tích tầm nhìn tại".
 - **16 tính năng AI theo thiết bị chưa có mô tả** (Heat Map, vân tay, DMS…): `AI_Function_Description_v1.0.pdf` chỉ mô tả 12 tính năng.
 
+- **Đổi secret OAuth**: `AUTH_GOOGLE_SECRET` và `AUTH_SECRET` từng được dán trong chat và nằm trong một commit local (đã viết lại trước khi push, không lên GitHub). Nên tạo secret mới trên Google Cloud Console + `npx auth secret`, cập nhật `.env.local` và Vercel.
+- **Vercel chưa cấu hình xong**: tạo Blob store (Vercel tự đặt `BLOB_READ_WRITE_TOKEN`); đặt `AUTH_*`, `INVENTORY_SHEET_ID`, `GOOGLE_SERVICE_ACCOUNT_JSON` (nội dung JSON, không dùng đường dẫn file) trong Environment Variables. Tài liệu gốc `Data/MK Vision`, `Data/Design` không có trên git → bản Vercel thiếu file `/files/*` và ảnh lấy từ đó, có thể `check-data` báo lỗi; cần kiểm khi deploy.
+
 ### Bước tiếp theo (session sau)
-1. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
-2. Bổ sung chứng nhận hợp quy AutoSecure khi người dùng gửi; nhập dữ liệu PM chốt, chạy `check-data` → build → screenshot.
-3. Các góp ý QA chưa làm: số liệu trang chủ ("2 triệu sản phẩm/năm" vs "95.000 camera/tháng") chưa có nguồn rõ; hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; lightbox ảnh giải pháp chưa đóng bằng Esc; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
+1. Deploy thử lên Vercel theo mục trên; đăng nhập thật bằng tài khoản @mkvision.com và tài khoản gmail cá nhân (phải bị từ chối); sửa một số trên Sheet, xem web đổi sau 1–2 phút.
+2. Feature 3 — **AI Chatbot tư vấn** (đã lên kế hoạch, chưa làm): `/tro-ly`, `POST /api/chat` dùng `@anthropic-ai/sdk`, model `claude-opus-5-5`, streaming, đưa toàn bộ catalog (sinh lúc build) vào system prompt có prompt cache, tồn kho đặt sau điểm cache; trả lời theo khung: tóm tắt yêu cầu → sản phẩm phù hợp (Đáp ứng / Một phần / Chưa) → điểm chưa đáp ứng → phương án chào → câu hỏi lại khách. Không giá / chiết khấu. Giới hạn ~30 câu/giờ/người, log mức dùng không log nội dung. Cần `ANTHROPIC_API_KEY` + hạn mức chi tiêu và 5–10 yêu cầu khách mẫu (đã bỏ tên khách). Làm trên nhánh mới từ `main`.
+3. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
+4. Bổ sung chứng nhận hợp quy AutoSecure khi người dùng gửi; nhập dữ liệu PM chốt, chạy `check-data` → build → screenshot.
+5. Các góp ý QA chưa làm: số liệu trang chủ ("2 triệu sản phẩm/năm" vs "95.000 camera/tháng") chưa có nguồn rõ; hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; lightbox ảnh giải pháp chưa đóng bằng Esc; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
 
 ### Quyết định quan trọng và lý do
 - **Dữ liệu giữ nguyên văn, chuẩn hoá chỉ ở lớp hiển thị** (`lib/labels.ts`, `features.json` aliases): datasheet là nguồn tin cậy; đổi tên ngay trong JSON sẽ mất dấu vết với tài liệu gốc.
@@ -93,5 +100,10 @@ Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). Toàn
 - **Bỏ giải pháp Edge AI và Điện lực** theo yêu cầu người dùng (Edge AI là năng lực, không phải giải pháp ngành).
 - **Gộp `MKSP28-5150` vào loại "Switch truy cập L2+"** (cùng loại MKST28); PoE tách thành bộ lọc nhu cầu.
 - **Đổi phong cách từ Primefold sang Hikvision nhưng giữ màu navy MK Vision** cho nút chính/vạch menu (không dùng đỏ Hikvision) để đúng nhận diện thương hiệu; header chuyển ra layout và `fixed` vì header nằm trong hero (có `isolate`) sẽ bị nội dung phía dưới đè khi cuộn.
+- **Đăng nhập bằng Google OAuth thay vì LDAP**: Secure LDAP chỉ có ở gói Workspace Enterprise; OAuth + kiểm `hd`/`email_verified` phía server là đủ chặn tài khoản ngoài công ty (`hd` gửi lên Google chỉ là gợi ý). Dùng Auth.js ghim bản beta thay vì tự viết luồng OAuth.
+- **Trang vẫn sinh tĩnh, phiên đọc phía client**: chặn ở `proxy.ts`, không gọi `auth()` trong layout/trang, để giữ tốc độ và cách build cũ. `AUTH_DISABLED=1` chỉ để chụp ảnh trên máy.
+- **Tồn kho từ Google Sheet qua service account (Viewer), không để link công khai**; Sheet dùng chung cho mọi người đã đăng nhập; số tồn không đưa vào `/Data`. Hỏi Drive `modifiedTime` trước, đổi mới đọc lại bảng (rẻ, không cần webhook — webhook cần URL công khai). Ghép model bằng `modelKey` (chỉ chữ + số, không phân biệt hoa thường); dòng không khớp hiện ở `/ton-kho` để người nhập sửa.
+- **`INVENTORY_LOCAL_FILE` ưu tiên hơn Sheet**: để chạy thử bằng CSV mà không phải xoá biến Sheet (PowerShell không đặt được biến rỗng). Server thật không đặt biến này.
+- **Secret không vào git, kể cả `.env.example`**: Next.js / Vercel không đọc `.env.example`, ghi giá trị thật vào đó chỉ làm lộ secret.
 - **Tồn kho dùng `unstable_cache` + bản dự phòng bền vững thay vì biến trong bộ nhớ**: trên Vercel mỗi instance serverless có bộ nhớ riêng, bị tắt/khởi động lại bất kỳ lúc nào, nên cache trong tiến trình mất và mỗi instance gọi Google riêng. Chưa chuyển sang `use cache` vì phải bật Cache Components cho toàn site.
 - **Tài liệu gốc (`Data/MK Vision`, `Data/Design`, ~640MB) không đưa lên git**: dung lượng lớn và là tài liệu nội bộ; clone sang máy khác phải chép riêng trước khi build.
