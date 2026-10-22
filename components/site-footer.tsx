@@ -40,6 +40,7 @@ export function SiteFooter() {
             { href: "/so-sanh", label: "So sánh" },
             { href: "/thuat-toan-ai", label: "Tính năng AI" },
             { href: "/tai-lieu", label: "Thư viện tài liệu" },
+            { href: "/ton-kho", label: "Tồn kho" },
           ])}
           {col("Công ty", [
             { href: "https://mkvision.com/", label: "mkvision.com", external: true },

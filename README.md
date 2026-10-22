@@ -26,6 +26,17 @@ Website chỉ dành cho tài khoản Google `@mkvision.com` (Auth.js + Google OA
 
 Chạy thử trên máy không có OAuth Client: đặt `AUTH_DISABLED=1` (bỏ qua đăng nhập). Không đặt biến này trên server thật.
 
+## Tồn kho (Google Sheet)
+
+Trang `/ton-kho`, ô Tồn kho ở trang chi tiết, nhãn trên thẻ sản phẩm, bộ lọc "Còn hàng" và hàng "Tồn kho" ở bảng so sánh đọc số từ một Google Sheet chung. Server kiểm tra thời điểm sửa file mỗi 60 giây (`INVENTORY_POLL_SECONDS`) và chỉ đọc lại bảng khi file đổi; Google lỗi thì giữ số lần đọc trước và hiện cảnh báo.
+
+1. Tạo Google Sheet (không phải file .xlsx tải lên) từ mẫu `templates/ton-kho-mau.csv`: cột **Model**, **Tồn kho**, tùy chọn **Kho**, **Ghi chú**. Một model nhiều kho thì nhiều dòng, web tự cộng. Model so khớp không phân biệt hoa thường, bỏ dấu cách / gạch nối.
+2. Google Cloud: bật **Google Sheets API** và **Google Drive API**; tạo service account, tải key JSON đặt trên server (không commit).
+3. Chia sẻ Sheet cho email của service account, quyền **Viewer**.
+4. Đặt biến môi trường: `INVENTORY_SHEET_ID` (đoạn giữa `/d/` và `/edit` trong link), `GOOGLE_SERVICE_ACCOUNT_FILE` (đường dẫn key JSON) hoặc `GOOGLE_SERVICE_ACCOUNT_JSON`; tùy chọn `INVENTORY_SHEET_RANGE`, `INVENTORY_LOW_STOCK` (ngưỡng "Sắp hết", mặc định 10).
+
+Chạy thử không cần Google: `INVENTORY_LOCAL_FILE=<đường dẫn CSV>`.
+
 ## Dữ liệu (`/Data`)
 
 | Đường dẫn | Nội dung |

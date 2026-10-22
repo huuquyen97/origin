@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AlertTriangle, ChevronDown, Columns3, Download, Info } from "lucide-react";
 import { PageHero } from "@/components/hero";
 import { DocRow, ProductCard, ProductMedia, SolutionCard } from "@/components/cards";
+import { StockPanel } from "@/components/inventory/stock";
 import { CopyLinkButton, CopyShortButton, CopySpecsButton } from "@/components/products/copy-buttons";
 import { aiFeatureName, getAiFeatures, getProduct, getProducts, getSolution, keySpecs, seriesName, toCard, type Doc } from "@/lib/data";
 import { catLabel, specLabel } from "@/lib/labels";
@@ -68,6 +69,7 @@ export default async function ProductPage({ params }: Props) {
                 </div>
               ))}
             </dl>
+            <StockPanel slug={p.slug} />
           </aside>
 
           <div className="min-w-0">

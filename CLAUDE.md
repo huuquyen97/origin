@@ -10,6 +10,7 @@ Ngôn ngữ giao diện: tiếng Việt. Thuật ngữ kỹ thuật giữ nguyê
 - Next.js 16 (App Router, Turbopack), React 19, TypeScript strict, Tailwind CSS v4, Fuse.js, zod, lucide-react. Node 24. Windows + PowerShell.
 - Không database. Dữ liệu đọc từ `/Data` lúc build; mọi trang sinh tĩnh (`generateStaticParams`), chỉ mục tìm kiếm là route tĩnh `/search-index.json`. Phần động chỉ gồm `proxy.ts` và route `/api/*`; không gọi `auth()`/`cookies()` trong layout hay trang (sẽ làm mất sinh tĩnh) — phiên lấy phía client qua `SessionProvider`.
 - Đăng nhập: Auth.js v5 (`next-auth@5.0.0-beta.32`, ghim bản) + Google, chỉ tài khoản `@mkvision.com` (`auth.ts`). `proxy.ts` chặn mọi trang, `/files/*`, `/search-index.json`; API chưa đăng nhập trả 401. Biến môi trường xem `.env.example` (`.env*` không commit). Chạy server thật (`next start`) sau reverse proxy HTTPS, đặt `AUTH_URL`.
+- Tồn kho: `lib/inventory/` đọc Google Sheet bằng service account (`google-auth-library` + REST), bộ nhớ đệm trong tiến trình, kiểm tra `modifiedTime` mỗi 60 giây; `GET /api/ton-kho`; client dùng chung `useInventory()` (`components/inventory/`). Số tồn **không** nằm trong `/Data` (không phải thông số datasheet). Chưa đặt `INVENTORY_SHEET_ID` / `INVENTORY_LOCAL_FILE` thì mọi phần tồn kho tự ẩn.
 - Hạn chế thêm dependency; nếu cần thì nêu lý do.
 
 ## Lệnh
@@ -53,6 +54,7 @@ Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). Toàn
 | QA toàn site | Đã chạy (ảnh `screenshots/qa-*`); 18 hạng mục cải tiến đã làm, xem dưới |
 | Nhãn tài liệu (trong `documents.json`) | Gửi khách được 48 · Nội bộ 16 · Bản cũ 6 · Hết hạn 1 (chứng nhận hợp quy AutoSecure V1C, hết hạn 16/10/2026) |
 | Đăng nhập Google (22/10, nhánh `feature/login-google`) | `/dang-nhap`, chỉ `@mkvision.com`; chặn trang, `/files`, chỉ mục tìm kiếm; menu tài khoản + Đăng xuất. Đã kiểm bằng curl + cookie phiên giả; **chưa thử với OAuth Client thật** (chờ tạo trên Google Cloud). Ảnh `screenshots/14-*` |
+| Tồn kho (22/10, nhánh `feature/inventory`, tách từ `feature/login-google`) | `/ton-kho`, ô tồn kho trang chi tiết, nhãn thẻ sản phẩm, lọc "Còn hàng", hàng "Tồn kho" ở so sánh. Đã kiểm bằng CSV thử (cộng nhiều kho, "1.200", model không khớp, tự cập nhật ~20s, giữ số cũ khi lỗi); **chưa thử với Google Sheet thật** (chờ service account + link Sheet). Header 7 mục: ô tìm kiếm thu thành nút ở 1024–1279px. Ảnh `screenshots/15-*` |
 | MK Networks | Dùng datasheet docx hiện có (không có bản mới hơn); thông số chưa có trong tài liệu để trống, mục `unconfirmed` giữ nguyên |
 | Tính năng AI chuẩn | `Data/AI/features.json`; dùng chung cho sản phẩm, bộ lọc, trang AI, tìm kiếm |
 | Thông số chưa chốt | Trường `unconfirmed` cho cả 24 sản phẩm, hiện cảnh báo tại ô; bỏ hiển thị "Ghi chú dữ liệu" |

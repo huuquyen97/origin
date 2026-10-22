@@ -8,6 +8,7 @@ export const NAV = [
   { href: "/thuat-toan-ai", label: "Tính năng AI" },
   { href: "/tai-lieu", label: "Tài liệu" },
   { href: "/so-sanh", label: "So sánh" },
+  { href: "/ton-kho", label: "Tồn kho" },
 ] as const;
 
 export const DOC_TYPE_LABEL: Record<DocType, string> = {
@@ -59,6 +60,26 @@ export const T = {
   compare: "So sánh",
   copied: "Đã copy vào clipboard",
 };
+
+/** Tồn kho (lib/inventory) */
+export const INV = {
+  title: "Tồn kho",
+  status: { ok: "Còn hàng", low: "Sắp hết", out: "Hết hàng" },
+  none: "Chưa có trong file tồn kho",
+  notConfigured: "Chưa kết nối file tồn kho",
+  loading: "Đang tải tồn kho…",
+  failed: "Không tải được số tồn kho",
+  stale: "Chưa đọc được file mới nhất, đang hiện số liệu lần đọc trước",
+  updated: "Cập nhật",
+  inStock: "Còn hàng",
+  viewAll: "Xem bảng tồn kho",
+};
+
+/** Giờ Việt Nam: "10:32 22/10/2026" */
+export const vnDateTime = (iso: string) =>
+  new Intl.DateTimeFormat("vi-VN", { timeZone: "Asia/Ho_Chi_Minh", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit", year: "numeric" })
+    .format(new Date(iso))
+    .replace(",", "");
 
 /** Đăng nhập Google Workspace (auth.ts) */
 export const AUTH = {

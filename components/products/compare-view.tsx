@@ -5,6 +5,8 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AlertTriangle, ClipboardCopy, Download, MessageSquareText, X } from "lucide-react";
 import { ProductCard } from "@/components/cards";
+import { stockText } from "@/components/inventory/stock";
+import { useInventory } from "@/components/inventory/use-inventory";
 import { copyText } from "@/components/toast";
 import { norm } from "@/lib/search/normalize";
 import { SPEC_GROUP_LABEL, T } from "@/lib/strings";
@@ -36,6 +38,7 @@ export function CompareView({ products, series, initial }: Props & { initial: Re
   // Link chia sẻ (?ids=) chỉ để xem: không ghi đè danh sách riêng cho tới khi người dùng sửa
   const [shared, setShared] = useState<string[] | null>(() => (initial.ids ? valid(initial.ids.split(",")) : null));
   const [onlyDiff, setOnlyDiff] = useState(false);
+  const { data: inv } = useInventory();
   const ids = shared ?? stored;
 
   useEffect(() => {
@@ -64,6 +67,8 @@ export function CompareView({ products, series, initial }: Props & { initial: Re
     mk("Loại", ps.map((p) => p.categoryLabel)),
     ...[...new Set(ps.flatMap((p) => p.keySpecs.map(([l]) => l)))].map((l) => mk(l, ps.map((p) => p.keySpecs.find(([x]) => x === l)?.[1] ?? ""))),
     mk("Tính năng AI", ps.map((p) => p.aiNames.join(", "))),
+    // Số tồn lấy lúc xem (không phải thông số datasheet); ẩn khi chưa kết nối file tồn kho
+    ...(inv?.configured ? [mk("Tồn kho", ps.map((p) => stockText(inv, p.slug)))] : []),
   ];
   const groups = [...new Set([...GROUP_ORDER, ...ps.flatMap((p) => Object.keys(p.specs))])].filter((g) => ps.some((p) => p.specs[g]));
   const rowsFor = (g: string): Row[] => {

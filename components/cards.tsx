@@ -26,7 +26,7 @@ export function ProductMedia({ image, model, alt, className = "" }: { image: str
   );
 }
 
-export function ProductCard({ p, compare }: { p: ProductCardProps; compare?: React.ReactNode }) {
+export function ProductCard({ p, compare, badge }: { p: ProductCardProps; compare?: React.ReactNode; badge?: React.ReactNode }) {
   // Thẻ ngắn: loại + thông số chính ngắn gọn (camera: độ phân giải, IP; switch thường dài nên chỉ hiện loại)
   const tags = [...new Set([p.categoryLabel, ...p.keySpecs.map(([, v]) => v).filter((v) => v && v.length <= 12)])].slice(0, 3);
   return (
@@ -40,6 +40,7 @@ export function ProductCard({ p, compare }: { p: ProductCardProps; compare?: Rea
         <div className="grid flex-1 content-start gap-1.5 p-4">
           <div className="text-base font-semibold tracking-tight tabular-nums">{p.model}</div>
           <div className="line-clamp-3 text-[13.5px] text-muted">{p.name}</div>
+          {badge && <div>{badge}</div>}
         </div>
         <div className="flex items-center justify-between gap-2 px-4 pb-4">
           <div className="flex flex-wrap gap-1.5">{tags.map((t) => <span key={t} className="tag">{t}</span>)}</div>

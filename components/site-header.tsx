@@ -33,7 +33,7 @@ export function SiteHeader() {
         <Link href="/" aria-label="MK Vision — Trang chủ" className="inline-flex h-[52px] shrink-0 items-center rounded-full bg-white py-2 pl-3 pr-4">
           <Image src="/brand/mk-vision.png" alt="MK Vision" width={72} height={36} priority className="h-9 w-auto" />
         </Link>
-        <div className="hidden h-full items-stretch gap-8 lg:flex xl:gap-10">
+        <div className="hidden h-full items-stretch gap-6 lg:flex xl:gap-8 2xl:gap-10">
           {NAV.map((n) => (
             <Link key={n.href} href={n.href} aria-current={isActive(n.href) ? "page" : undefined} className={`nav-link ${solid ? "hover:text-brand-navy aria-[current=page]:text-brand-navy" : "text-white/90 hover:text-white"}`}>
               {n.label}
@@ -46,13 +46,13 @@ export function SiteHeader() {
             type="button"
             onClick={() => openSearch()}
             aria-label="Tìm kiếm"
-            className={`inline-flex h-[53px] min-w-[53px] items-center justify-center gap-3 rounded-full px-3.5 text-base transition-colors lg:min-w-[252px] lg:justify-start lg:pl-5 lg:pr-2.5 ${
+            className={`inline-flex h-[53px] min-w-[53px] items-center justify-center gap-3 rounded-full px-3.5 text-base transition-colors xl:min-w-[252px] xl:justify-start xl:pl-5 xl:pr-2.5 ${
               solid ? "border border-line bg-surface text-muted hover:border-line-2" : "bg-white text-muted"
             }`}
           >
             <Search className="size-[19px] text-ink" aria-hidden />
-            <span className="mr-auto hidden lg:inline">{T.searchPlaceholder}</span>
-            <kbd className="hidden h-7 items-center rounded-md border border-line bg-white px-2 font-sans text-[14px] text-muted lg:inline-flex">Ctrl K</kbd>
+            <span className="mr-auto hidden xl:inline">{T.searchPlaceholder}</span>
+            <kbd className="hidden h-7 items-center rounded-md border border-line bg-white px-2 font-sans text-[14px] text-muted xl:inline-flex">Ctrl K</kbd>
           </button>
           <button
             type="button"
