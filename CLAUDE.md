@@ -43,9 +43,9 @@ Agent `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Man
 
 ## Trạng thái dự án (cập nhật 22/10/2026)
 
-Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). `main` đã gộp `feature/update_giao_dien_hikvision`, `feature/login-google`, `feature/inventory` và được push cuối session 22/10. Làm tính năng mới thì tách nhánh từ `main`.
+Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). `main` đã gộp `feature/update_giao_dien_hikvision`, `feature/login-google`, `feature/inventory`; từ 27/10 có cả tài liệu gốc `Data/MK Vision` (~640MB) để Vercel tự build từ GitHub. Làm tính năng mới thì tách nhánh từ `main`.
 
-Triển khai: hướng tới Vercel (`AUTH_URL=https://mk-vision-docs.vercel.app`, OAuth Client có redirect URI localhost:3000 + Vercel). Secret đặt trong `.env.local` (máy dev) và Environment Variables của Vercel, **không** ghi vào `.env.example` (file mẫu được commit). File JSON OAuth Client / service account nằm ngoài repo: `../Private Docs MKV Docs/`.
+Triển khai: Vercel Production https://mk-vision-docs.vercel.app (project `mk-vision-docs`, team `tommy-c937`). Hai OAuth Client trong project Google `mk-vision-docs`: **Production** `311582447762-lsjrlm…` (redirect Vercel + `docs.mkvision.com`, không có localhost) đặt trên Vercel; **máy dev** `311582447762-50gpn7…` (localhost + Vercel) đặt trong `.env.local`. Secret chỉ đặt trong `.env.local` và Environment Variables của Vercel (kiểu Sensitive, không đọc lại được), **không** ghi vào `.env.example`. File JSON OAuth Client / service account nằm ngoài repo: `../Private Docs MKV Docs/`.
 
 ### Đã xong
 | Phần | Trạng thái |
@@ -79,9 +79,9 @@ Triển khai: hướng tới Vercel (`AUTH_URL=https://mk-vision-docs.vercel.app
 - **MobiSecure**: `Datasheet _Mobi Secure.pdf` không ghi tên model (web vẫn dùng MK22FC1E); IP65 (datasheet) vs IP67 (slide); dòng "Hiệu năng xử lý" bị cắt ở "Phân tích tầm nhìn tại".
 - **16 tính năng AI theo thiết bị chưa có mô tả** (Heat Map, vân tay, DMS…): `AI_Function_Description_v1.0.pdf` chỉ mô tả 12 tính năng.
 
-- **Đổi secret OAuth**: `AUTH_GOOGLE_SECRET` và `AUTH_SECRET` từng được dán trong chat và nằm trong một commit local (đã viết lại trước khi push, không lên GitHub). Nên tạo secret mới trên Google Cloud Console + `npx auth secret`, cập nhật `.env.local` và Vercel.
-- **Vercel Production đã chạy (27/10)**: https://mk-vision-docs.vercel.app (project `mk-vision-docs`, team `tommy-c937`). Env Production: `AUTH_*`, `INVENTORY_*`, `GOOGLE_SERVICE_ACCOUNT_JSON` (sensitive), Blob store gắn project (`BLOB_STORE_ID`, OIDC). Đã kiểm: trang/`/files`/chỉ mục → 307 `/dang-nhap`, `/api/ton-kho` → 401, nút Google chuyển đúng `redirect_uri` Vercel + `hd`. **Chưa kiểm sau đăng nhập** (tồn kho từ Sheet, ghi Blob) vì không có cookie phiên Production.
-- **Cách deploy**: chạy `npx vercel@65.3.1 deploy --prod` từ máy có đủ `Data/MK Vision` (`.vercelignore` loại `.env*`, `public/files`…). Deploy từ GitHub sẽ lỗi `ENOENT Data/MK Vision/Docs` vì tài liệu gốc không có trên git.
+- **Đổi `AUTH_SECRET` Production**: `AUTH_GOOGLE_ID`/`AUTH_GOOGLE_SECRET` đã thay bằng OAuth Client mới (27/10); `AUTH_SECRET` cũ từng dán trong chat, nên tạo mới (`npx auth secret`) và cập nhật trên Vercel (mọi phiên đăng nhập hiện có sẽ phải đăng nhập lại).
+- **Vercel Production (27/10)**: env `AUTH_*`, `INVENTORY_*`, `GOOGLE_SERVICE_ACCOUNT_JSON` (service account `a8c4…`; file `_PRD` mới trong Private Docs chưa dùng), Blob store gắn project (`BLOB_STORE_ID`, xác thực OIDC). Đã sửa lỗi tồn kho Production `ENOENT /var/task/Data/Products` (function không kèm JSON dữ liệu; xem quyết định). Đã kiểm: trang/`/files`/chỉ mục → 307 `/dang-nhap`, `/api/ton-kho` → 401, nút Google đúng `redirect_uri` + `hd`. **Chưa kiểm sau đăng nhập** (mở `/ton-kho` rồi xem `npx vercel@65.3.1 logs -e production`; gói Hobby chỉ giữ log ~30 phút).
+- **Cách deploy**: push `main` lên GitHub để Vercel tự build (nếu project đã nối repo — kiểm trong Vercel → Settings → Git), hoặc `npx vercel@65.3.1 deploy --prod` từ máy này (`.vercelignore` loại `.env*`, `public/files`…; CLI upload cả thư mục làm việc nên cất file chưa commit trước).
 
 ### Bước tiếp theo (session sau)
 1. Trên Vercel Production: đăng nhập thật bằng tài khoản @mkvision.com và tài khoản gmail cá nhân (phải bị từ chối); sửa một số trên Sheet, xem web đổi sau 1–2 phút.
@@ -107,4 +107,6 @@ Triển khai: hướng tới Vercel (`AUTH_URL=https://mk-vision-docs.vercel.app
 - **`INVENTORY_LOCAL_FILE` ưu tiên hơn Sheet**: để chạy thử bằng CSV mà không phải xoá biến Sheet (PowerShell không đặt được biến rỗng). Server thật không đặt biến này.
 - **Secret không vào git, kể cả `.env.example`**: Next.js / Vercel không đọc `.env.example`, ghi giá trị thật vào đó chỉ làm lộ secret.
 - **Tồn kho dùng `unstable_cache` + bản dự phòng bền vững thay vì biến trong bộ nhớ**: trên Vercel mỗi instance serverless có bộ nhớ riêng, bị tắt/khởi động lại bất kỳ lúc nào, nên cache trong tiến trình mất và mỗi instance gọi Google riêng. Chưa chuyển sang `use cache` vì phải bật Cache Components cho toàn site.
-- **Tài liệu gốc (`Data/MK Vision`, `Data/Design`, ~640MB) không đưa lên git**: dung lượng lớn và là tài liệu nội bộ; clone sang máy khác phải chép riêng trước khi build.
+- **Tài liệu gốc `Data/MK Vision` (~640MB) đưa lên git từ 27/10** (trước đó không, theo yêu cầu người dùng): để Vercel tự build từ GitHub, không phụ thuộc máy có đủ `/Data`; repo private. 3 catalogue ~57MB vượt mức cảnh báo 50MB của GitHub (dưới giới hạn 100MB); file > 100MB phải dùng Git LFS. `Data/Design` vẫn không đưa lên.
+- **Function động chỉ đóng gói JSON dữ liệu, không kèm tài liệu gốc** (`next.config.ts`: `outputFileTracingExcludes` loại `Data/MK Vision`, `Data/Design`, `public/files`; `outputFileTracingIncludes` thêm `Data/*/**/*.json` + `lib/generated/files.json` cho `/api/ton-kho`): `lib/data` đọc bằng `fs` lúc chạy nên Next không tự đóng gói. Route API mới dùng `lib/data` (VD chatbot) phải thêm vào `outputFileTracingIncludes`.
+- **Trang tồn kho không hiện dòng mô tả nguồn và thông báo lỗi đọc file** (người dùng yêu cầu 27/10): lỗi đọc Sheet chỉ ghi log server (`[ton-kho]`), xem bằng `vercel logs`.
