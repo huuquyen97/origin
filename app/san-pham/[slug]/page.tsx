@@ -6,10 +6,11 @@ import { PageHero } from "@/components/hero";
 import { DocRow, ProductCard, ProductMedia, SolutionCard } from "@/components/cards";
 import { StockPanel } from "@/components/inventory/stock";
 import { CopyLinkButton, CopyShortButton, CopySpecsButton } from "@/components/products/copy-buttons";
-import { aiFeatureName, getAiFeatures, getProduct, getProducts, getSolution, keySpecs, seriesName, toCard, type Doc } from "@/lib/data";
+import { Shots } from "@/components/solutions/shots";
+import { aiFeatureName, getAiFeatures, getCatalog, getFeatureShots, getProduct, getProducts, getSolution, keySpecs, seriesName, toCard, type Doc } from "@/lib/data";
 import { catLabel, specLabel } from "@/lib/labels";
 import { SPEC_GROUPS } from "@/lib/data/schema";
-import { DOC_STATUS, SPEC_GROUP_LABEL, T } from "@/lib/strings";
+import { DOC_STATUS, PROFILE, SPEC_GROUP_LABEL, T } from "@/lib/strings";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -39,6 +40,10 @@ export default async function ProductPage({ params }: Props) {
   const keyFacts: [string, string][] = [["Dòng", sName], ["Loại", catLabel(p.category)], ...keySpecs(p)];
   const flag = (g: string, k: string) => p.unconfirmed.find((u) => u.group === g && u.label === k)?.note ?? "";
   const aiFeatures = getAiFeatures().filter((f) => p.ai.includes(f.id));
+  const shots = getFeatureShots(p.slug);
+  const catalog = getCatalog();
+  const inCatalog = catalog.models.find((m) => m.slug === p.slug);
+  const catalogSeries = inCatalog && catalog.series.find((s) => s.id === inCatalog.series);
 
   const specText = [`${p.model} — ${p.name}`, `Dòng: ${sName}`];
   for (const g of groups) {
@@ -105,10 +110,37 @@ export default async function ProductPage({ params }: Props) {
               )}
             </div>
 
+            {inCatalog && (
+              <p className="mt-3 text-[14px] text-ink-2">
+                <Link href={`/san-pham/danh-muc?q=${encodeURIComponent(inCatalog.model)}`} className={`tag hover:underline ${inCatalog.conflict ? "tag-warn" : "tag-navy"}`}>
+                  {inCatalog.conflict && <AlertTriangle className="size-3.5" aria-hidden />}Series {inCatalog.series} · {catalogSeries?.short}
+                </Link>{" "}
+                <span className="text-muted">trong danh mục camera hiện hành {catalog.date}</span>
+                {inCatalog.conflict && <span className="mt-1.5 block text-[13px] text-brand-gold-700">{inCatalog.conflict}</span>}
+              </p>
+            )}
+
             {p.features.length > 0 && (
               <section className="mt-9">
                 <h3 className="mb-3.5 text-lg">Điểm nổi bật</h3>
                 <ul className="check-list">{p.features.map((h) => <li key={h}>{h}</li>)}</ul>
+              </section>
+            )}
+
+            {shots.length > 0 && (
+              <section className="mt-9">
+                <h3 className="mb-1.5 text-lg">Chú thích tính năng</h3>
+                <p className="mb-3.5 text-[13.5px] text-muted">{PROFILE.illustration}</p>
+                <Shots images={shots.map((s) => s.image)} labels={shots.map((s) => `${s.title} (${PROFILE.short} ${s.page})`)} />
+                {shots.some((s) => s.conflicts.length) && (
+                  <div className="note-warn mt-3">
+                    <AlertTriangle className="mt-0.5 size-4 shrink-0" aria-hidden />
+                    <div>
+                      <b>Khác với datasheet, không dùng để báo khách:</b>
+                      <ul className="mt-1 grid list-disc gap-0.5 pl-4">{shots.flatMap((s) => s.conflicts).map((c) => <li key={c}>{c}</li>)}</ul>
+                    </div>
+                  </div>
+                )}
               </section>
             )}
 

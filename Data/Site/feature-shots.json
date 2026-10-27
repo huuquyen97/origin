@@ -1,0 +1,23 @@
+[
+  {
+    "product": "mk22fc1e",
+    "image": "/img/profile/shot-mk22fc1e.webp",
+    "title": "Chú thích tính năng camera đeo người",
+    "page": "tr.51",
+    "conflicts": ["Ảnh ghi “WiFi”; datasheet chuẩn (Datasheet _Mobi Secure.pdf) không ghi Wi-Fi."]
+  },
+  {
+    "product": "m6",
+    "image": "/img/profile/shot-m6.webp",
+    "title": "Chú thích tính năng đầu đọc BioSecure",
+    "page": "tr.52",
+    "conflicts": ["Ảnh ghi “Màn hình cảm ứng”; datasheet chỉ ghi màn hình IPS 5 inch, không ghi cảm ứng."]
+  },
+  {
+    "product": "autosecure",
+    "image": "/img/profile/shot-autosecure.webp",
+    "title": "Chú thích tính năng camera hành trình AutoSecure",
+    "page": "tr.50",
+    "conflicts": ["Ảnh ghi “Góc nhìn kép 360°”; datasheet ghi góc nhìn 138° (trước xe) và 190° (trong cabin).", "Ảnh ghi “Ghi hình đến 72h”; datasheet chỉ ghi Micro-SD lên đến 512 GB, không ghi số giờ."]
+  }
+]

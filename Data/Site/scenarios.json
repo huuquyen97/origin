@@ -1,0 +1,815 @@
+{
+  "source": "MK Vision_Năng lực v1 2026.pdf",
+  "scenarios": [
+    {
+      "id": "an-ninh-trat-tu",
+      "name": "An ninh trật tự",
+      "page": "tr.57",
+      "image": "/img/profile/scene-an-ninh-trat-tu.webp",
+      "productsImage": "/img/profile/scene-an-ninh-trat-tu-products.webp",
+      "solution": "do-thi",
+      "series": [
+        "biosecure",
+        "v-secure",
+        "autosecure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Đăng kí lưu trú",
+          "box": [
+            39.5,
+            2.11,
+            10.3,
+            4.9
+          ],
+          "features": [
+            "eid"
+          ],
+          "series": "biosecure"
+        },
+        {
+          "label": "Phát hiện lấn chiếm vỉa hè",
+          "box": [
+            16.3,
+            12.64,
+            16.9,
+            4.9
+          ],
+          "features": [
+            "encroachment"
+          ]
+        },
+        {
+          "label": "Cảnh báo tội phạm truy nã xuất hiện ở khu vực",
+          "box": [
+            3.5,
+            45.15,
+            17,
+            7.82
+          ],
+          "features": [
+            "blacklist-search",
+            "face-recognition"
+          ]
+        },
+        {
+          "label": "Cảnh sát tuần tra",
+          "box": [
+            5.7,
+            56.61,
+            11.6,
+            4.9
+          ],
+          "features": [],
+          "series": "mobisecure"
+        },
+        {
+          "label": "Cảnh báo mật độ lưu lượng xe, tắc đường",
+          "box": [
+            66.3,
+            64.8,
+            17.5,
+            7.82
+          ],
+          "features": [
+            "vehicle-counting"
+          ]
+        },
+        {
+          "label": "Cảnh báo dừng, đỗ xe sai quy định",
+          "box": [
+            15,
+            74.63,
+            21.5,
+            4.9
+          ],
+          "features": [
+            "illegal-parking"
+          ]
+        },
+        {
+          "label": "Phát hiện xe chở phế thải",
+          "box": [
+            52.3,
+            75.8,
+            16.3,
+            4.9
+          ],
+          "features": [
+            "vehicle-detection"
+          ]
+        },
+        {
+          "label": "Tìm kiếm, truy vết người và phương tiện",
+          "box": [
+            17.8,
+            82.7,
+            24.8,
+            4.9
+          ],
+          "features": [
+            "blacklist-search",
+            "lpr"
+          ]
+        },
+        {
+          "label": "Cảnh báo sớm hành vi bạo lực đánh nhau",
+          "box": [
+            48.2,
+            83.98,
+            25.6,
+            4.9
+          ],
+          "features": []
+        }
+      ]
+    },
+    {
+      "id": "giao-thong",
+      "name": "Giao thông",
+      "page": "tr.58",
+      "image": "/img/profile/scene-giao-thong.webp",
+      "productsImage": "/img/profile/scene-giao-thong-products.webp",
+      "solution": "giao-thong",
+      "series": [
+        "v-secure",
+        "autosecure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Phát hiện đỗ xe, đón trả sai quy định",
+          "box": [
+            20.5,
+            8.54,
+            13.4,
+            7.82
+          ],
+          "features": [
+            "illegal-parking"
+          ]
+        },
+        {
+          "label": "Điều khiển đèn giao thông thông minh",
+          "box": [
+            42,
+            8.54,
+            17.1,
+            7.82
+          ],
+          "features": []
+        },
+        {
+          "label": "Giám sát tốc độ",
+          "box": [
+            14,
+            17.67,
+            10.6,
+            4.9
+          ],
+          "features": []
+        },
+        {
+          "label": "Phát hiện không đội mũ bảo hiểm",
+          "box": [
+            60.6,
+            44.68,
+            21.5,
+            4.9
+          ],
+          "features": []
+        },
+        {
+          "label": "Nhận diện hành vi tài xế",
+          "box": [
+            3,
+            46.09,
+            15.5,
+            4.9
+          ],
+          "features": [
+            "driver-monitoring"
+          ],
+          "series": "autosecure"
+        },
+        {
+          "label": "Phát hiện đi ngược chiều",
+          "box": [
+            66.2,
+            53.11,
+            16.1,
+            4.9
+          ],
+          "features": [
+            "wrong-way"
+          ]
+        },
+        {
+          "label": "Phát hiện vượt đèn đỏ",
+          "box": [
+            13,
+            56.38,
+            14.4,
+            4.9
+          ],
+          "features": [
+            "red-light"
+          ]
+        },
+        {
+          "label": "Tìm kiếm truy vết đối tượng",
+          "box": [
+            4.1,
+            69.71,
+            17.7,
+            4.9
+          ],
+          "features": [
+            "lpr",
+            "blacklist-search"
+          ]
+        },
+        {
+          "label": "Phân tích lưu lượng giao thông",
+          "box": [
+            76.4,
+            71.7,
+            19.7,
+            4.9
+          ],
+          "features": [
+            "vehicle-counting"
+          ]
+        },
+        {
+          "label": "Chở quá số người quy định",
+          "box": [
+            38.7,
+            83.05,
+            17.1,
+            4.9
+          ],
+          "features": []
+        }
+      ]
+    },
+    {
+      "id": "van-phong",
+      "name": "Văn phòng",
+      "page": "tr.59",
+      "image": "/img/profile/scene-van-phong.webp",
+      "productsImage": "/img/profile/scene-van-phong-products.webp",
+      "solution": "toa-nha",
+      "series": [
+        "biosecure",
+        "v-secure"
+      ],
+      "hotspots": [
+        {
+          "label": "Giám sát khu vực hạn chế",
+          "box": [
+            64.6,
+            0,
+            17.9,
+            5.13
+          ],
+          "features": [
+            "intrusion"
+          ]
+        },
+        {
+          "label": "Cảnh báo cháy, khói",
+          "box": [
+            37.8,
+            3.52,
+            14.2,
+            5.13
+          ],
+          "features": []
+        },
+        {
+          "label": "Xâm nhập an ninh",
+          "box": [
+            69.1,
+            8.31,
+            13.2,
+            5.13
+          ],
+          "features": [
+            "intrusion",
+            "line-crossing"
+          ]
+        },
+        {
+          "label": "Điểm danh chấm công",
+          "box": [
+            20.5,
+            14.98,
+            16.1,
+            5.13
+          ],
+          "features": [
+            "face-recognition",
+            "fingerprint"
+          ],
+          "series": "biosecure"
+        },
+        {
+          "label": "Tìm kiếm người, phương tiện",
+          "box": [
+            9.7,
+            22.81,
+            20.2,
+            5.13
+          ],
+          "features": [
+            "blacklist-search",
+            "lpr"
+          ]
+        },
+        {
+          "label": "Nhận diện biển số",
+          "box": [
+            2.8,
+            31.12,
+            13,
+            5.13
+          ],
+          "features": [
+            "lpr"
+          ]
+        },
+        {
+          "label": "Quản lý giám sát, lưu giữ",
+          "box": [
+            76.7,
+            82.11,
+            17.2,
+            5.13
+          ],
+          "features": []
+        },
+        {
+          "label": "Quản lý khách ra vào",
+          "box": [
+            53.1,
+            82.23,
+            14.7,
+            5.13
+          ],
+          "features": [
+            "eid",
+            "face-recognition"
+          ],
+          "series": "biosecure"
+        }
+      ]
+    },
+    {
+      "id": "truong-hoc",
+      "name": "Trường học",
+      "page": "tr.60",
+      "image": "/img/profile/scene-truong-hoc.webp",
+      "productsImage": "/img/profile/scene-truong-hoc-products.webp",
+      "solution": "truong-hoc",
+      "series": [
+        "biosecure",
+        "v-secure",
+        "autosecure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Khu vực phụ huynh đón học sinh",
+          "box": [
+            45.5,
+            0.09,
+            15.5,
+            7.59
+          ],
+          "features": [
+            "face-recognition"
+          ]
+        },
+        {
+          "label": "Điểm danh chấm công",
+          "box": [
+            3.6,
+            2.95,
+            14.9,
+            4.85
+          ],
+          "features": [
+            "face-recognition"
+          ],
+          "series": "biosecure"
+        },
+        {
+          "label": "Xâm nhập an ninh",
+          "box": [
+            71.7,
+            3.06,
+            12.2,
+            4.85
+          ],
+          "features": [
+            "intrusion"
+          ]
+        },
+        {
+          "label": "Chào mừng",
+          "box": [
+            3.6,
+            11.06,
+            8.4,
+            4.85
+          ],
+          "features": [
+            "face-recognition"
+          ]
+        },
+        {
+          "label": "Nhận diện biển số",
+          "box": [
+            3.6,
+            25.92,
+            12,
+            4.85
+          ],
+          "features": [
+            "lpr"
+          ]
+        },
+        {
+          "label": "Quản lý xe đưa đón học sinh",
+          "box": [
+            3.5,
+            33.01,
+            12.7,
+            7.7
+          ],
+          "features": [],
+          "series": "autosecure"
+        },
+        {
+          "label": "Giám sát thi cử, quản lý phòng học",
+          "box": [
+            83.4,
+            78.83,
+            12.6,
+            7.59
+          ],
+          "features": []
+        },
+        {
+          "label": "Quản lý giám sát, lưu giữ",
+          "box": [
+            53.5,
+            81.58,
+            15.9,
+            4.85
+          ],
+          "features": []
+        },
+        {
+          "label": "Tìm kiếm người, phương tiện",
+          "box": [
+            46.4,
+            88.21,
+            18.4,
+            4.85
+          ],
+          "features": [
+            "blacklist-search",
+            "lpr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trai-giam",
+      "name": "Trại giam, cơ sở cai nghiện",
+      "page": "tr.61",
+      "image": "/img/profile/scene-trai-giam.webp",
+      "productsImage": "/img/profile/scene-trai-giam-products.webp",
+      "solution": "trai-giam",
+      "series": [
+        "biosecure",
+        "v-secure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Giám sát phân trại",
+          "box": [
+            28.4,
+            0,
+            12.2,
+            4.9
+          ],
+          "features": [
+            "intrusion"
+          ]
+        },
+        {
+          "label": "Giám sát phạm nhân",
+          "box": [
+            12.4,
+            8.66,
+            13.7,
+            4.9
+          ],
+          "features": [
+            "people-detection"
+          ]
+        },
+        {
+          "label": "Định danh và giám sát khu thăm gặp",
+          "box": [
+            9.3,
+            15.09,
+            14.6,
+            7.71
+          ],
+          "features": [
+            "face-recognition",
+            "eid"
+          ],
+          "series": "biosecure"
+        },
+        {
+          "label": "Điểm danh kiểm diện",
+          "box": [
+            73.5,
+            55.45,
+            14.2,
+            4.9
+          ],
+          "features": [
+            "face-recognition"
+          ],
+          "series": "mobisecure"
+        },
+        {
+          "label": "Hàng rào điện tử",
+          "box": [
+            66.7,
+            67.73,
+            11.3,
+            4.9
+          ],
+          "features": [
+            "line-crossing",
+            "intrusion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cua-khau",
+      "name": "Cửa khẩu, biên giới",
+      "page": "tr.62",
+      "image": "/img/profile/scene-cua-khau.webp",
+      "productsImage": "/img/profile/scene-cua-khau-products.webp",
+      "solution": null,
+      "series": [
+        "v-secure",
+        "biosecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Cảnh báo tụ tập biểu tình",
+          "box": [
+            21.5,
+            12.4,
+            16.4,
+            4.9
+          ],
+          "features": [
+            "crowd"
+          ]
+        },
+        {
+          "label": "Định danh và quản lý luồng xuất nhập cảnh",
+          "box": [
+            7.2,
+            18.6,
+            17.6,
+            7.71
+          ],
+          "features": [
+            "eid",
+            "face-recognition"
+          ],
+          "series": "biosecure"
+        },
+        {
+          "label": "Kiểm soát vượt biên: phát hiện người xâm nhập vượt biên",
+          "box": [
+            67.6,
+            52.17,
+            17,
+            10.63
+          ],
+          "features": [
+            "intrusion",
+            "line-crossing"
+          ]
+        },
+        {
+          "label": "Kiểm soát phương tiện lưu thông qua cửa khẩu",
+          "box": [
+            1.7,
+            69.83,
+            17,
+            7.71
+          ],
+          "features": [
+            "lpr"
+          ]
+        },
+        {
+          "label": "Kiểm soát người lưu thông qua cửa khẩu",
+          "box": [
+            48.1,
+            69.83,
+            17.1,
+            7.71
+          ],
+          "features": [
+            "face-recognition",
+            "people-counting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dien-luc",
+      "name": "Điện lực",
+      "page": "tr.63",
+      "image": "/img/profile/scene-dien-luc.webp",
+      "productsImage": "/img/profile/scene-dien-luc-products.webp",
+      "solution": null,
+      "series": [
+        "v-secure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Cảnh báo cháy, khói sớm",
+          "box": [
+            11.4,
+            5.04,
+            16,
+            4.9
+          ],
+          "features": []
+        },
+        {
+          "label": "Giám sát đường dây truyền tải",
+          "box": [
+            5.5,
+            11.47,
+            13.2,
+            7.71
+          ],
+          "features": []
+        },
+        {
+          "label": "Phân quyền người được vào khu vực hạn chế",
+          "box": [
+            67.5,
+            56.97,
+            17.8,
+            7.82
+          ],
+          "features": [
+            "face-recognition",
+            "card-id"
+          ]
+        },
+        {
+          "label": "Cảnh báo người xâm nhập vào vùng nguy hiểm",
+          "box": [
+            5.5,
+            67.73,
+            16.9,
+            7.82
+          ],
+          "features": [
+            "intrusion"
+          ]
+        },
+        {
+          "label": "Camera gắn người ghi thao tác kỹ thuật",
+          "box": [
+            55.3,
+            75.8,
+            17.5,
+            7.82
+          ],
+          "features": [],
+          "series": "mobisecure"
+        }
+      ]
+    },
+    {
+      "id": "the-thao",
+      "name": "Thể thao",
+      "page": "tr.64",
+      "image": "/img/profile/scene-the-thao.webp",
+      "productsImage": "/img/profile/scene-the-thao-products.webp",
+      "solution": null,
+      "series": [
+        "v-secure",
+        "mobisecure"
+      ],
+      "hotspots": [
+        {
+          "label": "Cung cấp dữ liệu tối ưu hiệu suất vận động viên, xây dựng chiến thuật",
+          "box": [
+            14.5,
+            5.62,
+            19.7,
+            7.71
+          ],
+          "features": []
+        },
+        {
+          "label": "E-Profile: hồ sơ vận động viên thông minh",
+          "box": [
+            5.9,
+            17.08,
+            17.9,
+            7.71
+          ],
+          "features": []
+        },
+        {
+          "label": "Phát hiện tình huống nhạy cảm",
+          "box": [
+            2.2,
+            32.4,
+            17.4,
+            5.13
+          ],
+          "features": []
+        },
+        {
+          "label": "Livestream chất lượng cao",
+          "box": [
+            44.5,
+            15.21,
+            14.7,
+            5.13
+          ],
+          "features": []
+        },
+        {
+          "label": "Tích hợp quay chậm đa góc, độ phân giải 4K",
+          "box": [
+            44.5,
+            26.09,
+            15.7,
+            7.71
+          ],
+          "features": []
+        },
+        {
+          "label": "Camera AI quản lý ra vào sân tự động kết hợp thẻ căn cước",
+          "box": [
+            57.2,
+            47.96,
+            16.3,
+            7.71
+          ],
+          "features": [
+            "face-recognition",
+            "eid"
+          ]
+        },
+        {
+          "label": "Cắt highlight sử dụng AI, ghi lại các pha bóng ấn tượng",
+          "box": [
+            50.7,
+            70.53,
+            16.4,
+            7.71
+          ],
+          "features": []
+        },
+        {
+          "label": "Theo dõi đường đi của bóng",
+          "box": [
+            40.6,
+            86.79,
+            15.6,
+            5.13
+          ],
+          "features": []
+        }
+      ]
+    }
+  ]
+}

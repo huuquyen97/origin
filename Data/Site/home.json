@@ -58,15 +58,15 @@
       "image": "/img/scenes/meeting-1.jpg"
     },
     {
-      "value": "2 triệu",
-      "label": "Sản phẩm/năm là công suất nhà máy tại KCN Thăng Long 3, Vĩnh Phúc",
-      "sub": "Khoảng 95.000 camera/tháng · 2 dây chuyền SMT + 2 dây chuyền lắp ráp",
+      "value": "≈1,4 triệu",
+      "label": "PCBA/năm là công suất 2 dây chuyền SMT, 82.000 linh kiện/giờ mỗi dây chuyền",
+      "sub": "Lắp ráp, kiểm tra, đóng gói ≈1,1–1,5 triệu/năm theo từng trạm · Nguồn: Hồ sơ năng lực 2026, tr.34–35",
       "image": "/img/scenes/rnd-1.jpg"
     },
     {
-      "value": "82%",
-      "label": "Tỷ lệ làm chủ công nghệ trung bình trên 7 lĩnh vực, từ cơ khí, điện tử đến AI và VMS",
-      "sub": "Nguồn: Báo cáo tóm tắt năng lực MK Vision",
+      "value": "8",
+      "label": "Công nghệ lõi: cơ khí, vật liệu, điện tử, phần mềm nhúng, quang học, AI tại biên, VMS và sản xuất",
+      "sub": "Mức làm chủ theo từng mảng xem trang Năng lực · Nguồn: Hồ sơ năng lực 2026, tr.7–32",
       "image": "/img/scenes/products.jpg"
     },
     {

@@ -130,6 +130,58 @@ export const HomeSchema = z.object({
   searchSuggestions: z.array(z.string()),
 });
 
+/* ---------- Nội dung từ hồ sơ năng lực (Data/Site): nguồn là tài liệu nội bộ không phát hành, ghi trang ở từng mục ---------- */
+const Page = z.string(); // "tr.45"
+
+export const CatalogSchema = z.object({
+  title: z.string(),
+  date: z.string(),
+  source: z.string(),
+  sourcePages: Page,
+  envLegend: z.record(z.string(), z.string()),
+  series: z.array(z.object({ id: z.string(), name: z.string(), short: z.string(), points: z.array(z.string()), lines: z.array(z.string()).optional() })),
+  models: z.array(z.object({ model: z.string(), series: z.string(), mp: z.string(), form: z.string(), connect: z.string(), soc: z.string(), env: z.string() })),
+  shots: z.array(z.object({ image: z.string(), title: z.string(), page: Page })),
+});
+
+const Rows = z.array(z.array(z.string()));
+export const CapabilitySchema = z.object({
+  source: z.string(),
+  definition: z.object({
+    page: Page, text: z.string(), highlight: z.string(), direction: z.string(), strategic: z.array(z.string()),
+    flow: z.object({ edge: z.array(z.string()), cloud: z.array(z.string()) }), factors: z.array(z.string()),
+  }),
+  pillars: z.object({ page: Page, items: z.array(z.object({ name: z.string(), image: z.string() })) }),
+  rnd: z.object({ page: Page, stages: z.array(z.object({ code: z.string(), name: z.string().optional(), goal: z.string(), tasks: z.array(z.string()) })) }),
+  cores: z.array(z.object({
+    n: z.number(), name: z.string(), page: Page,
+    groups: z.array(z.object({ name: z.string(), mastery: z.number().min(0).max(100).optional(), items: z.array(z.string()) })),
+  })),
+  manufacturing: z.object({
+    pcba: z.object({ page: Page, rows: Rows }),
+    assembly: z.object({ page: Page, note: z.string(), headers: z.array(z.string()), rows: Rows }),
+    cleanroom: z.object({ page: Page, image: z.string(), rows: Rows }),
+    photos: z.array(z.object({ image: z.string(), caption: z.string(), page: Page })),
+  }),
+  qc: z.object({ page: Page, items: z.array(z.object({ code: z.string(), points: z.array(z.string()) })) }),
+});
+
+export const ScenariosSchema = z.object({
+  source: z.string(),
+  scenarios: z.array(z.object({
+    id: z.string(), name: z.string(), page: Page, image: z.string(), productsImage: z.string(),
+    solution: z.string().nullable(), series: z.array(z.string()),
+    hotspots: z.array(z.object({ label: z.string(), box: z.tuple([z.number(), z.number(), z.number(), z.number()]), features: z.array(z.string()), series: z.string().optional() })),
+  })),
+});
+
+export const FeatureShotSchema = z.object({ product: z.string(), image: z.string(), title: z.string(), page: Page, conflicts: z.array(z.string()).default([]) });
+
+export type Catalog = z.infer<typeof CatalogSchema>;
+export type Capability = z.infer<typeof CapabilitySchema>;
+export type Scenario = z.infer<typeof ScenariosSchema>["scenarios"][number];
+export type FeatureShot = z.infer<typeof FeatureShotSchema>;
+
 export type DocType = (typeof DOC_TYPES)[number];
 export type DocStatus = (typeof DOC_STATUSES)[number];
 export type AiFeature = z.infer<typeof AiFeatureSchema>;

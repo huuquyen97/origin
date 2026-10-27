@@ -5,9 +5,10 @@ import type { z } from "zod";
 import { fileUrl, pathKey } from "@/lib/file-slug.mjs";
 import { catLabel, kindOf, KEY_SPEC_LABELS, specLabel, type NeedId } from "@/lib/labels";
 import {
-  AiFeatureSchema, AiSchema, CompanySchema, DocumentSchema, HomeSchema, ProductSchema, SeriesSchema, SolutionSchema,
-  type AiAlgorithm, type AiFeature, type Company, type DocStatus, type DocType, type Home, type Product, type Series, type Solution,
+  AiFeatureSchema, AiSchema, CapabilitySchema, CatalogSchema, CompanySchema, DocumentSchema, FeatureShotSchema, HomeSchema, ProductSchema, ScenariosSchema, SeriesSchema, SolutionSchema,
+  type AiAlgorithm, type AiFeature, type Capability, type Catalog, type Company, type DocStatus, type DocType, type FeatureShot, type Home, type Product, type Scenario, type Series, type Solution,
 } from "./schema";
+import { modelKey } from "@/lib/inventory/types";
 
 const ROOT = process.cwd();
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -183,7 +184,30 @@ function load() {
   }));
   for (const a of aiList) if (!features.some((f) => f.id === a.feature)) throw new Error(`[Data] Data/AI/algorithms.json: "${a.name}" gắn tính năng không có trong features.json — ${a.feature}`);
 
-  return { products: productList, productMap, solutions: solutionList, solutionMap, documents, ai: aiList, features: featureList, series, company, home };
+  // Hồ sơ năng lực 2026: danh mục model, năng lực, kịch bản ngành, ảnh chú thích tính năng
+  const catalog = parse(CatalogSchema, readJson(join(DATA, "Site/catalog.json")), "Data/Site/catalog.json");
+  const capability = parse(CapabilitySchema, readJson(join(DATA, "Site/capability.json")), "Data/Site/capability.json");
+  const scenarios = parse(ScenariosSchema, readJson(join(DATA, "Site/scenarios.json")), "Data/Site/scenarios.json").scenarios;
+  const shots = readArray("Site/feature-shots.json", FeatureShotSchema);
+  const fail = (file: string, msg: string) => { throw new Error(`[Data] Data/Site/${file}: ${msg}`); };
+  for (const m of catalog.models) if (!catalog.series.some((s) => s.id === m.series)) fail("catalog.json", `${m.model} gắn series không có — ${m.series}`);
+  for (const sc of scenarios) {
+    if (sc.solution && !solutionMap.has(sc.solution)) fail("scenarios.json", `${sc.id} liên kết giải pháp không có — ${sc.solution}`);
+    for (const s of [...sc.series, ...sc.hotspots.flatMap((h) => (h.series ? [h.series] : []))]) if (!seriesOrder.includes(s)) fail("scenarios.json", `${sc.id} gắn dòng không có — ${s}`);
+    for (const h of sc.hotspots) for (const f of h.features) if (!features.some((x) => x.id === f)) fail("scenarios.json", `${sc.id} / "${h.label}" gắn tính năng không có — ${f}`);
+  }
+  for (const s of shots) if (!productMap.has(s.product)) fail("feature-shots.json", `sản phẩm không có — ${s.product}`);
+  // Model trong danh mục ↔ trang sản phẩm: chỉ khi trùng tên model (không khớp gần đúng)
+  const slugByModel = new Map(productList.map((p) => [modelKey(p.model), p.slug]));
+  // Danh mục ghi series A (Không AI) nhưng datasheet trên web có tính năng AI: hiện cảnh báo, chờ PM chốt
+  const conflictOf = (series: string, slug: string | null) =>
+    slug && series === "A" && productMap.get(slug)!.ai.length ? "Danh mục ghi “Không hỗ trợ AI” nhưng datasheet trên web có tính năng AI. Cần PM xác nhận trước khi báo khách." : null;
+  const catalogFull = {
+    ...catalog,
+    models: catalog.models.map((m) => { const slug = slugByModel.get(modelKey(m.model)) ?? null; return { ...m, slug, conflict: conflictOf(m.series, slug) }; }),
+  };
+
+  return { products: productList, productMap, solutions: solutionList, solutionMap, documents, ai: aiList, features: featureList, series, company, home, catalog: catalogFull, capability, scenarios, shots };
 }
 
 let cache: ReturnType<typeof load> | null = null;
@@ -203,6 +227,32 @@ export const getSeries = (): Series[] => getData().series;
 export const getCompany = (): Company => getData().company;
 export const getHome = (): Home => getData().home;
 export const seriesName = (id: string) => getData().series.find((s) => s.id === id)?.name ?? id;
+export type CatalogFull = Omit<Catalog, "models"> & { models: (Catalog["models"][number] & { slug: string | null; conflict: string | null })[] };
+export const getCatalog = (): CatalogFull => getData().catalog;
+export const getCapability = (): Capability => getData().capability;
+export const getScenarios = (): Scenario[] => getData().scenarios;
+export const getFeatureShots = (slug: string): FeatureShot[] => getData().shots.filter((s) => s.product === slug);
+/** Kịch bản ngành rút gọn cho Client Component (đã đổi id → tên hiển thị); `solution` lọc theo giải pháp nếu có */
+export function getSceneData(solution?: string) {
+  const ref = (id: string) => ({ id, name: seriesName(id) });
+  return getData().scenarios
+    .filter((sc) => !solution || sc.solution === solution)
+    .map((sc) => ({
+      ...sc,
+      solution: sc.solution ? { slug: sc.solution, name: getSolution(sc.solution)!.shortName || getSolution(sc.solution)!.name } : null,
+      series: sc.series.map(ref),
+      hotspots: sc.hotspots.map((h) => ({
+        ...h,
+        features: h.features.map((id) => ({ id, name: aiFeatureName(id), count: getData().features.find((f) => f.id === id)?.products.length ?? 0 })),
+        series: h.series ? ref(h.series) : null,
+      })),
+    }));
+}
+/** Sản phẩm trên web nhưng không có trong danh mục camera hiện hành (chỉ xét dòng V-Secure) — để báo PM đối chiếu */
+export const productsNotInCatalog = () => {
+  const inCat = new Set(getData().catalog.models.map((m) => m.slug));
+  return getData().products.filter((p) => p.series === "v-secure" && !inCat.has(p.slug));
+};
 
 /* ---------- Thông số chính, nhu cầu (dùng chung cho card, trang chi tiết, bộ lọc) ---------- */
 /** Giá trị của hàng thông số đầu tiên có nhãn hiển thị trùng label */

@@ -97,6 +97,7 @@ export default function HomePage() {
           <div className="reveal mb-8 grid justify-items-center gap-3 text-center md:mb-10">
             <h2 className="heading-1">Năng lực MK Vision</h2>
             <p className="lead">Làm chủ công nghệ, sản xuất tại Việt Nam. Số liệu trích từ hồ sơ năng lực của MK Vision.</p>
+            <Link href="/nang-luc" className="link-more">Xem năng lực chi tiết <ArrowRight aria-hidden /></Link>
           </div>
           <div className="grid gap-4 md:grid-cols-12 md:gap-6">
             {home.stats.slice(0, 4).map((s, i) => (

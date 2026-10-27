@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { PageHero } from "@/components/hero";
+import { ScenarioExplorer, ScenarioExplorerView } from "@/components/solutions/scenario-explorer";
 import { SolutionsBrowser, SolutionsBrowserView } from "@/components/solutions/solutions-browser";
-import { getSolutions } from "@/lib/data";
+import { getSceneData, getSolutions } from "@/lib/data";
+import { SCENE } from "@/lib/strings";
 
 export const metadata: Metadata = { title: "Giải pháp" };
 
 export default function SolutionsPage() {
+  const scenes = getSceneData();
   const sols = getSolutions().map(({ slug, name, shortName, industry, summary, cover }) => ({ slug, name, shortName, industry, summary, cover }));
   return (
     <>
@@ -15,6 +18,14 @@ export default function SolutionsPage() {
         <Suspense fallback={<SolutionsBrowserView solutions={sols} initialIndustry="" />}>
           <SolutionsBrowser solutions={sols} />
         </Suspense>
+
+        <section id="kich-ban" className="mt-16 scroll-mt-24 border-t border-line pt-12" aria-labelledby="scene-h">
+          <h2 id="scene-h" className="heading-2 mb-2">{SCENE.title}</h2>
+          <p className="mb-6 text-[15px] text-muted">{SCENE.lead}</p>
+          <Suspense fallback={<ScenarioExplorerView scenes={scenes} />}>
+            <ScenarioExplorer scenes={scenes} />
+          </Suspense>
+        </section>
       </main>
     </>
   );

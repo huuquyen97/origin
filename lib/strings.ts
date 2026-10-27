@@ -9,6 +9,7 @@ export const NAV = [
   { href: "/tai-lieu", label: "Tài liệu" },
   { href: "/so-sanh", label: "So sánh" },
   { href: "/ton-kho", label: "Tồn kho" },
+  { href: "/nang-luc", label: "Năng lực" },
 ] as const;
 
 export const DOC_TYPE_LABEL: Record<DocType, string> = {
@@ -73,6 +74,38 @@ export const INV = {
   updated: "Cập nhật",
   inStock: "Còn hàng",
   viewAll: "Xem bảng tồn kho",
+};
+
+/** Nội dung lấy từ hồ sơ năng lực 2026 (tài liệu nội bộ, không xem/tải trên web) */
+export const PROFILE = {
+  source: (pages: string) => `Nguồn: Hồ sơ năng lực MK Vision 2026, ${pages}. Tài liệu nội bộ, không phát hành trên web.`,
+  illustration: "Hình minh họa từ hồ sơ năng lực. Thông số chính xác của model xem bảng thông số / datasheet.",
+  short: "Hồ sơ năng lực 2026,",
+};
+
+export const CATALOG = {
+  title: "Danh mục model camera hiện hành",
+  link: "Danh mục 27 model camera hiện hành",
+  noPage: "Chưa có datasheet trên web",
+  legend: "Model gạch chân đã có trang thông số; model còn lại chưa có datasheet trên web. Biểu tượng cảnh báo: phân hạng series khác datasheet, cần PM xác nhận.",
+  notInCatalog: "Model V-Secure trên web chưa có trong danh mục hiện hành",
+  notInCatalogNote: "Tên model không trùng với danh mục 06/2026 (có thể đã đổi tên hoặc ngừng). Cần PM xác nhận trước khi chào khách.",
+  cols: { model: "Model", series: "Series", mp: "Độ phân giải", form: "Kiểu dáng", connect: "Kết nối", soc: "SoC", env: "Môi trường" },
+  filters: { series: "Series", form: "Kiểu dáng", mp: "Độ phân giải", connect: "Kết nối", env: "Môi trường" },
+  empty: "Không có model khớp bộ lọc.",
+};
+
+export const SCENE = {
+  title: "Kịch bản ứng dụng theo ngành",
+  lead: "Chọn một tình huống (hoặc điểm trên hình) để xem tính năng AI và dòng sản phẩm liên quan.",
+  directional: "Kịch bản định hướng trong hồ sơ năng lực, chưa có giải pháp chi tiết trên web. Trao đổi với Presales trước khi chào khách.",
+  products: "Sản phẩm đề xuất trong hồ sơ",
+  features: "Tính năng AI liên quan",
+  series: "Dòng sản phẩm",
+  noFeature: "Chưa có tính năng chuẩn tương ứng trên web; hỏi Presales khi chào khách.",
+  noProduct: "Chưa model nào trên web ghi tính năng này trong datasheet; xác nhận với PM / Presales trước khi chào khách.",
+  solution: "Xem giải pháp",
+  pick: "Chọn một tình huống",
 };
 
 /** Giờ Việt Nam: "10:32 22/10/2026" */

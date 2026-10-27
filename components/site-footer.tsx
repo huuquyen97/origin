@@ -37,6 +37,7 @@ export function SiteFooter() {
           {col("Giải pháp", sols.map((s) => ({ href: `/giai-phap/${s.slug}`, label: s.shortName || s.name })))}
           {col("Tra cứu", [
             { href: "/san-pham", label: "Tất cả sản phẩm" },
+            { href: "/san-pham/danh-muc", label: "Danh mục model" },
             { href: "/so-sanh", label: "So sánh" },
             { href: "/thuat-toan-ai", label: "Tính năng AI" },
             { href: "/tai-lieu", label: "Thư viện tài liệu" },
@@ -44,7 +45,9 @@ export function SiteFooter() {
           ])}
           {col("Công ty", [
             { href: "https://mkvision.com/", label: "mkvision.com", external: true },
-            { href: "/tai-lieu?type=profile", label: "Hồ sơ năng lực" },
+            { href: "/nang-luc", label: "Năng lực MK Vision" },
+            { href: "/giai-phap#kich-ban", label: "Kịch bản ứng dụng" },
+            { href: "/tai-lieu?type=profile", label: "Slide hồ sơ năng lực" },
             { href: "/tai-lieu?type=certificate", label: "Chứng nhận" },
           ])}
         </div>

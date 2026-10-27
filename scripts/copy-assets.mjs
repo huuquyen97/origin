@@ -6,6 +6,8 @@ import { fileUrl } from "../lib/file-slug.mjs";
 
 const root = process.cwd();
 const SOURCES = ["Data/MK Vision/Docs", "Data/MK Vision/Solutions"];
+// Tài liệu chỉ dùng làm nguồn nội dung, không phát hành trên web (không xem / tải được): hồ sơ năng lực có BOM, giá, tên nhân sự
+const NOT_PUBLISHED = [/^Data\/MK Vision\/Docs\/MKV Profile\//];
 
 function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
@@ -30,6 +32,7 @@ const count = { link: 0, copy: 0, skip: 0 };
 for (const dir of SOURCES) {
   for (const abs of walk(join(root, dir))) {
     const rel = relative(root, abs).replace(/\\/g, "/");
+    if (NOT_PUBLISHED.some((r) => r.test(rel))) continue;
     const url = fileUrl(rel);
     if (seen.has(url)) throw new Error(`Trùng URL tài liệu: "${rel}" và "${seen.get(url)}" -> ${url}`);
     seen.set(url, rel);

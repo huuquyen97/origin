@@ -6,7 +6,9 @@ import { PageHero } from "@/components/hero";
 import { DocRow, ProductCard } from "@/components/cards";
 import { Shots } from "@/components/solutions/shots";
 import { DocKit, type KitItem } from "@/components/solutions/doc-kit";
-import { getProduct, getSeries, getSolution, getSolutions, toCard, type Doc } from "@/lib/data";
+import { ScenarioExplorerView } from "@/components/solutions/scenario-explorer";
+import { getProduct, getSceneData, getSeries, getSolution, getSolutions, toCard, type Doc } from "@/lib/data";
+import { SCENE } from "@/lib/strings";
 import { catLabel } from "@/lib/labels";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -33,6 +35,7 @@ export default async function SolutionPage({ params }: Props) {
   const prods = s.products.map(getProduct).filter((p) => p !== undefined);
   const series = getSeries().filter((x) => s.relatedSeries.includes(x.id));
   const shots = s.images;
+  const scenes = getSceneData(s.slug);
 
   // Bộ tài liệu gửi khách: tài liệu của giải pháp + datasheet tốt nhất của từng model đề xuất, chỉ lấy "Gửi khách được"
   const rank = (d: Doc) => (d.ext === "pdf" ? 0 : 1);
@@ -152,6 +155,14 @@ export default async function SolutionPage({ params }: Props) {
             )}
           </aside>
         </div>
+
+        {scenes.length > 0 && (
+          <section className="mt-14 border-t border-line pt-12" aria-labelledby="scene-h">
+            <h2 id="scene-h" className="heading-2 mb-2">{SCENE.title}</h2>
+            <p className="mb-6 text-[15px] text-muted">{SCENE.lead}</p>
+            <ScenarioExplorerView scenes={scenes} tabs={false} />
+          </section>
+        )}
       </main>
     </>
   );

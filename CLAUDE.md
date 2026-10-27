@@ -41,7 +41,7 @@ Quy tắc chi tiết nằm trong `.claude/rules/`. Rule có `paths` chỉ nạp 
 
 Agent `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Manager, chỉ báo cáo, không sửa. Mở phiên mới mới nạp được.
 
-## Trạng thái dự án (cập nhật 22/10/2026)
+## Trạng thái dự án (cập nhật 27/10/2026)
 
 Git: remote `origin` = https://github.com/huuquyen97/origin.git (private). `main` đã gộp `feature/update_giao_dien_hikvision`, `feature/login-google`, `feature/inventory`; từ 27/10 có cả tài liệu gốc `Data/MK Vision` (~640MB) để Vercel tự build từ GitHub. Làm tính năng mới thì tách nhánh từ `main`.
 
@@ -50,7 +50,7 @@ Triển khai: Vercel Production https://mk-vision-docs.vercel.app (project `mk-v
 ### Đã xong
 | Phần | Trạng thái |
 |---|---|
-| Website 8 trang (trang chủ, sản phẩm, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu, tồn kho) + đăng nhập | Chạy ổn: lint 0 lỗi (4 cảnh báo `<img>`), build 52 trang |
+| Website 10 trang (trang chủ, sản phẩm, danh mục model, chi tiết, so sánh, giải pháp, tính năng AI, tài liệu, tồn kho, năng lực) + đăng nhập | Chạy ổn: lint 0 lỗi (6 cảnh báo `<img>`), build 54 trang |
 | Dữ liệu | 24 sản phẩm, 17 giải pháp, 71 tài liệu có mô tả trong `documents.json` (105 file trong thư viện, file chưa mô tả mặc định Nội bộ), 28 tính năng AI chuẩn, 12 mô tả thuật toán |
 | Rules | CLAUDE.md tách thành 8 file trong `.claude/rules/` theo chuẩn Claude Code |
 | QA toàn site | Đã chạy (ảnh `screenshots/qa-*`); 18 hạng mục cải tiến đã làm, xem dưới |
@@ -70,7 +70,11 @@ Triển khai: Vercel Production https://mk-vision-docs.vercel.app (project `mk-v
 | MobiSecure MK22FC1E (21/10) | Thông số + mô tả lấy lại từ `Datasheet _Mobi Secure.pdf` (người dùng xóa datasheet `MK22FC1E - BWC 2MB_23022026.pdf`); MOBISECURE.pdf/.docx chuyển "Bản cũ"; bỏ LPR, Wi-Fi, ONVIF, bảo hành (không có trong datasheet chuẩn). Ảnh `screenshots/11-mobisecure-*` |
 | Tính năng AI (21/10) | Mô tả chỉ lấy từ `[MKV]-AI_Function_Description_v1.0.pdf` (thay file Excel cũ đã xóa): 12 mô tả trong `algorithms.json`. Từ điển `features.json` vẫn giữ tính năng theo thiết bị (28, link từ trang sản phẩm); bỏ 5 tính năng chỉ có ở Excel và không model nào ghi (thuộc tính khuôn mặt / người / phương tiện, Liveness, vi phạm giao thông chung). Ảnh `screenshots/13-*` |
 
+| Hồ sơ năng lực 2026 (27/10, nhánh `feature/nang-luc-danh-muc`, **chưa merge `main`**) | Nguồn `Docs/MKV Profile/MK Vision_Năng lực v1 2026.pdf` — **không phát hành** trên web (`NOT_PUBLISHED` trong copy-assets; 404, không có trong thư viện / tìm kiếm). Thêm: `/san-pham/danh-muc` (27 model camera, series A/B/E/S/K, lọc, `?q=`), `/nang-luc` (8 công nghệ lõi + % làm chủ, R&D, sản xuất, phòng sạch, QC; menu thứ 8), kịch bản 8 ngành có điểm nóng ở `/giai-phap#kich-ban` (`?kb=`) + 5 trang giải pháp, ảnh chú thích tính năng ở MK22FC1E / M6 / AutoSecure (kèm điểm lệch datasheet), số liệu trang chủ theo hồ sơ 2026, tìm kiếm có model danh mục + kịch bản + năng lực, lightbox có nút Đóng + Esc. QA agent đã chạy, đã sửa các lỗi trong phạm vi. Ảnh `screenshots/16-*` |
+
 ### Chưa xong / chờ người khác
+- **PM xác nhận danh mục 06/2026 vs datasheet**: VA50FA2V-40 / VB50FA1V / VB80FA1V không có trong danh mục (đổi tên hay ngừng?); VA50FA0V danh mục ghi series A "Không AI" nhưng datasheet có FR/LPR (web đang hiện cảnh báo vàng); VB50FB1V ghi "AI-ready" nhưng datasheet có sẵn FR + LPR; ảnh chú thích lệch datasheet: MK22FC1E "WiFi", M6 "màn hình cảm ứng", AutoSecure "360°" và "72h".
+- **Hồ sơ năng lực 2026 đang nằm trong git** (đưa lên cùng `Data/MK Vision` ở commit b9fff62, đã push): file có BOM + giá + tên nhân sự. Web không phục vụ file, nhưng ai đọc được repo GitHub / build Vercel đều xem được. Người dùng cần quyết định có gỡ khỏi git (lịch sử vẫn còn trừ khi viết lại lịch sử).
 - **Chứng nhận hợp quy AutoSecure mới**: người dùng sẽ bổ sung sau. Khi có file → thêm vào `documents.json` với `validFrom`/`validTo`, status `public`. Đến lúc đó Sales chỉ có bản Hết hạn.
 - **Datasheet MK Networks** (MKST28, MKSP28, MKSX30, MKSP10, MKEAP-650): tạm dùng bản docx hiện có, không chờ bản mới. Nếu sau này có PDF chính thức thì nhập `specs`, gỡ `unconfirmed`, đổi nhãn sang `public`.
 - **PM chốt các thông số xung đột** (danh sách trong `unconfirmed` của từng sản phẩm: zoom số VA50FA2V-40 16x/10x, VB80FA1V bản VN/EN, IP65/IP67 của T8, Wi-Fi 6/802.11ac MKEAP-650, ERPS MKISP12…).
@@ -84,11 +88,12 @@ Triển khai: Vercel Production https://mk-vision-docs.vercel.app (project `mk-v
 - **Cách deploy**: push `main` lên GitHub để Vercel tự build (nếu project đã nối repo — kiểm trong Vercel → Settings → Git), hoặc `npx vercel@65.3.1 deploy --prod` từ máy này (`.vercelignore` loại `.env*`, `public/files`…; CLI upload cả thư mục làm việc nên cất file chưa commit trước).
 
 ### Bước tiếp theo (session sau)
-1. Trên Vercel Production: đăng nhập thật bằng tài khoản @mkvision.com và tài khoản gmail cá nhân (phải bị từ chối); sửa một số trên Sheet, xem web đổi sau 1–2 phút.
-2. Feature 3 — **AI Chatbot tư vấn** (đã lên kế hoạch, chưa làm): `/tro-ly`, `POST /api/chat` dùng `@anthropic-ai/sdk`, model `claude-opus-5-5`, streaming, đưa toàn bộ catalog (sinh lúc build) vào system prompt có prompt cache, tồn kho đặt sau điểm cache; trả lời theo khung: tóm tắt yêu cầu → sản phẩm phù hợp (Đáp ứng / Một phần / Chưa) → điểm chưa đáp ứng → phương án chào → câu hỏi lại khách. Không giá / chiết khấu. Giới hạn ~30 câu/giờ/người, log mức dùng không log nội dung. Cần `ANTHROPIC_API_KEY` + hạn mức chi tiêu và 5–10 yêu cầu khách mẫu (đã bỏ tên khách). Làm trên nhánh mới từ `main`.
-3. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
-4. Bổ sung chứng nhận hợp quy AutoSecure khi người dùng gửi; nhập dữ liệu PM chốt, chạy `check-data` → build → screenshot.
-5. Các góp ý QA chưa làm: số liệu trang chủ ("2 triệu sản phẩm/năm" vs "95.000 camera/tháng") chưa có nguồn rõ; hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; lightbox ảnh giải pháp chưa đóng bằng Esc; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
+1. Review nhánh `feature/nang-luc-danh-muc` trên local rồi merge vào `main` khi người dùng đồng ý (không tự merge).
+2. Trên Vercel Production: đăng nhập thật bằng tài khoản @mkvision.com và tài khoản gmail cá nhân (phải bị từ chối); sửa một số trên Sheet, xem web đổi sau 1–2 phút.
+3. Feature 3 — **AI Chatbot tư vấn** (đã lên kế hoạch, chưa làm): `/tro-ly`, `POST /api/chat` dùng `@anthropic-ai/sdk`, model `claude-opus-5-5`, streaming, đưa toàn bộ catalog (sinh lúc build) vào system prompt có prompt cache, tồn kho đặt sau điểm cache; trả lời theo khung: tóm tắt yêu cầu → sản phẩm phù hợp (Đáp ứng / Một phần / Chưa) → điểm chưa đáp ứng → phương án chào → câu hỏi lại khách. Không giá / chiết khấu. Giới hạn ~30 câu/giờ/người, log mức dùng không log nội dung. Cần `ANTHROPIC_API_KEY` + hạn mức chi tiêu và 5–10 yêu cầu khách mẫu (đã bỏ tên khách). Làm trên nhánh mới từ `main`.
+4. Chạy lại agent `qatesting` trên bản mới; thử trang so sánh / sản phẩm trên điện thoại thật (ảnh mobile của script chụp — trang đặt trong iframe — chỉ hiện trạng thái ban đầu, chưa rõ nguyên nhân; mở trực tiếp ở 375px thì đúng).
+5. Bổ sung chứng nhận hợp quy AutoSecure khi người dùng gửi; nhập dữ liệu PM chốt, chạy `check-data` → build → screenshot.
+6. Các góp ý QA chưa làm: trang chủ cuộn ngang nhẹ (dải tab hero ở 375px, carousel ở 1440px); hero chi tiết sản phẩm dùng chung ảnh có áo "pavana"; ảnh VMS là giao diện rỗng; giải pháp "Ra vào camera AI" xếp ngành Tài chính – Ngân hàng và dùng chung ảnh với Tòa nhà.
 
 ### Quyết định quan trọng và lý do
 - **Dữ liệu giữ nguyên văn, chuẩn hoá chỉ ở lớp hiển thị** (`lib/labels.ts`, `features.json` aliases): datasheet là nguồn tin cậy; đổi tên ngay trong JSON sẽ mất dấu vết với tài liệu gốc.
@@ -109,4 +114,6 @@ Triển khai: Vercel Production https://mk-vision-docs.vercel.app (project `mk-v
 - **Tồn kho dùng `unstable_cache` + bản dự phòng bền vững thay vì biến trong bộ nhớ**: trên Vercel mỗi instance serverless có bộ nhớ riêng, bị tắt/khởi động lại bất kỳ lúc nào, nên cache trong tiến trình mất và mỗi instance gọi Google riêng. Chưa chuyển sang `use cache` vì phải bật Cache Components cho toàn site.
 - **Tài liệu gốc `Data/MK Vision` (~640MB) đưa lên git từ 27/10** (trước đó không, theo yêu cầu người dùng): để Vercel tự build từ GitHub, không phụ thuộc máy có đủ `/Data`; repo private. 3 catalogue ~57MB vượt mức cảnh báo 50MB của GitHub (dưới giới hạn 100MB); file > 100MB phải dùng Git LFS. `Data/Design` vẫn không đưa lên.
 - **Function động chỉ đóng gói JSON dữ liệu, không kèm tài liệu gốc** (`next.config.ts`: `outputFileTracingExcludes` loại `Data/MK Vision`, `Data/Design`, `public/files`; `outputFileTracingIncludes` thêm `Data/*/**/*.json` + `lib/generated/files.json` cho `/api/ton-kho`): `lib/data` đọc bằng `fs` lúc chạy nên Next không tự đóng gói. Route API mới dùng `lib/data` (VD chatbot) phải thêm vào `outputFileTracingIncludes`.
+- **Hồ sơ năng lực dùng làm nguồn nhưng không phát hành**: có BOM, giá, tên nhân sự, ảnh người thật. Mọi số liệu trích ghi "Hồ sơ năng lực 2026, tr.X"; năng lực chung (IP65/67, TOPS, LLM…) không gán vào `specs` model; danh mục chỉ link model trùng tên; ảnh chú thích chỉ gắn model đã đối chiếu thông số và liệt kê điểm lệch. Số liệu trang chủ chọn hồ sơ 2026 (mới nhất) thay "2 triệu sản phẩm/năm" và "82% / 7 lĩnh vực" của báo cáo cũ.
+- **Kịch bản ngành: điểm nóng trùng nhãn có sẵn trong ảnh** (toạ độ lấy từ vị trí chữ trong PDF, không vẽ lại) + danh sách tình huống cho mobile / bàn phím; tính năng AI liên quan chỉ là liên kết tra cứu, chỉ hiện "N sản phẩm có…" khi có model ghi tính năng đó. Điện lực / Thể thao / Cửa khẩu hiện là kịch bản định hướng, không thêm lại giải pháp.
 - **Trang tồn kho không hiện dòng mô tả nguồn và thông báo lỗi đọc file** (người dùng yêu cầu 27/10): lỗi đọc Sheet chỉ ghi log server (`[ton-kho]`), xem bằng `vercel logs`.

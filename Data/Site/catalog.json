@@ -1,0 +1,47 @@
+{
+  "title": "Danh mục 27 model camera IP hiện hành",
+  "date": "Tháng 6/2026",
+  "source": "MK Vision_Năng lực v1 2026.pdf",
+  "sourcePages": "tr.44–45",
+  "envLegend": { "K": "chống phá hoại / khắc nghiệt", "N": "ngoài trời" },
+  "series": [
+    { "id": "A", "name": "A series", "short": "Không AI", "points": ["IP camera", "Giám sát thông thường", "Không hỗ trợ AI"] },
+    { "id": "B", "name": "B series", "short": "AI-ready", "points": ["IP camera", "Hỗ trợ AI", "Có thể nâng cấp AI"] },
+    { "id": "E", "name": "E series", "short": "Licensed AI", "points": ["IP camera", "Tích hợp sẵn AI"] },
+    { "id": "S", "name": "S series", "short": "Cao cấp", "points": ["IP camera", "Sản phẩm cao cấp", "Tích hợp sẵn AI"] },
+    { "id": "K", "name": "K series", "short": "Sản phẩm đặc biệt", "points": ["Sản phẩm đặc biệt", "Hỗ trợ AI"], "lines": ["AutoSecure", "BioSecure", "MobiSecure"] }
+  ],
+  "models": [
+    { "model": "VA80FA2V-37", "series": "A", "mp": "8MP", "form": "PTZ 37x", "connect": "LAN", "soc": "Khác", "env": "K" },
+    { "model": "VA80FA2V-50", "series": "A", "mp": "8MP", "form": "PTZ 50x", "connect": "LAN", "soc": "Khác", "env": "K" },
+    { "model": "VA20FA2V-31", "series": "A", "mp": "2MP", "form": "PTZ 31x", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VA50FA2V-31", "series": "A", "mp": "5MP", "form": "PTZ 31x", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VA50FA0V", "series": "A", "mp": "5MP", "form": "Dome", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VA50FB1E", "series": "A", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "Khác", "env": "N" },
+    { "model": "VA20FC1E", "series": "A", "mp": "2MP", "form": "Bullet", "connect": "LAN", "soc": "Khác", "env": "N" },
+    { "model": "VA50FA0E", "series": "A", "mp": "5MP", "form": "Dome", "connect": "LAN", "soc": "Khác", "env": "N" },
+    { "model": "VA50FA2E-33", "series": "A", "mp": "5MP", "form": "PTZ 33x", "connect": "LAN", "soc": "Khác", "env": "N" },
+    { "model": "VA50FA2E-25", "series": "A", "mp": "5MP", "form": "PTZ 25x", "connect": "LAN", "soc": "Khác", "env": "N" },
+    { "model": "VB50FA2V-31", "series": "B", "mp": "5MP", "form": "PTZ 31x", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VB50FB1V", "series": "B", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VB80FA1E", "series": "B", "mp": "8MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "N" },
+    { "model": "VB50FC1V", "series": "B", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VS804A2V-36", "series": "S", "mp": "8MP", "form": "PTZ 36x", "connect": "LAN", "soc": "CV75", "env": "K" },
+    { "model": "VS80FA2V-36", "series": "S", "mp": "8MP", "form": "PTZ 36x", "connect": "LAN", "soc": "CV75", "env": "K" },
+    { "model": "VS80FB2V-36", "series": "S", "mp": "8MP", "form": "PTZ 36x", "connect": "LAN", "soc": "CV72", "env": "K" },
+    { "model": "VS804A1V", "series": "S", "mp": "8MP", "form": "Bullet", "connect": "LAN", "soc": "CV72", "env": "K" },
+    { "model": "VS804B1V", "series": "S", "mp": "8MP", "form": "Bullet", "connect": "LAN", "soc": "CV72", "env": "K" },
+    { "model": "VS50FA1V", "series": "S", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VS50FA0V", "series": "S", "mp": "5MP", "form": "Dome", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VE50FB1V", "series": "E", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VE80FA1E", "series": "E", "mp": "8MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "N" },
+    { "model": "VE50FC1V", "series": "E", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "K" },
+    { "model": "VE82FA1V", "series": "E", "mp": "8MP", "form": "Bullet", "connect": "4G", "soc": "CV25", "env": "K" },
+    { "model": "VE503A1E", "series": "E", "mp": "5MP", "form": "Bullet", "connect": "LAN", "soc": "CV25", "env": "N" },
+    { "model": "VE525A1E", "series": "E", "mp": "5MP", "form": "Bullet", "connect": "4G", "soc": "CV25", "env": "N" }
+  ],
+  "shots": [
+    { "image": "/img/profile/shot-ai-camera.webp", "title": "AI Camera: cảm biến kép, gạt nước, cảm biến phụ", "page": "tr.46" },
+    { "image": "/img/profile/shot-ai-ptz.webp", "title": "PTZ AI: ống kính tele tự động đến 36x zoom, theo dõi bằng AI", "page": "tr.47" }
+  ]
+}

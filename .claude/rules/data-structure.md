@@ -20,6 +20,7 @@ Data/
   AI/algorithms.json     # mô tả tính năng AI, chỉ lấy từ Docs/AI Function/[MKV]-AI_Function_Description_v1.0.pdf (thay file Excel cũ); feature = id trong features.json
   AI/features.json       # từ điển tính năng AI chuẩn theo thiết bị (nameVi + name EN, keywords, aliases = chuỗi aiFeatures nguyên văn); tính năng không có model và không có mô tả thì không giữ
   Site/series.json | company.json | home.json   # dòng sản phẩm, công ty, nội dung trang chủ
+  Site/catalog.json | capability.json | scenarios.json | feature-shots.json   # từ hồ sơ năng lực 2026 (Docs/MKV Profile): danh mục 27 model camera + series A/B/E/S/K, năng lực, 8 kịch bản ngành (điểm nóng), ảnh chú thích tính năng → sản phẩm
 ```
 
 ## Schema
@@ -38,6 +39,8 @@ Data/
 ## Tài liệu và ảnh
 
 - `scripts/copy-assets.mjs` đưa tài liệu gốc sang `public/files/` với tên ASCII không dấu (hard link) và sinh `lib/generated/files.json`. File mới trong `Data/MK Vision/Docs` tự hiện trong thư viện tài liệu, trừ thư mục `Image/`, `Product Photos/`.
+- Tài liệu chỉ dùng làm nguồn nội dung, **không phát hành** (không xem / tải được trên web): khai báo trong `NOT_PUBLISHED` của `scripts/copy-assets.mjs` (hiện có `Docs/MKV Profile/` — hồ sơ năng lực có BOM, giá, tên nhân sự). Nội dung trích từ đó ghi nguồn bằng tên file + trang, không có link.
+- Nội dung hồ sơ năng lực (`Data/Site/catalog|capability|scenarios`) là năng lực chung / danh mục, **không** gán vào `specs` của model. Danh mục chỉ link sang trang sản phẩm khi tên model trùng (`modelKey`); ảnh chú thích chỉ gắn vào model đã đối chiếu thông số (`feature-shots.json`). Ảnh cắt từ PDF đặt ở `public/img/profile/` (webp).
 - Tên file tiếng Việt trên đĩa có thể ở dạng Unicode NFC hoặc NFD: so khớp đường dẫn qua `pathKey()`, tạo URL qua `fileUrl()` (`lib/file-slug.mjs`), không ghép URL thủ công.
 - Ảnh web đã tối ưu đặt trong `public/img/` (`products/<slug>.png` ≤ ~600KB, `scenes/`, `solutions/`). Không dùng ảnh gốc nhiều MB trực tiếp.
 - `public/files/`, `public/brand/`, `lib/generated/` được sinh lúc build — không sửa tay.
