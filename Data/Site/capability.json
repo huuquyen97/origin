@@ -5,93 +5,416 @@
     "text": "AI Camera Xử lý tại Biên (Edge AI Camera) là một hệ thống camera thông minh tích hợp khả năng xử lý dữ liệu và suy luận trí tuệ nhân tạo trực tiếp tại thiết bị.",
     "highlight": "Giảm độ trễ truyền tải, tiết kiệm băng thông, xử lý dữ liệu tại chỗ, bảo mật thông tin cao hơn.",
     "direction": "Định hướng của MK Vision là nghiên cứu, phát triển và sản xuất các thiết bị Camera AI có khả năng xử lý cục bộ các thuật toán phân tích dữ liệu trên chính phần cứng của thiết bị (AI-on-Edge).",
-    "strategic": ["Xây dựng hệ thống giám sát thông minh", "Nâng cao an ninh, an toàn công cộng", "Quản lý giao thông thông minh", "Phát triển công nghệ tự chủ quốc gia"],
-    "flow": { "edge": ["Camera sensor", "Deep learning"], "cloud": ["Metadata", "Integrations", "Notifications", "Analytics"] },
-    "factors": ["Efficiency", "Quality", "Speed", "Cost"]
+    "strategic": [
+      "Xây dựng hệ thống giám sát thông minh",
+      "Nâng cao an ninh, an toàn công cộng",
+      "Quản lý giao thông thông minh",
+      "Phát triển công nghệ tự chủ quốc gia"
+    ],
+    "flow": {
+      "edge": [
+        "Camera sensor",
+        "Deep learning"
+      ],
+      "cloud": [
+        "Metadata",
+        "Integrations",
+        "Notifications",
+        "Analytics"
+      ]
+    },
+    "factors": [
+      "Hiệu quả",
+      "Chất lượng",
+      "Tốc độ",
+      "Giá thành"
+    ]
   },
   "pillars": {
     "page": "tr.4",
     "items": [
-      { "name": "Thiết kế giải pháp", "image": "/img/profile/pillar-1.webp" },
-      { "name": "Phát triển", "image": "/img/profile/pillar-2.webp" },
-      { "name": "Chế tạo", "image": "/img/profile/pillar-3.webp" },
-      { "name": "Dịch vụ gia tăng", "image": "/img/profile/pillar-4.webp" }
+      {
+        "name": "Thiết kế giải pháp",
+        "image": "/img/profile/pillar-1.webp"
+      },
+      {
+        "name": "Phát triển",
+        "image": "/img/profile/pillar-2.webp"
+      },
+      {
+        "name": "Chế tạo",
+        "image": "/img/profile/pillar-3.webp"
+      },
+      {
+        "name": "Dịch vụ gia tăng",
+        "image": "/img/profile/pillar-4.webp"
+      }
     ]
   },
   "rnd": {
     "page": "tr.5",
     "stages": [
-      { "code": "Concept", "goal": "Đánh giá tính khả thi của sản phẩm và dự án NCPT", "tasks": ["Xây dựng ý tưởng sản phẩm và công nghệ chủ chốt", "Dự tính chi phí NCPT", "Bổ nhiệm đội dự án và lập kế hoạch triển khai dự án"] },
-      { "code": "EVT", "name": "Engineering Verification Test", "goal": "Xác minh thiết kế cơ bản, đảm bảo nguyên mẫu hoạt động đúng thiết kế", "tasks": ["Xây dựng đặc tả yêu cầu sản phẩm (PRS)", "Thiết kế HW và BOM điện tử", "Phát triển Firmware bring-up", "Hoàn thiện thiết kế kiểu dáng (ID)", "Thiết kế cơ khí (ME)", "Chế tạo mẫu EVT, bring-up và debug"] },
-      { "code": "DVT", "name": "Design Verification Test", "goal": "Xác nhận thiết kế đáp ứng yêu cầu của người dùng về chức năng và độ ổn định", "tasks": ["Hoàn thiện thiết kế phần cứng, BOM điện tử và lắp ráp", "Phát triển firmware thương mại", "Làm khuôn vỏ", "Xây dựng quy trình sản xuất và phát triển các công cụ sản xuất", "Xây dựng quy trình kiểm soát chất lượng", "Chế tạo và đánh giá mẫu DVT"] },
-      { "code": "PVT", "name": "Product Validation Test", "goal": "Xác nhận khả năng sản xuất hàng loạt", "tasks": ["Hoàn thiện firmware thương mại", "Thiết kế bao gói và chế tạo mẫu", "Hoàn thiện quy trình sản xuất và phát triển các công cụ sản xuất", "Hoàn thiện quy trình kiểm soát chất lượng", "Chế tạo và đánh giá mẫu PVT"] },
-      { "code": "MP", "name": "Mass Production", "goal": "Sản xuất hàng loạt, tối ưu chi phí, duy trì chất lượng", "tasks": ["Chuẩn bị NVL", "Pilot (nếu là đơn hàng đầu tiên)", "Sản xuất hàng loạt theo đơn hàng", "Tối ưu chi phí"] }
+      {
+        "code": "Concept",
+        "goal": "Đánh giá tính khả thi của sản phẩm và dự án NCPT",
+        "tasks": [
+          "Xây dựng ý tưởng sản phẩm và công nghệ chủ chốt",
+          "Dự tính chi phí NCPT",
+          "Bổ nhiệm đội dự án và lập kế hoạch triển khai dự án"
+        ]
+      },
+      {
+        "code": "EVT",
+        "name": "Engineering Verification Test",
+        "goal": "Xác minh thiết kế cơ bản, đảm bảo nguyên mẫu hoạt động đúng thiết kế",
+        "tasks": [
+          "Xây dựng đặc tả yêu cầu sản phẩm (PRS)",
+          "Thiết kế HW và BOM điện tử",
+          "Phát triển Firmware bring-up",
+          "Hoàn thiện thiết kế kiểu dáng (ID)",
+          "Thiết kế cơ khí (ME)",
+          "Chế tạo mẫu EVT, bring-up và debug"
+        ]
+      },
+      {
+        "code": "DVT",
+        "name": "Design Verification Test",
+        "goal": "Xác nhận thiết kế đáp ứng yêu cầu của người dùng về chức năng và độ ổn định",
+        "tasks": [
+          "Hoàn thiện thiết kế phần cứng, BOM điện tử và lắp ráp",
+          "Phát triển firmware thương mại",
+          "Làm khuôn vỏ",
+          "Xây dựng quy trình sản xuất và phát triển các công cụ sản xuất",
+          "Xây dựng quy trình kiểm soát chất lượng",
+          "Chế tạo và đánh giá mẫu DVT"
+        ]
+      },
+      {
+        "code": "PVT",
+        "name": "Product Validation Test",
+        "goal": "Xác nhận khả năng sản xuất hàng loạt",
+        "tasks": [
+          "Hoàn thiện firmware thương mại",
+          "Thiết kế bao gói và chế tạo mẫu",
+          "Hoàn thiện quy trình sản xuất và phát triển các công cụ sản xuất",
+          "Hoàn thiện quy trình kiểm soát chất lượng",
+          "Chế tạo và đánh giá mẫu PVT"
+        ]
+      },
+      {
+        "code": "MP",
+        "name": "Mass Production",
+        "goal": "Sản xuất hàng loạt, tối ưu chi phí, duy trì chất lượng",
+        "tasks": [
+          "Chuẩn bị NVL",
+          "Pilot (nếu là đơn hàng đầu tiên)",
+          "Sản xuất hàng loạt theo đơn hàng",
+          "Tối ưu chi phí"
+        ]
+      }
     ]
   },
   "cores": [
     {
-      "n": 1, "name": "Cơ khí, kiểu dáng", "page": "tr.7",
+      "n": 1,
+      "name": "Cơ khí, kiểu dáng",
+      "page": "tr.7",
       "groups": [
-        { "name": "Triết lý thiết kế", "mastery": 100, "items": ["Form Follows Function (Kiểu dáng theo chức năng)", "Installation-Friendly Design (Tối ưu lắp đặt)", "Modular Integration (Tích hợp Module)", "Ergonomics & Haptics (Công thái học)"] },
-        { "name": "Lựa chọn vật liệu", "mastery": 100, "items": ["Vỏ nhôm/Polycarbonate chống UV", "Độ bền cơ học IP65/IP67", "Chịu nhiệt -20°C đến +60°C", "Trọng lượng tối ưu & cân bằng"] }
+        {
+          "name": "Triết lý thiết kế",
+          "mastery": 100,
+          "items": [
+            "Form Follows Function (Kiểu dáng theo chức năng)",
+            "Installation-Friendly Design (Tối ưu lắp đặt)",
+            "Modular Integration (Tích hợp Module)",
+            "Ergonomics & Haptics (Công thái học)"
+          ]
+        },
+        {
+          "name": "Lựa chọn vật liệu",
+          "mastery": 100,
+          "items": [
+            "Vỏ nhôm/Polycarbonate chống UV",
+            "Độ bền cơ học IP65/IP67",
+            "Chịu nhiệt -20°C đến +60°C",
+            "Trọng lượng tối ưu & cân bằng"
+          ]
+        }
       ]
     },
     {
-      "n": 2, "name": "Vật liệu, tối ưu hóa", "page": "tr.8",
+      "n": 2,
+      "name": "Vật liệu, tối ưu hóa",
+      "page": "tr.8",
       "groups": [
-        { "name": "Chi tiết vật liệu", "mastery": 95, "items": ["Vỏ ngoài nhôm 6063 hoặc Polycarbonate UV-resistant", "Độ bền cơ học IK10 (chống va đập)", "Chứng chỉ IP65/IP67 (chống bụi, nước)", "Nhiệt độ hoạt động -20°C đến +60°C (công nghiệp), độ ẩm 0-95% (không ngưng tụ)"] },
-        { "name": "Cân bằng & trọng lượng", "mastery": 100, "items": ["Trọng lượng tối ưu (~500-800g)", "Cân bằng khối tâm chính xác", "Giảm rung động & nhiễu", "Tối ưu cho lắp đặt trên cột/tường"] },
-        { "name": "Tối ưu hóa thiết kế", "mastery": 100, "items": ["CAD 3D (CATIA/SolidWorks) mô phỏng", "FEA (Finite Element Analysis) phân tích ứng suất", "CFD (Computational Fluid Dynamics) tản nhiệt", "Prototype & Testing lặp lại"] },
-        { "name": "Design for Manufacturing", "mastery": 100, "items": ["DFM (Design for Manufacturing)", "DFA (Design for Assembly)", "DFT (Design for Testing)", "Tối ưu chi phí sản xuất"] }
+        {
+          "name": "Chi tiết vật liệu",
+          "mastery": 95,
+          "items": [
+            "Vỏ ngoài nhôm 6063 hoặc Polycarbonate UV-resistant",
+            "Độ bền cơ học IK10 (chống va đập)",
+            "Chứng chỉ IP65/IP67 (chống bụi, nước)",
+            "Nhiệt độ hoạt động -20°C đến +60°C (công nghiệp), độ ẩm 0-95% (không ngưng tụ)"
+          ]
+        },
+        {
+          "name": "Cân bằng & trọng lượng",
+          "mastery": 100,
+          "items": [
+            "Trọng lượng tối ưu (~500-800g)",
+            "Cân bằng khối tâm chính xác",
+            "Giảm rung động & nhiễu",
+            "Tối ưu cho lắp đặt trên cột/tường"
+          ]
+        },
+        {
+          "name": "Tối ưu hóa thiết kế",
+          "mastery": 100,
+          "items": [
+            "CAD 3D (CATIA/SolidWorks) mô phỏng",
+            "FEA (Finite Element Analysis) phân tích ứng suất",
+            "CFD (Computational Fluid Dynamics) tản nhiệt",
+            "Prototype & Testing lặp lại"
+          ]
+        },
+        {
+          "name": "Design for Manufacturing",
+          "mastery": 100,
+          "items": [
+            "DFM (Design for Manufacturing)",
+            "DFA (Design for Assembly)",
+            "DFT (Design for Testing)",
+            "Tối ưu chi phí sản xuất"
+          ]
+        }
       ]
     },
     {
-      "n": 3, "name": "Điện tử, vi mạch", "page": "tr.10",
+      "n": 3,
+      "name": "Điện tử, vi mạch",
+      "page": "tr.10",
       "groups": [
-        { "name": "Khả năng thiết kế", "mastery": 100, "items": ["Bo mạch tín hiệu tốc độ cao: vi xử lý, DRAM, PCIE, MIPI, LVDS, USB 3.0, HDMI", "Hệ thống xử lý tín hiệu hình ảnh: module mạch sensor và ống kính có điều khiển zoom, focus, iris", "Khối nguồn POE cho các sản phẩm camera AI", "Bo mạch đa lớp phức tạp, có thể lên đến 24 lớp", "Chống nhiễu, tương thích điện từ EMI/EMC"] },
-        { "name": "Khả năng tối ưu", "mastery": 100, "items": ["Tối ưu Power Integrity (tính toàn vẹn nguồn)", "Tối ưu quản lý nhiệt, tản nhiệt cho chip và thiết bị", "Thiết kế tối ưu cho sản xuất (DFM), lắp ráp (DFA) và kiểm thử (DFT)", "Mô phỏng Signal Integrity cho DDRAM và Power Integrity cho phần nguồn"] }
+        {
+          "name": "Khả năng thiết kế",
+          "mastery": 100,
+          "items": [
+            "Bo mạch tín hiệu tốc độ cao: vi xử lý, DRAM, PCIE, MIPI, LVDS, USB 3.0, HDMI",
+            "Hệ thống xử lý tín hiệu hình ảnh: module mạch sensor và ống kính có điều khiển zoom, focus, iris",
+            "Khối nguồn POE cho các sản phẩm camera AI",
+            "Bo mạch đa lớp phức tạp, có thể lên đến 24 lớp",
+            "Chống nhiễu, tương thích điện từ EMI/EMC"
+          ]
+        },
+        {
+          "name": "Khả năng tối ưu",
+          "mastery": 100,
+          "items": [
+            "Tối ưu Power Integrity (tính toàn vẹn nguồn)",
+            "Tối ưu quản lý nhiệt, tản nhiệt cho chip và thiết bị",
+            "Thiết kế tối ưu cho sản xuất (DFM), lắp ráp (DFA) và kiểm thử (DFT)",
+            "Mô phỏng Signal Integrity cho DDRAM và Power Integrity cho phần nguồn"
+          ]
+        }
       ]
     },
     {
-      "n": 4, "name": "Hệ điều hành, phần mềm nhúng", "page": "tr.12–14",
+      "n": 4,
+      "name": "Hệ điều hành, phần mềm nhúng",
+      "page": "tr.12–14",
       "groups": [
-        { "name": "Core System", "mastery": 100, "items": ["Bootloader (U-boot): khởi tạo hệ thống, quản lý flash, cập nhật OTA", "Embedded OS (Linux, RTOS)", "Device Driver Layer: cảm biến, audio codec, ISP, motor (Pan, Tilt, Zoom, Focus, Iris), đèn IR, LCD", "Làm chủ Yocto/Buildroot, cấu hình kernel, file system để build firmware"] },
-        { "name": "Xử lý hình ảnh & video", "mastery": 100, "items": ["ISP, CVFlow, IQ Tuning; AWB, AF, AE", "Noise Reduction, Sharpening, Color Correction, HDR, EIS; Smart IR, Auto Night vision", "Video codec: H.264, H.265/HEVC, MJPEG, JPEG, VP9, Smart Rate Control", "Audio codec: G.711, G.726, AAC, Opus"] },
-        { "name": "Mạng & giao thức", "mastery": 100, "items": ["ONVIF, RTSP/RTP, HTTP/HTTPS, MQTT, WebSocket, WebRTC, HLS, Mpegdash, MP4", "Wi-Fi (wpa_supplicant), LTE (PPP, QMI, MBIM)", "Tự phát triển full stack RTSP/HTTP/MQTT, Onvif client/server", "Tích hợp với các platform khác nhau, kiểm soát các kết nối"] },
-        { "name": "Bảo mật & độ tin cậy", "mastery": 100, "items": ["Secure Boot / Verified Boot: eFuse, TrustZone, U-Boot verification", "Encryption / Signing: RSA, AES, SHA, HMAC", "Access Control: TLS, Digest Auth, JWT", "Tự triển khai signing, OTA, hỗ trợ rollback, log monitor"] }
+        {
+          "name": "Core System",
+          "mastery": 100,
+          "items": [
+            "Bootloader (U-boot): khởi tạo hệ thống, quản lý flash, cập nhật OTA",
+            "Embedded OS (Linux, RTOS)",
+            "Device Driver Layer: cảm biến, audio codec, ISP, motor (Pan, Tilt, Zoom, Focus, Iris), đèn IR, LCD",
+            "Làm chủ Yocto/Buildroot, cấu hình kernel, file system để build firmware"
+          ]
+        },
+        {
+          "name": "Xử lý hình ảnh & video",
+          "mastery": 100,
+          "items": [
+            "ISP, CVFlow, IQ Tuning; AWB, AF, AE",
+            "Noise Reduction, Sharpening, Color Correction, HDR, EIS; Smart IR, Auto Night vision",
+            "Video codec: H.264, H.265/HEVC, MJPEG, JPEG, VP9, Smart Rate Control",
+            "Audio codec: G.711, G.726, AAC, Opus"
+          ]
+        },
+        {
+          "name": "Mạng & giao thức",
+          "mastery": 100,
+          "items": [
+            "ONVIF, RTSP/RTP, HTTP/HTTPS, MQTT, WebSocket, WebRTC, HLS, Mpegdash, MP4",
+            "Wi-Fi (wpa_supplicant), LTE (PPP, QMI, MBIM)",
+            "Tự phát triển full stack RTSP/HTTP/MQTT, Onvif client/server",
+            "Tích hợp với các platform khác nhau, kiểm soát các kết nối"
+          ]
+        },
+        {
+          "name": "Bảo mật & độ tin cậy",
+          "mastery": 100,
+          "items": [
+            "Secure Boot / Verified Boot: eFuse, TrustZone, U-Boot verification",
+            "Encryption / Signing: RSA, AES, SHA, HMAC",
+            "Access Control: TLS, Digest Auth, JWT",
+            "Tự triển khai signing, OTA, hỗ trợ rollback, log monitor"
+          ]
+        }
       ]
     },
     {
-      "n": 5, "name": "Quang học, cảm biến ảnh", "page": "tr.17–18",
+      "n": 5,
+      "name": "Quang học, cảm biến ảnh",
+      "page": "tr.17–18",
       "groups": [
-        { "name": "Thiết kế quang học", "mastery": 50, "items": ["Ống kính tiêu cự cố định, khẩu độ f/1.4 - f/2.8, góc nhìn 30° - 120°", "Coating chống phản xạ (AR coating)", "Tính toán quang học (ray tracing), thiết kế bù sai số (aberration correction)", "Tối ưu hóa MTF (Modulation Transfer Function)"] },
-        { "name": "Cảm biến ảnh", "mastery": 50, "items": ["CMOS độ phân giải 2MP - 8MP", "Kích thước pixel 2.0 - 3.0 micrometers", "Rolling shutter hoặc global shutter", "HDR (High Dynamic Range) support"] },
-        { "name": "Cảm biến ảnh nhiệt", "mastery": 80, "items": ["Microbolometer array (160x120 - 640x512)", "Độ nhạy nhiệt <50mK (NETD)", "Dải nhiệt -40°C đến +550°C", "Tích hợp NUC (Non-Uniformity Correction)"] },
-        { "name": "Tích hợp & hiệu chỉnh", "mastery": 100, "items": ["Hiệu chỉnh độ trắng (white balance)", "Hiệu chỉnh lưu lượng (exposure correction)", "Hiệu chỉnh méo (distortion correction)", "Calibration tại nhà máy"] }
+        {
+          "name": "Thiết kế quang học",
+          "mastery": 50,
+          "items": [
+            "Ống kính tiêu cự cố định, khẩu độ f/1.4 - f/2.8, góc nhìn 30° - 120°",
+            "Coating chống phản xạ (AR coating)",
+            "Tính toán quang học (ray tracing), thiết kế bù sai số (aberration correction)",
+            "Tối ưu hóa MTF (Modulation Transfer Function)"
+          ]
+        },
+        {
+          "name": "Cảm biến ảnh",
+          "mastery": 50,
+          "items": [
+            "CMOS độ phân giải 2MP - 8MP",
+            "Kích thước pixel 2.0 - 3.0 micrometers",
+            "Rolling shutter hoặc global shutter",
+            "HDR (High Dynamic Range) support"
+          ]
+        },
+        {
+          "name": "Cảm biến ảnh nhiệt",
+          "mastery": 80,
+          "items": [
+            "Microbolometer array (160x120 - 640x512)",
+            "Độ nhạy nhiệt <50mK (NETD)",
+            "Dải nhiệt -40°C đến +550°C",
+            "Tích hợp NUC (Non-Uniformity Correction)"
+          ]
+        },
+        {
+          "name": "Tích hợp & hiệu chỉnh",
+          "mastery": 100,
+          "items": [
+            "Hiệu chỉnh độ trắng (white balance)",
+            "Hiệu chỉnh lưu lượng (exposure correction)",
+            "Hiệu chỉnh méo (distortion correction)",
+            "Calibration tại nhà máy"
+          ]
+        }
       ]
     },
     {
-      "n": 6, "name": "AI, dữ liệu, LLM tại biên", "page": "tr.20",
+      "n": 6,
+      "name": "AI, dữ liệu, LLM tại biên",
+      "page": "tr.20",
       "groups": [
-        { "name": "AI Engine & NPU", "mastery": 80, "items": ["NPU (Neural Processing Unit) tích hợp", "Hỗ trợ INT8, INT16, FP16 inference", "Throughput 2-10 TOPS", "Tiêu thụ điện năng tối ưu (<5W)"] },
-        { "name": "Xử lý dữ liệu", "mastery": 90, "items": ["Tiền xử lý ảnh (preprocessing)", "Trích xuất đặc trưng (feature extraction)", "Nhận dạng đối tượng (object detection)", "Phân loại & tracking (classification)"] },
-        { "name": "Framework & Models", "mastery": 85, "items": ["TensorFlow Lite (TFLite) tối ưu", "ONNX Runtime cho tương thích", "OpenVINO cho thiết bị Intel", "Quantization & pruning tối ưu"] },
-        { "name": "LLM tại biên", "mastery": 100, "items": ["Mô hình 1-7B parameters", "Hỗ trợ tiếng Việt & tiếng Anh", "Xử lý ngôn ngữ tự nhiên (NLP)", "Độ trễ <500ms cho inference"] }
+        {
+          "name": "AI Engine & NPU",
+          "mastery": 80,
+          "items": [
+            "NPU (Neural Processing Unit) tích hợp",
+            "Hỗ trợ INT8, INT16, FP16 inference",
+            "Throughput 2-10 TOPS",
+            "Tiêu thụ điện năng tối ưu (<5W)"
+          ]
+        },
+        {
+          "name": "Xử lý dữ liệu",
+          "mastery": 90,
+          "items": [
+            "Tiền xử lý ảnh (preprocessing)",
+            "Trích xuất đặc trưng (feature extraction)",
+            "Nhận dạng đối tượng (object detection)",
+            "Phân loại & tracking (classification)"
+          ]
+        },
+        {
+          "name": "Framework & Models",
+          "mastery": 85,
+          "items": [
+            "TensorFlow Lite (TFLite) tối ưu",
+            "ONNX Runtime cho tương thích",
+            "OpenVINO cho thiết bị Intel",
+            "Quantization & pruning tối ưu"
+          ]
+        },
+        {
+          "name": "LLM tại biên",
+          "mastery": 100,
+          "items": [
+            "Mô hình 1-7B parameters",
+            "Hỗ trợ tiếng Việt & tiếng Anh",
+            "Xử lý ngôn ngữ tự nhiên (NLP)",
+            "Độ trễ <500ms cho inference"
+          ]
+        }
       ]
     },
     {
-      "n": 7, "name": "VMS, nền tảng", "page": "tr.28, 31",
+      "n": 7,
+      "name": "VMS, nền tảng",
+      "page": "tr.28, 31",
       "groups": [
-        { "name": "Nền tảng phần mềm", "items": ["VMS: Video Management System, quản lý video", "EMS: Event Management System, quản lý sự kiện", "FMS: Fleet Management System, quản lý đội xe", "DEMS: Digital Evidence Management System, quản lý bằng chứng số"] },
-        { "name": "Quản lý tập trung", "items": ["Truyền thông tin liền mạch giữa các thiết bị như một hệ sinh thái bằng chứng số", "Cấu hình cao, điều khiển bằng chính sách, quản lý và vận hành tập trung", "Kiến trúc mở, cung cấp API và SDK để tích hợp hệ thống bên thứ ba"] }
+        {
+          "name": "Nền tảng phần mềm",
+          "items": [
+            "VMS: Video Management System, quản lý video",
+            "EMS: Event Management System, quản lý sự kiện",
+            "FMS: Fleet Management System, quản lý đội xe",
+            "DEMS: Digital Evidence Management System, quản lý bằng chứng số"
+          ]
+        },
+        {
+          "name": "Quản lý tập trung",
+          "items": [
+            "Truyền thông tin liền mạch giữa các thiết bị như một hệ sinh thái bằng chứng số",
+            "Cấu hình cao, điều khiển bằng chính sách, quản lý và vận hành tập trung",
+            "Kiến trúc mở, cung cấp API và SDK để tích hợp hệ thống bên thứ ba"
+          ]
+        }
       ]
     },
     {
-      "n": 8, "name": "Quy trình sản xuất & kiểm soát chất lượng", "page": "tr.32",
+      "n": 8,
+      "name": "Quy trình sản xuất & kiểm soát chất lượng",
+      "page": "tr.32",
       "groups": [
-        { "name": "Quy trình SMT", "mastery": 100, "items": ["Sản xuất tại Việt Nam: SMT Line Panasonic, Pick & Place tốc độ cao", "Reflow oven tối ưu nhiệt độ, Wave soldering cho BGA/MCU", "Solder Paste Printing (SPI) → Component Placement → Reflow Soldering → Cleaning & Inspection"] },
-        { "name": "Kiểm soát chất lượng", "mastery": 100, "items": ["SPI - 3D Solder Paste Inspection", "AOI - 3D Automated Optical Inspection", "X-Ray Inspection cho BGA/MCU", "Functional Testing (FCT)"] },
-        { "name": "Tiêu chuẩn & chứng chỉ", "items": ["IPC-A-610 (Soldering Standard)", "IPC-J-STD-001 (Solder Joint)", "ISO 9001:2015 (QMS)", "RoHS & REACH Compliance"] }
+        {
+          "name": "Quy trình SMT",
+          "mastery": 100,
+          "items": [
+            "Sản xuất tại Việt Nam: SMT Line Panasonic, Pick & Place tốc độ cao",
+            "Reflow oven tối ưu nhiệt độ, Wave soldering cho BGA/MCU",
+            "Solder Paste Printing (SPI) → Component Placement → Reflow Soldering → Cleaning & Inspection"
+          ]
+        },
+        {
+          "name": "Kiểm soát chất lượng",
+          "mastery": 100,
+          "items": [
+            "SPI - 3D Solder Paste Inspection",
+            "AOI - 3D Automated Optical Inspection",
+            "X-Ray Inspection cho BGA/MCU",
+            "Functional Testing (FCT)"
+          ]
+        },
+        {
+          "name": "Tiêu chuẩn & chứng chỉ",
+          "items": [
+            "IPC-A-610 (Soldering Standard)",
+            "IPC-J-STD-001 (Solder Joint)",
+            "ISO 9001:2015 (QMS)",
+            "RoHS & REACH Compliance"
+          ]
+        }
       ]
     }
   ],
@@ -99,51 +422,195 @@
     "pcba": {
       "page": "tr.34",
       "rows": [
-        ["Số lượng dây chuyền SMT", "2 dây chuyền"],
-        ["Thiết bị chính", "Máy in kem hàn (Printer), máy gắp đặt linh kiện (Mounter), SPI, AOI, lò hàn Reflow"],
-        ["Tốc độ gắp đặt (chuẩn)", "82.000 CPH (linh kiện/giờ), 1 dây chuyền"],
-        ["Thời gian vận hành", "20 giờ/ngày × 26 ngày/tháng"],
-        ["Loại PCB", "Bản mạch gắn linh kiện hàn dán (PCBA): trung bình 583 linh kiện/PCBA"],
-        ["Sản lượng lý thuyết", "≈ 139 PCBA/giờ/dây chuyền"],
-        ["Tỷ lệ sử dụng (hiệu suất, cân bằng chuyền)", "80%"],
-        ["Sản lượng thực tế", "≈ 112 PCBA/giờ/dây chuyền"],
-        ["Công suất theo năm", "≈ 2 dây chuyền × 112 PCBA/giờ × 20 giờ × 26 ngày × 12 tháng = 1,397,760 PCBA/năm"]
+        [
+          "Số lượng dây chuyền SMT",
+          "2 dây chuyền"
+        ],
+        [
+          "Thiết bị chính",
+          "Máy in kem hàn (Printer), máy gắp đặt linh kiện (Mounter), SPI, AOI, lò hàn Reflow"
+        ],
+        [
+          "Tốc độ gắp đặt (chuẩn)",
+          "82.000 CPH (linh kiện/giờ), 1 dây chuyền"
+        ],
+        [
+          "Thời gian vận hành",
+          "20 giờ/ngày × 26 ngày/tháng"
+        ],
+        [
+          "Loại PCB",
+          "Bản mạch gắn linh kiện hàn dán (PCBA): trung bình 583 linh kiện/PCBA"
+        ],
+        [
+          "Sản lượng lý thuyết",
+          "≈ 139 PCBA/giờ/dây chuyền"
+        ],
+        [
+          "Tỷ lệ sử dụng (hiệu suất, cân bằng chuyền)",
+          "80%"
+        ],
+        [
+          "Sản lượng thực tế",
+          "≈ 112 PCBA/giờ/dây chuyền"
+        ],
+        [
+          "Công suất theo năm",
+          "≈ 2 dây chuyền × 112 PCBA/giờ × 20 giờ × 26 ngày × 12 tháng = 1,397,760 PCBA/năm"
+        ]
       ]
     },
     "assembly": {
       "page": "tr.35",
       "note": "Khu vực sản xuất có thể mở rộng lên tầng 3, 4 và 5.",
-      "headers": ["Trạm", "Mục đích", "Công suất (giờ)", "Số trạm", "Công suất năm"],
+      "headers": [
+        "Trạm",
+        "Mục đích",
+        "Công suất (giờ)",
+        "Số trạm",
+        "Công suất năm"
+      ],
       "rows": [
-        ["Kiểm tra hở/ngắn mạch (ICT)", "Kiểm tra tính liên tục và phát hiện mạch hở/ngắn giữa các pad, kiểm tra nguồn và các tín hiệu cơ bản", "40", "6", "1.497.600"],
-        ["Kiểm tra chức năng (FCT)", "Xác minh hoạt động đầy đủ sau khi cấp nguồn: I/O, giao tiếp (UART, CAN, USB, Wi-Fi, LED, MIC)", "45", "5", "1.404.000"],
-        ["Nạp & xác minh firmware", "Nạp firmware và kiểm tra checksum/phiên bản", "70", "3", "1.310.400"],
-        ["Lấy nét / Hiệu chỉnh hình ảnh", "Lắp thấu kính vào cảm biến trên PCBA và điều chỉnh tiêu cự", "30", "6", "1.123.200"],
-        ["Lắp ráp", "Lắp ráp PCBA với các bộ phận nhựa và kim loại như vỏ, vít, keo, băng dính…", "15", "14", "1.310.400"],
-        ["Kiểm tra bán thành phẩm", "Xác minh hoạt động đầy đủ sau khi cấp nguồn: I/O, giao tiếp (UART, CAN, USB, Wi-Fi, LED, MIC…)", "15", "14", "1.310.400"],
-        ["Đóng gói thành phẩm", "Đóng gói (phụ kiện, hộp, nhãn)", "20", "10", "1.248.000"],
-        ["Ghi log & truy xuất nguồn gốc", "Ghi nhận PASS/FAIL, mã vạch, phiên bản firmware — MES (F-Cim), truy xuất 100%", "Toàn tuyến", "Toàn tuyến", "Toàn tuyến"]
+        [
+          "Kiểm tra hở/ngắn mạch (ICT)",
+          "Kiểm tra tính liên tục và phát hiện mạch hở/ngắn giữa các pad, kiểm tra nguồn và các tín hiệu cơ bản",
+          "40",
+          "6",
+          "1.497.600"
+        ],
+        [
+          "Kiểm tra chức năng (FCT)",
+          "Xác minh hoạt động đầy đủ sau khi cấp nguồn: I/O, giao tiếp (UART, CAN, USB, Wi-Fi, LED, MIC)",
+          "45",
+          "5",
+          "1.404.000"
+        ],
+        [
+          "Nạp & xác minh firmware",
+          "Nạp firmware và kiểm tra checksum/phiên bản",
+          "70",
+          "3",
+          "1.310.400"
+        ],
+        [
+          "Lấy nét / Hiệu chỉnh hình ảnh",
+          "Lắp thấu kính vào cảm biến trên PCBA và điều chỉnh tiêu cự",
+          "30",
+          "6",
+          "1.123.200"
+        ],
+        [
+          "Lắp ráp",
+          "Lắp ráp PCBA với các bộ phận nhựa và kim loại như vỏ, vít, keo, băng dính…",
+          "15",
+          "14",
+          "1.310.400"
+        ],
+        [
+          "Kiểm tra bán thành phẩm",
+          "Xác minh hoạt động đầy đủ sau khi cấp nguồn: I/O, giao tiếp (UART, CAN, USB, Wi-Fi, LED, MIC…)",
+          "15",
+          "14",
+          "1.310.400"
+        ],
+        [
+          "Đóng gói thành phẩm",
+          "Đóng gói (phụ kiện, hộp, nhãn)",
+          "20",
+          "10",
+          "1.248.000"
+        ],
+        [
+          "Ghi log & truy xuất nguồn gốc",
+          "Ghi nhận PASS/FAIL, mã vạch, phiên bản firmware — MES (F-Cim), truy xuất 100%",
+          "Toàn tuyến",
+          "Toàn tuyến",
+          "Toàn tuyến"
+        ]
       ]
     },
     "cleanroom": {
       "page": "tr.40",
       "image": "/img/profile/cleanroom.webp",
-      "rows": [["Tiêu chuẩn", "ISO 7 · cấp độ sạch 10.000"], ["Nhiệt độ", "18 ~ 27 ⁰C"], ["Độ ẩm", "30 ~ 75 %"], ["Độ chiếu sáng", "600 LUX"], ["FFU", "8 bộ · lưu lượng 1080 m3/h · HEPA H13: 99,97% @0.3 micro"]]
+      "rows": [
+        [
+          "Tiêu chuẩn",
+          "ISO 7 · cấp độ sạch 10.000"
+        ],
+        [
+          "Nhiệt độ",
+          "18 ~ 27 ⁰C"
+        ],
+        [
+          "Độ ẩm",
+          "30 ~ 75 %"
+        ],
+        [
+          "Độ chiếu sáng",
+          "600 LUX"
+        ],
+        [
+          "FFU",
+          "8 bộ · lưu lượng 1080 m3/h · HEPA H13: 99,97% @0.3 micro"
+        ]
+      ]
     },
     "photos": [
-      { "image": "/img/profile/factory-smt.webp", "caption": "Dây chuyền SMT", "page": "tr.32" },
-      { "image": "/img/profile/qc-image.webp", "caption": "Kiểm tra hình ảnh", "page": "tr.38" },
-      { "image": "/img/profile/qc-reliability.webp", "caption": "Phòng kiểm thử độ tin cậy", "page": "tr.38" }
+      {
+        "image": "/img/profile/factory-smt.webp",
+        "caption": "Dây chuyền SMT",
+        "page": "tr.32"
+      },
+      {
+        "image": "/img/profile/qc-image.webp",
+        "caption": "Kiểm tra hình ảnh",
+        "page": "tr.38"
+      },
+      {
+        "image": "/img/profile/qc-reliability.webp",
+        "caption": "Phòng kiểm thử độ tin cậy",
+        "page": "tr.38"
+      }
     ]
   },
   "qc": {
     "page": "tr.36",
     "items": [
-      { "code": "QA/QMS", "points": ["Phát triển, duy trì và cải tiến hệ thống quản lý chất lượng (ISO, IATF...)", "Thực hiện đánh giá nội bộ và giám sát CAPA để cải tiến liên tục"] },
-      { "code": "IQC", "points": ["Kiểm tra và xác minh chất lượng của vật tư và linh kiện đầu vào", "Thực hiện lấy mẫu AQL, kiểm thử và đo lường theo các thông số kỹ thuật"] },
-      { "code": "PQC", "points": ["Giám sát chất lượng sản phẩm trong suốt quá trình sản xuất", "Phân tích lỗi và theo dõi các chỉ số Yield, DPPM, và FPY tại mỗi công đoạn"] },
-      { "code": "OQC", "points": ["Kiểm tra thành phẩm trước khi xuất xưởng cho khách hàng", "Thực hiện kiểm tra AQL và phát hành báo cáo QA/COC"] },
-      { "code": "Reliability", "points": ["Thực hiện kiểm thử độ tin cậy về môi trường, cơ khí và vòng đời sản phẩm", "Tiến hành phân tích lỗi (FA) và hỗ trợ cải tiến thiết kế"] }
+      {
+        "code": "QA/QMS",
+        "points": [
+          "Phát triển, duy trì và cải tiến hệ thống quản lý chất lượng (ISO, IATF...)",
+          "Thực hiện đánh giá nội bộ và giám sát CAPA để cải tiến liên tục"
+        ]
+      },
+      {
+        "code": "IQC",
+        "points": [
+          "Kiểm tra và xác minh chất lượng của vật tư và linh kiện đầu vào",
+          "Thực hiện lấy mẫu AQL, kiểm thử và đo lường theo các thông số kỹ thuật"
+        ]
+      },
+      {
+        "code": "PQC",
+        "points": [
+          "Giám sát chất lượng sản phẩm trong suốt quá trình sản xuất",
+          "Phân tích lỗi và theo dõi các chỉ số Yield, DPPM, và FPY tại mỗi công đoạn"
+        ]
+      },
+      {
+        "code": "OQC",
+        "points": [
+          "Kiểm tra thành phẩm trước khi xuất xưởng cho khách hàng",
+          "Thực hiện kiểm tra AQL và phát hành báo cáo QA/COC"
+        ]
+      },
+      {
+        "code": "Reliability",
+        "points": [
+          "Thực hiện kiểm thử độ tin cậy về môi trường, cơ khí và vòng đời sản phẩm",
+          "Tiến hành phân tích lỗi (FA) và hỗ trợ cải tiến thiết kế"
+        ]
+      }
     ]
   }
 }
