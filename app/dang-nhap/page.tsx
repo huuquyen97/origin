@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: AUTH.title };
 export default function LoginPage() {
   return (
     <main className="shade-hero relative isolate grid min-h-svh place-items-center overflow-hidden bg-dark px-4 py-12 text-white">
-      <Image src="/img/scenes/hero.jpg" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
+      <Image src="/img/cover/login-bg.jpg" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
       <Suspense fallback={<LoginCardView callbackUrl="/" error="" />}>
         <LoginCard />
       </Suspense>

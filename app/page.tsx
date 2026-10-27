@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <section className="shade-hero relative isolate flex min-h-[min(760px,100svh)] flex-col overflow-hidden bg-dark text-white">
-        <Image src="/img/scenes/hero.jpg" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
+        <Image src="/img/cover/home-cover-2.jpg" alt="" fill priority sizes="100vw" className="-z-20 object-cover object-[78%_center]" />
         <div className="container-x grid flex-1 content-center justify-items-center gap-5 pb-10 pt-[128px] text-center md:gap-6 md:pt-[150px]">
           <span className="eyebrow eyebrow-dark">Cổng tra cứu nội bộ  - MK Vision Docs</span>
           <h1 className="heading-display max-w-[18ch]">Hỏi gì về sản phẩm, có ngay câu trả lời.</h1>
