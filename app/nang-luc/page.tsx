@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronDown, Cloud, Cpu } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { PageHero } from "@/components/hero";
 import { Shots } from "@/components/solutions/shots";
 import { getCapability } from "@/lib/data";
-import { PROFILE } from "@/lib/strings";
 
 export const metadata: Metadata = { title: "Năng lực MK Vision" };
-
-const Src = ({ page }: { page: string }) => <p className="mt-3 text-[12.5px] text-faint">{PROFILE.short} {page}</p>;
 
 function Mastery({ value }: { value: number }) {
   return (
@@ -22,7 +19,7 @@ function Mastery({ value }: { value: number }) {
   );
 }
 
-/** Vì sao chọn MK Vision: Edge AI, 8 công nghệ lõi, quy trình R&D, năng lực sản xuất và kiểm soát chất lượng — trích hồ sơ năng lực 2026. */
+/** Vì sao chọn MK Vision: Edge AI, 8 công nghệ lõi, quy trình R&D, năng lực sản xuất và kiểm soát chất lượng (nội dung: Data/Site/capability.json). */
 export default function CapabilityPage() {
   const c = getCapability();
   const d = c.definition;
@@ -30,34 +27,21 @@ export default function CapabilityPage() {
 
   return (
     <>
-      <PageHero image="/img/scenes/rnd-1.jpg" crumbs={[{ label: "Năng lực" }]} eyebrow="Hồ sơ năng lực 2026" title="Năng lực MK Vision" lead={d.text} />
+      <PageHero image="/img/scenes/rnd-1.jpg" crumbs={[{ label: "Năng lực" }]} eyebrow="Edge AI · Make in Vietnam" title="Năng lực MK Vision" lead={d.text} />
       <main className="container-x py-12 md:py-14">
         {/* Edge AI */}
-        <section aria-labelledby="edge-h" className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-12">
+        <section aria-labelledby="edge-h" className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div>
             <span className="eyebrow">AI-on-Edge</span>
             <h2 id="edge-h" className="heading-2 mt-2">Xử lý AI ngay trên camera</h2>
             <p className="mt-3 text-ink-2">{d.direction}</p>
-            <p className="note-warn mt-4 text-[14px]"><span><b>Đặc điểm nổi bật:</b> {d.highlight}</span></p>
-            <h3 className="mt-6 text-base">Sản phẩm công nghệ chiến lược quốc gia, then chốt trong:</h3>
-            <ul className="check-list mt-2">{d.strategic.map((x) => <li key={x}>{x}</li>)}</ul>
+            <p className="mt-4 border-l-[3px] border-brand-gold pl-4 text-[15px] text-ink-2"><b className="text-ink">Đặc điểm nổi bật:</b> {d.highlight}</p>
           </div>
-          <div className="rounded-xl2 bg-surface p-5 md:p-7">
-            <div className="grid gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
-              <div className="rounded-xl2 border border-line bg-white p-4">
-                <p className="mb-2 flex items-center gap-2 text-[13px] font-semibold text-brand-navy"><Cpu className="size-4" aria-hidden />Edge Device</p>
-                <ol className="grid gap-1.5 text-[14px]">{d.flow.edge.map((x, i) => <li key={x}><span className="text-faint">{i + 1}.</span> {x}</li>)}</ol>
-              </div>
-              <ArrowRight className="mx-auto size-5 rotate-90 text-muted sm:rotate-0" aria-hidden />
-              <div className="rounded-xl2 border border-line bg-white p-4">
-                <p className="mb-2 flex items-center gap-2 text-[13px] font-semibold text-brand-navy"><Cloud className="size-4" aria-hidden />Cloud Side</p>
-                <p className="text-[14px] font-semibold">{d.flow.cloud[0]}</p>
-                <p className="text-[13.5px] text-muted">→ {d.flow.cloud.slice(1).join(" · ")}</p>
-              </div>
-            </div>
-            <p className="mt-5 text-[13.5px] text-muted">Yếu tố quyết định trong dự án camera quy mô lớn:</p>
+          <div className="lg:pt-9">
+            <h3 className="text-base">Sản phẩm công nghệ chiến lược quốc gia, then chốt trong:</h3>
+            <ul className="check-list mt-3">{d.strategic.map((x) => <li key={x}>{x}</li>)}</ul>
+            <p className="mt-6 text-[14px] text-muted">Yếu tố quyết định trong dự án camera quy mô lớn:</p>
             <div className="mt-2 flex flex-wrap gap-1.5">{d.factors.map((x) => <span key={x} className="tag tag-navy">{x}</span>)}</div>
-            <Src page={d.page} />
           </div>
         </section>
 
@@ -72,14 +56,13 @@ export default function CapabilityPage() {
               </div>
             ))}
           </div>
-          <Src page={c.pillars.page} />
         </section>
 
         {/* 8 công nghệ lõi */}
         <section aria-labelledby="core-h" className="mt-16">
           <div className="section-head !mb-6">
             <h2 id="core-h" className="heading-2">{c.cores.length} công nghệ lõi</h2>
-            <p className="max-w-[52ch] text-[14px] text-muted">Mức làm chủ theo từng mảng, theo hồ sơ năng lực. Các con số ở đây là năng lực chung của công ty, không phải thông số của một model cụ thể.</p>
+            <p className="max-w-[52ch] text-[14px] text-muted">Mức làm chủ theo từng mảng. Các con số ở đây là năng lực chung của công ty, không phải thông số của một model cụ thể.</p>
           </div>
           <div className="grid gap-4 lg:grid-cols-2">
             {c.cores.map((core) => (
@@ -100,7 +83,6 @@ export default function CapabilityPage() {
                     </details>
                   ))}
                 </div>
-                <Src page={core.page} />
               </article>
             ))}
           </div>
@@ -125,7 +107,6 @@ export default function CapabilityPage() {
               </li>
             ))}
           </ol>
-          <Src page={c.rnd.page} />
         </section>
 
         {/* Năng lực sản xuất */}
@@ -142,9 +123,8 @@ export default function CapabilityPage() {
                   </div>
                 ))}
               </dl>
-              <Src page={m.pcba.page} />
             </div>
-            <Shots images={m.photos.map((p) => p.image)} labels={m.photos.map((p) => `${p.caption} (${p.page})`)} />
+            <Shots images={m.photos.map((p) => p.image)} labels={m.photos.map((p) => p.caption)} />
           </div>
 
           <div className="mt-6">
@@ -173,7 +153,6 @@ export default function CapabilityPage() {
               ))}
             </ul>
             <p className="mt-3 text-[13.5px] text-muted">{m.assembly.note}</p>
-            <Src page={m.assembly.page} />
           </div>
         </section>
 
@@ -203,11 +182,10 @@ export default function CapabilityPage() {
               </dl>
             </div>
           </div>
-          <Src page={`${c.qc.page}, ${m.cleanroom.page}`} />
         </section>
 
-        <div className="mt-14 flex flex-wrap items-center justify-between gap-4 rounded-xl2 bg-surface p-5 md:p-6">
-          <p className="max-w-[60ch] text-[13.5px] text-muted">{PROFILE.source("tr.2–40")}</p>
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-8">
+          <p className="max-w-[60ch] text-[15px] font-semibold">Xem danh mục model hiện hành và kịch bản ứng dụng theo ngành.</p>
           <div className="flex flex-wrap gap-2">
             <Link href="/san-pham/danh-muc" className="btn btn-ghost btn-sm">Danh mục model</Link>
             <Link href="/giai-phap#kich-ban" className="btn btn-primary btn-sm">Kịch bản ứng dụng</Link>
