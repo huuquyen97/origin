@@ -20,3 +20,4 @@ lib/generated/
 
 # Bản tồn kho đọc thành công gần nhất (lib/inventory/last-good.ts) khi không dùng Vercel Blob
 /.data/
+.vercel

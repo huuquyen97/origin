@@ -49,4 +49,5 @@ const fileStore: Store = {
   },
 };
 
-export const lastGood: Store = process.env.BLOB_READ_WRITE_TOKEN ? blobStore : fileStore;
+// Blob store gắn vào project Vercel có BLOB_STORE_ID và xác thực bằng OIDC (không cần token); ngoài Vercel dùng BLOB_READ_WRITE_TOKEN
+export const lastGood: Store = process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID ? blobStore : fileStore;

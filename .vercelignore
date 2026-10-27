@@ -1,0 +1,12 @@
+# Deploy bằng Vercel CLI từ máy có đủ /Data (tài liệu gốc không có trên git).
+# Không upload secret, file sinh lúc build và file làm việc trên máy.
+.env*
+!.env.example
+.vercel
+.data
+.next
+node_modules
+public/files
+public/brand
+lib/generated
+screenshots
