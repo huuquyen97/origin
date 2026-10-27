@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { AlertTriangle, ExternalLink, RefreshCw, Search } from "lucide-react";
+import { ExternalLink, RefreshCw, Search } from "lucide-react";
 import { stockStatus, type StockStatus } from "@/lib/inventory/types";
 import { matchesAll } from "@/lib/search/normalize";
 import { INV, T, vnDateTime } from "@/lib/strings";
@@ -55,13 +55,6 @@ export function InventoryTable({ products }: { products: Row[] }) {
           <a className="btn btn-ghost btn-sm" href={data.sheetUrl} target="_blank" rel="noopener"><ExternalLink /> Mở file tồn kho</a>
         )}
       </div>
-      {(data.stale || (data.error && !Object.keys(data.items).length)) && (
-        <p role="alert" className="mb-5 flex gap-2 rounded-2xl bg-brand-gold-50 px-4 py-3 text-[14px] text-brand-gold-700">
-          <AlertTriangle className="mt-0.5 size-4 shrink-0" aria-hidden />
-          <span>{data.stale ? INV.stale : "Không đọc được file tồn kho"}{data.error ? `: ${data.error}` : ""}</span>
-        </p>
-      )}
-
       <div className="mb-5 grid grid-cols-[minmax(0,1fr)] gap-3.5">
         <label className="flex h-12 items-center gap-2.5 rounded-full border border-line bg-white px-4 transition focus-within:border-ink">
           <Search className="size-[17px] text-muted" aria-hidden />

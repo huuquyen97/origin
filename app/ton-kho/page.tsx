@@ -16,7 +16,6 @@ export default function InventoryPage() {
         crumbs={[{ label: INV.title }]}
         eyebrow="Số liệu kho"
         title="Tồn kho theo model"
-        lead="Số lượng lấy từ file tồn kho chung trên Google Drive, tự cập nhật khoảng 1 phút sau khi file thay đổi."
       />
       <main className="container-x py-12 md:py-14">
         <InventoryTable products={products} />
