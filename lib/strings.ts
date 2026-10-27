@@ -88,7 +88,7 @@ export const AUTH = {
   lead: "Cổng tra cứu nội bộ của MK Vision. Dùng tài khoản Google công ty (@mkvision.com) để tiếp tục.",
   button: "Đăng nhập bằng Google",
   redirecting: "Đang chuyển tới Google…",
-  note: "Chỉ tài khoản @mkvision.com được truy cập. Phiên đăng nhập giữ 7 ngày trên trình duyệt này.",
+  note: "Chỉ tài khoản @mkvision.com được truy cập.",
   signOut: "Đăng xuất",
   signedInAs: "Đang đăng nhập",
   errors: {
