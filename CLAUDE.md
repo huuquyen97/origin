@@ -30,16 +30,22 @@ Quy tắc chi tiết nằm trong `.claude/rules/`. Rule có `paths` chỉ nạp 
 
 | File | Chủ đề | Nạp khi |
 |---|---|---|
-| `file-safety.md` | Không xóa `/Data`; Windows không phân biệt hoa thường | luôn |
-| `quality-checks.md` | lint, build, screenshot trước khi báo xong | luôn |
-| `company-and-products.md` | Thông tin công ty, các dòng sản phẩm | luôn |
+| `mandatory-rule.md` | Guardrail tuyệt đối: an toàn `/Data`, secret, git, kiểm tra trước khi báo xong, việc phải hỏi | luôn |
+| `project-overview.md` | Công ty, dòng sản phẩm, stack, kiến trúc build/chạy, env, deploy, thuật ngữ | luôn |
+| `workflow.md` | Quy trình theo loại việc, nhánh/commit, kiểm tra, QA, ba-research, deploy, tổng kết phiên | luôn |
 | `data-integrity.md` | Thông số chỉ lấy từ datasheet, xử lý xung đột | `Data/**`, `public/img/products/**` |
 | `data-structure.md` | Cấu trúc `/Data`, schema, copy tài liệu, thêm sản phẩm | `Data/**`, `lib/data/**`, `lib/file-slug.mjs`, `scripts/**` |
-| `design.md` | Design system tham khảo hikvision.com/vn (từ 21/10/2026) | `app/**`, `components/**`, `public/img/**` |
-| `frontend-code.md` | Quy ước Next.js / React / Tailwind | file code trong `app/`, `components/`, `lib/` |
-| `features.md` | Tính năng và route từng trang | `app/**`, `components/**`, `lib/search/**` |
+| `design-system.md` | Token màu/chữ, layout, header/hero, card, nút, tag, bảng, ảnh, a11y (tham khảo hikvision.com/vn) | `app/**`, `components/**`, `public/img/**` |
+| `site-structure.md` | Bản đồ route, tham số URL, nội dung từng trang, component dùng chung, tìm kiếm | `app/**`, `components/**`, `lib/search/**`, `lib/strings.ts` |
+| `coding-convention.md` | Quy ước Next.js / React / TS / Tailwind, lớp dữ liệu, API, cache | code trong `app/`, `components/`, `lib/`, `scripts/`, `auth.ts`, `proxy.ts`, `next.config.ts` |
+| `security-and-access.md` | Đăng nhập, proxy, secret, phát hành tài liệu, API, rủi ro | `auth.ts`, `proxy.ts`, `app/api/**`, `lib/inventory/**`, `copy-assets`, `.env.example`… |
+| `content-writing.md` | Văn phong, thuật ngữ, số/ngày, cảnh báo, ghi nguồn, copy gửi khách | `lib/strings.ts`, `lib/labels.ts`, `Data/Site/**`, `Data/Solutions/**`, `Data/Documents/**`, `*.tsx` |
 
-Agent `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Manager, chỉ báo cáo, không sửa. Mở phiên mới mới nạp được.
+Từ 28/10/2026 các rule cũ `file-safety`, `quality-checks`, `company-and-products`, `design`, `frontend-code`, `features` đã gộp vào các file trên.
+
+Agent (mở phiên mới mới nạp được):
+- `.claude/agents/qatesting.md`: kiểm thử website như end user / QC Manager, chỉ báo cáo, không sửa.
+- `.claude/agents/ba-research.md`: phân tích, lên kế hoạch / tối ưu tính năng, nghiên cứu thị trường / đối thủ, so sánh lựa chọn; báo cáo ≤ 500 từ lưu `analysis/YYYY-MM-DD-<chu-de>.md`, không sửa code.
 
 ## Trạng thái dự án (cập nhật 27/10/2026)
 
